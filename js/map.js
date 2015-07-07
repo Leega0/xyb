@@ -62,7 +62,7 @@ function ChinaMapDis(){
 		return false;
 	} else {
 	   $.ajax({
-		url: environment.basePath+'map.json',
+		url:'js/map.json',
 		//url: environment.globalPath+'/v2/local/json/citydis.json',
 		dataType: 'json',
 		type: 'GET',
