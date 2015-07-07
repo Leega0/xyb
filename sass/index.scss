@@ -505,6 +505,9 @@
 // 如何投资
 .bg-how-invest{
 	position: relative;
+	h3{
+		margin: 0;
+	}
 	.arrow_gray{
 		width: 36px;
 		height: 23px;
@@ -516,12 +519,8 @@
 	}
 }
 // 新手引导-立即注册
-.nw-regist-now{
-	position: relative;
 	.regist-now{
-		overflow: visible;
-	}
-	.arrow_white{
+		.arrow_white{
 		width: 36px;
 		height: 23px;
 		position: absolute;
@@ -529,12 +528,5 @@
 		margin-left: -18px;
 		top:0;
 		background:url(../images/sprites/arrow_white.png) no-repeat;
+		}
 	}
-
-}
-.h200{
-	overflow: hidden;
-	height: 200px;
-	background-color: #fff;
-	clear:both;
-}
