@@ -513,13 +513,13 @@
 	}
 	ul{
 		overflow: hidden;
-		padding:70px 0;
+		padding:70px 0 100px;
 	}
 	li{
 		float: left;
-		width: 340px;
+		width: 386px;
 		height: 105px;
-		border:1px solid red;
+		position: relative;
 		.nw-icons{
 			width: 82px;
 			height: 82px;
@@ -533,6 +533,10 @@
 			margin-left: 10px;
 			.icon-nw-darrow{
 				position: absolute;
+				width: 18px;
+				height: 15px;
+				right: 10px;
+				top: 40px;
 				background: url(../images/sprites/nw-arrow-right.png) no-repeat;
 			}
 			.title{
