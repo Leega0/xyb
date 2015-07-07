@@ -1141,6 +1141,10 @@ h6 {
       text-align: center;
       a{
         line-height: 2;
+        display: block;
+        padding:0;
+        width: 100px;
+        text-align: center;
       }
       z-index: 99;
     }
