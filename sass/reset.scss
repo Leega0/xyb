@@ -980,12 +980,15 @@ h6 {
   border-color: transparent  transparent transparent #74ca98;
 }
 .triangle-up {
+  // 筛选暂时取消
+      display: none;
       height: 0;
       width: 0;     
       border: 3px solid #474747;
       border-color: transparent transparent #474747 transparent;
 }
 .triangle-down {
+  // 筛选暂时取消
       height: 0;
       width: 0;
       border: 3px solid #474747;
