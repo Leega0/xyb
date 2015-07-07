@@ -884,8 +884,8 @@
 /*map 地图样式*/
 .map-point {
   margin: 0 auto;
-  width: 469px;
-  height: 388px;
+  width: 733px;
+  height: 392px;
   overflow: hidden;
   position: relative;
   background: url(../images/mapbg.png) no-repeat 0 0;
@@ -899,7 +899,10 @@
   height: 22px;
   text-indent: -9999em;
   overflow: hidden;
-  background: url(../images/map_point.png) no-repeat;
+  background: url(../images/map_point_cur.png) no-repeat;
+  &:hover{
+  	background: url(../images/btn_h.png) no-repeat;
+  }
 }
 .mapStateTip {
   position: absolute;
