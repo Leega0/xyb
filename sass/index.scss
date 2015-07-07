@@ -456,6 +456,9 @@
 // 新手专区
 .new-user-banner{
 	overflow: visible;
+	.bxslider{
+		overflow: hidden;
+	}
 	.arrow_blue{
 		width: 36px;
 		height: 23px;
