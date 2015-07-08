@@ -22,6 +22,10 @@ dl {
   margin: 0;
 }
 
+.padt10 {
+  padding-top: 10px;
+}
+
 .user-account-info {
   text-align: center;
 }
@@ -256,6 +260,11 @@ dl.qc-code {
   box-sizing: border-box;
 }
 
+.user-account-moudle.record {
+  padding: 0;
+  border: 0;
+}
+
 .user-account-moudle .all-earn {
   font-size: 14px;
 }
@@ -446,6 +455,11 @@ dl.qc-code {
 
 .investment-wrap .investment-volume-total .ui-font-gray i {
   color: #474747;
+}
+
+.borrow-volume-total span {
+  display: inline-block;
+  line-height: 40px;
 }
 
 .invet-list-filter td {
