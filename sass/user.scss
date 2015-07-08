@@ -4,6 +4,9 @@ html{
 .bg-gray{
 	background-color: #f6f6f6;
 }
+.border-bottom{
+	border-bottom:1px solid #eee;
+}
 $base_blue:#2c97f4;
 // 用户账户导航
 .user_l{
@@ -135,8 +138,289 @@ dl{
 		padding:26px 0;
 	}
 }
+// 用户中心右侧
 .user_r{
 	border:1px solid #eee;
 	margin-left: 219px;
 	margin-bottom: 50px;
+	padding: 30px;
+}
+.w330{
+	width:330px;
+}
+.w280{
+	width:280px;
+}
+.w180{
+	width:180px;
+}
+.user-assets-box{
+	padding:20px 0;
+	overflow: hidden;
+}
+.user-assets-view{
+	float: left;
+	margin-left: 20px;
+	dt{
+		padding:5px 0;
+	}
+	.num{
+		font-size: 28px;
+		font-weight: bold;
+		font-family: "Arial";
+		padding-bottom: 10px;
+		.icon-up-blue{
+			background: url(../images/icon-up-blue.png) no-repeat;
+			display: inline-block;
+			width: 18px;
+			height: 20px;
+		}
+	}
+	.btns{
+		.ui-btn{
+			font-size: 12px;
+			padding:8px 22px;
+		}
+		.ui-btn-empty{
+			font-size: 12px;
+			padding:7px 21px;
+		}
+	}
+}
+// 账户tab切换样式
+.user-tabs {
+    height: 46px;
+    border: 1px solid #eee;
+    position: relative;
+    background-color: #f6f6f6;
+}
+.user-tabs-item {
+    display: block;
+    float: left;
+    height: 46px;
+    line-height: 46px;
+    padding: 0 35px;
+    font-size: 14px;
+    border-right: 1px solid #eee;
+}
+.user-tabs-active {
+    height: 46px;
+    line-height: 46px;
+    background-color: #fff;
+    border-top: 2px solid $base_blue;
+    font-weight: bold;
+    color: $base_blue;
+}
+.user-account-moudle{
+	border:1px solid #eee;
+	border-top:0;
+	padding:30px;
+	overflow: hidden;
+    width: 100%;
+    box-sizing:border-box;
+    .all-earn{
+		font-size: 14px;
+		dd{
+			padding:10px 0; 
+			&:first-child{
+				padding-top: 0;
+			}
+			&:last-child{
+				padding-bottom: 0;
+			}
+			em{
+				font-family: "Arial";
+			}	
+		}
+	}
+	.all-loan{
+		font-size: 14px;
+		height: 124px;
+		box-sizing:border-box;
+		dd{
+			overflow: hidden;
+			line-height: 40px;
+			&:first-child{
+				line-height: normal;
+			}
+			&:last-child{
+				line-height: normal;
+			}
+			span{
+				display: inline-block;
+			}
+		}
+		.fr{
+			.ui-btn{
+				color: #3e3e3e;
+				border:1px solid #eee;
+				border-radius:3px;
+				font-size: 14px;
+			}
+		}
+		em{
+				font-family: "Arial";
+			}	
+	}
+}
+// 账户tab内容
+.all-property{
+	float: left;
+	margin-top: 30px;
+	width:250px;
+	.big-num{
+		font-size: 28px;
+		font-weight: bold;
+		font-family: "Arial";
+		padding-top: 6px;
+	}
+}
+.all-property-detail{
+	float: left;
+	margin-left: 20px;
+	.ui-pt16{
+		padding-top: 16px;
+	}
+	.nor-num{
+		font-size: 18px;
+		font-family: "Arial";
+		padding-top: 8px;
+		padding-bottom:4px;
+	}
+}
+// 用户今日赚得
+.user-earn-today{
+	background-color: #f4faff;
+	border:1px solid #d3e5f4;
+}
+// 近期回款计划
+.invest-list-control{
+	overflow: hidden;
+	a{
+		float: right;
+	    color: #b9b9b9;
+	    line-height: 64px;
+	    font-size: 12px;
+	    margin-left: 24px;
+	    &.on{
+	    	color: $base_blue;
+	    }
+	}
+	p{
+		height: 64px;
+	    line-height: 64px;
+	    padding-left: 4px;
+	    color: #3e3e3e;
+	    font-weight: bold;
+	    font-size: 14px;
+	}
+	form{
+		float: right;
+	}
+	select{
+		height: 30px;
+	    width: 110px;
+	    border: 1px solid #e2e3e4;
+	    border-radius: 5px;
+	    margin-left: 12px;
+	}
+	.filter_time,.filter_status{
+		float: left;
+	    line-height: 64px;
+	    margin-left: 40px;
+	}
+}
+.invest-list{
+	tr{
+		border-bottom: 1px solid #eee;
+		&.tr1{
+			border-top:1px solid #eee;
+			border-left:1px solid #eee;
+			border-right:1px solid #eee;
+		}
+	}
+	td{
+		text-align: center;
+    	height: 50px;
+	}
+	th{
+		text-align: center;
+    	height: 50px;
+    	background: #f6f6f6;
+    	font-weight: normal;
+	}
+	.index-invest-name{
+		p{	
+			width: 134px;
+			line-height: 50px;
+			display: inline-block;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+	}
+}
+// 我的投资
+.investment-wrap{
+	font-size: 14px;
+	p{
+		position: relative;
+	}
+	.investment-volume-total{
+		padding: 14px 0 20px 16px;
+    	border-top: 1px solid #eee;
+    	&:first-child{
+    		border-top:0;
+    	}
+    	p{
+		    height: 24px;
+		    line-height: 24px;
+    	}
+    	.ui-font-gray{
+    		padding-top: 10px;
+    		i{
+    			color: #474747;
+    		}
+    	}
+	}
+}
+.invet-list-filter{
+	td{
+		height: 70px;
+	}
+	.table-inside-btn{
+		a{
+			border:1px solid #eee;
+			border-radius:3px;
+			padding:3px 6px;
+			margin: 0 2px;
+		}
+	}
+}
+// 修改弹窗蓝边
+.layer-title{
+	border-left:0;
+	.border-blue{
+		display: inline-block;
+		position: relative;
+		top: 3px;
+		margin-right: 5px;
+		height: 16px;
+		border-left:4px solid $base_blue;
+	}
+}
+.user-myinvest-layer{
+	padding:30px;
+	.last-detail-tb{
+		font-size: 12px;
+		td{
+			&:first-child{
+				text-align: center;
+			}
+		}
+		.num{
+			font-family: "Arial";
+			font-size: 18px;
+		}
+	}
 }
