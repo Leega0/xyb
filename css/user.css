@@ -838,6 +838,10 @@ dl.qc-code {
   font-weight: normal;
 }
 
+.user-info-tb {
+  margin-top: 10px;
+}
+
 .user-info-tb .u-input {
   box-sizing: border-box;
   padding: 5px 10px;
@@ -846,7 +850,7 @@ dl.qc-code {
 }
 
 .user-info-tb td {
-  padding: 10px 0;
+  padding: 12px 0;
 }
 
 .user-info-tb td:first-child {
@@ -925,6 +929,45 @@ dl.qc-code {
 .user-add-box .ui-btn {
   font-size: 14px;
   padding: 8px 30px;
+}
+
+.user-addrinfo-layer {
+  padding-top: 10px;
+}
+
+.user-write-info .label {
+  padding: 14px 0 10px;
+}
+
+.user-write-info .u-input {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.user-write-info .user-name input {
+  width: 50%;
+}
+
+.user-write-info .user-provience select {
+  width: 120px;
+}
+
+.user-write-info .user-addr-detail input {
+  width: 100%;
+}
+
+.user-write-info .user-phone input {
+  width: 50%;
+}
+
+.user-add-save {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.user-add-save .ui-btn {
+  padding: 12px 100px;
 }
 
 /*# sourceMappingURL=user.css.map */

@@ -724,6 +724,7 @@ dl{
 	}
 }
 .user-info-tb{
+	margin-top: 10px;
 	.u-input{
 		box-sizing:border-box;
 		padding:5px 10px;
@@ -731,7 +732,7 @@ dl{
 		border-radius:3px;
 	}
 	td{
-		padding:10px 0;
+		padding:12px 0;
 		&:first-child{
 			padding-left: 30px;
 			padding-right: 20px;
@@ -809,4 +810,45 @@ dl{
 		font-size: 14px;
 		padding:8px 30px;
 	}
+}
+// 新增收货地址
+.user-addrinfo-layer{
+	padding-top: 10px;
+}
+.user-write-info{
+	.label{
+		padding:14px 0 10px;
+	}
+	.u-input{
+		border:1px solid #ddd;
+		border-radius:3px;
+		padding:10px;
+	}
+	.user-name{
+		input{
+			width: 50%;
+		}
+	}
+	.user-provience{
+		select{
+			width: 120px;
+		}
+	}
+	.user-addr-detail{
+		input{
+			width: 100%;
+		}
+	}
+	.user-phone{
+		input{
+			width: 50%;
+		}
+	}
+}
+.user-add-save{
+		text-align: center;
+		padding-top: 50px;
+		.ui-btn{
+			padding:12px 100px;
+		}
 }
