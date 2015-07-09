@@ -178,3 +178,13 @@ h5{
 		font-weight: normal;
 	}
 }
+// 借款页select
+.lend-handle{
+	.ui-form-item{
+		.ui-input-middle{
+			select{
+				width: 150px;
+			}
+		}
+	}
+}

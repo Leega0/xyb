@@ -1,0 +1,4 @@
+blue-card.png, 246, 216, 0, 0
+gray-card.png, 246, 216, 248, 0
+green-card.png, 246, 216, 496, 0
+pink-card.png, 246, 216, 744, 0

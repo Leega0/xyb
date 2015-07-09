@@ -144,10 +144,12 @@ dl{
 }
 // 用户中心右侧
 .user_r{
+	position:relative;
 	border:1px solid #eee;
 	margin-left: 219px;
 	margin-bottom: 50px;
 	padding: 30px;
+	min-height:763px;
 }
 .w330{
 	width:330px;
@@ -225,7 +227,75 @@ dl{
     &.record{
     	padding:0;	
     	border:0;
+    	a{
+    		display: block;
+    		color: #2c97f4;
+    	}
+    	span{
+    		display: block;
+    		color: #b9b9b9;
+    		
+    	}
+    	td{
+    		line-height: 24px;
+    		height: 80px;
+    	}
     }
+    &.massage-list{
+    	padding:0 0 60px 0;	
+    	border:0;
+     	tr a{
+     		color: #474747;
+    		&:hover{
+    			color: #62b7e7;
+    		}
+    		&:active{
+    			color: #474747;
+    		}
+    	}
+    	.delete-btn{
+    		position:relative;
+    		margin-top: 25px;
+    		.ui-btn-empty{
+    			border:1px solid #b9b9b9;
+    			color: #474747;
+				  &:hover{
+				    color: #62b7e7;
+				    border-color: #62b7e7;
+				  }
+				  &:active{
+				    color: #474747;
+				    border-color: #b9b9b9;
+				  }
+    		}
+    		#page{
+    			position:absolute;
+    			top: -23px;
+    			right: 22px;;
+    		}
+    	}
+	    .massage-title{
+			color: #3e3e3e;
+			font-size:16px;
+			text-align:center;
+			margin:35px 0 24px;
+	    }
+	    .massage-date{
+	    	color: #b9b9b9;
+	    	font-size:12px;
+	    	text-align:center;
+	    	padding-bottom:29px;
+	    	border-bottom:1px solid #eeeeee;
+	    	margin-bottom:29px;
+	    }
+	    .massage-text{
+	    	color: #3e3e3e;
+			font-size:14px;
+			padding:0 23px;
+			margin-bottom:42px;
+	    }
+    }
+
     .all-earn{
 		font-size: 14px;
 		dd{
@@ -270,6 +340,39 @@ dl{
 				font-family: "Arial";
 			}	
 	}
+}
+.massage-page-btn{
+	text-align:right;
+	padding-top:20px;
+	margin:0 30px;
+	width:919px;
+	border-top:1px solid #eeeeee;
+    position:absolute;
+    bottom:50px;
+    left: 0;
+    .ui-btn-nborder{
+    	padding: 6px 12px;
+    	color: #474747;
+    	font-size:14px;
+			&:hover{
+				color: #62b7e7;
+			}
+			&:active{
+				color: #474747;
+			}
+    	}
+    .ui-btn-empty{
+	    border: 1px solid #b9b9b9;
+	    color: #474747;
+ 		&:hover{
+			color: #62b7e7;
+			border-color: #62b7e7;
+		}
+		&:active{
+			color: #474747;
+			border-color: #b9b9b9;
+		}
+    }
 }
 // 账户tab内容
 .all-property{
@@ -399,6 +502,7 @@ dl{
 		line-height: 40px;
 	}
 }
+//收支记录
 .invet-list-filter{
 	td{
 		height: 70px;
@@ -851,4 +955,393 @@ dl{
 		.ui-btn{
 			padding:12px 100px;
 		}
+}
+// 自动投资
+.user-auto-invest{
+	position: relative;
+	margin-right:14px;
+	margin-left: 14px;
+	padding-bottom: 20px;
+	.user-switch-box{
+		position:absolute;
+		top: -9px;
+		right: 0;
+		overflow: hidden;
+		width: 182px;
+		.title{
+			float: left;
+			font-size: 14px;
+			font-weight: bold;
+			padding-top: 8px;
+		}
+		.user-invest-switch{
+			float: right;
+			width: 98px;
+			height: 30px;
+			background-color: #b9b9b9;
+			border-radius:3px;
+			color: #fff;
+			a{
+				display: inline-block;
+				width: 46px;
+                height: 28px;
+                line-height: 28px;
+                text-align: center;
+                border-radius:3px;
+			}
+			.cur{			
+                color: #2c97f4;
+                background-color: #fff;
+                margin: 1px;   
+			}
+		}
+	}
+}
+.user-auto-step{
+	overflow: hidden;
+	width:900px;
+	margin:0 auto;
+	background: url(../images/user-step.png) no-repeat;
+	li{
+		float: left;
+		height: 42px;
+		line-height: 42px;
+		width: 33.33%;
+		text-align:center;
+	}
+}
+// 自动投标条件
+.auto-invest-conditon{
+	width:900px;
+	margin:0 auto;
+	font-size: 14px;
+	tr{
+		border-bottom:1px solid #eee;
+	}
+	td{
+		padding:20px 0;
+		&:first-child{
+			text-align: right;
+			width: 95px;
+		}
+		&.title{
+		text-align: left;
+		font-weight: bold;
+		padding-left: 10px;
+		font-size: 14px;
+		}
+	}
+	.u-input{
+		border:1px solid #ddd;
+		border-radius:3px;
+		padding:6px 10px;
+		font-size: 12px;
+	}
+	.option{
+		padding-left: 50px;
+	}
+	.invest-rate,.invest-earn-rate,.invest-long{
+		.u-input{
+			width: 100px;
+		}
+		label{
+			padding:0 10px;
+			font-size: 12px;
+		}
+	}
+	.invest-product,.invest-method{
+		input{
+			position: relative;
+			top: 2px;
+		}
+		label{
+			padding-right: 30px;
+		}
+	}
+	.invest-num,.invest-last{
+		label{
+			font-size: 12px;
+			padding-left: 10px;
+		}
+		.ui-font-gray{
+			font-size: 12px;
+			padding-left: 30px;
+		}
+	}
+	.user-credit-level{
+		span{
+			padding-right: 30px;
+		}
+		.credit-level{
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+			line-height: 30px;
+			color: #fff;
+			font-size: 16px;
+			background-color: #74ca98;
+			border-radius: 50%;
+			text-align: center;
+			margin-left: 10px;
+			&.level_b{
+				background-color: #f1c40f;
+			}
+			&.level_c{
+				background-color: #fc8478;
+			}
+		}
+	}
+}
+.user-save-autoinvest{
+	text-align:center;
+	padding-top: 40px;
+	.ui-btn{
+		padding:12px 50px;
+	}
+}
+// 收益卡模块
+.gift-catd-filter{
+	border-bottom:1px solid #eee;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	.fl{
+		a{
+			padding-right:20px;
+			&.cur{
+				font-weight: bold;
+				color: $base_blue;
+			}
+		}
+	}
+}
+.gift-catd-wrap{
+	overflow: hidden;
+	border-bottom:1px solid #eee;
+	padding-bottom: 30px;
+	li{
+		float: left;
+		width: 33.33%;
+		padding:20px 0;
+	}
+	.gift-card-box{
+		width: 246px;
+		height: 216px;
+		margin-left: 10px;
+		background:url(../images/sprites/gift-card.png) no-repeat;
+		color: #fff;
+		.go-to-use{
+			text-align: center;
+			height: 50px;
+			line-height: 48px;
+			a{
+				display:block;
+				font-weight:bold;
+				font-size: 16px;
+
+			}
+		}
+		&.blue-card{
+			.go-to-use{
+			  
+              a{
+              	color: #3189d6;
+              }
+		   }
+			
+		}
+		&.green-card{
+			background-position:-496px 0;
+			.go-to-use{
+			  
+              a{
+              	color: #35a364;
+              }
+		   }
+		}
+		&.pink-card{
+			background-position:-744px 0;
+			.go-to-use{
+			  
+              a{
+              	color: #f87c71;
+              }
+		   }
+		}
+		&.gray-card{
+			background-position:-248px 0;
+			.go-to-use{
+			  
+              a{
+              	color: #b9b9b9;
+              	&:hover{
+              		cursor: not-allowed;
+              	}
+              }
+		   }
+		}
+		dt{
+			text-align: center;
+			font-weight: bold;
+			font-size: 18px;
+			line-height: 50px;
+		}
+		dd{
+			overflow: hidden;
+		}
+		.date,.beishu{
+             height: 60px;
+             float: left;
+             text-align: center;
+             em{
+             	display: block;
+             	font-weight: bold;
+             	font-size: 28px;
+             	font-family: "Arial";
+             	padding-top: 5px;
+             }
+		}
+		.date{
+			margin-top: 12px;
+             margin-left: 40px;
+		}
+		.beishu{
+			float: right;
+			margin-top: 12px;
+			margin-right: 40px;
+		}
+		.out-date{
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+		}
+	}
+}
+.user-account-moudle{
+&.red-bonus{
+	dd{
+		float:left;
+		width:285px;
+	}
+	p{
+		font-size:12px;
+		color: #474747;
+		&.title{
+			margin-top:50px;
+		}
+		&.num{
+			font-size: 28px;
+			font-weight:bold;
+			margin:10px auto;
+		}
+	}
+	.red-bonus-data{
+		text-align:center;
+		padding-top: 30px;
+		p{
+			
+			margin:25px 0;
+		}
+		a{
+			width: 196px;
+			height: 28px;
+			line-height: 28px;
+		}
+	}
+	.red-bonus-le{
+		padding-left: 124px;
+		width:161px;
+	}
+	.invest-list-control{
+		padding-right:24px;
+		margin-top:30px;
+	}
+}
+&.safty{
+	tr:first-child{
+		  border-top: 1px solid #eee;
+	}
+	td{
+		height: 80px;
+		text-align:left;
+	}
+	.text-black{
+		color:#474747;
+		font-size:12px;
+		font-weight:bold;
+		margin-right:30px;
+	}
+	.text-dark{
+		margin-top: 15px;
+		display: block;
+		color:#b9b9b9;
+		font-size:12px;
+	}
+	.tips{
+		padding:30px 16px;
+		color: #b9b9b9;
+		font-size:12px;
+		line-height:24px;
+	}
+	i{
+		display: block;
+		margin:0 auto;
+		width: 16px;
+		height: 16px;
+		background:url(../images/sprites/icon-criedted.png) no-repeat;
+		background-size:16px;
+		&.error{
+			background:url(../images/sprites/icon-error-samll.png) no-repeat;
+		}
+	}
+	dl{
+		margin:40px 0 40px;
+		.safty-level-box{
+			height:19px;
+			width: 400px;
+		}
+		.safty-level-text{
+			font-size: 16px;
+			right:-40px;
+		}
+	}
+	dd{
+		float:left;
+		padding-left:20px;
+		&:first-child{
+			padding-left:160px;
+			color: #474747;
+			font-size: 16px;
+		}
+	}
+	.safty-level-box{
+		position:relative;
+		display:inline-block;
+		margin:0 20px 0 0;
+		background:#eeeeee;
+	}
+	.safty-level-bar{
+		position:absolute;
+		left: 0;
+		top: 0;
+		display:block;
+		height:100%;
+		width: 30%;
+	}
+	.safty-level-text{
+		position:absolute;
+		
+		top: 0;
+	}
+	td{
+		.safty-level-box{
+			top:2px;
+			height:14px;
+			width: 100px;
+		}
+		.safty-level-text{
+			font-size: 12px;
+			right:-20px;
+		}
+	}
+}
 }

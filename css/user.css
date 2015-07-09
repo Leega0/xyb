@@ -169,10 +169,12 @@ dl.qc-code {
 }
 
 .user_r {
+  position: relative;
   border: 1px solid #eee;
   margin-left: 219px;
   margin-bottom: 50px;
   padding: 30px;
+  min-height: 763px;
 }
 
 .w330 {
@@ -265,6 +267,87 @@ dl.qc-code {
   border: 0;
 }
 
+.user-account-moudle.record a {
+  display: block;
+  color: #2c97f4;
+}
+
+.user-account-moudle.record span {
+  display: block;
+  color: #b9b9b9;
+}
+
+.user-account-moudle.record td {
+  line-height: 24px;
+  height: 80px;
+}
+
+.user-account-moudle.massage-list {
+  padding: 0 0 60px 0;
+  border: 0;
+}
+
+.user-account-moudle.massage-list tr a {
+  color: #474747;
+}
+
+.user-account-moudle.massage-list tr a:hover {
+  color: #62b7e7;
+}
+
+.user-account-moudle.massage-list tr a:active {
+  color: #474747;
+}
+
+.user-account-moudle.massage-list .delete-btn {
+  position: relative;
+  margin-top: 25px;
+}
+
+.user-account-moudle.massage-list .delete-btn .ui-btn-empty {
+  border: 1px solid #b9b9b9;
+  color: #474747;
+}
+
+.user-account-moudle.massage-list .delete-btn .ui-btn-empty:hover {
+  color: #62b7e7;
+  border-color: #62b7e7;
+}
+
+.user-account-moudle.massage-list .delete-btn .ui-btn-empty:active {
+  color: #474747;
+  border-color: #b9b9b9;
+}
+
+.user-account-moudle.massage-list .delete-btn #page {
+  position: absolute;
+  top: -23px;
+  right: 22px;
+}
+
+.user-account-moudle.massage-list .massage-title {
+  color: #3e3e3e;
+  font-size: 16px;
+  text-align: center;
+  margin: 35px 0 24px;
+}
+
+.user-account-moudle.massage-list .massage-date {
+  color: #b9b9b9;
+  font-size: 12px;
+  text-align: center;
+  padding-bottom: 29px;
+  border-bottom: 1px solid #eeeeee;
+  margin-bottom: 29px;
+}
+
+.user-account-moudle.massage-list .massage-text {
+  color: #3e3e3e;
+  font-size: 14px;
+  padding: 0 23px;
+  margin-bottom: 42px;
+}
+
 .user-account-moudle .all-earn {
   font-size: 14px;
 }
@@ -317,6 +400,46 @@ dl.qc-code {
 
 .user-account-moudle .all-loan em {
   font-family: "Arial";
+}
+
+.massage-page-btn {
+  text-align: right;
+  padding-top: 20px;
+  margin: 0 30px;
+  width: 919px;
+  border-top: 1px solid #eeeeee;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+}
+
+.massage-page-btn .ui-btn-nborder {
+  padding: 6px 12px;
+  color: #474747;
+  font-size: 14px;
+}
+
+.massage-page-btn .ui-btn-nborder:hover {
+  color: #62b7e7;
+}
+
+.massage-page-btn .ui-btn-nborder:active {
+  color: #474747;
+}
+
+.massage-page-btn .ui-btn-empty {
+  border: 1px solid #b9b9b9;
+  color: #474747;
+}
+
+.massage-page-btn .ui-btn-empty:hover {
+  color: #62b7e7;
+  border-color: #62b7e7;
+}
+
+.massage-page-btn .ui-btn-empty:active {
+  color: #474747;
+  border-color: #b9b9b9;
 }
 
 .all-property {
@@ -968,6 +1091,432 @@ dl.qc-code {
 
 .user-add-save .ui-btn {
   padding: 12px 100px;
+}
+
+.user-auto-invest {
+  position: relative;
+  margin-right: 14px;
+  margin-left: 14px;
+  padding-bottom: 20px;
+}
+
+.user-auto-invest .user-switch-box {
+  position: absolute;
+  top: -9px;
+  right: 0;
+  overflow: hidden;
+  width: 182px;
+}
+
+.user-auto-invest .user-switch-box .title {
+  float: left;
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 8px;
+}
+
+.user-auto-invest .user-switch-box .user-invest-switch {
+  float: right;
+  width: 98px;
+  height: 30px;
+  background-color: #b9b9b9;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.user-auto-invest .user-switch-box .user-invest-switch a {
+  display: inline-block;
+  width: 46px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.user-auto-invest .user-switch-box .user-invest-switch .cur {
+  color: #2c97f4;
+  background-color: #fff;
+  margin: 1px;
+}
+
+.user-auto-step {
+  overflow: hidden;
+  width: 900px;
+  margin: 0 auto;
+  background: url(../images/user-step.png) no-repeat;
+}
+
+.user-auto-step li {
+  float: left;
+  height: 42px;
+  line-height: 42px;
+  width: 33.33%;
+  text-align: center;
+}
+
+.auto-invest-conditon {
+  width: 900px;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+.auto-invest-conditon tr {
+  border-bottom: 1px solid #eee;
+}
+
+.auto-invest-conditon td {
+  padding: 20px 0;
+}
+
+.auto-invest-conditon td:first-child {
+  text-align: right;
+  width: 95px;
+}
+
+.auto-invest-conditon td.title {
+  text-align: left;
+  font-weight: bold;
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+.auto-invest-conditon .u-input {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 6px 10px;
+  font-size: 12px;
+}
+
+.auto-invest-conditon .option {
+  padding-left: 50px;
+}
+
+.auto-invest-conditon .invest-rate .u-input, .auto-invest-conditon .invest-earn-rate .u-input, .auto-invest-conditon .invest-long .u-input {
+  width: 100px;
+}
+
+.auto-invest-conditon .invest-rate label, .auto-invest-conditon .invest-earn-rate label, .auto-invest-conditon .invest-long label {
+  padding: 0 10px;
+  font-size: 12px;
+}
+
+.auto-invest-conditon .invest-product input, .auto-invest-conditon .invest-method input {
+  position: relative;
+  top: 2px;
+}
+
+.auto-invest-conditon .invest-product label, .auto-invest-conditon .invest-method label {
+  padding-right: 30px;
+}
+
+.auto-invest-conditon .invest-num label, .auto-invest-conditon .invest-last label {
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+.auto-invest-conditon .invest-num .ui-font-gray, .auto-invest-conditon .invest-last .ui-font-gray {
+  font-size: 12px;
+  padding-left: 30px;
+}
+
+.auto-invest-conditon .user-credit-level span {
+  padding-right: 30px;
+}
+
+.auto-invest-conditon .user-credit-level .credit-level {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  font-size: 16px;
+  background-color: #74ca98;
+  border-radius: 50%;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.auto-invest-conditon .user-credit-level .credit-level.level_b {
+  background-color: #f1c40f;
+}
+
+.auto-invest-conditon .user-credit-level .credit-level.level_c {
+  background-color: #fc8478;
+}
+
+.user-save-autoinvest {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.user-save-autoinvest .ui-btn {
+  padding: 12px 50px;
+}
+
+.gift-catd-filter {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+  padding-left: 10px;
+}
+
+.gift-catd-filter .fl a {
+  padding-right: 20px;
+}
+
+.gift-catd-filter .fl a.cur {
+  font-weight: bold;
+  color: #2c97f4;
+}
+
+.gift-catd-wrap {
+  overflow: hidden;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 30px;
+}
+
+.gift-catd-wrap li {
+  float: left;
+  width: 33.33%;
+  padding: 20px 0;
+}
+
+.gift-catd-wrap .gift-card-box {
+  width: 246px;
+  height: 216px;
+  margin-left: 10px;
+  background: url(../images/sprites/gift-card.png) no-repeat;
+  color: #fff;
+}
+
+.gift-catd-wrap .gift-card-box .go-to-use {
+  text-align: center;
+  height: 50px;
+  line-height: 48px;
+}
+
+.gift-catd-wrap .gift-card-box .go-to-use a {
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.gift-catd-wrap .gift-card-box.blue-card .go-to-use a {
+  color: #3189d6;
+}
+
+.gift-catd-wrap .gift-card-box.green-card {
+  background-position: -496px 0;
+}
+
+.gift-catd-wrap .gift-card-box.green-card .go-to-use a {
+  color: #35a364;
+}
+
+.gift-catd-wrap .gift-card-box.pink-card {
+  background-position: -744px 0;
+}
+
+.gift-catd-wrap .gift-card-box.pink-card .go-to-use a {
+  color: #f87c71;
+}
+
+.gift-catd-wrap .gift-card-box.gray-card {
+  background-position: -248px 0;
+}
+
+.gift-catd-wrap .gift-card-box.gray-card .go-to-use a {
+  color: #b9b9b9;
+}
+
+.gift-catd-wrap .gift-card-box.gray-card .go-to-use a:hover {
+  cursor: not-allowed;
+}
+
+.gift-catd-wrap .gift-card-box dt {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 50px;
+}
+
+.gift-catd-wrap .gift-card-box dd {
+  overflow: hidden;
+}
+
+.gift-catd-wrap .gift-card-box .date, .gift-catd-wrap .gift-card-box .beishu {
+  height: 60px;
+  float: left;
+  text-align: center;
+}
+
+.gift-catd-wrap .gift-card-box .date em, .gift-catd-wrap .gift-card-box .beishu em {
+  display: block;
+  font-weight: bold;
+  font-size: 28px;
+  font-family: "Arial";
+  padding-top: 5px;
+}
+
+.gift-catd-wrap .gift-card-box .date {
+  margin-top: 12px;
+  margin-left: 40px;
+}
+
+.gift-catd-wrap .gift-card-box .beishu {
+  float: right;
+  margin-top: 12px;
+  margin-right: 40px;
+}
+
+.gift-catd-wrap .gift-card-box .out-date {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.user-account-moudle.red-bonus dd {
+  float: left;
+  width: 285px;
+}
+
+.user-account-moudle.red-bonus p {
+  font-size: 12px;
+  color: #474747;
+}
+
+.user-account-moudle.red-bonus p.title {
+  margin-top: 50px;
+}
+
+.user-account-moudle.red-bonus p.num {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 10px auto;
+}
+
+.user-account-moudle.red-bonus .red-bonus-data {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.user-account-moudle.red-bonus .red-bonus-data p {
+  margin: 25px 0;
+}
+
+.user-account-moudle.red-bonus .red-bonus-data a {
+  width: 196px;
+  height: 28px;
+  line-height: 28px;
+}
+
+.user-account-moudle.red-bonus .red-bonus-le {
+  padding-left: 124px;
+  width: 161px;
+}
+
+.user-account-moudle.red-bonus .invest-list-control {
+  padding-right: 24px;
+  margin-top: 30px;
+}
+
+.user-account-moudle.safty tr:first-child {
+  border-top: 1px solid #eee;
+}
+
+.user-account-moudle.safty td {
+  height: 80px;
+  text-align: left;
+}
+
+.user-account-moudle.safty .text-black {
+  color: #474747;
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 30px;
+}
+
+.user-account-moudle.safty .text-dark {
+  margin-top: 15px;
+  display: block;
+  color: #b9b9b9;
+  font-size: 12px;
+}
+
+.user-account-moudle.safty .tips {
+  padding: 30px 16px;
+  color: #b9b9b9;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.user-account-moudle.safty i {
+  display: block;
+  margin: 0 auto;
+  width: 16px;
+  height: 16px;
+  background: url(../images/sprites/icon-criedted.png) no-repeat;
+  background-size: 16px;
+}
+
+.user-account-moudle.safty i.error {
+  background: url(../images/sprites/icon-error-samll.png) no-repeat;
+}
+
+.user-account-moudle.safty dl {
+  margin: 40px 0 40px;
+}
+
+.user-account-moudle.safty dl .safty-level-box {
+  height: 19px;
+  width: 400px;
+}
+
+.user-account-moudle.safty dl .safty-level-text {
+  font-size: 16px;
+  right: -40px;
+}
+
+.user-account-moudle.safty dd {
+  float: left;
+  padding-left: 20px;
+}
+
+.user-account-moudle.safty dd:first-child {
+  padding-left: 160px;
+  color: #474747;
+  font-size: 16px;
+}
+
+.user-account-moudle.safty .safty-level-box {
+  position: relative;
+  display: inline-block;
+  margin: 0 20px 0 0;
+  background: #eeeeee;
+}
+
+.user-account-moudle.safty .safty-level-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  height: 100%;
+  width: 30%;
+}
+
+.user-account-moudle.safty .safty-level-text {
+  position: absolute;
+  top: 0;
+}
+
+.user-account-moudle.safty td .safty-level-box {
+  top: 2px;
+  height: 14px;
+  width: 100px;
+}
+
+.user-account-moudle.safty td .safty-level-text {
+  font-size: 12px;
+  right: -20px;
 }
 
 /*# sourceMappingURL=user.css.map */

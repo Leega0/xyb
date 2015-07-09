@@ -169,8 +169,16 @@
 						<td>2015-10-30 10:10:10</td>
 						<td>提现手续费</td>
 						<td>13056161631316516</td>
-						<td>-3.00</td>
+						<td class="ui-font-green">+3.00</td>
 						<td>0.00</td>
+	                    <td>58,654.00</td>
+	                </tr>
+	                <tr>
+						<td>2015-10-30 10:10:10</td>
+						<td>提现手续费</td>
+						<td>13056161631316516</td>
+						<td>0.00</td>
+						<td class="ui-font-pink">-3.00</td>
 	                    <td>58,654.00</td>
 	                </tr>
 	                </tbody>
@@ -213,7 +221,7 @@
 	                <tbody>
 	                <tr class="tr1">
 	                    <th>充值时间</th>
-	                    <th>充值类型</th>
+	                    <th>充值方式</th>
 	                    <th>流水号</th>
 	                    <th>充值金额(元)</th>
 	                    <th>到账金额(元)</th>
@@ -222,12 +230,21 @@
 	                </tr>
 	                <tr>
 						<td>2015-10-30 10:10:10</td>
-						<td>提现手续费</td>
+						<td>网银充值</td>
 						<td>13056161631316516</td>
 						<td>1000.00</td>
 						<td>1000.00</td>
 	                    <td>0.00</td>
 	                    <td>充值成功</td>
+	                </tr>
+	                <tr>
+						<td>2015-10-30 10:10:10</td>
+						<td>网银充值</td>
+						<td>13056161631316516</td>
+						<td>1000.00</td>
+						<td>1000.00</td>
+	                    <td>0.00</td>
+	                    <td>等待入账</td>
 	                </tr>
 	                </tbody>
 	            </table>
@@ -259,11 +276,11 @@
 	            <table class="invest-list" width="100%">
 	                <colgroup>
 	                    <col width="165px">
-	                    <col width="120px">
+	                    <col width="165px">
 	                    <col width="160px">
 	                    <col width="100px">
-	                    <col width="175px">
-	                    <col width="180px">
+	                    <col width="160px">
+	                    <col width="150px">
 	                </colgroup>
 	                <tbody>
 	                <tr class="tr1">
@@ -278,21 +295,227 @@
 						<td>2015-10-30 10:10:10</td>
 						<td>提现手续费</td>
 						<td>13056161631316516</td>
-						<td>-3.00</td>
+						<td>1000.00</td>
 						<td>0.00</td>
 	                    <td>提现成功</td>
+	                </tr>
+	                <tr>
+						<td>2015-10-30 10:10:10</td>
+						<td>提现手续费</td>
+						<td>13056161631316516</td>
+						<td>1000.00</td>
+						<td>0.00</td>
+	                    <td>排队中</td>
 	                </tr>
 	                </tbody>
 	            </table>
             </div>
             <div class="user-account-moudle record">
-
+				<div class="invest-list-control">
+					<form>
+						<div class="filter_time">
+							记录时间:
+							<select>
+								<option>最近3个月</option>
+								<option>不限</option>
+								<option>3</option>
+								<option>4</option>
+							</select>
+						</div>
+						<div class="filter_status">
+							类型:
+							<select>
+								<option>不限</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+							</select>
+						</div>
+					</form>
+					<p class="fl">冻结记录列表</p>
+				</div>
+	            <table class="invest-list" width="100%">
+	                <colgroup>
+	                    <col width="160px">
+	                    <col width="210px">
+	                    <col width="160px">
+	                    <col width="210px">
+	                    <col width="160px">
+	                </colgroup>
+	                <tbody>
+	                <tr class="tr1">
+	                    <th>冻结时间</th>
+	                    <th>流水号</th>
+	                    <th>冻结金额(元)</th>
+	                    <th>冻结类型</th>
+	                    <th>状态</th>
+	                </tr>
+	                <tr>
+						<td>2015-10-30 10:10:10</td>
+						<td>13056161631316516</td>
+						<td>1000.00</td>
+						<td>提现申请</td>
+	                    <td>冻结中</td>
+	                </tr>
+	                <tr>
+						<td>2015-10-30 10:10:10</td>
+						<td>13056161631316516</td>
+						<td>1000.00</td>
+						<td>提现申请</td>
+	                    <td>已解冻</td>
+	                </tr>
+	                <tr>
+						<td>2015-10-30 10:10:10</td>
+						<td>13056161631316516</td>
+						<td>1000.00</td>
+						<td>购买产品</td>
+	                    <td>冻结中</td>
+	                </tr>
+	                </tbody>
+	            </table>
             </div>
             <div class="user-account-moudle record">
-
+				<div class="invest-list-control">
+					<form>
+						<div class="filter_time">
+							记录时间:
+							<select>
+								<option>最近3个月</option>
+								<option>不限</option>
+								<option>3</option>
+								<option>4</option>
+							</select>
+						</div>
+						<div class="filter_status">
+							类型:
+							<select>
+								<option>不限</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+							</select>
+						</div>
+					</form>
+					<p class="fl">中奖记录列表</p>
+				</div>
+	            <table class="invest-list" width="100%">
+	                <colgroup>
+	                    <col width="200px">
+	                    <col width="200px">
+	                    <col width="450px">
+	                    <col width="150px">
+	                </colgroup>
+	                <tbody>
+	                <tr class="tr1">
+	                    <th>中奖时间</th>
+	                    <th>中奖遍号</th>
+	                    <th>奖品</th>
+	                    <th>发放状态</th>
+	                </tr>
+	                <tr>
+						<td>2015-10-30 10:10:10</td>
+						<td>13056161631316516</td>
+						<td>手机十部</td>
+	                    <td>已发放</td>
+	                </tr>
+	                <tr>
+						<td>2015-10-30 10:10:10</td>
+						<td>13056161631316516</td>
+						<td>手机十部</td>
+	                    <td>已发放<a href="">查看快递</a></td>
+	                </tr>
+	                <tr>
+						<td>2015-10-30 10:10:10</td>
+						<td>13056161631316516</td>
+						<td>手机十部</td>
+	                    <td>等待发放<span>次月15号前邮寄</span></td>
+	                </tr>
+	                <tr>
+						<td>2015-10-30 10:10:10</td>
+						<td>13056161631316516</td>
+						<td>手机十部</td>
+	                    <td><a href="">设置收件地址</a><span>设置后等待发放</span></td>
+	                </tr>
+	                </tbody>
+	            </table>
             </div>
             <div class="user-account-moudle record">
-
+				<div class="invest-list-control">
+					<form>
+						<div class="filter_time">
+							记录时间:
+							<select>
+								<option>最近3个月</option>
+								<option>不限</option>
+								<option>3</option>
+								<option>4</option>
+							</select>
+						</div>
+						<div class="filter_status">
+							类型:
+							<select>
+								<option>不限</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+							</select>
+						</div>
+					</form>
+					<p class="fl">兑换记录列表</p>
+				</div>
+	            <table class="invest-list" width="100%">
+	                <colgroup>
+	                    <col width="160px">
+	                    <col width="210px">
+	                    <col width="160px">
+	                    <col width="210px">
+	                    <col width="160px">
+	                </colgroup>
+	                <tbody>
+	                <tr class="tr1">
+	                    <th>兑换时间</th>
+	                    <th>流水号</th>
+	                    <th>商品</th>
+	                    <th>积分消耗(分)</th>
+	                    <th>兑换状态</th>
+	                </tr>
+	                <tr>
+						<td>2015-10-30 10:10:10</td>
+						<td>13056161631316516</td>
+						<td>1手机十部</td>
+						<td class="ui-font-green">-2000,000.00</td>
+	                    <td>已兑换</td>
+	                </tr>
+	                <tr>
+						<td>2015-10-30 10:10:10</td>
+						<td>13056161631316516</td>
+						<td>1手机十部</td>
+						<td class="ui-font-green">-2000,000.00</td>
+	                    <td>已发放<a href="">查看快递</a></td>
+	                </tr>
+	                <tr>
+						<td>2015-10-30 10:10:10</td>
+						<td>13056161631316516</td>
+						<td>1手机十部</td>
+						<td class="ui-font-green">-2000,000.00</td>
+	                    <td>等待发放<span>次月15号前邮寄</span></td>
+	                </tr>
+	                <tr>
+						<td>2015-10-30 10:10:10</td>
+						<td>13056161631316516</td>
+						<td>1手机十部</td>
+						<td class="ui-font-green">-2000,000.00</td>
+	                    <td><a href="">设置收件地址</a><span>设置后等待发放</span></td>
+	                </tr>
+	                <tr>
+						<td>2015-10-30 10:10:10</td>
+						<td>13056161631316516</td>
+						<td>1手机十部</td>
+						<td class="ui-font-green">-2000,000.00</td>
+	                    <td>已发放</td>
+	                </tr>
+	                </tbody>
+	            </table>
             </div>
             <!-- tab切换end -->
           <!-- 收益展示模块 -->
