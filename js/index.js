@@ -2,6 +2,7 @@ $(function(){
 	// banner
   	$('.bxslider').bxSlider({
   		// mode:'fade',
+      controls:false,
   		auto:true,
   		responsive:false
   	});
