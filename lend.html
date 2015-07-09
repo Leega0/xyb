@@ -81,7 +81,7 @@
 		<div class="ui-form-item">
 			<p class="ui-input-body ui-input-middle">
 				<i class="ui-label-icon icon-form-person"></i>
-				<input type="text" id="lend-name" placeholder="借款人称呼">
+				<input type="text" id="lend-name" placeholder="借款人称呼" value="借款人称呼" onfocus="if(this.value==this.defaultValue)this.value=''" onblur="if(this.value.replace(/ /ig,'')=='')this.value=this.defaultValue">
 			</p>
 			<p class="ui-input-body ui-input-short">
 				<select name="" id="">
@@ -94,7 +94,7 @@
 		<div class="ui-form-item">
 			<p class="ui-input-body">
 				<i class="ui-label-icon icon-form-phone"></i>
-				<input type="number" placeholder="联系手机号码">
+				<input type="text" placeholder="联系手机号码" value="联系手机号码" onfocus="if(this.value==this.defaultValue)this.value=''" onblur="if(this.value.replace(/ /ig,'')=='')this.value=this.defaultValue">
 			</p>
 		</div>
 		<div class="ui-form-item">
@@ -107,7 +107,7 @@
 		<!-- 计算工具 -->
 		<div class="lend-handle clearfix">
 		<div class="ui-form-item">
-			<label>借款金额:</label><p class="ui-input-body ui-input-middle"><input type="number" value="10000" class="ui-size16 bold ui-font-blue" placeholder="10000"></p>
+			<label>借款金额:</label><p class="ui-input-body ui-input-middle"><input type="text" value="10000" class="ui-size16 bold ui-font-blue" placeholder="10000" onfocus="if(this.value==this.defaultValue)this.value=''" onblur="if(this.value.replace(/ /ig,'')=='')this.value=this.defaultValue"></p>
 		</div>
 		<div class="ui-form-item">
 		<label>借款周期:</label>

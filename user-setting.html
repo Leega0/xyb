@@ -100,8 +100,8 @@
 				<li><a href="">我的投资<i class="ui-arrow"></i></a></li>
 				<li><a href="">我的借款<i class="ui-arrow"></i></a></li>
 				<li><a href="">收支记录<i class="ui-arrow"></i></a></li>
-				<li class="cur"><a href="">充值提现<i class="ui-arrow"></i></a></li>
-				<li><a href="">账户设置<i class="ui-arrow"></i></a></li>
+				<li><a href="">充值提现<i class="ui-arrow"></i></a></li>
+				<li class="cur"><a href="">账户设置<i class="ui-arrow"></i></a></li>
 				<li><a href="">消息中心<i class="ui-arrow"></i></a></li>
 			</ul>
 			<!-- 二维码扫描 -->
@@ -123,31 +123,29 @@
             </div>
             <div class="user-account-moudle">
 				<!-- 基本信息 -->
-				<p class="user-base-info clearfix">基本信息设置<span class="fr">信息完整度：<em class="ui-font-blue">100%</em></span></p>
+				<p class="user-base-info clearfix border-bottom">基本信息设置<span class="fr">信息完整度：<em class="ui-font-blue">100%</em></span></p>
 				<!-- 基本信息修改 -->
 				<table class="user-info-tb">
 					<tr>
 						<td>昵称：</td>
-						<td><input type="text" value="飞天小黄鸭"></td>
+						<td class="nick-name"><input type="text" value="飞天小黄鸭" name="name" class="u-input"></td>
 					</tr>
 					<tr>
 						<td>性别：</td>
-						<td><input type="radio"><label for="">男</label></td>
-						<td><input type="radio"><label for="">女</label></td>
-						<td><input type="radio"><label for="">保密</label></td>
+						<td class="user-sex"><input type="radio" checked><label for="">男</label>
+						<input type="radio"><label for="">女</label>
+						<input type="radio"><label for="">保密</label></td>
 					</tr>
 					<tr>
 						<td>生日：</td>
-						<td>
-							<select name="" id="">
+						<td class="uer-birthday">
+							<select name="" id="" class="u-input">
 								<option value="">1990</option>
 								<option value="">1989</option>
 								<option value="">1988</option>
 							</select>
-							年
-						</td>
-						<td>
-							<select name="" id="">
+							<label>年</label>
+							<select name="" id="" class="u-input">
 									<option value="">12</option>
 									<option value="">11</option>
 									<option value="">10</option>
@@ -162,68 +160,79 @@
 									<option value="">1</option>
 
 							</select>
-							月
-						</td>
-						<td>
-							<select name="" id="">
+							<label for="">月</label>
+							<select name="" id="" class="u-input">
 								<option value="">30</option>
 								<option value="">29</option>
 								<option value="">31</option>
 								<option value="">28</option>
 							</select>
-							日
+							<label for="">日</label>
 						</td>
-						<td> 填生日有惊喜哦~</td>
+						<td class="ui-font-gray ui-pl20"> 填生日有惊喜哦~</td>
 					</tr>
 					<tr>
 						<td>手机：</td>
-						<td>1802****204<a href="" class="ui-font-blue">修改</a></td>
-						<td>已验证</td>
+						<td class="user-phone"><span class="bold">1802****204</span><a href="" class="ui-font-blue">[修改]</a><label for="" class="ui-font-gray">已验证</label></td>
 					</tr>
 					<tr>
 						<td>邮箱：</td>
-						<td>1802****204@189.cn<a href="" class="ui-font-blue">修改</a></td>
-						<td>已验证</td>
+						<td class="user-email"><span class="bold">1802****204@189.cn</span><a href="" class="ui-font-blue">[修改]</a><label for="" class="ui-font-gray">已验证</label></td>
 					</tr>
 					<tr>
-						<td><input type="submit" value="保存" class="ui-btn ui-btn-blue"></td>
+						<td class="user-save" colspan="2"><input type="submit" value="保存" class="ui-btn ui-btn-blue"></td>
 					</tr>
 				</table>
 				<!-- 收货地址管理 -->
 				<div class="invest-list-control">
-                    <p>收货地址管理<em class="ui-font-gray">(平台实物礼品或奖品邮寄地址)</em></p>
+                    <p>收货地址管理<em class="ui-font-gray normal">(平台实物礼品或奖品邮寄地址)</em></p>
             	</div>
             	<!-- 地址列表 -->
-            	<table class="invest-list" width="100%">
+            	<table class="invest-list user-address-list" width="100%">
                     <colgroup>
-                        <col width="110px">
-                        <col width="134px">
-                        <col width="92px">
-                        <col width="92px">
-                        <col width="74px">
-                        <col>
+                        <col width="91px">
+                        <col width="135px">
+                        <col width="271px">
+                        <col width="138px">
+                        <col width="140px">
+                        <col width="112px">
                     </colgroup>
                     <tbody>
                     <tr class="tr1">
                         <th>收件人</th>
-                        <th>所在地</th>
-                        <th>地址</th>
-                        <th>电话/手机</th>
-                        <th>操作</th>
+                        <th class="user-area">所在地</th>
+                        <th class="user-address">地址</th>
+                        <th class="user-phone">电话/手机</th>
+                        <th class="user-handle">操作</th>
        					<th></th>
                     </tr>
-                    <tr>
+                    <tr class="user-address-item user-address-def">
                         <td>侯文涛 </td>
-                        <td>广东深圳市福田区</td>
-                        <td>农林路天天向上花园109栋409</td>
-                        <td>13800***001</td>
-                        <td><a href="">修改</a><i>|</i><a href=""></a></td>
-                        <td>默认地址</td>
-            
+                        <td class="user-area">广东深圳市福田区</td>
+                        <td class="user-address">农林路天天向上花园109栋409</td>
+                        <td class="user-phone">13800***001</td>
+                        <td class="user-handle"><a href="" class="ui-font-blue">修改</a><i class="sapare">|</i><a href="" class="ui-font-blue">删除</a></td>
+                        <td><a href="javascript:void(0);" class="default-addr ui-btn ui-btn-blue">默认地址</a></td>
                     </tr>
-                    
+                    <tr class="user-address-item">
+                        <td>侯文涛 </td>
+                        <td class="user-area">广东深圳市福田区</td>
+                        <td class="user-address">农林路天天向上花园109栋409</td>
+                        <td class="user-phone">13800***001</td>
+                        <td class="user-handle"><a href="" class="ui-font-blue">修改</a><i class="sapare">|</i><a href="" class="ui-font-blue">删除</a></td>
+                        <td><a href="javascript:void(0);" class="default-addr ui-btn ui-btn-blue">默认地址</a></td>
+                    </tr>
+                    <tr class="user-address-item">
+                        <td>侯文涛 </td>
+                        <td class="user-area">广东深圳市福田区</td>
+                        <td class="user-address">农林路天天向上花园109栋409</td>
+                        <td class="user-phone">13800***001</td>
+                        <td class="user-handle"><a href="" class="ui-font-blue">修改</a><i class="sapare">|</i><a href="" class="ui-font-blue">删除</a></td>
+                        <td><a href="javascript:void(0);" class="default-addr ui-btn ui-btn-blue">默认地址</a></td>
+                    </tr>
                     </tbody>
                 </table>
+                <p class="user-add-box"><a href="javascript:void(0);" class="ui-btn ui-btn-blue user-add-address">+新增收货地址</a></p>
             </div>
             <div class="user-account-moudle">
 				2
@@ -278,70 +287,30 @@
 <!-- footer end -->
 <!-- script -->
 <script type="text/javascript" src="js/lib/jquery.js"></script>
+<script type="text/javascript" src="js/plugins/layer.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
 <script type="text/javascript" src="js/user.js"></script>
 <script type="text/javascript">
+// 设置默认地址
+$(function(){
+	$(".user-address-item").hover(function() {
+		$(this).addClass('hover-item')
+	}, function() {
+		$(this).removeClass('hover-item')
+	});
+})
+	//地址填写弹窗
 	$(function(){
-		var banks= {"bank_cmb": { "bankname":"招商银行" , "banked_one":"无限额" ,"banked_daily":"无限额",
-		"banktel":95528,"banked_dyone":"5万","banked_dydy":"20万","banked_xyone":"1000元","banked_xydaily":"5000元","banked_xydyone":"1000元",
-		"banked_xydydy":"5000元"},"bank_icbc": { "bankname":"工商银行" , "banked_one":"无限额" ,"banked_daily":"无限额",
-		"banktel":95558,"banked_dyone":"5万","banked_dydy":"20万","banked_xyone":"1000元","banked_xydaily":"5000元","banked_xydyone":"1000元",
-		"banked_xydydy":"5000元"}};
-       
-        $(".bank-list").children().bind('mouseenter',function() {
-        	var bankid = $(this).attr('id');//获取当前银行id值
-        	//console.log(banks[bankid].bankname);
-        	$.each(function(banks) {
-        		if(banks[bankid]){
-        				var bank_tpl ='<div class="tb-bank-intro">'+
-                        '<table id="bankid_limit">'+
-                            '<thead><tr>'+
-                                '<th>银行</th>'+
-                                '<th>开通范围</th>'+
-                                '<th>客户类型</th>'+
-                                '<th>单笔限额(元)</th>'+
-                                '<th>每日限额(元)</th>'+
-                                '<th>客服热线</th>'+
-                            '</tr></thead>'+
-                            '<tbody>'+
-                                '<tr>'+
-                                    '<td rowspan="4" id="bankname_cmb">'+data[bankid].bankname+'</td>'+
-                                    '<td rowspan="2">借记卡</td>'+
-                                    '<td>数字证书</td>'+
-                                    '<td id="banked_cmb_one">'+data[bankid].banked_one+'</td>'+
-                                    '<td id="banked_cmb_daily">'+data[bankid].banked_daily+'</td>'+
-                                    '<td rowspan="4" id="banktel_cmb">'+data[bankid].banktel+'</td>'+
-                                '</tr>'+
-                                '<tr><td>动态密码</td>'+
-                                '<td id="banked_cmb_dyone">'+data[bankid].banked_dyone+'</td>'+
-                                '<td id="banked_cmb_dydy">'+data[bankid].banked_dydy+'</td></tr>'+
-                                '<tr>'+
-                                    '<td rowspan="2">信用卡</td>'+
-                                    '<td>数字证书</td>'+
-                                    '<td id="banked_cmb_xyone">'+data[bankid].banked_xyone+'</td>'+
-                                    '<td id="banked_cmb_xydaily">'+data[bankid].banked_xydaily+'</td>'+
-                                '</tr>'+
-                                '<tr>'+
-                                    '<td>动态密码</td>'+
-                                    '<td id="banked_cmb_xydyone">'+data[bankid].banked_xydyone+'</td>'+
-                                    '<td id="banked_cmb_xydydy">'+data[bankid].banked_xydydy+'</td>'+
-                                '</tr>'+
-                            '</tbody>'+
-                        '</table>'+
-                        '</div>';
-
-                        $("#bank_xewrap").html(bank_tpl)
-        		}
-        	});  	
-	$(".bank-list").children().bind('mouseleave',function() {
-		 $("#bank_xewrap").html("");
-    }); 
-    });
-//提现银行卡选中
-$(".cur-bank-box").bind('click', function() {
-	$(this).addClass('selected-bank').append('<i class="icon-selected"></i>').siblings().removeClass('selected-bank').children(".icon-selected").remove();
-});
-    });         
+		$(".layer_list_trans").on("click",function(){
+			layer.open({
+				type:2,
+				title:false,
+				shadeClose:true,
+				area: ['540px','500px'],
+				content:['user-layer-address.htm','no']
+			})
+		});
+	})
 </script>
 </body>
 </html>

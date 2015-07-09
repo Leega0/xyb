@@ -520,9 +520,16 @@ dl{
     	margin: 30px 0 60px 0;
     }
 }
-.account-recharge{
+.account-recharge, .account-setting{
 	.user-account-moudle{
 		border:0;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+.account-recharge{
+	.user-account-moudle{
+		padding-left: 20px;
 	}
 }
 .bank-list{
@@ -706,4 +713,100 @@ dl{
 	height: 18px;
 	background:url(../images/icon-addbank.png) no-repeat;
 	margin: 8px 10px 0 40px;
+}
+// 用户信息
+.user-base-info{
+	font-size: 14px;
+	font-weight: bold;
+	padding:0 10px 20px 10px;
+	span{
+		font-weight: normal;
+	}
+}
+.user-info-tb{
+	.u-input{
+		box-sizing:border-box;
+		padding:5px 10px;
+		border:1px solid #e7e7e7;
+		border-radius:3px;
+	}
+	td{
+		padding:10px 0;
+		&:first-child{
+			padding-left: 30px;
+			padding-right: 20px;
+		}
+	}
+	.user-sex{
+		input{
+			position: relative;
+			top:2px;
+			margin-right: 5px;
+		}
+		label{
+			padding-right: 14px;
+		}
+	}
+	.uer-birthday{
+		label{
+			padding:0 10px;
+		}
+	}
+	.user-phone, .user-email{
+		.ui-font-blue{
+			padding:0 10px;
+		}
+	}
+	.user-save{
+		padding-top: 30px;
+		padding-bottom: 20px;
+		.ui-btn{
+			font-size: 14px;
+			padding:10px 40px;
+			margin-left: 0;
+		}
+	}
+}
+// 正常字体大小
+.normal{
+	font-weight: normal;
+}
+// 用户地址列表
+.user-address-list{
+	td{
+		padding:16px 0;
+	}
+	.user-area,.user-address,.user-phone,.user-handle{
+		text-align: left;
+		text-indent: 30px;
+	}
+	.user-handle{
+		.sapare{
+			color: #d7d7d7;
+			padding:0 8px;
+		}
+	}
+	.default-addr{
+		font-size: 12px;
+		padding-left: 0;
+		padding-right: 0;
+		width: 70px;
+		display: none;
+	}
+	.user-address-def,.hover-item{
+		.default-addr{
+			display: block;
+		}
+	}
+	.hover-item{
+		background-color: #f6f6f6;
+	}
+}
+.user-add-box{
+	text-align:center;
+	margin-top: 30px;
+	.ui-btn{
+		font-size: 14px;
+		padding:8px 30px;
+	}
 }
