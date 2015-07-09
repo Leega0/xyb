@@ -19,6 +19,10 @@ $base_blue:#2c97f4;
 dl{
 	margin: 0;
 }
+//公共样式
+.padt10{
+	padding-top:10px;
+}
 .user-account-info{
 	text-align:center;
 	.avatar{
@@ -218,6 +222,10 @@ dl{
 	overflow: hidden;
     width: 100%;
     box-sizing:border-box;
+    &.record{
+    	padding:0;	
+    	border:0;
+    }
     .all-earn{
 		font-size: 14px;
 		dd{
@@ -382,6 +390,13 @@ dl{
     			color: #474747;
     		}
     	}
+	}
+}
+// 我的借款
+.borrow-volume-total{
+	span{
+		display:inline-block;
+		line-height: 40px;
 	}
 }
 .invet-list-filter{
