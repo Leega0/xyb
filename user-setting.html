@@ -8,9 +8,6 @@
 	<title>用户后台--设置</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/user.css">
-	<!--[if lte IE 8]>
-		<script src="js/lib/html5.js"></script>
-    <![endif]-->
 </head>
 <body>
 <!-- 顶部start -->
@@ -599,7 +596,7 @@
             			<p>剩 <span class="ui-font-blue">45</span> 天过期</p>
             		</dd>
             		<dd class="red-bonus-data">
-            			<canvas class="user-redbg-progress" width="90px" height="90px">75%</canvas>
+            			<div id="unfreeze_rate">75%</div>
             			<p>全解冻所需投资(元)：
             			<span class="ui-font-blue bold">586,542,12121242.00</span></p>
             			<a href="" class="ui-btn ui-btn-blue">立即解冻红包</a>
@@ -735,8 +732,10 @@
 <!-- footer end -->
 <!-- script -->
 <script type="text/javascript" src="js/lib/jquery.js"></script>
+<script type="text/javascript" src="js/lib/highcharts.js"></script>
 <script type="text/javascript" src="js/plugins/layer.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/unfreez.js"></script>
 <script type="text/javascript" src="js/user.js"></script>
 <script type="text/javascript">
 // 设置默认地址
@@ -752,7 +751,6 @@ $(function(){
 		$(this).addClass('cur');
 	})
 	;
-	drawProcess();
 })
 	//地址填写弹窗
 	$(function(){
@@ -767,8 +765,5 @@ $(function(){
 		});
 	})
 </script>
-<!--[if lte IE 8]>
-	<script type="text/javascript" src="js/lib/excanvas.min.js"></script>
-	<![endif]-->
 </body>
 </html>

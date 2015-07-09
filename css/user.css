@@ -1519,8 +1519,9 @@ dl.qc-code {
   right: -20px;
 }
 
-.user-redbg-progress {
-  margin-left: 90px\9;
+#unfreeze_rate {
+  width: 110px;
+  height: 115px;
+  overflow: hidden;
+  margin-left: 90px;
 }
-
-/*# sourceMappingURL=user.css.map */
