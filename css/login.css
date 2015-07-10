@@ -66,9 +66,9 @@
   position: absolute;
   top: 50px;
   right: 10px;
-  height: 380px;
   width: 380px;
   background: #fff;
+  padding-bottom: 20px;
 }
 
 .page-tips .contain_wrap {
@@ -273,4 +273,10 @@
   height: 40px;
   box-sizing: border-box;
   line-height: 42px;
+}
+
+.erro-message {
+  color: red;
+  font-size: 14px;
+  padding-top: 3px;
 }

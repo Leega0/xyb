@@ -58,9 +58,9 @@
 		position:absolute;
 		top: 50px;
 		right: 10px;
-		height: 380px;
 		width: 380px;
 		background:#fff;
+		padding-bottom:20px;
 	}
 }
 // 提示信息页面
@@ -240,4 +240,10 @@
 		box-sizing:border-box;
 		line-height: 42px;
 	}
+}
+// 错误信息提示
+.erro-message{
+	color: red;
+    font-size: 14px;
+    padding-top: 3px;
 }

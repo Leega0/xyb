@@ -22,18 +22,24 @@
 			<!-- 登录框开始 -->
 			<div class="login-box">
 				<div class="login-input">
-					<h5>信用宝会员</h5>
+					<h5 class="clearfix">信用宝会员<span class="erro-message fr">请输入用户名</span></h5>
 					<div class="ui-form-item">
 						<p class="ui-input-body">
 							<i class="ui-label-icon icon-form-peoples"></i>
-							<input type="text" placeholder="手机号/邮箱/用户名">
+							<input type="text" value="手机号/邮箱/用户名">
 						</p>
 					</div>
 					<div class="ui-form-item">
 						<p class="ui-input-body">
 							<i class="ui-label-icon icon-form-loginpw"></i>
-							<input type="password" placeholder="登录密码">
+							<input type="password" value="">
 						</p>
+					</div>
+					<div class="ui-form-item">
+						<p class="ui-input-body ui-input-middle ui-mr10" style="width:217px;">
+							<input type="text" value="输入右侧验证码">	
+						</p>
+						<img src="images/valid-code.jpg">
 					</div>
 					<p class="auto-login">
 						<input type="checkbox" checked="checked" name="remember_login" id="remember_login">
@@ -41,7 +47,7 @@
 						<a href="" target="_blank" class="ui-font-gray fr">忘记登录密码</a>
 					</p>
 					<div class="ui-form-item">
-						<p class="ui-form-btn"><a href="" class="ui-btn ui-btn-blue">立即申请</a></p>
+						<p class="ui-form-btn"><a href="" class="ui-btn ui-btn-blue">立即登录</a></p>
 					</div>
 					<p class="align-right"><a href="" class="ui-font-blue ui-size16">免费注册&gt;</a></p>
 				</div>
@@ -71,6 +77,9 @@
 	.ui-popbar{
 		display: none;
 	}
+	html{
+			background-color: #fff;
+		}
 </style>
 </body>
 </html>
