@@ -120,6 +120,10 @@ dl{
 				right: 38px;
 				top: 20px;
 			}
+			&:hover{
+				border-left:2px solid $base_blue;
+				margin-left: -1px;
+			}
 		}
 		&.cur{
 			font-weight: bold;

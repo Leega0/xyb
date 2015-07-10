@@ -149,6 +149,11 @@ dl {
   top: 20px;
 }
 
+.user_nav li a:hover {
+  border-left: 2px solid #2c97f4;
+  margin-left: -1px;
+}
+
 .user_nav li.cur {
   font-weight: bold;
   background-color: #fff;
