@@ -1064,6 +1064,10 @@
   color: #474747;
 }
 
+.banner-vip {
+  overflow: hidden;
+}
+
 .vip-box-system-main-data {
   position: absolute;
   bottom: 0;

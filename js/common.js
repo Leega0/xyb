@@ -1,9 +1,9 @@
 $(function(){
 	// 顶部菜单栏展开
 	$(".myhome-account").hover(function() {
-		$(".home-account-list").show()
+		$(this).addClass('expand')
 	}, function() {
-		$(".home-account-list").hide()
+		$(this).removeClass('expand')
 	});
 	// menu 菜单栏展开
 	$(".menu-invest").hover(function() {

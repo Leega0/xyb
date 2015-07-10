@@ -1065,7 +1065,8 @@ h6 {
   height: 32px;
   color:#a6a6a6;
   line-height: 32px;
-  font-family: "宋体"
+  font-family: "宋体";
+  z-index: 999;
 }
 .myhome{
   li{
@@ -1087,14 +1088,50 @@ h6 {
       border-left: 1px solid #eee;
     }
   }
+  .user-level{
+    font-size: 11px;
+    font-style: italic;
+    color: #fff;
+    background-color: #2c97f4;
+    border-radius: 3px;
+    padding: 1px 3px;
+    margin-left: 5px;
+    font-family: "Arial";
+  }
+  .icon-messages{
+    position: relative;
+    padding:10px;
+    margin-top: 5px;
+    margin-left: 10px;
+    background: url(../images/sprites/icon-unread.png) no-repeat center;
+  }
 
 }
 .myhome-account{
   position: relative;
+  &.expand{
+    height: 33px;
+    background-color: #fff;
+    .home-account-list{
+      display: block;
+    }
+    .icon-arrow{
+      background:url(../images/sprites/icon-arrow-up.png) no-repeat;
+    }
+  }
   .home-account-list{
-    background-color: #f6f6f6;
     display: none;
     position: absolute;
+    z-index: 99;
+    width: 118px;
+    background-color: #fff;
+    border:1px solid #eee;
+    border-top:0;
+    p{
+      &:hover{
+        background-color: #f4faff;
+      }
+    }
   }
   .icon-arrow{
     position: absolute;
