@@ -126,10 +126,21 @@
                         <p>1. 充值免手续费。</p>
                         <p>2. 由于银行系统的限制，部分银行充值功能仅限于IE内核的浏览器。</p>
                         <p>3. 本网站坚决抵制信用卡套现行为，如发现某一用户存在套现行为，我公司将冻结其账户资金。</p>
-                        <p class="zhif_type ui-pt20">选择支付平台</p>
-                        <ul class="bank_type clearfix">
-                            <li class="bank_block" title="4"><input type="radio" name="paytype" id="ybplay" checked><label for="ybplay" title="4"><img src="images/YeePayLogo.jpg" alt="易宝支付"></label></li>
-                        </ul>
+                        <p class="zhif_type ui-pt20">使用快捷支付银行卡<span class="separa">|</span><a class="btn-manage-card ui-font-blue" href="javascript:void(0);">管理</a></p>
+                        <div class="select-bank-box clearfix ui-pb30">
+                        	<div class="cur-bank-box selected-bank">
+                        		<span class="bank_cmb select-bank-icon"></span>
+                        		<span>(尾号3649)</span>
+                        		<i class="icon-selected"></i>
+                        	</div>
+                        	<div class="cur-bank-box">
+                        			<span class="bank_ccb select-bank-icon"></span>
+                        			<span>(尾号3649)</span>
+                        	</div>
+                        	<div class="add-bank-box">
+                        		+添加快捷支付银行卡
+                        	</div>
+                        </div>
                         <p class="zhif_type">该支付平台支持以下银行通道</p>
                         <!-- 银行显示列表 -->
                             <ul class="bank-list clearfix">
@@ -164,7 +175,7 @@
                             <span class="msg_pic"></span>
                             <span class="msg_content f_more_sign ui-size12"></span>
                         </span>
-                        <a id="bt_go_2confirm" class="begin_cal ui-btn ui-btn-blue" value="马上充值" onclick="return check_data();">确认充值</a>
+                        <a id="bt_go_2confirm" class="begin_cal ui-btn ui-btn-blue pay-compelte" value="马上充值" onclick="return check_data();">确认充值</a>
                     </form>
                 </div>
                 <!-- 充值结束 -->
@@ -268,70 +279,46 @@
 <!-- footer end -->
 <!-- script -->
 <script type="text/javascript" src="js/lib/jquery.js"></script>
+<script type="text/javascript" src="js/plugins/layer.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
 <script type="text/javascript" src="js/user.js"></script>
 <script type="text/javascript">
 	$(function(){
-		var banks= {"bank_cmb": { "bankname":"招商银行" , "banked_one":"无限额" ,"banked_daily":"无限额",
-		"banktel":95528,"banked_dyone":"5万","banked_dydy":"20万","banked_xyone":"1000元","banked_xydaily":"5000元","banked_xydyone":"1000元",
-		"banked_xydydy":"5000元"},"bank_icbc": { "bankname":"工商银行" , "banked_one":"无限额" ,"banked_daily":"无限额",
-		"banktel":95558,"banked_dyone":"5万","banked_dydy":"20万","banked_xyone":"1000元","banked_xydaily":"5000元","banked_xydyone":"1000元",
-		"banked_xydydy":"5000元"}};
-       
-        $(".bank-list").children().bind('mouseenter',function() {
-        	var bankid = $(this).attr('id');//获取当前银行id值
-        	//console.log(banks[bankid].bankname);
-        	$.each(function(banks) {
-        		if(banks[bankid]){
-        				var bank_tpl ='<div class="tb-bank-intro">'+
-                        '<table id="bankid_limit">'+
-                            '<thead><tr>'+
-                                '<th>银行</th>'+
-                                '<th>开通范围</th>'+
-                                '<th>客户类型</th>'+
-                                '<th>单笔限额(元)</th>'+
-                                '<th>每日限额(元)</th>'+
-                                '<th>客服热线</th>'+
-                            '</tr></thead>'+
-                            '<tbody>'+
-                                '<tr>'+
-                                    '<td rowspan="4" id="bankname_cmb">'+data[bankid].bankname+'</td>'+
-                                    '<td rowspan="2">借记卡</td>'+
-                                    '<td>数字证书</td>'+
-                                    '<td id="banked_cmb_one">'+data[bankid].banked_one+'</td>'+
-                                    '<td id="banked_cmb_daily">'+data[bankid].banked_daily+'</td>'+
-                                    '<td rowspan="4" id="banktel_cmb">'+data[bankid].banktel+'</td>'+
-                                '</tr>'+
-                                '<tr><td>动态密码</td>'+
-                                '<td id="banked_cmb_dyone">'+data[bankid].banked_dyone+'</td>'+
-                                '<td id="banked_cmb_dydy">'+data[bankid].banked_dydy+'</td></tr>'+
-                                '<tr>'+
-                                    '<td rowspan="2">信用卡</td>'+
-                                    '<td>数字证书</td>'+
-                                    '<td id="banked_cmb_xyone">'+data[bankid].banked_xyone+'</td>'+
-                                    '<td id="banked_cmb_xydaily">'+data[bankid].banked_xydaily+'</td>'+
-                                '</tr>'+
-                                '<tr>'+
-                                    '<td>动态密码</td>'+
-                                    '<td id="banked_cmb_xydyone">'+data[bankid].banked_xydyone+'</td>'+
-                                    '<td id="banked_cmb_xydydy">'+data[bankid].banked_xydydy+'</td>'+
-                                '</tr>'+
-                            '</tbody>'+
-                        '</table>'+
-                        '</div>';
-
-                        $("#bank_xewrap").html(bank_tpl)
-        		}
-        	});  	
-	$(".bank-list").children().bind('mouseleave',function() {
-		 $("#bank_xewrap").html("");
-    }); 
-    });
 //提现银行卡选中
 $(".cur-bank-box").bind('click', function() {
 	$(this).addClass('selected-bank').append('<i class="icon-selected"></i>').siblings().removeClass('selected-bank').children(".icon-selected").remove();
 });
-    });         
+//管理银行卡
+$(".btn-manage-card").on("click",function(){
+			layer.open({
+				type:2,
+				title:false,
+				shadeClose:true,
+				area: ['540px','400px'],
+				content:['user-layer-managecard.htm','no']
+			})
+		});
+// 添加银行卡
+$(".add-bank-box").on("click",function(){
+			layer.open({
+				type:2,
+				title:false,
+				shadeClose:true,
+				area: ['540px','500px'],
+				content:['user-layer-addbcard.htm','no']
+			})
+		});
+// 支付状态
+$(".pay-compelte").on("click",function(){
+			layer.open({
+				type:2,
+				title:false,
+				shadeClose:true,
+				area: ['540px','350px'],
+				content:['user-layer-paystatus.htm','no']
+			})
+		});
+});       
 </script>
 </body>
 </html>

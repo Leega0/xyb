@@ -221,10 +221,6 @@
   padding-bottom: 200px;
 }
 
-.w85 {
-  width: 85% !important;
-}
-
 .input-vali-code .ui-input-middle {
   width: 220px;
 }
@@ -235,10 +231,6 @@
 
 .input-vali-code img {
   float: right;
-}
-
-.w98 {
-  width: 98% !important;
 }
 
 .ui-form-hidden {

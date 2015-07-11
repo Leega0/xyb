@@ -118,7 +118,6 @@
 			<div class="user-tabs">
                     <a class="user-tabs-item" href="javascript:void(0);">账户信息</a>
                     <a class="user-tabs-item" href="javascript:void(0);">安全中心 </a> 
-                    <a class="user-tabs-item" href="javascript:void(0);">自动投资</a> 
                     <a class="user-tabs-item" href="javascript:void(0);">收益卡(4)</a>
                     <a class="user-tabs-item" href="javascript:void(0);">红包</a>
             </div>
@@ -236,217 +235,52 @@
                 <p class="user-add-box"><a href="javascript:void(0);" class="ui-btn ui-btn-blue user-add-address">+新增收货地址</a></p>
             </div>
             <div class="user-account-moudle safty">
-            <!-- 账户安全 -->
-            	<dl class="clearfix">
-            		<dd>账户安全等级</dd>
-            		<dd>
-            			<div class="safty-level-box">
-            			<span class="safty-level-bar bg-green"></span>
-            			<span class="safty-level-text">底</span>
-            			</div>
-            			<span class="text-dark">完成 账户安全项目评估列表 中的项目条件即可提高账户安全等级</span>
-            		</dd>
-            	</dl>
-				<div class="invest-list-control">
-                    <p>账户安全项目评估列表</p>
-            	</div>
-	            <table class="invest-list" width="100%">
-	                <colgroup>
-	                    <col width="80px">
-	                    <col width="200px">
-	                    <col width="520px">
-	                    <col width="100x">
-	                </colgroup>
-	                <tbody>
-	                <tr>
-	                    <td><i class="user-icon-correct"></i></td>
-	                    <td>登录密码</td>
-	                    <td>安全程度：
-	                    <div class="safty-level-box">
-	            			<span class="safty-level-bar bg-green"></span>
-	            			<span class="safty-level-text">底</span>
-            			</div>
-	                    <span class="text-dark">登录信用宝账户时需要输入的密码</span>
-	                    </td>
-	                    <td><a href="" class="ui-font-blue">[修改]</a></td>
-	                </tr>
-	                <tr>
-	                    <td><i class="user-icon-correct"></i></td>
-	                    <td>手机绑定</td>
-	                    <td>绑定手机号：<span class="text-black">1380****000</span>
-	                    <span class="text-dark">提现时实名认证与提现银行卡所有人需一致，保证资金安全</span>
-	                    </td>
-	                    <td><a href="" class="ui-font-blue">[修改]</a></td>
-	                </tr>
-	                <tr>
-	                    <td><i class="user-icon-correct"></i></td>
-	                    <td>邮箱绑定</td>
-	                    <td>绑定邮箱地址：<span class="text-black">541***454@@qq.com</span>
-	                    <span class="text-dark">提现时实名认证与提现银行卡所有人需一致，保证资金安全</span>
-	                    </td>
-	                    <td><a href="" class="ui-font-blue">[修改]</a></td>
-	                </tr>
-                	<tr>
-	                    <td><i class="error"></i></td>
-	                    <td>支付密码</td>
-	                    <td>请设置支付密码
-	                    <span class="text-dark">在账户资金变动，修改账户信息时需要输入的密码</span>
-	                    </td>
-	                    <td><a href="" class="ui-font-blue">[修改]</a></td>
-	                </tr>
-	                <tr>
-	                    <td><i class="user-icon-correct"></i></td>
-	                    <td>实名认证</td>
-	                    <td>真实姓名：<span class="text-black">王*明 </span>
-	                    身份证号：<span class="text-black">4403011970********4215</span>
-	                    <span class="text-dark">提现时实名认证与提现银行卡所有人需一致，保证资金安全</span>
-	                    </td>
-	                    <td><a href="javascript:;" class="ui-font-gray">[修改]</a></td>
-	                </tr>
-	                <tr>
-	                    <td><i class="user-icon-correct"></i></td>
-	                    <td>银行卡绑定</td>
-	                    <td>开户行：<span class="text-black">招商银行</span>
-	                    银行帐号：<span class="text-black">6222005********5254 </span>
-	                    <span class="text-dark">提现时提现银行卡所有人需与实名认证</span>
-	                    </td>
-	                    <td><a href="" class="ui-font-blue">[修改]</a></td>
-	                </tr>
-	                </tbody>
-	            </table>
-	            <p class="tips">
-	            安全服务提示<br/>
-	            1.确认您登录的是信用宝网址http://www.xyb100.com，注意防范进入钓鱼网站，不要轻信各种即时通讯工具发送的链接，谨防网络诈骗。<br/>
-	            2.建议您安装杀毒软件，并定期更新操作系统等软件补丁，确保账户及交易安全。
-	            </p>
-            </div>
-            <div class="user-account-moudle">
-				<!-- 功能开启 -->
-				<div class="user-auto-invest">
-					<p class="ui-size14 bold">自动投资<span class="ui-font-gray normal ui-size12">&nbsp;&nbsp;设定条件，无需登录自动完成投资</span></p>
-					<!-- 自动开关按钮 -->
-					<div class="user-switch-box">
-						<p class="title">功能开启：</p>
-						<div class="user-invest-switch">
-							<a href="javascript:void(0);" class="cur" id="auto_invest">开</a>
-							<a href="javascript:void(0);" id="auto_invest_off">关</a>
+	            	<div class="user-auto-invest">
+						<p class="ui-size14 bold">绑定邮箱</p>
+					</div>
+					<!-- 当前步骤 -->
+					<ul class="user-auto-step user-two-step">
+						<li><span class="bold ui-font-blue">1.验证身份</span></li>
+						<li>2.绑定成功</li>
+					</ul>
+					<!-- 绑定结果start -->
+					<!-- <div class="user-sec-input">
+						<div class="ui-form-item">
+							<p class="ui-input-body">
+								<i class="ui-label-icon icon-form-phone"></i>
+								<input type="text" placeholder="输入注册手机号" class="w85">
+							</p>
+						</div>
+						<div class="ui-form-item ui-pt10">
+							<p class="ui-input-body ui-input-middle">
+								<input type="text" placeholder="输入短信验证码" class="w98">
+							</p>
+							<p class="send-code">
+								<a href="javascript:void(0);" class="ui-btn ui-btn-blue">发送验证码</a>
+							</p>
+						</div>
+						<div class="ui-form-item input-vali-code">
+							<p class="ui-input-body ui-input-middle">
+								<input type="text" placeholder="输入右侧验证码">	
+							</p>
+							<img src="images/valid-code.jpg" title="点击刷新验证码">
+						</div>
+						<div class="ui-form-item">
+							<p class="ui-form-btn"><a href="" class="ui-btn ui-btn-blue">下一步</a></p>
+						</div>
+					</div> -->
+					<!-- 绑定结果end -->
+					<!-- 验证身份 -->
+					<div class="user-sec-input page-tips">
+						<em class="icon-sucess"></em>
+						<p class="p1">恭喜您，登录密码修改成功</p>
+						<p class="p2">请妥善保管好您的新密码及手机,避免被他人非法利用</p>
+						<div class="ui-form-item">
+							<p class="ui-form-btn"><a href="" class="ui-btn ui-btn-blue">返回安全中心</a></p>
 						</div>
 					</div>
-				</div>
-				<!-- 自动投资步骤 -->
-				<ul class="user-auto-step">
-					<li>1.设定自动投资条件</li>
-					<li>2.系统自动排队匹配投资项目</li>
-					<li>3.投资成功</li>
-				</ul>
-				<!-- 自动投资设置 -->
-				<table class="auto-invest-conditon">
-					<tr>
-						<td colspan="2" class="title">条件设置</td>
-					</tr>
-					<tr>
-						<td>投资金额比例</td>
-						<td class="option invest-rate">
-						 <select name="" id="" class="u-input">
-						 	<option value="">10%</option>
-						 	<option value="">20%</option>
-						 	<option value="">30%</option>
-						 </select>
-						</td>
-					</tr>
-					<tr>
-						<td>投资产品</td>
-						<td class="option invest-product">
-							<span>
-								<input type="checkbox" checked>
-								<label for="">定期宝</label>
-							</span>
-							<span>
-								<input type="checkbox" checked>
-								<label for="">信投宝</label>
-							</span>
-						</td>
-					</tr>
-					<tr>
-						<td>年化利率</td>
-						<td class="option invest-earn-rate">
-							<select name="" id="" class="u-input">
-								<option value="">6%</option>
-							 	<option value="">5%</option>
-							 	<option value="">4%</option>
-							 	<option value="">3%</option>
-							</select>
-							<label>至</label>
-							<select name="" id="" class="u-input">
-								<option value="">12%</option>
-							 	<option value="">10%</option>
-							 	<option value="">8%</option>
-							 	<option value="">7%</option>
-							</select>
-						</td>
-					</tr>
-					<tr>
-						<td>风险等级</td>
-						<td class="option user-credit-level">
-							<span><input type="checkbox" checked><label class="credit-level level_a">A</label></span>
-							<span><input type="checkbox" checked><label class="credit-level level_b">B</label></span>
-							<span><input type="checkbox" checked><label class="credit-level level_c">C</label></span>
-						</td>
-					</tr>
-					<tr>
-						<td>借款期限</td>
-						<td class="option invest-long">
-							<select name="" id="" class="u-input">
-								<option value="">1个月</option>
-							 	<option value="">2个月</option>
-							 	<option value="">3个月</option>
-							 	<option value="">4个月</option>
-							 	<option value="">5个月</option>
-							 	<option value="">6个月</option>
-							</select>
-							<label>至</label>
-							<select name="" id="" class="u-input">
-								<option value="">12个月</option>
-							 	<option value="">11个月</option>
-							 	<option value="">10个月</option>
-							 	<option value="">9个月</option>
-							 	<option value="">8个月</option>
-							 	<option value="">7个月</option>
-							</select>
-						</td>
-					</tr>
-					<tr>
-						<td>还款方式</td>
-						<td class="option invest-method">
-							<span>
-								<input type="checkbox" checked>
-								<label for="">等额本息</label>
-							</span>
-							<span>
-								<input type="checkbox">
-								<label for="">先息后本</label>
-							</span>
-							<span>
-								<input type="checkbox">
-								<label for="">约定本息</label>
-							</span>
-						</td>
-					</tr>
-					<tr>
-						<td>每笔投资金额</td>
-						<td class="option invest-num"><input type="text" value="100" class="u-input"><label>元</label></td>
-					</tr>
-					<tr>
-						<td>账户保留金额</td>
-						<td class="option invest-last">
-							<input type="text" value="100" class="u-input"><label>元</label><span class="ui-font-gray">当你账户的可投资金额大于这个金额时，自动投资才会生效</span>
-						</td>
-					</tr>
-				</table>
-				<!-- 保存设置 -->
-				<p class="user-save-autoinvest">
-					<input type="submit" value="保存" class="ui-btn ui-btn-blue">
-				</p>
+					<!-- 验证身份end -->
+
             </div>
             <div class="user-account-moudle">
 				<!-- 收益卡筛选 -->
@@ -751,8 +585,10 @@ $(function(){
 		$(this).addClass('cur');
 	})
 	;
+})
 	//地址填写弹窗
-	$(".user-add-address").on("click",function(){
+	$(function(){
+		$(".user-add-address").on("click",function(){
 			layer.open({
 				type:2,
 				title:false,
@@ -761,7 +597,7 @@ $(function(){
 				content:['user-layer-address.htm','no']
 			})
 		});
-});
+	})
 </script>
 </body>
 </html>

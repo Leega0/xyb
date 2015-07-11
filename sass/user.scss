@@ -599,6 +599,13 @@ dl{
     	font-weight: bold;
     	line-height: normal;
     	padding-bottom: 10px;
+    	.separa{
+    		color: #eee;
+    		padding:0 10px;
+    	}
+    	.btn-manage-card{
+    		font-weight: normal;
+    	}
     }
     .bank_type{
     	padding-bottom: 40px;
@@ -653,7 +660,6 @@ dl{
     display: inline-block;
     vertical-align: middle;
     background-repeat: no-repeat;
-    cursor: pointer;
 }
 .bank_icbc{
     background-position: -3px -229px;
@@ -746,12 +752,23 @@ dl{
 }
 .cur-bank-box span{
 	float: left;
+	line-height: 33px;
 }
 .cur-bank-box label{
 	cursor:pointer;
 }
 .cur-bank-box:first-child{
 	margin-left: 0;
+}
+.add-bank-box{
+	border:1px dashed #ddd;
+	width:180px;
+	cursor: pointer;
+	margin-left: 18px;
+	height:35px;
+	float: left;
+	line-height: 35px;
+	text-align:center;
 }
 .del-this-bank{
 	position: relative;
@@ -1012,6 +1029,12 @@ dl{
 		line-height: 42px;
 		width: 33.33%;
 		text-align:center;
+	}
+}
+.user-two-step{
+	background: url(../images/user-step-two.png) no-repeat;
+	li{
+		width: 50%;
 	}
 }
 // 自动投标条件
@@ -1287,12 +1310,14 @@ dl{
 		line-height:24px;
 	}
 	i{
+		&.user-icon-correct,&.error{
 		display: block;
 		margin:0 auto;
 		width: 16px;
 		height: 16px;
 		background:url(../images/sprites/icon-criedted.png) no-repeat;
 		background-size:16px;
+		}
 		&.error{
 			background:url(../images/sprites/icon-error-samll.png) no-repeat;
 		}
@@ -1355,4 +1380,119 @@ dl{
 	height:115px;
 	overflow: hidden;
 	margin-left: 90px;
+}
+// 用户中心 安全中心 模块
+.user-sec-input{
+	width: 330px;
+	margin:0 auto;
+	padding-top: 40px;
+}
+.send-code {
+	.ui-btn {
+    margin-left: 13px;
+    margin-right: 0;
+    padding: 0;
+    width: 114px;
+    height: 40px;
+    box-sizing: border-box;
+    line-height: 42px;
+	}
+}
+.input-vali-code{
+	img{
+		margin-left: 12px;
+	}
+}
+.page-tips{
+	text-align:center;
+	padding-top: 60px;
+	.icon-sucess{
+		display: inline-block;
+	    width: 40px;
+	    height: 40px;
+		background: url("../images/sprites/icon-sucess.png") no-repeat center;
+	}
+	.p1{
+		font-size: 18px;
+    	margin: 40px 0 20px;
+	}
+	.p2{
+		color: #b9b9b9;
+    	margin-bottom: 16px;
+	}
+}
+// 管理
+.user-manage-cardtb{
+	font-size: 12px;
+	border-top:2px solid #eee;
+	margin-top: 20px;
+	tr{
+		border-bottom:1px solid #eee;
+	}
+	td{
+		padding:18px 0 18px 10px;
+		.separa{
+			color: #eee;
+			padding:0 6px;
+		}
+	}
+}
+// 添加银行卡
+.add-card-itmes{
+	margin-top: 20px;
+	margin-left: 15px;
+	td{
+		padding:8px 0 8px 20px;
+		&:first-child{
+			text-align: right;
+			padding-left: 0;
+		}
+		.ui-input{
+			border:1px solid #ddd;
+			border-radius:3px;
+			box-sizing:border-box;
+			padding:10px;
+			width: 250px;
+		}
+	}
+}
+.add-bank-card{
+	text-align:center;
+	padding-top: 40px;
+	.ui-btn{
+		padding:12px 110px;
+	}
+}
+// 充值状态返回
+.layer-paycomplete{
+	text-align:center;
+	width:314px;
+	margin:30px auto;
+	.icon-bind-tips{
+		display:inline-block;
+		width:40px;
+		height:40px;
+		background:url(../images/sprites/icon-bind-tips.png) no-repeat;
+		margin-bottom: 20px;
+	}
+	p{
+		line-height: 2;
+		font-size: 14px;
+	}
+	.pay-back-links{
+		padding-top: 40px;
+		.ui-btn,.ui-btn-empty{
+			padding: 0;
+			margin: 0;
+			width: 150px;
+			text-align: center;
+			height: 42px;
+			line-height: 42px;
+		}
+		.ui-btn-empty{
+			height: 40px;
+			line-height: 40px;
+			margin-top: 1px;
+		}
+	}
 }

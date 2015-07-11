@@ -18,7 +18,7 @@ html {
  */
 
 body {
-  font: normal 12px/1.2 '微软雅黑','宋体';
+  font: normal 12px/1.2 '微软雅黑',Helvetica,'宋体';
   position: relative;
   margin: 0;
 }
@@ -720,6 +720,13 @@ h6 {
 }
 .ui-pr30 {
   padding-right: 30px !important;
+}
+// 宽度设置
+.w85{
+  width:85% !important;
+}
+.w98{
+  width:98% !important;
 }
 // 按钮 链接
 .ui-btn {
