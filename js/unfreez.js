@@ -1,12 +1,12 @@
 var unfreezeValue= parseInt($('#unfreeze_rate').text().replace(/%/,''));
 var freezeValue= parseInt(100-unfreezeValue);
-var vData={unfreezeValue,freezeValue}
+var vData={'un_rate':unfreezeValue,'rate':freezeValue}
 $('#unfreeze_rate').highcharts({
 	chart: {
 					type: 'pie'
 				},
 	title: {
-					text: '<span style="color:#2c97f4;font-size:18px">'+vData['unfreezeValue']+'<em style="font-size:14px">%</em></span>',
+					text: '<span style="color:#2c97f4;font-size:18px">'+vData['un_rate']+'<em style="font-size:14px">%</em></span>',
 					verticalAlign:'middle',
 					y:5,
 					userHTML:true,
@@ -40,8 +40,8 @@ $('#unfreeze_rate').highcharts({
         },
      series: [{
             data:[
-                 ['未解冻',vData['freezeValue']],
-                 ['已解冻',vData['unfreezeValue']]
+                 ['未解冻',vData['rate']],
+                 ['已解冻',vData['un_rate']]
                  ]
         }]
 
