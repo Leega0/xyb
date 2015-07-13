@@ -1187,6 +1187,14 @@ dl.qc-code {
   width: 50%;
 }
 
+.user-five-step {
+  background: url(../images/user-step-5.png) no-repeat;
+}
+
+.user-five-step li {
+  width: 20%;
+}
+
 .auto-invest-conditon {
   width: 900px;
   margin: 0 auto;
@@ -1599,6 +1607,19 @@ dl.qc-code {
 .page-tips .p2 {
   color: #b9b9b9;
   margin-bottom: 16px;
+}
+
+.page-tips .p3 {
+  margin-bottom: 16px;
+}
+
+.page-tips-w420 {
+  width: 420px;
+}
+
+.page-tips-w420 .ui-form-item {
+  width: 330px;
+  margin: 0 auto;
 }
 
 .user-manage-cardtb {
