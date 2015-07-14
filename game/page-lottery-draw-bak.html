@@ -93,12 +93,12 @@
 				<dl class="lottery-draw-login-after dis-block clearfix">
 					<dd>
 						<i class="lottery-draw-top-icon-1"></i>
-						<p class="num" id="scoreC">10000</p>
+						<p class="num">10000</p>
 						<p class="text">账户积分<a href="">(赚取积分?)</a></p>
 					</dd>
 					<dd>
 						<i class="lottery-draw-top-icon-2"></i>
-						<p class="num" id="timeC">10</p>
+						<p class="num">10</p>
 						<p class="text">可玩次数<a href="">(提升?)</a></p>
 					</dd>
 					<dd>
@@ -154,7 +154,7 @@
 							</td>	
 							<td colspan="3" rowspan="2">
 								<!-- 添加样式disable为禁用 -->
-								<a href="javascript:;" class="prize-lotter-btn"></a>
+								<a href="javascript:;"></a>
 							</td>
 							<td class="lottery-unit lottery-unit-5">
 							<p class="cash-num">
@@ -334,18 +334,18 @@
 				<img src="images/prize-1.png" alt="">
 			</div>
 		</div>
-		<p class="p-big bold" id="phyPrize"></p>
+		<p class="p-big bold">prize_name</p>
 		<p class="p-normal">恭喜您，获得以上奖品</p>
 		<p class="p-normal">实物奖我们将在次月15号发放，可查询<a href="">中奖记录&gt;</a>了解奖品最新动态</p>
 		<p class="p-normal">奖品有效期1个月，期间未填写收货地址我们视为放弃领奖。</p>
-		<a href="javascript:void(0);" class="ui-btn ui-btn-blue" id="write_addres">填写收货地址</a>
+		<a href="" class="ui-btn ui-btn-blue">填写收货地址</a>
 		<a href="" class="ui-btn-empty ui-btn-empty-blue">下次再填写</a>
 	</div> 
 	
 	
 	<!-- 领奖弹窗结束 -->
 	<!-- 成功弹窗开始 -->
-	 
+	<!-- 
 	<div class="pop-up-box sucess" id="get_sucess">
 		<i class="icon-sucess"></i>
 		<p class="p-big">恭喜您，已经提交申请</p>
@@ -353,23 +353,23 @@
 		<p class="p-small">期间可查看<a href="">中奖记录&gt;</a>了解奖品最新动态</p>
 		<a href="" class="ui-btn ui-btn-blue">确定</a>
 	</div> 
-	
+	-->
 	<!-- 成功弹窗结束 -->
 	<!-- 礼金弹窗开始 -->
-	 	
+	<!-- 	
 	<div class="pop-up-box cash" id="get_integral">
 		<div class="prize-bg">
 		</div>
-		<p class="p-big bold" id="normalPrize">￥388投资礼金</p>
+		<p class="p-big bold">￥388投资礼金</p>
 		<p class="p-normal">恭喜您，获得以上奖品</p>
 		<p class="p-normal">虚拟奖品我们将在30分钟内发放到您账户中</p>
 		<a href="" class="ui-btn ui-btn-blue">确定</a>
 		<a href="" class="ui-btn-empty ui-btn-empty-blue">继续抽奖</a>
 	</div> 
-	
+	-->
 	<!-- 礼金弹窗结束 -->
 	<!-- 设置地址开始 -->
-	 
+	<!-- 
 	<div class="pop-up-box adress" id="get_adress">
 		<h3>选择收货地址(仅支持中国内地)</h3>
 		<form action="">
@@ -427,7 +427,7 @@
 		</form>
 		<a href="" class="ui-btn ui-btn-blue">确认提交</a>
 	</div> 
-	
+	-->
 	<!-- 设置地址结束 -->
 <!-- 弹窗结束 -->
 <!-- footer start -->
@@ -526,12 +526,9 @@
                 if (lottery.times > lottery.cycle + 10 && lottery.index == prize_site) {
                     var prize_id = $("#lottery").attr("prize_id");
                     var prize_name = $("#lottery").attr("prize_name");
-                    var prize_type = $("#lottery").attr("prize_type");
-                    if(prize_type==1){
                     layer.open({
 	                     type: 1,   //0-4的选择,
 	                     title: false,
-	                     scrollbar:false,
 	                     border: [0],
 	                     closeBtn: [0],
 	                     area: ['640', 'auto'],
@@ -540,29 +537,6 @@
 	                     bgcolor: '',
 	                     content: $('#get_prize')
 	                 });
-                    // 弹框填充内容
-                 	var purl=$(".lottery-unit").find('img').attr('src')
-                 	$('#get_prize').find('img').attr('src',purl);
-				    $('#phyPrize').text(prize_name);
-                }else if(prize_type==2){
-                	//虚拟奖品
-                	layer.open({
-	                     type: 1,   //0-4的选择,
-	                     title: false,
-	                     scrollbar:false,
-	                     border: [0],
-	                     closeBtn: [0],
-	                     area: ['640', 'auto'],
-	                     shadeClose: false,
-	                     closeBtn: [0, false], //去掉默认关闭按钮
-	                     bgcolor: '',
-	                     content: $('#get_integral')
-	                 });
-                	// 弹窗内容
-                	$('#get_integral').find('img').attr('src','images/prize-bg-cash.png');
-                	$('#phyPrize').text(prize_name);
-                }
-                    
                     console.log("中奖名称："+prize_name+"\n中奖id："+prize_id)
                     clearTimeout(lottery.timer);
                     lottery.prize = -1;
@@ -593,21 +567,6 @@
             var click = false;
 
             $(function() {
-            	$("#write_addres").on('click',function(){
-            		layer.closeAll();
-            		layer.open({
-	                     type: 1,   //0-4的选择,
-	                     title: false,
-	                     scrollbar:false,
-	                     border: [0],
-	                     closeBtn: [0],
-	                     area: ['640', 'auto'],
-	                     shadeClose: false,
-	                     closeBtn: [0, false], //去掉默认关闭按钮
-	                     bgcolor: '',
-	                     content: $('#get_adress')
-	                 });
-            	});
                 lottery.init('lottery');
                 $("#lottery a").click(function() {
                      if (click) {
@@ -618,7 +577,6 @@
                             $("#lottery").attr("prize_site", data.prize_site);
                             $("#lottery").attr("prize_id", data.prize_id);
                             $("#lottery").attr("prize_name", data.prize_name);
-                            $("#lottery").attr("prize_type", data.prize_type);
                             roll();
                             click = true;
                             return false;
@@ -626,7 +584,6 @@
                     }
                 });
             })
-
         </script>
 </body>
 </html>

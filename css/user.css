@@ -1709,3 +1709,25 @@ dl.qc-code {
   line-height: 40px;
   margin-top: 1px;
 }
+
+.real-name-valid {
+  width: 280px;
+}
+
+.real-name-valid .ui-form-item {
+  padding: 15px 0;
+}
+
+.real-name-valid .w100 {
+  width: 100%;
+}
+
+.real-name-valid .get-valid {
+  width: 100%;
+  padding: 12px 0;
+}
+
+.real-name-tips {
+  line-height: 2;
+  margin-top: 60px;
+}

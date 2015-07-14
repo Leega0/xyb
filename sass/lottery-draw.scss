@@ -1,3 +1,9 @@
+.layui-layer{
+	background: none !important;
+}
+.layui-layer-content{
+	height:auto !important;
+}
 dl{
 	margin:0;
 }
@@ -145,14 +151,12 @@ dl{
 	padding-bottom:26px;
 	table{
 		border-collapse: inherit;
-		border-spacing: 10px;
-		width: 832px;
+		border-spacing: 14px;
+		width: 834px;
 	}
 	td{
-		
-		width: 154px;
-		height: 104px;
-		// background:#ffde00;
+		position:relative;
+		height: 100px;
 		text-align: center;
     	vertical-align: middle;
     	&.active{
@@ -162,10 +166,29 @@ dl{
 		    z-index: 2;
     	}
 	}
+	.prize-title{
+		position:absolute;
+		left:0;
+		bottom:0;
+		width: 150px;
+		height: 30px;
+		font-size:12px;
+		color:#fff;
+		line-height:30px;
+		background:url("../images/prize-title-bg.png") no-repeat;
+	}
+	.cash-num{
+		font-size:28px;
+		color:#fff;
+		line-height:34px;
+	}
+	.cash-title{
+		display: block;
+		font-size:16px;
+	}
 	img{
 		display: block;
-		width: 100%;
-		height: 100%;
+		margin:0 auto;
 	}
 	a{
 		display:block;
@@ -275,18 +298,7 @@ dl{
 	font-size:12px;
 }
 //弹窗
-.pop-up-bg{
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #000000; /* background color for IE */
-  filter: alpha(opacity=40); /* opacity filter for IE */
-  background-color: rgba(0,0,0,.4); /* for other browsers */
-  z-index: 10;
-}
+
 .icon-sucess{
   display: block;
   width: 40px;
@@ -299,6 +311,7 @@ dl{
 	width:650px;
 	background:#ffde00;
 	margin:0 auto;
+	display:none;
 	.prize-bg{
 		width:160px;
 		height:160px;
@@ -358,6 +371,14 @@ dl{
 	&.prize{
 		text-align: center;
 		padding:22px 0 32px;
+		.prize-bg{
+			display: table-cell;
+			vertical-align: middle;
+		}
+		.prize-bg-wrap{
+			width: 160px;
+			margin:0 auto;
+		}
 	}
 	&.cash{
 		.prize-bg{
@@ -402,7 +423,6 @@ dl{
 			}
 		}
 		.new-adress{
-			display: none;
 			padding:0 26px;
 			p{
 				height:36px;

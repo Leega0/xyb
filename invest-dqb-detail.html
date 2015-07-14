@@ -136,7 +136,7 @@
                     </div>
                 <a href="javascript:void(0);" class="btn-recharge" id="btn_recharge">充值</a>
                 </div>
-                <p class="ui-form-btn ui-mtd5"><a href="" class="ui-btn ui-btn-blue">立即申请</a></p>
+                <p class="ui-form-btn ui-mtd5"><a href="javascript:void(0);" class="ui-btn ui-btn-blue" id="invest_now">立即投资</a></p>
             </div>
         </div>
 </div>
@@ -318,8 +318,17 @@
 	<!-- script -->
 	<script type="text/javascript" src="js/lib/jquery.js"></script>
     <script type="text/javascript" src="js/plugins/layer.js"></script>
-    <script type="text/javascript" src="js/lib/highcharts.js"></script>
-    <script type="text/javascript" src="js/chart.js"></script>
 	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript">
+		$("#invest_now").on("click",function(){
+			layer.open({
+				type:2,
+				title:false,
+				shadeClose:true,
+				area: ['420px','400px'],
+				content:['layer-login.htm','no']
+			})
+		});
+	</script>
 </body>
 </html>

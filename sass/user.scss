@@ -1512,3 +1512,21 @@ dl{
 		}
 	}
 }
+// 安全中心-实名认证
+.real-name-valid{
+	width:280px;
+	.ui-form-item{
+		padding:15px 0;
+	}
+	.w100{
+		width: 100%;
+	}
+	.get-valid{
+		width: 100%;
+		padding:12px 0;
+	}
+}
+.real-name-tips{
+	line-height: 2;
+	margin-top: 60px;
+}

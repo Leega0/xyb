@@ -1,59 +1,3 @@
-/** 
- *  
- * jQuery scrollQ plugin li上下滚动插件
- * @name jquery-scrollQ.js 
- * line 显示li行数 
- * scrollNum 每次滚动li行数
- * scrollTime 滚动速度 单位毫秒
- * 
- */  
-// (function($){  
-//     var status = false;  
-//     $.fn.scrollQ = function(options){  
-//         var defaults = {  
-//             line:6,  
-//             scrollNum:1,  
-//             scrollTime:2000
-//         }
-// 		var options=jQuery.extend(defaults,options);
-// 		var _self = this;
-// 		return this.each(function(){  
-// 			$("li",this).each(function(){
-// 				$(this).css("display","none");
-// 			})
-// 			$("li:lt("+options.line+")",this).each(function(){
-// 				$(this).css("display","block");
-// 			})
-// 			function scroll() {
-// 				for(i=0;i<options.scrollNum;i++) {
-// 					var start=$("li:first",_self);
-// 					start.fadeOut(100);
-// 					start.css("display","none");
-// 					start.appendTo(_self);
-// 					$("li:eq("+(options.line-1)+")",_self).each(function(){
-// 						$(this).fadeIn(500);
-// 						$(this).css("display","block");
-// 					})
-// 				}
-// 			}
-// 			var timer;
-// 			timer = setInterval(scroll,options.scrollTime);
-// 			_self.bind("mouseover",function(){
-// 				clearInterval(timer);
-// 			});
-// 			_self.bind("mouseout",function(){
-// 				timer = setInterval(scroll,options.scrollTime);
-// 			});
-			
-// 		});
-//     }
-// })(jQuery); 
-// $(function(){
-// 	 $("#big_award").scrollQ(); 
-// 	 $("#now_award").scrollQ({
-// 	 	scrollTime:1000
-// 	 }); 
-// });
 function marque(id,time){
 
 	var $swap = $(id);  //滚动区域
@@ -84,4 +28,89 @@ function marque(id,time){
 $(function(){
 	marque(big_award,900);
 	marque(now_award,600);
-})
+})//文本滚动 
+// start
+var $shadow = null,
+		$lotterBtn = $('.prize-lotter-btn'),
+		isMove = false,
+		count = 0,
+		startLotter,
+		cycle = 0,
+		speed = 70;
+
+	function goNext(number) {
+		$shadow.appendTo($('.lottery-unit:eq('+number+')'));
+	}
+
+	function lotter() {
+		if(count == 13) {
+			count = 0;
+			cycle++;
+		} else {
+			count++;
+		}
+
+		if(cycle > 1) {
+			clearInterval(startLotter);
+			if(speed > 150 && count < (lotterNum - 3)) {
+				speed = 360;
+			} else {
+				speed += 20;
+			}
+			
+		   if(speed > 350 && count == lotterNum) {
+				goNext(count);
+				setTimeout(function() {
+					count = 0,cycle = 0,speed = 70;
+				isMove = false;
+			 if(pPhy==1){
+			    	phyPox = $.layer({
+	                     type: 1,   //0-4的选择,
+	                     title: false,
+	                     border: [0],
+	                     closeBtn: [0],
+	                     area: ['640', 'auto'],
+	                     shadeClose: false,
+	                     closeBtn: [0, false], //去掉默认关闭按钮
+	                     bgcolor: '',
+	                     // page: {dom : '#phyPox'}
+	                     content: $('#get_prize')
+	                 });
+			    	
+				    $('#get_prize').find('img').attr('src',pUrl);
+				    $('#phyPrize').html(prizeName);
+					
+			    }else{
+				    normalPox = $.layer({
+	                     type: 1,   //0-4的选择,
+	                     title: false,
+	                     border: [0],
+	                     closeBtn: [0],
+	                     area: ['640', 'auto'],
+	                     shadeClose: false,
+	                     closeBtn: [0, false], //去掉默认关闭按钮
+	                     bgcolor: '',
+	                     // page: {dom : '#normalPox'}
+	                     content: $('#get_integral')
+	                     
+	                 });
+				    $('#get_integral').find('img').eq(0).attr('src',pUrl);
+				    $('#normalPrize').html(prizeName);
+			  	    }
+				}, 500);
+				return false;
+			}
+			setTimeout(lotter,speed);
+		}
+		goNext(count);
+	}
+	
+	
+	  $('#get_integral').find('a.close').bind('click',function(){
+		  layer.close(normalPox);
+		  $shadow.remove();
+	  });	
+	  $('#get_prize').find('a.close').bind('click',function(){
+		  layer.close(phyPox);
+		  $shadow.remove();
+	  });
