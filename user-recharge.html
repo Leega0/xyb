@@ -126,49 +126,149 @@
                         <p>1. 充值免手续费。</p>
                         <p>2. 由于银行系统的限制，部分银行充值功能仅限于IE内核的浏览器。</p>
                         <p>3. 本网站坚决抵制信用卡套现行为，如发现某一用户存在套现行为，我公司将冻结其账户资金。</p>
-                        <p class="zhif_type ui-pt20">使用快捷支付银行卡<span class="separa">|</span><a class="btn-manage-card ui-font-blue" href="javascript:void(0);">管理</a></p>
-                        <div class="select-bank-box clearfix ui-pb30">
-                        	<div class="cur-bank-box selected-bank">
-                        		<span class="bank_cmb select-bank-icon"></span>
-                        		<span>(尾号3649)</span>
-                        		<i class="icon-selected"></i>
+                        <!-- 选择充值方式 -->
+                        <p class="zhif_type ui-pt20 ui-mb10">选择充值方式</p>
+                        <ul class="charge-style-tabs">
+                        	<li>
+                        		连连支付安全账户(推荐)
+                        		<i class="icon-selected-big"></i>
+                        	</li>
+                        	<li>无网银快捷银行支付</li>
+                        </ul>
+                        <div class="charge-style-content">
+                        	<!-- 充值方式一 -->
+                        	<div class="content">
+                        		<!-- 充值方式end -->
+                        		<p class="zhif_type">该支付平台支持以下银行通道</p>
+                        		<!-- 银行显示列表 -->
+                        		<ul class="bank-list clearfix">
+                        			<li>
+                        				<input type="radio" checked name="bank_name" id="b_0102000">
+                        				<label for="b_0102000" class="bank-list-icon bank-icbc"></label>
+                        			</li>
+                        			<li>
+                        				<input type="radio"  name="bank_name" id="b_03030000">
+                        				<label for="b_03030000" class="bank-list-icon bank-gdyh"></label>
+                        			</li>
+                        			<li>
+                        				<input type="radio"  name="bank_name" id="b_01050000">
+                        				<label for="b_01050000" class="bank-list-icon bank-jsyh"></label>
+                        			</li>
+                        			<li>
+                        				<input type="radio"  name="bank_name" id="b_01030000">
+                        				<label for="b_01030000" class="bank-list-icon bank-nyyh"></label>
+                        			</li>
+                        			<li>
+                        				<input type="radio"  name="bank_name" id="b_03080000">
+                        				<label for="b_03080000" class="bank-list-icon bank-zsyh"></label>
+                        			</li>
+                        			<li>
+                        				<input type="radio"  name="bank_name" id="b_01040000">
+                        				<label for="b_01040000" class="bank-list-icon bank-boc"></label>
+                        			</li>
+                        			<li>
+                        				<input type="radio"  name="bank_name" id="b_03010000">
+                        				<label for="b_03010000" class="bank-list-icon bank-jtyh"></label>
+                        			</li>
+                        			<li>
+                        				<input type="radio"  name="bank_name" id="b_01000000">
+                        				<label for="b_01000000" class="bank-list-icon bank-yzcx"></label>
+                        			</li>
+                        			<li>
+                        				<input type="radio"  name="bank_name" id="b_03060000">
+                        				<label for="b_03060000" class="bank-list-icon bank-cgb"></label>
+                        			</li>
+                        			<li>
+                        				<input type="radio"  name="bank_name" id="b_03050000">
+                        				<label for="b_03050000" class="bank-list-icon bank-msyh"></label>
+                        			</li>
+                        			<li>
+                        				<input type="radio"  name="bank_name" id="b_03070000">
+                        				<label for="b_03070000" class="bank-list-icon bank-ping"></label>
+                        			</li>
+                        			<li>
+                        				<input type="radio"  name="bank_name" id="b_03020000">
+                        				<label for="b_03020000" class="bank-list-icon bank-zxyh"></label>
+                        			</li>
+                        			<li>
+                        				<input type="radio"  name="bank_name" id="b_04031000">
+                        				<label for="b_04031000" class="bank-list-icon bank-bjyh"></label>
+                        			</li>
+                        			<li>
+                        				<input type="radio"  name="bank_name" id="b_03090000">
+                        				<label for="b_03090000" class="bank-list-icon bank-xyyh"></label>
+                        			</li>
+                        			<li>
+                        				<input type="radio"  name="bank_name" id="b_64296510">
+                        				<label for="b_64296510" class="bank-list-icon bank-cdyh"></label>
+                        			</li>
+                        			<li>
+                        				<input type="radio"  name="bank_name" id="b_03100000">
+                        				<label for="b_03100000" class="bank-list-icon bank-pfyh"></label>
+                        			</li>
+                        			<li>
+                        				<input type="radio"  name="bank_name" id="b_03200000">
+                        				<label for="b_03200000" class="bank-list-icon bank-dyyh"></label>
+                        			</li>
+                        			<li>
+                        				<input type="radio"  name="bank_name" id="b_04083320">
+                        				<label for="b_04083320" class="bank-list-icon bank-hxyh"></label>
+                        			</li>
+                        			<li>
+                        				<input type="radio"  name="bank_name" id="b_03040000">
+                        				<label for="b_03040000" class="bank-list-icon bank-nbyh"></label>
+                        			</li>
+                        			<li>
+                        				<input type="radio"  name="bank_name" id="b_04012900">
+                        				<label for="b_04012900" class="bank-list-icon bank-shyh"></label>
+                        			</li>
+                        			<li>
+                        				<input type="radio"  name="bank_name" id="b_04243010">
+                        				<label for="b_04243010" class="bank-list-icon bank-njyh"></label>
+                        			</li>
+                        			<li>
+                        				<input type="radio"  name="bank_name" id="b_65012900">
+                        				<label for="b_65012900" class="bank-list-icon bank-shns"></label>
+                        			</li>
+                        			<li>
+                        				<input type="radio"  name="bank_name" id="b_03170000">
+                        				<label for="b_03170000" class="bank-list-icon bank-bhyh"></label>
+                        			</li>
+
+                        		</ul>
                         	</div>
-                        	<div class="cur-bank-box">
-                        			<span class="bank_ccb select-bank-icon"></span>
-                        			<span>(尾号3649)</span>
-                        	</div>
-                        	<div class="add-bank-box">
-                        		+添加快捷支付银行卡
+                        	<!-- 充值方式二 -->
+                        	<div class="content">
+
+                        		<div class="bank-tx-box">
+                        			<p class="zhif_type">真实姓名：<span class="normal">侯*涛</span></p>
+                        			<p class="zhif_type">认证银行卡<span class="separa">|</span><a class="btn-manage-card ui-font-blue" href="javascript:void(0);">管理</a></p>
+                        			<!-- 新绑卡 -->
+                        			<div class="select-bank-box clearfix">
+                        				<div class="cur-bank-box selected-bank">
+                        					<span class="bank-list-icon bank-zsyh"></span>
+                        					<span>(尾号3649)</span>
+                        					<i class="icon-selected"></i>
+                        				</div>
+                        				<div class="cur-bank-box">
+                        					<span class="bank-list-icon bank-zsyh"></span>
+                        					<span>(尾号3649)</span>
+                        				</div>
+                        				<div class="add-bank-box">
+                        					+绑定新银行卡
+                        				</div>
+                        			</div>
+                        			<p class="ui-font-gray ui-size12 tx-txt-notice clearfix">提现银行开户名必须与认证的信用宝账户真实姓名一致才能提现成功</p>
+                        		</div>
                         	</div>
                         </div>
-                        <p class="zhif_type">该支付平台支持以下银行通道</p>
-                        <!-- 银行显示列表 -->
-                            <ul class="bank-list clearfix">
-                                <li class="banklogo bank_icbc" id="bank_icbc"></li>
-                                <li class="banklogo bank_everbright" id="bank_everbright"></li>
-                                <li class="banklogo bank_ccb" id="bank_ccb"></li>
-                                <li class="banklogo bank_abc" id="bank_abc"></li>
-                                <li class="banklogo bank_cmb" id="bank_cmb"></li>
-                                <li class="banklogo bank_boc" id="bank_boc"></li>
-                                <li class="banklogo bank_comm" id="bank_comm"></li>
-                                <li class="banklogo bank_psbc" id="bank_psbc"></li>
-                                <li class="banklogo bank_cgb" id="bank_cgb"></li>
-                                <li class="banklogo bank_cmbc" id="bank_cmbc"></li>
-                                <li class="banklogo bank_paic" id="bank_paic"></li>
-                                <li class="banklogo bank_ecitic" id="bank_ecitic"></li>
-                                <li class="banklogo bank_bj" id="bank_bj"></li>
-                            </ul>
-                        <!-- 银行限额显示 -->
-                        <div id="bank_xewrap"></div>
-                        <!-- 银行限额end -->
-                        <p class="zhif_type ui-pt20">输入充值金额：</p>
-
+						<p class="zhif_type ui-pt20">输入充值金额：</p>
                         <form action="/recharge/sign" method="post" id="chongzhi">
                             <input type="hidden" name="paySystem" id="paySystem" value="">
                             <input type="hidden" name="payType" id="payType" value="">
                             <input type="hidden" name="amount" id="amount" value="">
                             <p>
-                               <input id="recharge_amount" class="w190" value="0.00" onfocus="if(this.value==this.defaultValue)this.value=''" onblur="if(this.value.replace(/ /ig,'')=='')this.value=this.defaultValue">&nbsp;           
+                               <input id="recharge_amount" class="w190 recharge_amount" value="0.00" onfocus="if(this.value==this.defaultValue)this.value=''" onblur="if(this.value.replace(/ /ig,'')=='')this.value=this.defaultValue">&nbsp;           
                            </p>
                            <p class="ui-size12 ui-pt10 ui-pb10">大写:<i class="daxie">零</i></p>
                            <span class="msg waiting_hide">
@@ -191,45 +291,43 @@
             		<p>过程中有任何疑问，您都可随时与我们联系。</p>
             	<!-- 提现银行卡选择 -->
             	<div class="bank-tx-box">
-                                <p>
-                                    <span>真实姓名：</span>
-                                   <!--  <b>侯*涛</b> -->
-                                    <a href="" class="ui-font-blue">[实名认证]</a>
-                                </p>
-                                <div class="tx-account-bank clearfix">
-                                    <span>提现银行账户： </span>
-                                    <div class="select-bank-box clearfix">
-	                                    <div class="cur-bank-box selected-bank">
-	                                    	
-	                                        <span class="bank_cmb select-bank-icon"></span>
-	                                        <span>(尾号3649)</span>
-	                                        
-	                                        
-	                                    <i class="icon-selected"></i></div>
-	                                    <div class="cur-bank-box">
-	                                        <span class="bank_ccb select-bank-icon"></span>
-	                                        <span>(尾号3649)</span>
-	                                    </div>
-	                                    <div class="cur-bank-box">
-	                                        <span class="bank_boc select-bank-icon"></span>
-	                                        <span>(尾号3649)</span>
-	                                    </div>
-	                                    <div class="cur-bank-box">
-	                                    	<span class="bank_bj select-bank-icon"></span>
-	                                    	<span>(尾号3649)</span>
-	                                    </div>
-
-            						</div>
-                                    <!-- 未实名制时显示 -->
-                                    <!--  请先进行<a href="" class="ui-font-blue">[银行卡认证]</a> -->
-                                </div>
-                                <p class="ui-font-gray ui-size12 tx-txt-notice clearfix">提现银行开户名必须与认证的信用宝账户真实姓名一致才能提现成功</p>
+            	<!-- 已实名 -->
+            		<div class="clearfix">
+            			<p class="zhif_type">真实姓名：<span class="normal">侯*涛</span></p>
+            			<p class="zhif_type">认证银行卡<span class="separa">|</span><a class="btn-manage-card ui-font-blue" href="javascript:void(0);">管理</a></p>
+            			<div class="tx-account-bank clearfix">
+            				<div class="select-bank-box clearfix">
+            					<div class="cur-bank-box selected-bank">
+            						<span class="bank-list-icon bank-zsyh"></span>
+            						<span>(尾号3649)</span>
+            						<i class="icon-selected"></i>
+            					</div>
+            					<div class="cur-bank-box">
+            						<span class="bank-list-icon bank-zsyh"></span>
+            						<span>(尾号3649)</span>
+            					</div>
+            					<div class="add-bank-box">
+            						+绑定新银行卡
+            					</div>
+            				</div>
+            			</div>
+            			<p class="ui-font-gray ui-size12 tx-txt-notice clearfix">提现银行开户名必须与认证的信用宝账户真实姓名一致才能提现成功</p>
+            		</div>
+            		<!-- 未实名制时显示 -->
+            		<!-- <div class="clearfix">
+	            		<p>真实姓名： 请先进行<a href="" class="ui-font-blue">[实名认证]</a>
+	            		</p>
+	            		<p>提现银行账户： 请先进行<a href="" class="ui-font-blue">[银行卡认证]</a>
+	            		</p>
+	            		<p class="ui-font-gray ui-size12 ui-pt10">提现银行开户名必须与认证的信用宝账户真实姓名一致才能提现成功</p>
+	            	</div> -->
+                    
                  </div>
                  <!-- end -->
                  <p class="zhif_type ui-pt30">账户余额：<em class="ui-font-blue ui-size16">0.00</em> 元 </p>
                  <p class="zhif_type ui-pt20">输入提现金额：</p>
                  <p>
-                 	<input id="recharge_amount" class="w190" value="0.00" onfocus="if(this.value==this.defaultValue)this.value=''" onblur="if(this.value.replace(/ /ig,'')=='')this.value=this.defaultValue">&nbsp;           
+                 	<input id="recharge_amount" class="recharge_amount w190" value="0.00" onfocus="if(this.value==this.defaultValue)this.value=''" onblur="if(this.value.replace(/ /ig,'')=='')this.value=this.defaultValue">&nbsp;           
                  </p>
                  <p class="ui-size12 ui-pt10 ui-pb10">大写:<i class="daxie">零</i></p>
                  <a id="" class="begin_cal ui-btn ui-btn-blue" value="确认提现" onclick="return check_data();">确认提现</a>
@@ -276,6 +374,85 @@
 		</div>
 	</div>
 </div>
+<!-- 弹窗内嵌部分 -->
+<div class="content_layer" id="user-bind-newcard">
+	<p class="layer-title"><i class="border-blue"></i>绑定新银行卡</p>
+	<div class="user-myinvest-layer user-addrinfo-layer">
+		<!-- 管理银行卡信息 -->
+		<div class="layer-add-card">
+			<div class="add-card-itmes ui-size14">
+				<div class="card-info-items">
+					<p>真实姓名</p>
+					<input type="text" class="ui-input" value="王*明" disabled>
+				</div>
+				<div class="card-info-items">
+					<p>身份证号</p>
+					<input type="text" class="ui-input" value="440301*********1542" disabled>
+				</div>
+				<div class="card-info-items">
+					<p>选择银行卡</p>
+					<select name="" id="" class="ui-input">
+						<option value="">请选择</option>
+						<option value="">中国银行</option>
+						<option value="">中国农业银行</option>
+						<option value="">招商银行</option>
+					</select>
+				</div>
+				<div class="card-info-items">
+					<p>银行卡卡号</p>
+					<input type="text" placeholder="请输入银行卡卡号" class="ui-input">
+				</div>
+				<div class="card-info-items">
+					<p>银行预留手机号</p>
+					<input type="text" placeholder="请输入银行预留手机号" class="ui-input">
+				</div>
+				<div class="card-info-items set-default-card">
+					<input type="checkbox" id="set_default_card"><label for="set_default_card">设置成默认提现银行卡</label>
+				</div>
+			</div>
+			<!-- 添加 -->
+			<p class="add-bank-card">
+				<input type="button" value="下一步" class="ui-btn ui-btn-blue" id="bind-card-next">
+			</p>
+		</div>
+	</div>
+</div>
+<!-- 接收手机验证码 -->
+<div class="content_layer" id="user-bind-phonecode">
+	<p class="layer-title"><i class="border-blue"></i>绑定新银行卡</p>
+	<div class="user-myinvest-layer user-addrinfo-layer">
+		<!-- 管理银行卡信息 -->
+		<div class="layer-add-card">
+			<div class="add-card-itmes ui-size14">
+				<div class="card-info-items">
+					<p class="ui-size14 ui-pt60">预留手机号：138*****8000</p>
+					<div class="ui-form-item ui-pt20 layer-phone-code">
+						<p class="ui-input-body">
+							<input type="text" placeholder="输入短信验证码" class="ui-short-input">
+						</p>
+						<a href="javascript:void(0);" class="ui-btn ui-btn-blue send-code">发送验证码</a>
+					</div>
+				</div>
+			</div>
+			<!-- 下一步 -->
+			<p class="add-bank-card">
+				<input type="button" value="下一步" class="ui-btn ui-btn-blue" id="bind-card-nextwo">
+			</p>
+		</div>
+	</div>
+</div>
+<!-- 添加成功 -->
+<div class="content_layer" id="user-bind-success">
+<p class="layer-title"><i class="border-blue"></i>绑定新银行卡</p>
+	<div class="user-sec-input page-tips w250">
+		<em class="icon-sucess"></em>
+		<p class="p1">恭喜您，登录密码修改成功</p>
+		<p class="p2">请妥善保管好您的信息，避免被他人非法利用。</p>
+		<div class="ui-form-item ui-">
+		<p class="ui-form-btn"><a href="javascript:void(0)" onclick="layer.closeAll();" class="ui-btn ui-btn-blue">确定</a></p>
+		</div>
+	</div>
+</div>
 <!-- footer end -->
 <!-- script -->
 <script type="text/javascript" src="js/lib/jquery.js"></script>
@@ -301,13 +478,33 @@ $(".btn-manage-card").on("click",function(){
 // 添加银行卡
 $(".add-bank-box").on("click",function(){
 			layer.open({
-				type:2,
+				type:1,
 				title:false,
 				shadeClose:true,
-				area: ['540px','500px'],
-				content:['user-layer-addbcard.htm','no']
+				area: ['540px','610px'],
+				content:$("#user-bind-newcard")
 			})
 		});
+$("#bind-card-next").on("click",function(){
+	layer.closeAll();
+	layer.open({
+		type:1,
+		title:false,
+		shadeClose:true,
+		area:['540px','380px'],
+		content:$("#user-bind-phonecode")
+	})
+});
+$("#bind-card-nextwo").on("click",function(){
+	layer.closeAll();
+	layer.open({
+		type:1,
+		title:false,
+		shadeClose:true,
+		area:['540px','380px'],
+		content:$("#user-bind-success")
+	})
+})
 // 支付状态
 $(".pay-compelte").on("click",function(){
 			layer.open({
@@ -318,7 +515,15 @@ $(".pay-compelte").on("click",function(){
 				content:['user-layer-paystatus.htm','no']
 			})
 		});
-});       
+});
+ // 充值方式切换
+ $('.charge-style-content .content').eq(0).show()
+ $(".charge-style-tabs li").bind('click',function(){
+ 	$(this).addClass('selected').append('<i class="icon-selected-big"></i>').siblings().
+ 	removeClass('selected').children(".icon-selected-big").remove(); 
+ 	var tab_index=$(this).index();
+ 	$('.charge-style-content .content').eq(tab_index).show().siblings().hide();
+ })
 </script>
 </body>
 </html>

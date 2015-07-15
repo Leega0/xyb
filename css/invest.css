@@ -1039,27 +1039,27 @@
   padding: 15px 0;
 }
 
-.qk-login-btn .ui-form-btn {
-  padding-bottom: 10px;
-}
-
-.ui-label-icon {
+.quick-login .ui-label-icon {
   background: url(../images/sprites/icon-reg.png) no-repeat;
 }
 
-.icon-form-peoples {
+.quick-login .icon-form-peoples {
   width: 31px;
   background-position: -84px 0;
 }
 
-.icon-form-loginpw {
+.quick-login .icon-form-loginpw {
   width: 27px;
   background-position: -55px 0;
   margin-left: 13px;
 }
 
-.auto-login input {
+.quick-login .auto-login input {
   position: relative;
   top: 2px;
   margin-right: 3px;
+}
+
+.qk-login-btn .ui-form-btn {
+  padding-bottom: 10px;
 }

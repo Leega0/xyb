@@ -603,6 +603,11 @@ dl.qc-code {
 
 .layer-title {
   border-left: 0;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding-left: 5px;
+  line-height: normal;
 }
 
 .layer-title .border-blue {
@@ -746,80 +751,126 @@ dl.qc-code {
 }
 
 .bank-list {
-  padding-top: 10px;
+  padding: 10px;
 }
 
-.banklogo {
+.bank-list li {
   float: left;
-  margin: 5px 28px 10px 0;
+  margin: 8px 20px 8px 0;
+}
+
+.bank-list li input {
+  position: relative;
+  top: 2px;
+}
+
+.bank-list-icon {
   border: 1px solid #ddd;
-  width: 106px;
-  height: 31px;
-  background-image: url(../images/bankLogo.png);
+  width: 124px;
+  height: 30px;
+  background-image: url(../images/sprites/banklist.png);
   display: inline-block;
   vertical-align: middle;
   background-repeat: no-repeat;
 }
 
-.bank_icbc {
-  background-position: -3px -229px;
+.bank-icbc {
+  background-position: 0 -289px;
 }
 
-.bank_everbright {
-  background-position: -3px -381px;
+.bank-gdyh {
+  background-position: 0 -225px;
 }
 
-.bank_ccb {
-  background-position: -3px -39px;
+.bank-jsyh {
+  background-position: 0 -321px;
 }
 
-.bank_abc {
-  background-position: -3px -77px;
+.bank-nyyh {
+  background-position: 0 -449px;
 }
 
-.bank_cmb {
-  background-position: -3px -153px;
+.bank-zsyh {
+  background-position: 0 -673px;
 }
 
-.bank_boc {
-  background-position: -3px -191px;
+.bank-boc {
+  background-position: 0 -97px;
 }
 
-.bank_comm {
-  background-position: -3px -419px;
+.bank-jtyh {
+  background-position: 0 -353px;
 }
 
-.bank_psbc {
-  background-position: -3px -457px;
+.bank-yzcx {
+  background-position: 0 -641px;
 }
 
-.bank_cgb {
-  background-position: -3px -533px;
+.bank-cgb {
+  background-position: 0 -161px;
 }
 
-.bank_cmbc {
-  background-position: -3px -115px;
+.bank-msyh {
+  background-position: 0 -385px;
 }
 
-.bank_paic {
-  background-position: -3px -305px;
+.bank-ping {
+  background-position: 0 0;
 }
 
-.bank_ecitic {
-  background-position: -3px -1px;
+.bank-zxyh {
+  background-position: 0 -705px;
 }
 
-.bank_bj {
-  background-image: url(../images//icon_bjbank.png);
-  background-repeat: no-repeat;
-  background-position: -1px -1px;
+.bank-bjyh {
+  background-position: 0 -65px;
+}
+
+.bank-xyyh {
+  background-position: 0 -609px;
+}
+
+.bank-cdyh {
+  background-position: 0 -129px;
+}
+
+.bank-pfyh {
+  background-position: 0 -513px;
+}
+
+.bank-dyyh {
+  background-position: 0 -193px;
+}
+
+.bank-hxyh {
+  background-position: 0 -257px;
+}
+
+.bank-nbyh {
+  background-position: 0 -417px;
+}
+
+.bank-shyh {
+  background-position: 0 -577px;
+}
+
+.bank-njyh {
+  background-position: 0 -481px;
+}
+
+.bank-shns {
+  background-position: 0 -545px;
+}
+
+.bank-bhyh {
+  background-position: 0 -33px;
 }
 
 .w190 {
   width: 190px;
 }
 
-#recharge_amount {
+.recharge_amount {
   height: 22px;
   line-height: 22px;
   padding: 8px;
@@ -868,6 +919,10 @@ dl.qc-code {
   line-height: 33px;
 }
 
+.cur-bank-box .bank-list-icon {
+  border: 0;
+}
+
 .cur-bank-box span {
   float: left;
   line-height: 33px;
@@ -890,6 +945,7 @@ dl.qc-code {
   float: left;
   line-height: 35px;
   text-align: center;
+  background-color: #fff;
 }
 
 .del-this-bank {
@@ -1103,6 +1159,7 @@ dl.qc-code {
 
 .user-write-info .user-addr-detail input {
   width: 100%;
+  box-sizing: border-box;
 }
 
 .user-write-info .user-phone input {
@@ -1613,6 +1670,10 @@ dl.qc-code {
   margin-bottom: 16px;
 }
 
+.page-tips .input-vali-code .ui-input-middle input {
+  width: 100%;
+}
+
 .page-tips-w420 {
   width: 420px;
 }
@@ -1641,26 +1702,32 @@ dl.qc-code {
   padding: 0 6px;
 }
 
-.add-card-itmes {
-  margin-top: 20px;
-  margin-left: 15px;
+.add-card-itmes .card-info-items {
+  width: 250px;
+  margin: 0 auto;
 }
 
-.add-card-itmes td {
-  padding: 8px 0 8px 20px;
+.add-card-itmes .card-info-items p {
+  font-size: 12px;
+  padding: 10px 0;
 }
 
-.add-card-itmes td:first-child {
-  text-align: right;
-  padding-left: 0;
-}
-
-.add-card-itmes td .ui-input {
+.add-card-itmes .card-info-items .ui-input {
   border: 1px solid #ddd;
   border-radius: 3px;
   box-sizing: border-box;
   padding: 10px;
   width: 250px;
+}
+
+.add-card-itmes .set-default-card {
+  padding: 15px 0;
+}
+
+.add-card-itmes .set-default-card input {
+  position: relative;
+  top: 1px;
+  margin-right: 5px;
 }
 
 .add-bank-card {
@@ -1730,4 +1797,90 @@ dl.qc-code {
 .real-name-tips {
   line-height: 2;
   margin-top: 60px;
+}
+
+.content_layer {
+  display: none;
+}
+
+.charge-style-tabs {
+  overflow: hidden;
+  padding-bottom: 30px;
+}
+
+.charge-style-tabs li {
+  float: left;
+  cursor: pointer;
+  margin-right: 20px;
+  width: 187px;
+  height: 38px;
+  border: 1px solid #ddd;
+  line-height: 38px;
+  text-align: center;
+  position: relative;
+}
+
+.charge-style-tabs li.selected {
+  border-color: #2c97f4;
+  margin-right: 20px;
+}
+
+.charge-style-tabs li .icon-selected-big {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 23px;
+  height: 23px;
+  background: url(../images/sprites/big-selected.png) no-repeat;
+}
+
+.charge-style-content .content {
+  display: none;
+}
+
+.layer-phone-code {
+  overflow: hidden;
+}
+
+.layer-phone-code .ui-input-body {
+  width: 126px;
+  float: left;
+  padding: 0 !important;
+}
+
+.layer-phone-code .send-code {
+  width: 90px;
+  height: 28px;
+  line-height: 28px;
+  float: left;
+}
+
+.w250 {
+  width: 252px !important;
+}
+
+.bind-card-tblist .tr1 {
+  border-left: 0 !important;
+  border-right: 0 !important;
+}
+
+.bind-card-tblist th {
+  text-align: left;
+  background-color: #fff;
+  padding-left: 10px;
+}
+
+.bind-card-tblist td {
+  padding-left: 12px;
+  height: 50px !important;
+}
+
+.add-new-bank {
+  text-align: center;
+  padding: 65px 0 30px;
+}
+
+.add-new-bank .ui-btn {
+  font-size: 14px;
+  padding: 9px 32px;
 }
