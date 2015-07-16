@@ -553,6 +553,8 @@ dl.qc-code {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  text-align: left;
+  text-indent: 18px;
 }
 
 .investment-wrap {
@@ -599,24 +601,6 @@ dl.qc-code {
   border-radius: 3px;
   padding: 3px 6px;
   margin: 0 2px;
-}
-
-.layer-title {
-  border-left: 0;
-  font-size: 16px;
-  margin-top: 20px;
-  margin-left: 20px;
-  padding-left: 5px;
-  line-height: normal;
-}
-
-.layer-title .border-blue {
-  display: inline-block;
-  position: relative;
-  top: 3px;
-  margin-right: 5px;
-  height: 16px;
-  border-left: 4px solid #2c97f4;
 }
 
 .user-myinvest-layer {
@@ -1797,10 +1781,6 @@ dl.qc-code {
 .real-name-tips {
   line-height: 2;
   margin-top: 60px;
-}
-
-.content_layer {
-  display: none;
 }
 
 .charge-style-tabs {

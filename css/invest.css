@@ -309,6 +309,7 @@
 
 .invest-intro-pd {
   padding: 0 30px 60px;
+  clear: both;
 }
 
 .invest-intro-table tr:first-child td {
@@ -323,51 +324,6 @@
 
 .invest-intro-table td:first-child {
   padding-left: 30px;
-}
-
-.layer-title {
-  font-size: 16px;
-  border-left: 3px solid #2c97f4;
-  margin-top: 20px;
-  margin-left: 20px;
-  padding-left: 5px;
-  line-height: normal;
-}
-
-.layer-content {
-  width: 270px;
-  margin: 0 auto;
-}
-
-.layer-content .charge_psw {
-  width: 80% !important;
-  margin-top: 2px !important;
-}
-
-.layer-content .btn-invest-all {
-  position: absolute;
-  right: 0;
-  top: 13px;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
-  width: 45px;
-  height: 40px;
-  line-height: 40px;
-  color: #fff;
-  text-align: center;
-  background-color: #2c97f4;
-}
-
-.layer-content .btn-invest-all:hover {
-  background-color: #62b7e7;
-}
-
-.layer-content .prospect-earn {
-  padding: 14px 0 14px 3px;
-}
-
-.layer-content .invest-settle {
-  padding: 8px 0;
 }
 
 .invest-money-text .use-crad-help {

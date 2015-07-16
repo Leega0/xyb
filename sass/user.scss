@@ -472,6 +472,8 @@ dl{
 			overflow: hidden;
 			text-overflow: ellipsis;
 			white-space: nowrap;
+			text-align: left;
+    		text-indent: 18px;
 		}
 	}
 }
@@ -518,23 +520,6 @@ dl{
 			padding:3px 6px;
 			margin: 0 2px;
 		}
-	}
-}
-// 修改弹窗蓝边
-.layer-title{
-	border-left:0;
-	font-size: 16px;
-	margin-top: 20px;
-    margin-left: 20px;
-    padding-left: 5px;
-    line-height: normal;
-	.border-blue{
-		display: inline-block;
-		position: relative;
-		top: 3px;
-		margin-right: 5px;
-		height: 16px;
-		border-left:4px solid $base_blue;
 	}
 }
 .user-myinvest-layer{
@@ -1590,9 +1575,6 @@ dl{
 	margin-top: 60px;
 }
 // dom弹窗
-.content_layer{
-	display:none;
-}
 .charge-style-tabs{
 	overflow: hidden;
 	padding-bottom: 30px;

@@ -400,8 +400,53 @@ VIP1~VIP4：高成长值优先；同成长值注册较早者优先；<br/>
 	</div>
 </div>
 <!-- footer end -->
+<!-- 弹窗内容 -->
+<div class="clearfix content_layer buy-vip">
+	<p class="layer-title">日常生活消费<i class="ui-size12 ui-font-gray">（项目编号：SB025413）</i></p>
+	<div class="layer-content detail-invest-content ui-mt50">
+		<p>需支付资金(元)</p>
+		<p class="ui-font-blue ui-size28 invest-last-num">￥251,124.00</p>
+		<div class="invest-money-detail clearfix">
+			<i class="detail-icons icon-plus ui-ml15d"></i>
+			<div class="invest-money-text">
+				<p>账户可用资金(元)<i class="ui-font-blue fr">￥521,512.00</i></p>
+				<p class="ui-font-gray money-last">账户余额(元)<i class="fr">￥521,512.00</i></p>
+				<p class="ui-font-gray money-last">账户礼金(元)<i class="fr">￥521,512.00</i></p>
+			</div>
+			<a href="" class="btn-recharge ui-mr5">充值</a>
+		</div>
+		<p>输入投资金额(元)</p>
+		<div class="ui-form-item">
+			<p class="ui-input-body ui-mt5">
+				<input type="number" placeholder="0.00" value="0.00" class="ui-font-gray ui-size16">
+			</p>
+			<a href="javascript:void(0);" class="btn-invest-all ui-size14">全投</a>
+		</div>
+		<div class="invest-money-detail clearfix">
+			<i class="detail-icons icon-plus ui-ml15d"></i>
+			<div class="invest-money-text">
+				<p class="use-crad-help">使用收益翻倍卡(<i class="ui-font-blue">2</i>)<a class="ui-font-gray fr">[使用规则]</a></p>
+				<!-- 收益卡 -->
+				<div class="gift-cards">
+					<p class="gift-card-item"><input type="radio" id="gift_card1" name="gift_card1" checked><label for="gift_card1">7天1.5倍收益卡</label><i class="ui-font-gray fr">[剩余期限 25 天]</i></p>
+					<p class="gift-card-item"><input type="radio" id="gift_card3" name="gift_card3"><label for="gift_card3">7天3倍收益卡</label><i class="ui-font-gray fr">[剩余期限 25 天]</i></p>
+				</div>
+			</div>
+		</div>
+		<!-- 计算预期收益 -->
+		<p class="ui-font-blue prospect-earn">预期收益：￥<i>254,521.00</i></p>
+	</div>
+	<!-- layer  底部提交 -->
+	<div class="layer-bottom">
+	     <div class="layer-content">
+	         <p class="ui-form-btn"><a href="" class="ui-btn ui-btn-blue">下一步</a></p>
+	         <p class="xyb-agree-ctn align-center"><input type="checkbox" checked="checked" name="xyb_agreement" id="xyb_agreement"><label for="xyb_agreement">我已阅读并同意</label><a href="" target="_blank" class="ui-font-blue">《信用宝服务协议》</a></p>
+	     </div>
+	</div>
+</div>
 <!-- script -->
 <script type="text/javascript" src="js/lib/jquery.js"></script>
+<script type="text/javascript" src="js/plugins/layer.js"></script>
 <script type="text/javascript">
 	$(function(){
 		var groess_num_1 =$(".groess-num-1").text();

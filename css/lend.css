@@ -34,9 +34,13 @@ h5 {
   padding-left: 36px;
 }
 
+.lend-cal-box .lend-title {
+  line-height: 56px;
+  margin-top: 8px;
+}
+
 .lend-cal-box .ui-form-item {
-  padding-top: 40px;
-  padding-bottom: 30px;
+  padding: 30px 0;
   float: left;
   margin-right: 25px;
 }

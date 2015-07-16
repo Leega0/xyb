@@ -80,11 +80,11 @@
 <div class="contain_wrap bg-white border-eee lend-main">
 <!-- 申请和计算 -->
 	<div class="lender-info">
-		<h5 class="border-lfb">信用宝极速借款</h5>
+		<h5 class="ui-pb20"><i class="border-blue"></i>借款申请</h5>
 		<div class="ui-form-item">
 			<p class="ui-input-body ui-input-middle">
 				<i class="ui-label-icon icon-form-person"></i>
-				<input type="text" id="lend-name" value="借款人称呼" onfocus="if(this.value==this.defaultValue)this.value=''" onblur="if(this.value.replace(/ /ig,'')=='')this.value=this.defaultValue">
+				<input type="text" id="lend-name" placeholder="借款人称呼">
 			</p>
 			<p class="ui-input-body ui-input-short">
 				<select name="" id="">
@@ -97,33 +97,20 @@
 		<div class="ui-form-item">
 			<p class="ui-input-body">
 				<i class="ui-label-icon icon-form-phone"></i>
-				<input type="text" value="联系手机号码" onfocus="if(this.value==this.defaultValue)this.value=''" onblur="if(this.value.replace(/ /ig,'')=='')this.value=this.defaultValue">
+				<input type="text" placeholder="联系手机号码">
 			</p>
 		</div>
 		<div class="ui-form-item">
 			<p class="ui-form-btn"><a href="" class="ui-btn ui-btn-blue">立即申请</a></p>
 		</div>
-		<p class="ui-font-gray">支持城市：<br>沈阳、郑州、西安、洛阳、福州、南阳、南昌、许昌、包头、上海、石家庄、淄博、扬州、厦门
+		<p class="ui-font-gray ui-pb40">支持城市：<br>沈阳、郑州、西安、洛阳、福州、南阳、南昌、许昌、包头、上海、石家庄、淄博、扬州、厦门
 </p>
 	</div>
 	<!-- 借款计算 -->
 	<div class="lend-cal-box">
-		<!-- 计算工具 -->
-		<div class="lend-handle clearfix">
-		<div class="ui-form-item">
-			<label>借款金额:</label><p class="ui-input-body ui-input-middle"><input type="text" value="10000" class="ui-size16 bold ui-font-blue" onfocus="if(this.value==this.defaultValue)this.value=''" onblur="if(this.value.replace(/ /ig,'')=='')this.value=this.defaultValue"></p>
-		</div>
-		<div class="ui-form-item">
-		<label>借款周期:</label>
-			<p class="ui-input-body ui-input-middle"><select class="ui-size16 bold ui-font-blue">
-				<option value="">12个月</option>
-				<option value="">9个月</option>
-				<option value="">6个月</option>
-			</select></p>
-		</div>
-		<div class="ui-form-item">
-			<a href="" class="ui-btn ui-btn-blue">立即计算</a>
-		</div>
+		<!-- title -->
+		<div class="lend-title clearfix">
+			<h5 class="fl"><i class="border-blue"></i>借款计算器</h5><p class="fr ui-font-gray">*以上计算结果以最优贷款条件算出仅供参考，请以自身申请贷款后最终平台评估的结果为准。</p>
 		</div>
 	<table class="level-rate" width="770">
 		<colgroup>
@@ -161,8 +148,25 @@
 	        <td>4554.04元</td>
 	        <td>54648.52元</td>
         </tr>
-        <tr><td class="ui-font-gray align-center" colspan="4">*以上计算结果以最优贷款条件算出仅供参考，请以自身申请贷款后最终平台评估的结果为准。</td></tr>
 	</table>
+	<!-- 计算工具 -->
+		<div class="lend-handle clearfix">
+		<div class="ui-form-item">
+			<label>借款金额:</label><p class="ui-input-body ui-input-middle"><input type="text" value="10000" class="ui-size16 bold ui-font-blue"></p>
+		</div>
+		<div class="ui-form-item">
+		<label>借款周期:</label>
+			<p class="ui-input-body ui-input-middle"><select class="ui-size16 bold ui-font-blue">
+				<option value="">12个月</option>
+				<option value="">9个月</option>
+				<option value="">6个月</option>
+			</select></p>
+		</div>
+		<div class="ui-form-item">
+			<a href="" class="ui-btn ui-btn-blue">立即计算</a>
+		</div>
+		</div>
+	<!-- 计算工具end -->
 </div>
 </div>
 <!-- 信用宝6大优势 -->
@@ -231,12 +235,12 @@
         	<th>月综合费率</th>
         	<th>利率</th>
         </tr>
-        <tr>
+        <!-- <tr>
         	<td>极速借款</td>
         	<td>1-36个月</td>
         	<td>0.50%</td>
         	<td>0.5%</td>
-        </tr>
+        </tr> -->
         <tr>
         	<td>信用借款</td>
         	<td>6-36个月</td>
@@ -249,12 +253,12 @@
         	<td>0.50%-3.4%</td>
         	<td>0.6%-1%</td>
         </tr>
-        <tr>
+        <!-- <tr>
         	<td>实地认证借款</td>
         	<td>6-36个月</td>
         	<td>0.99%-2.5%</td>
         	<td>1%-1.5%</td>
-        </tr>
+        </tr> -->
         <tr><td rolspan="4" style="border-bottom:0;">&nbsp;</td></tr>
 	</table>
 </div>
