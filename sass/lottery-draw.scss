@@ -148,15 +148,17 @@ dl{
 }
 //抽奖箱
 .lottery-draw-box-main{
-	padding-bottom:26px;
-	table{
-		border-collapse: inherit;
-		border-spacing: 14px;
-		width: 834px;
+	position:relative;
+	width:832px;
+	height:472px;
+	.prize-lotter{
+		width:832px;
+		height:472px;
 	}
-	td{
-		position:relative;
+	.prize-lotter-item{
+		position:absolute;
 		height: 100px;
+		width:150px;
 		text-align: center;
     	vertical-align: middle;
     	&.active{
@@ -165,6 +167,69 @@ dl{
 		    filter: alpha(opacity=30);
 		    z-index: 2;
     	}
+	}
+	.prize-number-1{
+		top:14px;
+		left:14px;
+	}
+	.prize-number-2{
+		top:14px;
+		left:178px;
+	}
+	.prize-number-3{
+		top:14px;
+		left:342px;
+	}
+	.prize-number-4{
+		top:14px;
+		left:506px;
+	}
+	.prize-number-5{
+		top:14px;
+		left:670px;
+	}
+	.prize-number-6{
+		top:128px;
+		left:670px;
+	}
+	.prize-number-7{
+		top:242px;
+		left:670px;
+	}
+	.prize-number-8{
+		top:356px;
+		left:670px;
+	}
+	.prize-number-9{
+		top:356px;
+		left:506px;
+	}
+	.prize-number-10{
+		top:356px;
+		left:342px;
+	}
+	.prize-number-11{
+		top:356px;
+		left:178px;
+	}
+	.prize-number-12{
+		top:356px;
+		left:14px;
+	}
+	.prize-number-13{
+		top:242px;
+		left:14px;
+	}
+	.prize-number-14{
+		top:128px;
+		left:14px;
+	}
+	.prize-number-15{
+		top:114px;
+		left:164px;
+		width: 506px;
+		height: 211px;
+		padding-top:31px;
 	}
 	.prize-title{
 		position:absolute;
@@ -178,6 +243,7 @@ dl{
 		background:url("../images/prize-title-bg.png") no-repeat;
 	}
 	.cash-num{
+		padding-top:16px;
 		font-size:28px;
 		color:#fff;
 		line-height:34px;

@@ -9,13 +9,10 @@ h5 {
   margin: 0 auto;
 }
 
-.contain_wrap {
-  overflow: hidden;
-}
-
 .lend-main {
   margin-top: 30px;
   margin-bottom: 20px;
+  overflow: hidden;
 }
 
 .lender-info {
@@ -47,10 +44,6 @@ h5 {
 
 .lend-cal-box .ui-form-item .ui-input-middle {
   width: 180px;
-}
-
-.lend-cal-box .ui-form-item .ui-input-middle input {
-  margin-top: 3px;
 }
 
 .lend-cal-box .ui-form-item .ui-btn {
@@ -114,6 +107,7 @@ h5 {
 .lend-advantage {
   margin-bottom: 20px;
   padding-bottom: 15px;
+  overflow: hidden;
 }
 
 .lend-advantage > h5 {

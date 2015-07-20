@@ -520,6 +520,9 @@ h6 {
 .text-underline {
   text-decoration: underline;
 }
+.ui-lh{
+  line-height: 2;
+}
 /* 字体颜色设置 */
 $base_blue:#2c97f4;
 .ui-font-gray{
@@ -803,6 +806,7 @@ $base_blue:#2c97f4;
 }
 .ui-input-body {
   border: 1px solid #ddd;
+  overflow: hidden;
   border-radius: 3px;
   vertical-align: middle;
   *zoom: 1;
@@ -812,13 +816,6 @@ $base_blue:#2c97f4;
   &.ui-input-middle{
     width: 200px;
     float: left;
-    input{
-      width: 80%;
-      margin-top: 1px;
-      font-size: 14px;
-      border:0;
-      outline: 0;
-    }
     select{
       margin-top: 8px;
       margin-left: 16px;
@@ -831,13 +828,6 @@ $base_blue:#2c97f4;
     width: 80px;
     float: left;
     margin-left: 10px;
-    input{
-      width: 80%;
-      margin-top: 1px;
-      font-size: 14px;
-      border:0;
-      outline: 0;
-    }
     select{
       margin-top: 8px;
       margin-left: 16px;
@@ -848,14 +838,15 @@ $base_blue:#2c97f4;
   }
   input{
     font-family: arial,'微软雅黑';
-    padding:8px 10px;
+    padding:0 10px;
     display: inline-block;
     box-sizing:border-box;
     width: 80%;
-      margin-top: 1px;
-      font-size: 14px;
-      border:0;
-      outline: 0;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    border:0;
+    outline: 0;
   }
 }
 .ui-form-btn{
@@ -1024,6 +1015,9 @@ $base_blue:#2c97f4;
 .border-lfb{
   border-left:3px solid #3ea3fe;
   padding-left: 5px;
+}
+.no-border{
+  border:0 !important;
 }
 .h10{
   overflow: hidden;
@@ -1199,12 +1193,19 @@ $base_blue:#2c97f4;
       background-color: #fff;
       display: none;
       text-align: center;
+      border:1px solid #eee;
+      p{
+        &:hover{
+          background-color: #f4faff;
+        }
+      }
       a{
         line-height: 2;
         display: block;
         padding:0;
         width: 100px;
-        text-align: center;
+        text-align: left;
+        text-indent: 18px;
       }
       z-index: 99;
     }
@@ -1420,7 +1421,7 @@ $base_blue:#2c97f4;
   .btn-invest-all{
     position: absolute;
     right: 0;
-    top:13px;
+    top:8px;
     border-top-right-radius:3px;
     border-bottom-right-radius:3px;
     width: 45px;
@@ -1442,6 +1443,17 @@ $base_blue:#2c97f4;
 }
 .content_layer{
   display:none;
+}
+.layer-bottom{
+  border-top:1px solid #ddd;
+  margin:0 25px;
+  .xyb-agree-ctn{
+    input{
+      position: relative;
+      top:2px;
+      margin-right: 3px;
+    }
+  }
 }
 // 公用蓝边
 .border-blue{

@@ -260,7 +260,7 @@
 					</ul>
 					<!-- 绑定输入start -->
 					<div class="user-sec-input">
-						<div class="ui-form-item">
+						<div class="ui-form-item" id="input-valid-phone">
 							<p class="ui-input-body">
 								<i class="ui-label-icon icon-form-phone"></i>
 								<input type="text" placeholder="输入注册手机号" class="w85">
@@ -309,6 +309,16 @@
 						</div>
 					</div>
 					<!-- 输入验证邮箱end -->
+					<!-- 提示绑定start -->
+					<div class="user-sec-input  page-tips real-name-valid">
+						<i class="icon-bind-tips"></i>
+						<p class="ui-size14 ui-lh">为了您的账户使用安全</p>
+						<p class="ui-size14 ui-lh">请绑定您的手机进行身份验证</p>
+						<div class="ui-form-item">
+									<a href="" class="ui-btn ui-btn-blue btn-bindphone-now">立即绑定手机</a>
+							</div>
+					</div>
+					<!-- 提示绑定end -->
 					<!-- 验证邮箱start -->
 					<div class="user-sec-input  page-tips page-tips-w420">
 						<em class="icon-sucess"></em>
@@ -809,6 +819,20 @@ $("#bind-card-nextwo").on("click",function(){
 	})
 })
 })
+// 验证错误提示
+$("#input-valid-phone").focusin(function(){
+	$(this).find('.ui-input-body').css({
+		borderColor: '#fe8479',
+		boxShadow: '0 0 0 1px #fe8479'
+	});
+	layer.tips('输入的手机号不正确', '.ui-input-body', {
+    tips: [1, '#fd8479'],
+    time: 24000
+	});
+});
+$("#input-valid-phone").focusout(function(){
+	layer.closeAll('tips');
+});
 </script>
 </body>
 </html>

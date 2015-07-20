@@ -1865,3 +1865,52 @@ dl{
   }
 
 }
+.buy-vip-layer{
+	.text-wrap{
+		padding:10px 0;
+	}
+	.item-recharge{
+		overflow: hidden;
+		.title{
+			float: left;
+		}
+		.content{
+			font-size: 14px;
+			color: #2c97f4;
+			float: right;
+		}
+		.btn-recharge{
+			font-size: 12px;
+			border:1px solid #2c97f4;
+			border-radius:3px;
+			padding:0 3px;
+			margin-left: 8px;
+		}
+	}
+	.pack-list{
+		overflow: hidden;
+		padding-bottom: 20px;
+		li{
+			width: 116px;
+			height: 40px;
+			cursor: pointer;
+			text-align:center;
+			line-height: 40px;
+			border:1px solid #ddd;
+			margin: 5px 0;
+			position: relative;
+			&.selected{
+				border-color:#2c97f4;
+				color: #2c97f4;
+			}
+			.icon-selected-big{
+				position: absolute;
+			    bottom: 0;
+			    right: 0;
+			    width: 23px;
+			    height: 23px;
+			    background: url(../images/sprites/big-selected.png) no-repeat;
+			}
+		}
+	}
+}

@@ -74,7 +74,9 @@
 	<!-- menu end -->
 	<div class="banner banner-vip">
 		<div class="contain_wrap">
-			<a href="" class="banner-vip-a">立即续费</a>
+			<a href="javascript:void(0);" class="banner-vip-a btn-vip-renewal">立即续费</a>
+			<!-- 未登录显示如下 -->
+			<!-- <a href="" class="banner-vip-a">立即购买</a> -->
 		</div>
 	</div>
 </div>
@@ -401,40 +403,27 @@ VIP1~VIP4：高成长值优先；同成长值注册较早者优先；<br/>
 </div>
 <!-- footer end -->
 <!-- 弹窗内容 -->
-<div class="clearfix content_layer buy-vip">
-	<p class="layer-title">日常生活消费<i class="ui-size12 ui-font-gray">（项目编号：SB025413）</i></p>
-	<div class="layer-content detail-invest-content ui-mt50">
-		<p>需支付资金(元)</p>
-		<p class="ui-font-blue ui-size28 invest-last-num">￥251,124.00</p>
-		<div class="invest-money-detail clearfix">
-			<i class="detail-icons icon-plus ui-ml15d"></i>
-			<div class="invest-money-text">
-				<p>账户可用资金(元)<i class="ui-font-blue fr">￥521,512.00</i></p>
-				<p class="ui-font-gray money-last">账户余额(元)<i class="fr">￥521,512.00</i></p>
-				<p class="ui-font-gray money-last">账户礼金(元)<i class="fr">￥521,512.00</i></p>
-			</div>
-			<a href="" class="btn-recharge ui-mr5">充值</a>
+<div class="clearfix content_layer buy-vip-layer">
+	<p class="layer-title"><i class="border-blue"></i>VIP会员服务订购</p>
+	<div class="layer-content buy-vip-content ui-mt30">
+		<p class="text-wrap">会员状态<span class="fr">已开通</span></p>
+		<p class="text-wrap">会员有效期<span class="fr">2015-06-28</span></p>
+		<div class="text-wrap item-recharge">
+			<p class="title">账户余额(元)</p>
+			<p class="content">￥251,124.00<a href="" class="btn-recharge">充值</a></p>
 		</div>
-		<p>输入投资金额(元)</p>
-		<div class="ui-form-item">
-			<p class="ui-input-body ui-mt5">
-				<input type="number" placeholder="0.00" value="0.00" class="ui-font-gray ui-size16">
-			</p>
-			<a href="javascript:void(0);" class="btn-invest-all ui-size14">全投</a>
+		<div class="choose-pack">
+			<p class="text-wrap">选择套餐</p>
+			<ul class="pack-list">
+				<li class="fl selected">
+					168元/1年
+					<i class="icon-selected-big"></i>
+				</li>
+				<li class="fr">300元/2年(9折)</li>
+				<li class="fl">428元/3年(85折)</li>
+				<li class="fr">588元/5年(7折)</li>
+			</ul>
 		</div>
-		<div class="invest-money-detail clearfix">
-			<i class="detail-icons icon-plus ui-ml15d"></i>
-			<div class="invest-money-text">
-				<p class="use-crad-help">使用收益翻倍卡(<i class="ui-font-blue">2</i>)<a class="ui-font-gray fr">[使用规则]</a></p>
-				<!-- 收益卡 -->
-				<div class="gift-cards">
-					<p class="gift-card-item"><input type="radio" id="gift_card1" name="gift_card1" checked><label for="gift_card1">7天1.5倍收益卡</label><i class="ui-font-gray fr">[剩余期限 25 天]</i></p>
-					<p class="gift-card-item"><input type="radio" id="gift_card3" name="gift_card3"><label for="gift_card3">7天3倍收益卡</label><i class="ui-font-gray fr">[剩余期限 25 天]</i></p>
-				</div>
-			</div>
-		</div>
-		<!-- 计算预期收益 -->
-		<p class="ui-font-blue prospect-earn">预期收益：￥<i>254,521.00</i></p>
 	</div>
 	<!-- layer  底部提交 -->
 	<div class="layer-bottom">
@@ -454,6 +443,19 @@ VIP1~VIP4：高成长值优先；同成长值注册较早者优先；<br/>
 		var groess_num_rate = groess_num_1 / groess_num_2;
 		var groess_bar_width = groess_num_rate * 250;
 		$(".groess-bar").css("width",groess_bar_width)
+		// buy -vip
+		$(".btn-vip-renewal").on("click",function(){
+			layer.open({
+				type:1,
+				title:false,
+				shadeClose:true,
+				area: ['540px','470px'],
+				content:$(".buy-vip-layer")
+			})
+		});
+		$(".pack-list li").bind('click', function() {
+	$(this).addClass('selected').append('<i class="icon-selected-big"></i>').siblings().removeClass('selected').children(".icon-selected-big").remove();
+});
 	})
 	$(function(){
 		var vip_box_newguy_vip =$(".vip-box-newguy-vip");

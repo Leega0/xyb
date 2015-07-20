@@ -2139,3 +2139,59 @@ dl {
 .vip-box-newguy .vip-box-newguy-vip {
   background: #fc8478;
 }
+
+.buy-vip-layer .text-wrap {
+  padding: 10px 0;
+}
+
+.buy-vip-layer .item-recharge {
+  overflow: hidden;
+}
+
+.buy-vip-layer .item-recharge .title {
+  float: left;
+}
+
+.buy-vip-layer .item-recharge .content {
+  font-size: 14px;
+  color: #2c97f4;
+  float: right;
+}
+
+.buy-vip-layer .item-recharge .btn-recharge {
+  font-size: 12px;
+  border: 1px solid #2c97f4;
+  border-radius: 3px;
+  padding: 0 3px;
+  margin-left: 8px;
+}
+
+.buy-vip-layer .pack-list {
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+.buy-vip-layer .pack-list li {
+  width: 116px;
+  height: 40px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 40px;
+  border: 1px solid #ddd;
+  margin: 5px 0;
+  position: relative;
+}
+
+.buy-vip-layer .pack-list li.selected {
+  border-color: #2c97f4;
+  color: #2c97f4;
+}
+
+.buy-vip-layer .pack-list li .icon-selected-big {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 23px;
+  height: 23px;
+  background: url(../images/sprites/big-selected.png) no-repeat;
+}

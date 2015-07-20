@@ -118,12 +118,12 @@ html #layui_layer_skinlayercss{display:none;position:absolute;width:1989px}
 .layui-layer-loading .layui-layer-content{width:60px;height:24px;background:url(default/loading-0.gif) no-repeat}
 .layui-layer-loading .layui-layer-loading1{width:37px;height:37px;background:url(default/loading-1.gif) no-repeat}
 .layui-layer-ico16,.layui-layer-loading .layui-layer-loading2{width:32px;height:32px;background:url(default/loading-2.gif) no-repeat}
-.layui-layer-tips{background:0 0;box-shadow:none;border:none}
-.layui-layer-tips .layui-layer-content{position:relative;line-height:22px;min-width:12px;padding:5px 10px;font-size:12px;border-radius:3px;box-shadow:1px 1px 3px rgba(0,0,0,.3);background-color:#F90;color:#fff}
+.layui-layer-tips{background:0 0;box-shadow:none;border:none;margin-top: 11px;margin-left: -1px;}
+.layui-layer-tips .layui-layer-content{position:relative;line-height:22px;min-width:12px;padding:1px 10px;font-size:12px;border-radius:3px;border-bottom-left-radius:0;border-bottom-right-radius:0;/*box-shadow:1px 1px 3px rgba(0,0,0,.3);*/background-color:#F90;color:#fff}
 .layui-layer-tips .layui-layer-close{right:-2px;top:-1px}
-.layui-layer-tips i.layui-layer-TipsG{position:absolute;width:0;height:0;border-width:8px;border-color:transparent;border-style:dashed}
-.layui-layer-tips i.layui-layer-TipsB,.layui-layer-tips i.layui-layer-TipsT{left:5px;border-right-style:solid;border-right-color:#F90}
-.layui-layer-tips i.layui-layer-TipsT{bottom:-8px}
+.layui-layer-tips i.layui-layer-TipsG{position:absolute;width: 7px;height: 4px;background:url(default/tip-arrow.png) no-repeat;}
+/*.layui-layer-tips i.layui-layer-TipsT{left:5px;border-right-style:solid;border-right-color:#F90}*/
+.layui-layer-tips i.layui-layer-TipsT{bottom:-4px;left: 10px}
 .layui-layer-tips i.layui-layer-TipsB{top:-8px}
 .layui-layer-tips i.layui-layer-TipsL,.layui-layer-tips i.layui-layer-TipsR{top:1px;border-bottom-style:solid;border-bottom-color:#F90}
 .layui-layer-tips i.layui-layer-TipsR{left:-8px}

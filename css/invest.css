@@ -219,13 +219,16 @@
   margin-right: 68px;
 }
 
+.detail-invest-content {
+  position: relative;
+}
+
 .detail-invest-content .invest-last-num {
   line-height: 1.8;
 }
 
 .detail-invest-content .ui-input-body input {
   width: 100%;
-  margin-top: 3px;
 }
 
 .detail-invest-content .invest-money-detail {
@@ -353,17 +356,6 @@
   border-bottom: 1px dashed #b5dcfe;
 }
 
-.layer-bottom {
-  border-top: 1px solid #ddd;
-  margin: 0 25px;
-}
-
-.layer-bottom .xyb-agree-ctn input {
-  position: relative;
-  top: 2px;
-  margin-right: 3px;
-}
-
 .detail-content-left {
   float: left;
   width: 840px;
@@ -393,7 +385,7 @@
 .detail-content-left .detail-content-feature p {
   width: 33.33%;
   float: left;
-  padding: 35px 0;
+  padding: 42px 0;
 }
 
 .detail-content-left .detail-content-feature p.release-date {
@@ -423,7 +415,7 @@
 
 .detail-content-right .detail-invest-box {
   width: 280px;
-  margin: 54px 30px 22px;
+  margin: 34px 30px 18px;
 }
 
 .detail-content-right .btn-invest-all {
@@ -1018,4 +1010,132 @@
 
 .qk-login-btn .ui-form-btn {
   padding-bottom: 10px;
+}
+
+.icon-sy-arrow {
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  margin-right: 3px;
+  width: 16px;
+  height: 14px;
+  background: url(../images/sprites/icon-sy-arrow.png) no-repeat;
+}
+
+.icon-wenhao {
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  margin-right: 5px;
+  width: 16px;
+  height: 16px;
+  background: url(../images/sprites/icon-wenhao.png) no-repeat;
+}
+
+.icon-tips-arrow {
+  position: absolute;
+  left: 10px;
+  width: 14px;
+  height: 7px;
+  background: url(../images/sprites/tips-arrow.png) no-repeat;
+}
+
+.tips-box-ye {
+  border: 1px solid #eee;
+  position: absolute;
+  width: 280px;
+  z-index: 9;
+  background: #fff;
+  box-shadow: 0px 0px 5px #eee;
+}
+
+.tips-box-ye .sy-card-list {
+  margin: 0 18px;
+}
+
+.tips-box-ye .sy-card-list dd {
+  padding: 16px 0;
+}
+
+.tips-box-sy {
+  border: 1px solid #eee;
+  position: absolute;
+  width: 280px;
+  left: 0;
+  z-index: 9;
+  margin-left: -10px;
+  margin-top: 5px;
+  padding: 10px 10px 0 10px;
+  border-radius: 3px;
+  background: #fff;
+  box-shadow: 0px 0px 2px #eee;
+  display: none;
+}
+
+.now-sy-card {
+  position: relative;
+  top: -2px;
+  margin-right: 2px;
+}
+
+.sy-card-list {
+  overflow: hidden;
+}
+
+.sy-card-list dt {
+  font-weight: bold;
+}
+
+.sy-card-list dt a {
+  font-weight: normal;
+}
+
+.sy-card-list dd {
+  border-top: 1px solid #eee;
+  padding: 10px 0;
+}
+
+.detail-invest-layer .detail-invest-content {
+  width: 280px;
+  margin: 34px auto 18px auto;
+}
+
+.detail-invest-layer .btn-invest-all {
+  position: absolute;
+  right: 0;
+  top: 8px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  width: 45px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+  background-color: #2c97f4;
+}
+
+.invset-list-wrap-error {
+  padding-top: 184px;
+  height: 684px;
+  border: 1px solid #eeeeee;
+  text-align: center;
+}
+
+.invset-list-wrap-error .title {
+  color: #474747;
+  font-size: 24px;
+  margin-top: 80px;
+}
+
+.invset-list-wrap-error .text-blue {
+  color: #2c98f3;
+  font-size: 16px;
+  margin-top: 16px;
+}
+
+.invset-list-wrap-error .text {
+  color: #474747;
+  font-size: 14px;
+  line-height: 34px;
+  margin-top: 50px;
 }

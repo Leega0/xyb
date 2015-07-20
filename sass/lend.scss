@@ -7,12 +7,10 @@ h5{
 	width: 1200px;
     margin: 0 auto;
 }
-.contain_wrap{
-	overflow: hidden;
-}
 .lend-main{
 	margin-top: 30px;
 	margin-bottom: 20px;
+	overflow: hidden;
 }
 .lender-info{
 	width: 290px;
@@ -34,9 +32,6 @@ h5{
 		margin-right: 25px;
 		.ui-input-middle{
 			width: 180px;
-			input{
-				margin-top: 3px;
-			}
 		}
 		.ui-btn{
 			padding:12px 60px;;
@@ -94,6 +89,7 @@ h5{
 .lend-advantage{
 	margin-bottom: 20px;
 	padding-bottom: 15px;
+	overflow: hidden;
 	&>h5{
 		margin:20px 0 20px 26px;
 	}

@@ -120,23 +120,33 @@
             <div class="detail-invest-content">
                 <p>剩余可投金额(元)</p>
                 <p class="ui-font-blue ui-size28 invest-last-num">521,245.00</p>
-                <p class="ui-pt5 ui-pb5">输入投资金额(元)</p>
-                <div class="ui-form-item">
+                <!-- tips -->
+                <p class="invest-money-detail clearfix ui-mt5">
+                        <i class="icon-wenhao"></i>账户可用(元)<a href="javascript:void(0);" class="btn-recharge" id="btn_recharge">充值</a><i class="ui-font-blue fr">￥521,512.00</i>
+                </p>
+                <div class="ui-form-item ui-mt5">
                     <p class="ui-input-body">
-                        <input type="number" placeholder="0.00" value="0.00" class="ui-font-blue ui-size16">
+                        <input type="text" placeholder="输入金额需为 50 的倍数" class="ui-font-blue ui-size14">
                     </p>
                     <a href="javascript:void(0);" class="btn-invest-all ui-size14">全投</a>
                 </div>
-                <div class="invest-money-detail clearfix ui-mt5">
-                    <i class="detail-icons icon-plus"></i>
-                    <div class="invest-money-text">
-                        <p>账户可用资金(元)<i class="ui-font-blue fr">￥521,512.00</i></p>
-                        <p class="ui-font-gray money-last">账户余额(元)<i class="fr">￥521,512.00</i></p>
-                        <p class="ui-font-gray money-last">账户礼金(元)<i class="fr">￥521,512.00</i></p>
-                    </div>
-                <a href="javascript:void(0);" class="btn-recharge" id="btn_recharge">充值</a>
+        
+                <div class="clearfix ui-pt10">收益提升卡(<em class="ui-font-blue">3</em>)<div class="fr">
+                	<span class="now-sy-card"><i class="icon-sy-arrow"></i>7天1.5倍卡</span><div class=" fr" id="change_sy_card"><a href=""><a href="javascript:void(0);" class="ui-font-blue">[更换]</a>
+ 				<!-- tips -->
+                <div class="tips-box-sy">
+                	<dl class="sy-card-list">
+                		<dt>收益提升卡(<em class="ui-font-blue">3</em>)<a href="" class="ui-font-blue fr">查看所有></a></dt>
+                		<dd class="no-border"><i class="icon-sy-arrow"></i>7天1.5倍卡<em class="ui-font-gray">[11.12过期]</em><a href="javascript:void(0);" class="ui-font-blue fr">[选择]</a></dd>
+                		<dd><i class="icon-sy-arrow"></i>7天1.5倍卡<em class="ui-font-gray">[11.12过期]</em><a href="javascript:void(0);" class="ui-font-blue fr">[选择]</a></dd>
+                		<dd><i class="icon-sy-arrow"></i>7天1.5倍卡<em class="ui-font-gray">[11.12过期]</em><a href="javascript:void(0);" class="ui-font-blue fr">[选择]</a></dd>
+                	</dl>
                 </div>
-                <p class="ui-form-btn ui-mtd5"><a href="javascript:void(0);" class="ui-btn ui-btn-blue" id="invest_now">立即投资</a></p>
+                <!-- tips end -->
+                	</div>
+                </div></div>
+                <p class="clearfix ui-pt15">预计收益(元)<span class="fr"><em class="ui-font-blue">512.00</em><em class="ui-font-green">+20.00</em></span></p>
+                <p class="ui-form-btn"><a href="javascript:void(0);" class="ui-btn ui-btn-blue" id="invest_now">立即投资</a></p>
             </div>
         </div>
 </div>
@@ -329,6 +339,47 @@
 				content:['layer-login.htm','no']
 			})
 		});
+		$(function(){
+			$("#change_sy_card").mouseover(function(){
+				$(".tips-box-sy").stop().slideDown()
+			});
+			$("#change_sy_card").mouseout(function(){
+				$(".tips-box-sy").stop().slideUp()
+			});
+		})
+	//tips 插件
+		$.fn.extend({
+	hoverTips : function (){
+		var self = $(this);
+		var sw = self.get(0).switch;
+		if( !sw ) {
+			sw = true;
+			var htmlDom = $('<div class="tips-box-ye">'+
+                	'<dl class="sy-card-list">'+
+                		'<dd class="no-border">账户余额(元)<span class="fr ui-font-blue">521,512.00</span></dd>'+
+                		'<dd>账户礼金(元)<span class="fr ui-font-blue">521,512.00</span></dd>'+
+                	'</dl>'+
+                	'<i class="icon-tips-arrow"></i>'+
+                '</div>')
+		}
+		self.on("mouseover",function(){
+			$("body").append( htmlDom );
+			var left = self.offset().left-10;
+			var top = self.offset().top - htmlDom.outerHeight()-10;
+			htmlDom.css({"left":left,"top":top - 10,"display":"block"});
+			htmlDom.stop().animate({ "top" : top ,"opacity" : 1},300);
+		});
+		self.on("mouseout",function(){
+			var top = parseInt(htmlDom.css("top"));
+			htmlDom.stop().animate({ "top" : top - 10 ,"opacity" : 0},300,function(){
+				htmlDom.remove();
+				sw = false;
+			});
+		});
+	}
+});
+
+$(".icon-wenhao").hoverTips();
 	</script>
 </body>
 </html>
