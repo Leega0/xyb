@@ -1334,12 +1334,17 @@ dl{
 		margin-right:30px;
 	}
 	.text-dark{
+		margin-top: 15px;
+		display: block;
+		color:#b9b9b9;
+		font-size:12px;
+	}
+	.text-dark-top{
 		padding-top: 15px;
 		color:#b9b9b9;
 		float: none;
 		clear: both;
 		padding-left: 0;
-		font-size:12px;
 	}
 	.tips{
 		padding:30px 16px;
@@ -1392,8 +1397,17 @@ dl{
 		top: 0;
 		display:block;
 		height:100%;
-		width: 30%;
+		&.bg-yellow{
+			width:60%;
+		}
+		&.bg-pink{
+			width:30%;
+		}
+		&.bg-green{
+			width:100%;
+		}
 	}
+
 	.safty-level-text{
 		position:absolute;
 		
@@ -1409,6 +1423,47 @@ dl{
 			font-size: 12px;
 			right:-20px;
 		}
+	}
+}
+//推荐好友
+&.recommend-friend{
+	dl{
+		padding-left: 150px;
+	}
+	dd{
+		float:left;
+		width:250px;
+		padding-top:40px;
+	}
+	.data{
+		color:#474747;
+		font-size:12px;
+	}
+	.num{
+		margin-top:6px;
+		display: block;
+		color:#2c97f4;
+		font-size:28px;
+		font-weight:bold;
+	}
+	.user-add-box{
+		margin-top: 60px;
+		a{
+			font-size: 16px;
+			height:30px;
+			line-height:30px;
+			width:196px;
+		}
+	}
+	.btn-a{
+		display: block;
+		margin:0 auto;
+		height:24px;
+		line-height:24px;
+		width:74px;
+		text-align:center;
+		border:1px solid #dddddd;
+		border-radius:3px;
 	}
 }
 }

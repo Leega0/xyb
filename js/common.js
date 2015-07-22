@@ -18,6 +18,20 @@ $(function(){
 		$(".menber-list").stop().slideUp();
 	});
     // 返回顶部
+    function w_screen(){
+    if($(window).width() <= 1280){
+      console.log(window.screen.width);
+      $("#index_popbar").hide();
+    }else if($(window).width() > 1280){
+      $("#index_popbar").show();
+    }
+  }
+  w_screen();
+  window.onresize=function(){
+    w_screen();
+    barEdge = ($(document).width()-1200) / 2 - $pobarWidth - 15;
+    $popbar.css('right', barEdge);
+  }
     var $popbar = $('.ui-popbar'),
         $pobarWidth = $popbar.width(),
         barEdge = ($(document).width()-1200) / 2 - $pobarWidth - 15;

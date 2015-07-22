@@ -12,6 +12,7 @@ html {
   /* 2 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
+  min-width: 1266px;
 }
 
 /**
@@ -1027,11 +1028,15 @@ h6 {
 }
 
 .bg-green {
-  background-color: #fc8478 !important;
+  background-color: #74ca98 !important;
+}
+
+.bg-yellow {
+  background-color: #f1c330 !important;
 }
 
 .bg-pink {
-  background-color: #74ca98 !important;
+  background-color: #fc8478 !important;
 }
 
 .green-bbox {

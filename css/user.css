@@ -1518,12 +1518,18 @@ dl.qc-code {
 }
 
 .user-account-moudle.safty .text-dark {
+  margin-top: 15px;
+  display: block;
+  color: #b9b9b9;
+  font-size: 12px;
+}
+
+.user-account-moudle.safty .text-dark-top {
   padding-top: 15px;
   color: #b9b9b9;
   float: none;
   clear: both;
   padding-left: 0;
-  font-size: 12px;
 }
 
 .user-account-moudle.safty .tips {
@@ -1584,7 +1590,18 @@ dl.qc-code {
   top: 0;
   display: block;
   height: 100%;
+}
+
+.user-account-moudle.safty .safty-level-bar.bg-yellow {
+  width: 60%;
+}
+
+.user-account-moudle.safty .safty-level-bar.bg-pink {
   width: 30%;
+}
+
+.user-account-moudle.safty .safty-level-bar.bg-green {
+  width: 100%;
 }
 
 .user-account-moudle.safty .safty-level-text {
@@ -1601,6 +1618,51 @@ dl.qc-code {
 .user-account-moudle.safty td .safty-level-text {
   font-size: 12px;
   right: -20px;
+}
+
+.user-account-moudle.recommend-friend dl {
+  padding-left: 150px;
+}
+
+.user-account-moudle.recommend-friend dd {
+  float: left;
+  width: 250px;
+  padding-top: 40px;
+}
+
+.user-account-moudle.recommend-friend .data {
+  color: #474747;
+  font-size: 12px;
+}
+
+.user-account-moudle.recommend-friend .num {
+  margin-top: 6px;
+  display: block;
+  color: #2c97f4;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.user-account-moudle.recommend-friend .user-add-box {
+  margin-top: 60px;
+}
+
+.user-account-moudle.recommend-friend .user-add-box a {
+  font-size: 16px;
+  height: 30px;
+  line-height: 30px;
+  width: 196px;
+}
+
+.user-account-moudle.recommend-friend .btn-a {
+  display: block;
+  margin: 0 auto;
+  height: 24px;
+  line-height: 24px;
+  width: 74px;
+  text-align: center;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
 }
 
 #unfreeze_rate {

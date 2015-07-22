@@ -11,6 +11,7 @@ html {
   background-color: #f6f6f6;
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  min-width: 1266px;
 }
 
 /**
@@ -943,10 +944,13 @@ $base_blue:#2c97f4;
   background-color: #2c97f4;
 }
 .bg-green{
-  background-color: #fc8478 !important;
+  background-color: #74ca98 !important;
+}
+.bg-yellow{
+  background-color: #f1c330 !important;
 }
 .bg-pink{
-  background-color: #74ca98 !important;
+  background-color: #fc8478 !important;
 }
 // 带边框绿色box
 .green-bbox{

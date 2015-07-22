@@ -1,0 +1,174 @@
+.banner-recommend-reward {
+  height: 400px;
+  background: url("../images/banner-recommend-reward.png") no-repeat center;
+}
+
+.border1 {
+  border: 1px solid #efefef;
+  border-radius: 3px;
+}
+
+.ui-btn-pink {
+  background-color: #fb8577;
+}
+
+.ui-btn-pink:hover {
+  background-color: #ffa393;
+}
+
+.ui-btn-pink:active {
+  background-color: #fb8577;
+}
+
+.recommend-reward {
+  padding: 40px 0;
+}
+
+.recommend-reward .top-step {
+  margin: 0;
+  height: 82px;
+  background: url(../images/recommend-reward-top-step.png) no-repeat;
+}
+
+.recommend-reward .top-step dd {
+  height: 82px;
+  float: left;
+  width: 400px;
+  text-align: center;
+}
+
+.recommend-reward .top-step p {
+  color: #474747;
+  font-size: 16px;
+  margin-top: 15px;
+  height: 50px;
+  line-height: 50px;
+  display: inline-block;
+}
+
+.recommend-reward .top-step span {
+  float: left;
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: #2c97f4;
+  color: #fff;
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+.recommend-reward .mid-box dd {
+  float: right;
+  width: 394px;
+  height: 270px;
+}
+
+.recommend-reward .mid-box dd:first-child {
+  float: left;
+  width: 790px;
+}
+
+.recommend-reward .mid-box .generate-box {
+  padding: 31px 0;
+}
+
+.recommend-reward .mid-box .generate-box input {
+  float: left;
+  width: 432px;
+  height: 36px;
+  padding-left: 10px;
+  margin-left: 21px;
+}
+
+.recommend-reward .mid-box .generate-box a {
+  float: left;
+  width: 96px;
+  height: 28px;
+  line-height: 28px;
+  margin: 0 0 0 30px;
+}
+
+.recommend-reward .mid-box .title {
+  padding: 34px 0 26px 9px;
+  color: #474747;
+  font-size: 16px;
+}
+
+.recommend-reward .mid-box .ri-title {
+  color: #474747;
+  font-size: 16px;
+  background: #f9f9f9;
+  height: 58px;
+  line-height: 58px;
+  padding-left: 14px;
+  border-bottom: 1px solid #efefef;
+}
+
+.recommend-reward .mid-box th, .recommend-reward .mid-box td {
+  font-size: 12px;
+  border-left: 1px solid #efefef;
+}
+
+.recommend-reward .mid-box th:first-child, .recommend-reward .mid-box td:first-child {
+  border-left: 0;
+}
+
+.recommend-reward .mid-box th {
+  color: #474747;
+  background: #f9f9f9;
+  height: 42px;
+}
+
+.recommend-reward .mid-box td {
+  color: #fb8678;
+  text-align: center;
+  height: 44px;
+}
+
+.recommend-reward .mid-box td:first-child {
+  color: #474747;
+}
+
+.recommend-reward .mid-box .text-sliderdown-wrap {
+  overflow: hidden;
+  height: 200px;
+}
+
+.recommend-reward .mid-box .text-sliderdown-box {
+  padding: 14px 0 0 16px;
+}
+
+.recommend-reward .mid-box .text-sliderdown-box li {
+  color: #b9b9b9;
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.recommend-reward .bottom-box .title {
+  color: #474747;
+  font-size: 16px;
+  padding: 76px 0 11px 9px;
+  border-bottom: 1px solid #efefef;
+}
+
+.recommend-reward .bottom-box .text {
+  padding: 20px 0 0 9px;
+  color: #b9b9b9;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.recommend-reward .bottom-box .text a {
+  color: #2c97f4;
+}
+
+.recommend-reward .bottom-box .text a:hover {
+  text-decoration: underline;
+}
+
+.recommend-reward .bottom-box .text a:active {
+  text-decoration: none;
+}

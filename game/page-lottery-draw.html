@@ -93,12 +93,12 @@
 				<dl class="lottery-draw-login-after dis-block clearfix">
 					<dd>
 						<i class="lottery-draw-top-icon-1"></i>
-						<p class="num" id="scoreC">10000</p>
+						<p class="num" id="scoreC">2000</p>
 						<p class="text">账户积分<a href="">(赚取积分?)</a></p>
 					</dd>
 					<dd>
 						<i class="lottery-draw-top-icon-2"></i>
-						<p class="num" id="timeC">10</p>
+						<p class="num" id="timeC">2</p>
 						<p class="text">可玩次数<a href="">(提升?)</a></p>
 					</dd>
 					<dd>
@@ -110,9 +110,9 @@
 			<!-- 抽奖箱头部结束 -->
 			<!-- 抽奖箱体部分开始 -->
 			<div class="lottery-draw-box-main" id="lottery">
-				<div class="prize-lotter-item prize-number-15 prize-lotter-center" id="Prized159">
+				<div class="prize-center-box prize-btn prize-lotter-center" id="Prized159">
 					<!-- 添加样式disable为禁用 -->
-					<a href="javascript:;" class="prize-lotter-btn prize-lotter-btn hvr-bounce-in"></a>
+					<a href="javascript:;" class="prize-lotter-btn hvr-bounce-in"></a>
 				</div>
 				<div class="prize-lotter">
 					<div class="prize-lotter-item prize-number-1" id="Prized167">
@@ -311,7 +311,7 @@
 <!-- 弹窗开始 -->
 	<!-- 领奖弹窗开始 -->
 	 	
-		<div class="pop-up-box prize" id="get_prize">
+		<div class="pop-up-box prize" id="phyPox">
 		<div class="prize-bg-wrap">
 			<div class="prize-bg">
 				<img src="images/prize-1.png" alt="">
@@ -322,7 +322,7 @@
 		<p class="p-normal">实物奖我们将在次月15号发放，可查询<a href="">中奖记录&gt;</a>了解奖品最新动态</p>
 		<p class="p-normal">奖品有效期1个月，期间未填写收货地址我们视为放弃领奖。</p>
 		<a href="javascript:void(0);" class="ui-btn ui-btn-blue" id="write_addres">填写收货地址</a>
-		<a href="" class="ui-btn-empty ui-btn-empty-blue">下次再填写</a>
+		<a href="javascript:layer.closeAll()" class="ui-btn-empty ui-btn-empty-blue">下次再填写</a>
 	</div> 
 	
 	
@@ -340,14 +340,14 @@
 	<!-- 成功弹窗结束 -->
 	<!-- 礼金弹窗开始 -->
 	 	
-	<div class="pop-up-box cash" id="get_integral">
+	<div class="pop-up-box cash" id="normalPox">
 		<div class="prize-bg">
 		</div>
 		<p class="p-big bold" id="normalPrize">￥388投资礼金</p>
 		<p class="p-normal">恭喜您，获得以上奖品</p>
 		<p class="p-normal">虚拟奖品我们将在30分钟内发放到您账户中</p>
-		<a href="" class="ui-btn ui-btn-blue">确定</a>
-		<a href="" class="ui-btn-empty ui-btn-empty-blue">继续抽奖</a>
+		<a href="javascript:layer.closeAll()" class="ui-btn ui-btn-blue">确定</a>
+		<a href="javascript:continueLuckyDraw(normalPox)" class="ui-btn-empty ui-btn-empty-blue">继续抽奖</a>
 	</div> 
 	
 	<!-- 礼金弹窗结束 -->
@@ -453,9 +453,9 @@
 <!-- footer end -->
 	<!-- script -->
 	<script type="text/javascript" src="../js/lib/jquery.js"></script>
-	<script type="text/javascript" src="../js/plugins/layer.js"></script>
+	<script type="text/javascript" src="../js/plugins/oldlayer/layer.js"></script>
 	<script type="text/javascript" src="../js/common.js"></script>
-	<script type="text/javascript" src="../js/lotter.js"></script>
+	<script type="text/javascript" src="../js/lottery-draw.js"></script>
 	<script type="text/javascript">
 		$(function(){
 			$(".toggle_btn").on("click",function(){
@@ -465,151 +465,159 @@
 		})
 	</script>
 	<!-- 抽奖操作 -->
-	<script type="text/javascript">
-            var lottery = {
-                index: 0, //当前转动到哪个位置，起点位置
-                count: 0, //总共有多少个位置
-                timer: 0, //setTimeout的ID，用clearTimeout清除
-                speed: 20, //初始转动速度
-                times: 0, //转动次数
-                cycle: 50, //转动基本次数：即至少需要转动多少次再进入抽奖环节
-                prize: 0, //中奖位置
-                init: function(id) {
-                    if ($("#" + id).find(".lottery-unit").length > 0) {
-                        $lottery = $("#" + id);
-                        $units = $lottery.find(".lottery-unit");
-                        this.obj = $lottery;
-                        this.count = $units.length;
-                        $lottery.find(".lottery-unit-" + this.index).addClass("active");
-                    }
-                },
-                roll: function() {
-                    var index = this.index;
-                    var count = this.count;
-                    var lottery = this.obj;
-                    $(lottery).find(".lottery-unit-" + index).removeClass("active");
-                    index += 1;
-                    if (index > count - 1) {
-                        index = 0;
-                    }
-                    $(lottery).find(".lottery-unit-" + index).addClass("active");
-                    this.index = index;
-                    return false;
-                },
-                stop: function(index) {
-                    this.prize = index;
-                    return false;
-                }
-            };
+<script type="text/javascript">
+var normalPox;	
+var phyPox;	
+var recordPagei;
+var id;
+var prizeName;
+var prizeCode;
+var prizePrice;
+var lotterNum = null ;
+var pUrl;
+var pPhy;
+$lotterBtn.bind('click',function() {
+		
+	if(!true){
+		layer.msg("本次抽奖已结束。敬请期待下次抽奖活动");
+		return ;
+	}
+	
+	var timeC = $("#timeC");	
+	var scoreC = $("#scoreC");	
+		
+	//检测用户是否登录
+	// if(!$.isLogin()) {
+	// 	$.popLogin();
+	// 	return;
+	// } 		
+		
+    if(timeC.text()<1){
+    	layer.msg("您今天的抽奖次数已用完，请明天再来试试。");
+    	return ;
+    }
+    if(scoreC.text()<1000){
+    	layer.msg("您的积分不足,快去投资赚取积分吧.");
+    	return ;
+    }
+		
+	/**
+    *抽奖
+    */
+    if(isMove) {
+    	//用户多次点击 不进行处理
+    }else{
+		$.ajax({
+			   // type: "POST",
+			   // url: "/luckyDraw/getPrize.jhtml?t="+Math.random(),
+			   type:"GET",
+			   url:"award.json",
+			   async: true,
+			   dataType: "json",
+			   success: function(data){
+				   
+				    var code = data.code;
+				  	if(code == "0") {
+					     id = data.pId;
+					     prizeName = data.prizeName;
+					     lotterNum = data.index;
+					     pUrl = "/"+data.prizePUrl;
+					     pPhy = data.prizePhy;
+					     prizeCode = data.prizeCode;
+					     prizePrice = data.prizePrice;
+					     
+			    		 /* console.log(lotterNum); */
+					    if($shadow == null) {
+							$('.prize-lotter-item:first').append('<div class="prize-lotter-shadow" id="prize-lotter-shadow"></div>');
+							$shadow = $('#prize-lotter-shadow');
+						}
+						
+						isMove = true;
+						startLotter = setInterval(lotter,speed);
+						
+						if(prizeCode=='SCORE'){
+							scoreC.text(scoreC.text()-1000+prizePrice);
+						} else{
+							scoreC.text(scoreC.text()-1000);
+						}
+						timeC.text(timeC.text()-1);
+					   
+				  	}else if(code == "-1") {
+				  		layer.msg(data.errMsg);
+				  		return ;
+				  	}else {
+				  		layer.msg("系统繁忙,请稍候再试..")
+				    	return ;
+				  	}				
+			   }
+			});
+     } 	
+	});
+	
+	
+	
+	function loginCallback(data) {
+		if(data.code == "0") {
+			window.location.reload();
+		}
+	}
+	
+	
+	$('#luckDrawRecord a').bind('click',function(){
+		//检测用户是否登录
+		if(!$.isLogin()) {
+			$.popLogin();
+			return;
+		}	
+	});
+	
 
-            function roll() {
-                lottery.times += 1;
-                lottery.roll();
-                var prize_site = $("#lottery").attr("prize_site");
-                if (lottery.times > lottery.cycle + 10 && lottery.index == prize_site) {
-                    var prize_id = $("#lottery").attr("prize_id");
-                    var prize_name = $("#lottery").attr("prize_name");
-                    var prize_type = $("#lottery").attr("prize_type");
-                    if(prize_type==1){
-                    layer.open({
-	                     type: 1,   //0-4的选择,
-	                     title: false,
-	                     scrollbar:false,
-	                     border: [0],
-	                     closeBtn: [0],
-	                     area: ['640', 'auto'],
-	                     shadeClose: false,
-	                     closeBtn: [0, false], //去掉默认关闭按钮
-	                     bgcolor: '',
-	                     content: $('#get_prize')
-	                 });
-                    // 弹框填充内容
-                 	var purl=$(".lottery-unit").find('img').attr('src')
-                 	$('#get_prize').find('img').attr('src',purl);
-				    $('#phyPrize').text(prize_name);
-                }else if(prize_type==2){
-                	//虚拟奖品
-                	layer.open({
-	                     type: 1,   //0-4的选择,
-	                     title: false,
-	                     scrollbar:false,
-	                     border: [0],
-	                     closeBtn: [0],
-	                     area: ['640', 'auto'],
-	                     shadeClose: false,
-	                     closeBtn: [0, false], //去掉默认关闭按钮
-	                     bgcolor: '',
-	                     content: $('#get_integral')
-	                 });
-                	// 弹窗内容
-                	$('#get_integral').find('img').attr('src','images/prize-bg-cash.png');
-                	$('#phyPrize').text(prize_name);
-                }
-                    
-                    console.log("中奖名称："+prize_name+"\n中奖id："+prize_id)
-                    clearTimeout(lottery.timer);
-                    lottery.prize = -1;
-                    lottery.times = 0;
-                    click = false;
 
-                } else {
-                    if (lottery.times < lottery.cycle) {
-                        lottery.speed -= 10;
-                    } else if (lottery.times == lottery.cycle) {
-                        var index = Math.random() * (lottery.count) | 0;
-                        lottery.prize = index;
-                    } else {
-                        if (lottery.times > lottery.cycle + 10 && ((lottery.prize == 0 && lottery.index == 7) || lottery.prize == lottery.index + 1)) {
-                            lottery.speed += 110;
-                        } else {
-                            lottery.speed += 20;
-                        }
-                    }
-                    if (lottery.speed < 40) {
-                        lottery.speed = 40;
-                    }
-                    lottery.timer = setTimeout(roll, lottery.speed);
-                }
-                return false;
-            }
+	
 
-            var click = false;
+	
+	/**
+	 * 查询抽奖记录 并关闭当前弹窗
+	 */
+	function loadMyLuckyDraw_Pox(param){
+		 //layer.close(param);
+		 $('#luckDrawRecord a').trigger('click');
+	}
+	/**
+	 * 继续抽奖
+     */
+	function continueLuckyDraw(param){
+		layer.close(param);
+		$lotterBtn.trigger('click');
+	}
+	
+	
+    
+    //实物中奖提交
+	$("#reg-update").click(function(e) {
+		//修改后台数据
+		$.ajax({
+			   type: "POST",
+			   url: "/personal/updateAdd.jhtml?t="+Math.random(),
+			   data: {
+				   		"addreeName" : $("#addreeName").val(),
+				   		"code" : $("#code").val(),
+				   		"userName" : $("#userName").val(),
+				   		"addreeTel" : $("#addreeTel").val()
+				     },
+			   async: false,
+			   success: function(data){
+				   if(data == "0"){
+					   layer.msg("提交成功！",1);
+					   layer.close(phyPox);
+					}else{
+						layer.msg("提交失败！");
+					}
+			   }
+			});
+    });    
 
-            $(function() {
-            	$("#write_addres").on('click',function(){
-            		layer.closeAll();
-            		layer.open({
-	                     type: 1,   //0-4的选择,
-	                     title: false,
-	                     scrollbar:false,
-	                     border: [0],
-	                     closeBtn: [0],
-	                     area: ['640', 'auto'],
-	                     shadeClose: false,
-	                     closeBtn: [0, false], //去掉默认关闭按钮
-	                     bgcolor: '',
-	                     content: $('#get_adress')
-	                 });
-            	});
-                lottery.init('lottery');
-                $("#lottery a").click(function() {
-                     if (click) {
-                        return false;
-                    } else {
-                        lottery.speed = 100;
-                        $.get("award.json", {uid: 1}, function(data) { //获取奖品，也可以在这里判断是否登陆状态
-                            $("#lottery").attr("prize_site", data.prize_site);
-                            $("#lottery").attr("prize_id", data.prize_id);
-                            $("#lottery").attr("prize_name", data.prize_name);
-                            $("#lottery").attr("prize_type", data.prize_type);
-                            roll();
-                            click = true;
-                            return false;
-                        }, "json")
-                    }
-                });
-            })
 
-        </script>
+    </script>
 </body>
 </html>

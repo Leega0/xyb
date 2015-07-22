@@ -4,7 +4,7 @@ $(function(){
   		// mode:'fade',
       controls:false,
   		auto:true,
-  		responsive:false
+  		responsive:true
   	});
   	// countdown
 
