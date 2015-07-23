@@ -85,6 +85,8 @@ h5 {
 }
 
 .level-rate .credit-level {
+  display: inline-block;
+  margin-right: 5px;
   width: 30px;
   height: 30px;
   line-height: 30px;
@@ -93,7 +95,6 @@ h5 {
   background-color: #74ca98;
   border-radius: 50%;
   text-align: center;
-  margin: 0 auto;
 }
 
 .level-rate .credit-level.level_b {
@@ -102,6 +103,10 @@ h5 {
 
 .level-rate .credit-level.level_c {
   background-color: #fc8478;
+}
+
+.level-rate .credit-level.level_d {
+  background-color: #ff3939;
 }
 
 .lend-advantage {

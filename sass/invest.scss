@@ -26,6 +26,9 @@
 			&.level_c{
 				background-color: #fc8478;
 			}
+			&.level_d{
+				background-color: #ff3939;
+			}
 		}
 	}
 	.invest-title{
@@ -199,6 +202,11 @@
 	position: relative;
 	.invest-last-num{
 		line-height: 1.8;
+	}
+	.ui-icon-sucess{
+		top:0;
+		left: 50%;
+		margin-left: -20px;
 	}
 	.ui-input-body{
 		input{
@@ -457,7 +465,9 @@
 // 四大优势
 .four-advantage{
 	overflow: hidden;
-	padding:30px 0;
+	padding:18px 0;
+	background-color: #def0ff;
+	margin:15px 0;
 	li{
 		float: left;
 		width: 25%;
@@ -1031,4 +1041,18 @@
 		line-height: 34px;
 		margin-top: 50px;
 	}
+}
+.ui-icon-sucess {
+	position:absolute;
+ 	background: url("../images/sprites/icon-sucess.png") no-repeat center;
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+#new_user_bimg{
+	display: block;
+	height: 400px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #2c97f4;
 }

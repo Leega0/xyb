@@ -34,6 +34,10 @@
   background-color: #fc8478;
 }
 
+.invest-table td .credit-level.level_d {
+  background-color: #ff3939;
+}
+
 .invest-table .invest-title {
   padding-left: 30px;
   font-size: 16px;
@@ -225,6 +229,12 @@
 
 .detail-invest-content .invest-last-num {
   line-height: 1.8;
+}
+
+.detail-invest-content .ui-icon-sucess {
+  top: 0;
+  left: 50%;
+  margin-left: -20px;
 }
 
 .detail-invest-content .ui-input-body input {
@@ -497,7 +507,9 @@
 
 .four-advantage {
   overflow: hidden;
-  padding: 30px 0;
+  padding: 18px 0;
+  background-color: #def0ff;
+  margin: 15px 0;
 }
 
 .four-advantage li {
@@ -1138,4 +1150,20 @@
   font-size: 14px;
   line-height: 34px;
   margin-top: 50px;
+}
+
+.ui-icon-sucess {
+  position: absolute;
+  background: url("../images/sprites/icon-sucess.png") no-repeat center;
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+#new_user_bimg {
+  display: block;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #2c97f4;
 }

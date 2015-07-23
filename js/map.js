@@ -1,3 +1,5 @@
+// hover延时
+(function($,g){var h={},id=1,etid=g+'ETID';$.fn[g]=function(e,f){id++;f=f||this.data(etid)||id;e=e||150;if(f===id)this.data(etid,f);this._hover=this.hover;this.hover=function(c,d){c=c||$.noop;d=d||$.noop;this._hover(function(a){var b=this;clearTimeout(h[f]);h[f]=setTimeout(function(){c.call(b,a)},e)},function(a){var b=this;clearTimeout(h[f]);h[f]=setTimeout(function(){d.call(b,a)},e)});return this};return this};$.fn[g+'Pause']=function(){clearTimeout(this.data(etid));return this};$[g]={get:function(){return id++},pause:function(a){clearTimeout(h[a])}}})(jQuery,'mouseDelay');
 var polygonNames = {
 	'沈阳': 'shenyang',
 	'大连': 'dalian',
@@ -80,17 +82,19 @@ function ChinaMapDis(){
 		map.html(point);
 		var pointTip = $('.mapStateTip');
 		var cont = pointTip.find('.items');
-		map.find('a').hover(function(e){
+		map.find('a').mouseDelay(false,null).hover(function(e){
 			var self = $(this);
 			var _offsetXY = new offsetXY(e);
 			self.parent().addClass('map-'+self.attr('data-rel'));
 			//self.parent().attr('style', 'background:url('+environment.basePath+'/v2/local/img/maps/'+self.attr('data-rel')+'.jpg)');
 			cont.html(self.text());
-			var tmpTop = self.offset().top - pointTip.width()/2 - 8;
-			var tmpLeft = self.offset().left - pointTip.height() - 14;
+			var tmpTop = self.offset().top - pointTip.height()/2-24;
+			var tmpLeft = self.offset().left - pointTip.width()/2;
 			pointTip.css({
-				left: _offsetXY[0],
-				top: _offsetXY[1],
+				// left: _offsetXY[0],
+				// top: _offsetXY[1],
+				left:tmpLeft,
+				top:tmpTop
 
 			}).show();
 		}, function(){

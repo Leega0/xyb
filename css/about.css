@@ -1,9 +1,14 @@
+.ui-mt50 {
+  margin-top: 0 !important;
+}
+
 dl {
   margin: 0;
 }
 
 .t_10 {
-  transition: all 1s;
+  -webkit-transition: all 1s;
+          transition: all 1s;
 }
 
 .display-block {
@@ -112,7 +117,8 @@ dl {
 }
 
 .about-our-top-links span {
-  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+          transition: all 0.25s;
   position: absolute;
   bottom: 1px;
   left: 0px;
@@ -1691,12 +1697,21 @@ dl {
   background: #f4f4f4 url("../images/black-code.png") no-repeat center;
 }
 
+.banner-safety-center {
+  background: url("../images/banner-safety-center.png") no-repeat center;
+}
+
+.banner-safety-center .contain_wrap {
+  height: 400px;
+}
+
 .safety-center h2 {
   font-weight: normal;
   text-align: center;
   font-size: 24px;
   color: #474747;
   margin: 0 0 60px 0;
+  padding: 84px 0 0;
 }
 
 .safety-center .p1 {
@@ -1751,16 +1766,8 @@ dl {
   background: url("../images/sprites/icon-green-right.png") no-repeat;
 }
 
-.safety-center-grade {
-  padding-top: 84px;
-}
-
 .safety-center-grade img {
   margin-bottom: 85px;
-}
-
-.safety-center-safe {
-  padding: 84px 0 0;
 }
 
 .safety-center-safe .p1 {
@@ -1776,7 +1783,7 @@ dl {
 }
 
 .safety-center-manage {
-  padding: 84px 0;
+  padding: 0 0 84px;
 }
 
 .safety-center-manage .p1 {
@@ -1800,7 +1807,7 @@ dl {
 }
 
 .safety-center-score {
-  padding: 84px 0;
+  padding: 0 0 84px;
 }
 
 .safety-center-score ul {
@@ -1808,7 +1815,7 @@ dl {
 }
 
 .safety-center-safeguard {
-  padding: 84px 0;
+  padding: 0 0 84px;
 }
 
 .safety-center-safeguard a {

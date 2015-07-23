@@ -860,6 +860,13 @@ $base_blue:#2c97f4;
   width: 100%;
   margin:0;
   }
+  .ui-btn-empty{
+  padding-top:12px;
+  padding-bottom:12px;
+  box-sizing:border-box;
+  width: 100%;
+  margin:0;
+  }
 }
 .ui-input-body:before,
 .ui-form-item:before,
@@ -1420,7 +1427,6 @@ $base_blue:#2c97f4;
   margin:0 auto;
   .charge_psw{
     width: 80% !important;
-    margin-top: 2px !important;
   }
   .btn-invest-all{
     position: absolute;

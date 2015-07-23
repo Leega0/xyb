@@ -16,7 +16,7 @@
 		<!-- 未登陆 -->
 		<p class="fl">全国客服热线：400-068-1176</p>
 		<ul class="fr myhome">
-			<li><a href="">你好，请 登录</a></li>
+			<li><a href="javascript:void(0);" id="test_opener">你好，请 登录</a></li>
 			<li class="separator"></li>
 			<li><a href="" class="ui-font-blue">免费注册</a></li>
 			<li class="separator"></li>
@@ -79,9 +79,9 @@
 	<!-- slider -->
 		<ul class="bxslider">
 			<!-- 后台上线时请调用背景图填充,前景图自适应待修改 -->
-			<li><a href=""><img src="images/banner1.jpg" width="1920" height="400"></a></li>
-			<li><a href=""><img src="images/banner1.jpg" width="1920" height="400"></a></li>
-			<li><a href=""><img src="images/banner1.jpg" width="1920" height="400"></a></li>
+			<li><a href="" style="background-image:url(images/banner1.jpg)"></a></li>
+			<li><a href="" style="background-image:url(images/banner-vip.png)"></a></li>
+			<li><a href="" style="background-image:url(images/new-user-area.jpg)"></a></li>
 		</ul>
 		<!-- banner fixed -->
 		<div class="contain_wrap">
@@ -158,7 +158,7 @@
 		<li>
 		<div class="invest-hq-rate">
 			<p>今日预期年化收益率</p>
-			<span class="ui-font-green"><i class="index-icons icon-down"></i>10.25<em>%</em></span>
+			<span class="ui-font-green"><!-- <i class="index-icons icon-down"></i> -->0.00<em>%</em></span>
 		</div>
 		</li>
 		<li>
@@ -639,14 +639,8 @@
 	</li>
 </ul>
 <!-- script -->
-<script type="text/javascript" src="js/lib/jquery.js"></script>
-<script type="text/javascript" src="js/lib/highcharts.js"></script>
-<script type="text/javascript" src="js/plugins/jquery.bxslider.min.js"></script>
 <link rel="stylesheet" href="js/plugins/jquery.bxslider.css">
-<script type="text/javascript" src="js/plugins/jquery.countdown.js"></script>
 <link rel="stylesheet" href="js/plugins/jquery.countdown.css">
-<script type="text/javascript" src="js/chart.js"></script>
-<script type="text/javascript" src="js/common.js"></script>
-<script type="text/javascript" src="js/index.js"></script>
+<script src="js/require.js" data-main="js/index_main"></script>
 </body>
 </html>

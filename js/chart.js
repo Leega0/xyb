@@ -33,7 +33,7 @@
 						text: ''
 					},
 					tickInterval:5,
-					tickPositions: [2, 4, 6, 8, 10],
+					tickPositions: [5, 6, 7, 8, 9],
 					labels: {
 						formatter: function() {
 							return this.value +''
@@ -58,7 +58,7 @@
 					shared: false,
 					shadow:false,
 					style:{
-						padding:5,
+						padding:5
 					},
 					formatter: function() {  
                     return '<span style="color:#fff">'+ this.y +'</span>';  
@@ -81,7 +81,7 @@
 				 series: [{
 				 	name: data['series']['name'],
 
-				 	data:data['series']['data'],
+				 	data:data['series']['data']
 
 				 }]
 });

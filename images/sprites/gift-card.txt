@@ -1,4 +1,4 @@
-blue-card.png, 246, 216, 0, 0
-gray-card.png, 246, 216, 248, 0
-green-card.png, 246, 216, 496, 0
-pink-card.png, 246, 216, 744, 0
+blue-card.png, 240, 156, 0, 0
+gray-card.png, 240, 156, 242, 0
+green-card.png, 240, 156, 484, 0
+pink-card.png, 240, 156, 726, 0

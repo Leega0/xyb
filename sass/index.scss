@@ -6,14 +6,15 @@
 	z-index:9;
 	.contain_wrap{
 		position: relative;
-		z-index: 9
+		// z-index: 99
 	}
 	.banner-fixed{
 		position: absolute;
 		width:316px;
 		height:400px;
 		background:rgba(0, 0, 0, 0.8)!important;
-		filter:Alpha(opacity=80); background:#000;
+		filter:Alpha(opacity=80); 
+		background:#000;
 		top:-400px;
 		right:0;
 		z-index: 99999;

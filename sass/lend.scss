@@ -67,6 +67,8 @@ h5{
 			padding:22px 0 22px 122px;
 		}
 		.credit-level{
+			display: inline-block;
+			margin-right:5px;
 			width: 30px;
 			height: 30px;
 			line-height: 30px;
@@ -75,12 +77,14 @@ h5{
 			background-color: #74ca98;
 			border-radius: 50%;
 			text-align: center;
-			margin: 0 auto;
 			&.level_b{
 				background-color: #f1c40f;
 			}
 			&.level_c{
 				background-color: #fc8478;
+			}
+			&.level_d{
+				background-color: #ff3939;
 			}
 		}
 	}

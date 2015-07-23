@@ -1,3 +1,6 @@
+.ui-mt50{
+	margin-top: 0 !important;
+}
 dl{
 	margin:0;
 }
@@ -1487,6 +1490,12 @@ dl{
 	}
 }
 // 安全中心页面
+.banner-safety-center{
+	.contain_wrap{
+		height:400px;
+	}
+	background:url("../images/banner-safety-center.png") no-repeat center;
+}
 .safety-center{
 	h2{
 		font-weight: normal;
@@ -1494,6 +1503,7 @@ dl{
 		font-size: 24px;
 		color: #474747;
 		margin:0 0 60px 0;
+		padding:84px 0 0;
 	}
 	.p1{
 		padding-left:40px;
@@ -1541,13 +1551,12 @@ dl{
 	}
 }
 .safety-center-grade{
-	padding-top:84px;
+	
 	img{
 		margin-bottom:85px;
 	}
 }
 .safety-center-safe{
-	padding:84px 0 0;
 	.p1{
 		margin-bottom:18px
 	}
@@ -1559,7 +1568,7 @@ dl{
 	}
 }
 .safety-center-manage{
-	padding:84px 0;
+	padding:0 0 84px;
 	.p1{
 		margin:20px 0 20px
 	}
@@ -1577,13 +1586,13 @@ dl{
 	}
 }
 .safety-center-score{
-	padding:84px 0;
+	padding:0 0 84px;
 	ul{
 		padding-top:94px;
 	}
 }
 .safety-center-safeguard{
-	padding:84px 0;
+	padding:0 0 84px;
 	a{
 		color:#2c97f4;
 	}

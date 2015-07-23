@@ -38,6 +38,11 @@ dl{
 			border:2px solid #ddd;
 			border-radius:50%;
 			background-color: #fff;
+			img{
+				width: 98px;
+				height: 98px;
+				overflow: hidden;
+			}
 		}
 	}
 	.user-name{
@@ -1152,6 +1157,9 @@ dl{
 			&.level_c{
 				background-color: #fc8478;
 			}
+			&.level_d{
+				background-color: #ff3939;
+			}
 		}
 	}
 }
@@ -1184,14 +1192,13 @@ dl{
 	li{
 		float: left;
 		width: 33.33%;
-		padding:20px 0;
+		padding:30px 0;
 	}
 	.gift-card-box{
-		width: 246px;
-		height: 216px;
-		margin-left: 10px;
+		width: 240px;
+		height: 156px;
+		margin-left: 32px;
 		background:url(../images/sprites/gift-card.png) no-repeat;
-		color: #fff;
 		.go-to-use{
 			text-align: center;
 			height: 50px;
@@ -1204,49 +1211,22 @@ dl{
 			}
 		}
 		&.blue-card{
-			.go-to-use{
-			  
-              a{
-              	color: #3189d6;
-              }
-		   }
-			
+			background-position: 0 0;
 		}
 		&.green-card{
-			background-position:-496px 0;
-			.go-to-use{
-			  
-              a{
-              	color: #35a364;
-              }
-		   }
+			background-position:-484px 0;
 		}
 		&.pink-card{
-			background-position:-744px 0;
-			.go-to-use{
-			  
-              a{
-              	color: #f87c71;
-              }
-		   }
+			background-position:-726px 0;
 		}
 		&.gray-card{
-			background-position:-248px 0;
-			.go-to-use{
-			  
-              a{
-              	color: #b9b9b9;
-              	&:hover{
-              		cursor: not-allowed;
-              	}
-              }
-		   }
+			background-position:-242px 0;
 		}
 		dt{
 			text-align: center;
-			font-weight: bold;
-			font-size: 18px;
-			line-height: 50px;
+			font-size: 14px;
+			line-height: 38px;
+			color: #fff;
 		}
 		dd{
 			overflow: hidden;
@@ -1264,18 +1244,19 @@ dl{
              }
 		}
 		.date{
-			margin-top: 12px;
+			margin-top: 18px;
              margin-left: 40px;
 		}
 		.beishu{
 			float: right;
-			margin-top: 12px;
+			margin-top: 18px;
 			margin-right: 40px;
 		}
 		.out-date{
-			height: 40px;
-			line-height: 40px;
+			line-height: 34px;
 			text-align: center;
+			color: #b9b9b9;
+			margin-top: 4px;
 		}
 	}
 }

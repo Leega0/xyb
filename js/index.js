@@ -1,7 +1,7 @@
 $(function(){
 	// banner
   	$('.bxslider').bxSlider({
-  		// mode:'fade',
+  		mode:'fade',
       controls:false,
   		auto:true,
   		responsive:true

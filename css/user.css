@@ -47,6 +47,12 @@ dl {
   background-color: #fff;
 }
 
+.user-account-info .avatar a img {
+  width: 98px;
+  height: 98px;
+  overflow: hidden;
+}
+
 .user-account-info .user-name {
   font-size: 14px;
   padding: 10px 0;
@@ -1326,6 +1332,10 @@ dl.qc-code {
   background-color: #fc8478;
 }
 
+.auto-invest-conditon .user-credit-level .credit-level.level_d {
+  background-color: #ff3939;
+}
+
 .user-save-autoinvest {
   text-align: center;
   padding-top: 40px;
@@ -1359,15 +1369,14 @@ dl.qc-code {
 .gift-catd-wrap li {
   float: left;
   width: 33.33%;
-  padding: 20px 0;
+  padding: 30px 0;
 }
 
 .gift-catd-wrap .gift-card-box {
-  width: 246px;
-  height: 216px;
-  margin-left: 10px;
+  width: 240px;
+  height: 156px;
+  margin-left: 32px;
   background: url(../images/sprites/gift-card.png) no-repeat;
-  color: #fff;
 }
 
 .gift-catd-wrap .gift-card-box .go-to-use {
@@ -1382,43 +1391,27 @@ dl.qc-code {
   font-size: 16px;
 }
 
-.gift-catd-wrap .gift-card-box.blue-card .go-to-use a {
-  color: #3189d6;
+.gift-catd-wrap .gift-card-box.blue-card {
+  background-position: 0 0;
 }
 
 .gift-catd-wrap .gift-card-box.green-card {
-  background-position: -496px 0;
-}
-
-.gift-catd-wrap .gift-card-box.green-card .go-to-use a {
-  color: #35a364;
+  background-position: -484px 0;
 }
 
 .gift-catd-wrap .gift-card-box.pink-card {
-  background-position: -744px 0;
-}
-
-.gift-catd-wrap .gift-card-box.pink-card .go-to-use a {
-  color: #f87c71;
+  background-position: -726px 0;
 }
 
 .gift-catd-wrap .gift-card-box.gray-card {
-  background-position: -248px 0;
-}
-
-.gift-catd-wrap .gift-card-box.gray-card .go-to-use a {
-  color: #b9b9b9;
-}
-
-.gift-catd-wrap .gift-card-box.gray-card .go-to-use a:hover {
-  cursor: not-allowed;
+  background-position: -242px 0;
 }
 
 .gift-catd-wrap .gift-card-box dt {
   text-align: center;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 50px;
+  font-size: 14px;
+  line-height: 38px;
+  color: #fff;
 }
 
 .gift-catd-wrap .gift-card-box dd {
@@ -1440,20 +1433,21 @@ dl.qc-code {
 }
 
 .gift-catd-wrap .gift-card-box .date {
-  margin-top: 12px;
+  margin-top: 18px;
   margin-left: 40px;
 }
 
 .gift-catd-wrap .gift-card-box .beishu {
   float: right;
-  margin-top: 12px;
+  margin-top: 18px;
   margin-right: 40px;
 }
 
 .gift-catd-wrap .gift-card-box .out-date {
-  height: 40px;
-  line-height: 40px;
+  line-height: 34px;
   text-align: center;
+  color: #b9b9b9;
+  margin-top: 4px;
 }
 
 .user-account-moudle.red-bonus dd {

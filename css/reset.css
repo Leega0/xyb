@@ -931,6 +931,14 @@ h6 {
   margin: 0;
 }
 
+.ui-form-btn .ui-btn-empty {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+}
+
 .ui-input-body:before,
 .ui-form-item:before,
 .ui-input-body:after,
@@ -1550,7 +1558,6 @@ h6 {
 
 .layer-content .charge_psw {
   width: 80% !important;
-  margin-top: 2px !important;
 }
 
 .layer-content .btn-invest-all {

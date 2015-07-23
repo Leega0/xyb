@@ -73,7 +73,6 @@ dl{
 //商品样式
 .mall-ui-commodity-wrap{
 	width:100%;
-	height: 302px;
 }
 .mall-ui-commodity-box{
 	position:relative;
@@ -91,6 +90,9 @@ dl{
 			bottom:0;
 			left:0;
 			width: 100%;
+		}
+		img{
+			max-width:170px;
 		}
 	}
 	.title{
@@ -136,7 +138,7 @@ dl{
 			height: 88px;	
 		}
 		img{
-
+			max-width: 80px;
 		}
 	}
 	.title{
@@ -182,18 +184,12 @@ dl{
 			display: block;
 			color:#b9b9b9;
 		}
-		i{
+		img{
 			float:left;
 			width:36px;
 			height:36px;
 			margin-right:16px;
-			background: url("../images/sprites/mall-login-box-top-icon.png") no-repeat;
-			&.mall-login-before{
-				background-position: 0 0;
-			}
-			&.mall-login-after{
-				background-position: -46px 0;
-			}
+			border-radius:6px;
 		}
 	}
 	.links{
@@ -231,7 +227,7 @@ dl{
 			width:22px;
 			height:42px;
 			margin-right: 4px;
-			background: url("../images/sprites/mall-login-box-top-links.png") no-repeat;
+			background: url("../images/mall/sprites/mall-login-box-top-links.png") no-repeat;
 			background-position: -30px center;
 		}
 	}
@@ -281,7 +277,7 @@ dl{
 		text-align:center;
 		font-size:24px;
 		color:#fd8479;
-		background: url("../images/mall-login-box-data-bg.png") no-repeat center;
+		background: url("../images/mall/mall-login-box-data-bg.png") no-repeat center;
 		margin-left:6px;
 	}
 }
@@ -311,7 +307,7 @@ dl{
 	display:block;
 	width:56px;
 	height:56px;
-	background: url("../images/icon-red-vip.png") no-repeat center;
+	background: url("../images/mall/icon-red-vip.png") no-repeat center;
 	z-index:10;
 }
 .icon-blue-hot{
@@ -321,7 +317,7 @@ dl{
 	display:block;
 	width:56px;
 	height:56px;
-	background: url("../images/icon-blue-hot.png") no-repeat center;
+	background: url("../images/mall/icon-blue-hot.png") no-repeat center;
 	z-index:10;
 }
 //广告部分
@@ -336,7 +332,7 @@ dl{
 //头部banner
 .integral-mall-banner{
 	height:400px;
-	background: url("../images/integral-mall-banner-bg.png") no-repeat center;
+	background: url("../images/mall/integral-mall-banner-bg.png") no-repeat center;
 }
 //主页开始
 .integral-mall-wrap{
@@ -443,7 +439,7 @@ dl{
 		height:48px;
 		width:32px;
 		margin:0 auto;
-		background: url("../images/sprites/mall-goods-lists-icon.png") no-repeat;
+		background: url("../images/mall/sprites/mall-goods-lists-icon.png") no-repeat;
 		&.icon-love{
 			background-position: -42px 12px;
 		}
@@ -506,6 +502,9 @@ dl{
 				display:inline-block;
 				width:60px;
 			}
+			.over-num-tips{
+				display: none;
+			}
 			.btn{
 				margin:16px 140px 0 0;
 				padding-top:22px;
@@ -538,6 +537,7 @@ dl{
 					color:#ff8a80;
 					margin-top:5px;
 				}
+
 			}
 		}
 	}
@@ -547,6 +547,9 @@ dl{
 	.vertical-mid{
 		height: 434px;
 		  width: 367px;
+	}
+	img{
+		max-width: 340px;
 	}
 }
 .page-mall-commodity-full{
@@ -594,24 +597,21 @@ dl{
 		}
 	}
 	.mall-ui-commodity-box{
-		margin-left:8px;
-		&:first-child{
-			margin-left:0;
-		}
+		margin: 3px;
 	}
 }
 .icon-sucess{
   display: block;
   width: 40px;
   height: 40px;
-  background: url("../images/sprites/icon-sucess.png") no-repeat center;
+  background: url("../images/mall/sprites/icon-sucess.png") no-repeat center;
   margin: 0 auto;
 }
 .icon-error{
   display: block;
   width: 40px;
   height: 40px;
-  background: url("../images/sprites/icon-error.png") no-repeat center;
+  background: url("../images/mall/sprites/icon-error.png") no-repeat center;
   margin: 0 auto;
 }
 .pop-up-box{
@@ -689,7 +689,6 @@ dl{
 			margin-top: 10px;
 		}
 	}
-
 	&.adress{
 		padding-top:30px;
 		h3{

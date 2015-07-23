@@ -455,10 +455,10 @@
             <div class="user-account-moudle">
 				<!-- 收益卡筛选 -->
 				<p class="clearfix gift-catd-filter">
-				<span class="fl">
-					<a href="" class="cur">未使用(5)</a>
-					<a href="">已使用(0)</a>
-					<a href="">已过期(0)</a>
+				<span class="fl" id="card_change_tab">
+					<a href="javascript:void(0);" class="cur">未使用(5)</a>
+					<a href="javascript:void(0);">已使用(0)</a>
+					<a href="javascript:void(0);">已过期(0)</a>
 				</span>
 				<span class="fr"><a href="">优惠券规则说明</a></span>
 				</p>
@@ -478,9 +478,7 @@
 							<dd class="out-date">
 								过期时间：2015-05-06
 							</dd>
-							<dd class="go-to-use">
-								<a href="">立即使用</a>
-							</dd>
+							
 						</dl>
 					</li>
 					<li>
@@ -497,9 +495,7 @@
 							<dd class="out-date">
 								过期时间：2015-05-06
 							</dd>
-							<dd class="go-to-use">
-								<a href="">立即使用</a>
-							</dd>
+							
 						</dl>
 					</li>
 					<li>
@@ -516,9 +512,7 @@
 							<dd class="out-date">
 								过期时间：2015-05-06
 							</dd>
-							<dd class="go-to-use">
-								<a href="">立即使用</a>
-							</dd>
+							
 						</dl>
 					</li>
 					<li>
@@ -535,9 +529,7 @@
 							<dd class="out-date">
 								过期时间：2015-05-06
 							</dd>
-							<dd class="go-to-use">
-								<a href="">立即使用</a>
-							</dd>
+							
 						</dl>
 					</li>
 					<li>
@@ -554,9 +546,7 @@
 							<dd class="out-date">
 								过期时间：2015-05-06
 							</dd>
-							<dd class="go-to-use">
-								<a href="">立即使用</a>
-							</dd>
+							
 						</dl>
 					</li>
 					<!-- 已使用 -->
@@ -574,9 +564,7 @@
 							<dd class="out-date">
 								过期时间：2015-05-06
 							</dd>
-							<dd class="go-to-use">
-								<a href="">立即使用</a>
-							</dd>
+							
 						</dl>
 					</li>
 				</ul>
@@ -802,6 +790,10 @@ $(function(){
 				content:$('.content_layer')
 			})
 		});
+	// 礼品券使用
+	$("#card_change_tab").children().on('click',function(){
+		$(this).addClass('cur').siblings().removeClass('cur')
+	})
 });
 </script>
 </body>

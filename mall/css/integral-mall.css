@@ -83,7 +83,6 @@ dl {
 
 .mall-ui-commodity-wrap {
   width: 100%;
-  height: 302px;
 }
 
 .mall-ui-commodity-box {
@@ -106,6 +105,10 @@ dl {
   bottom: 0;
   left: 0;
   width: 100%;
+}
+
+.mall-ui-commodity-box .img-box img {
+  max-width: 170px;
 }
 
 .mall-ui-commodity-box .title {
@@ -160,6 +163,10 @@ dl {
   height: 88px;
 }
 
+.mall-ui-aside-commodity-box .img-box img {
+  max-width: 80px;
+}
+
 .mall-ui-aside-commodity-box .title {
   display: block;
   color: #474747;
@@ -211,20 +218,12 @@ dl {
   color: #b9b9b9;
 }
 
-.mall-login-box-top .title i {
+.mall-login-box-top .title img {
   float: left;
   width: 36px;
   height: 36px;
   margin-right: 16px;
-  background: url("../images/sprites/mall-login-box-top-icon.png") no-repeat;
-}
-
-.mall-login-box-top .title i.mall-login-before {
-  background-position: 0 0;
-}
-
-.mall-login-box-top .title i.mall-login-after {
-  background-position: -46px 0;
+  border-radius: 6px;
 }
 
 .mall-login-box-top .links a {
@@ -267,7 +266,7 @@ dl {
   width: 22px;
   height: 42px;
   margin-right: 4px;
-  background: url("../images/sprites/mall-login-box-top-links.png") no-repeat;
+  background: url("../images/mall/sprites/mall-login-box-top-links.png") no-repeat;
   background-position: -30px center;
 }
 
@@ -324,7 +323,7 @@ dl {
   text-align: center;
   font-size: 24px;
   color: #fd8479;
-  background: url("../images/mall-login-box-data-bg.png") no-repeat center;
+  background: url("../images/mall/mall-login-box-data-bg.png") no-repeat center;
   margin-left: 6px;
 }
 
@@ -354,7 +353,7 @@ dl {
   display: block;
   width: 56px;
   height: 56px;
-  background: url("../images/icon-red-vip.png") no-repeat center;
+  background: url("../images/mall/icon-red-vip.png") no-repeat center;
   z-index: 10;
 }
 
@@ -365,7 +364,7 @@ dl {
   display: block;
   width: 56px;
   height: 56px;
-  background: url("../images/icon-blue-hot.png") no-repeat center;
+  background: url("../images/mall/icon-blue-hot.png") no-repeat center;
   z-index: 10;
 }
 
@@ -381,7 +380,7 @@ dl {
 
 .integral-mall-banner {
   height: 400px;
-  background: url("../images/integral-mall-banner-bg.png") no-repeat center;
+  background: url("../images/mall/integral-mall-banner-bg.png") no-repeat center;
 }
 
 .integral-mall-wrap {
@@ -502,7 +501,7 @@ dl {
   height: 48px;
   width: 32px;
   margin: 0 auto;
-  background: url("../images/sprites/mall-goods-lists-icon.png") no-repeat;
+  background: url("../images/mall/sprites/mall-goods-lists-icon.png") no-repeat;
 }
 
 .integral-mall-goods-lists .mall-goods-lists-icon.icon-love {
@@ -578,6 +577,10 @@ dl {
   width: 60px;
 }
 
+.page-mall-commodity-easy .page-easy-box .details .over-num-tips {
+  display: none;
+}
+
 .page-mall-commodity-easy .page-easy-box .details .btn {
   margin: 16px 140px 0 0;
   padding-top: 22px;
@@ -619,6 +622,10 @@ dl {
 .page-mall-commodity-easy-slider .vertical-mid {
   height: 434px;
   width: 367px;
+}
+
+.page-mall-commodity-easy-slider img {
+  max-width: 340px;
 }
 
 .page-mall-commodity-full .page-commodity-details {
@@ -668,18 +675,14 @@ dl {
 }
 
 .list-integral-mall .mall-ui-commodity-box {
-  margin-left: 8px;
-}
-
-.list-integral-mall .mall-ui-commodity-box:first-child {
-  margin-left: 0;
+  margin: 3px;
 }
 
 .icon-sucess {
   display: block;
   width: 40px;
   height: 40px;
-  background: url("../images/sprites/icon-sucess.png") no-repeat center;
+  background: url("../images/mall/sprites/icon-sucess.png") no-repeat center;
   margin: 0 auto;
 }
 
@@ -687,7 +690,7 @@ dl {
   display: block;
   width: 40px;
   height: 40px;
-  background: url("../images/sprites/icon-error.png") no-repeat center;
+  background: url("../images/mall/sprites/icon-error.png") no-repeat center;
   margin: 0 auto;
 }
 
