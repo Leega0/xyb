@@ -1225,6 +1225,10 @@ h6 {
   background: url(../images/sprites/vip-level.png) no-repeat;
 }
 
+.user-level.vip0 {
+  background-position: 0 0;
+}
+
 .user-level.vip1 {
   background-position: -26px 0;
 }

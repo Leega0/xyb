@@ -1125,6 +1125,9 @@ $base_blue:#2c97f4;
     margin-left: 5px;
     top:3px;
     background: url(../images/sprites/vip-level.png) no-repeat;
+    &.vip0{
+      background-position:0 0;
+    }
     &.vip1{
       background-position:-26px 0;
     }

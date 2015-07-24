@@ -74,7 +74,9 @@
 	<!-- menu end -->
 	<div class="banner banner-vip">
 		<div class="contain_wrap">
-			<a href="" class="banner-vip-a">立即续费</a>
+			<a href="javascript:void(0);" class="banner-vip-a btn-vip-renewal">立即续费</a>
+			<!-- 未登录显示如下 -->
+			<!-- <a href="" class="banner-vip-a">立即购买</a> -->
 		</div>
 	</div>
 </div>
@@ -381,7 +383,7 @@
 <!-- VIPt特权 end -->
 
 <!-- footer start -->
-<div id="footer" class="ui-mt50">
+<div id="footer">
 	<div class="footer contain_wrap clearfix">
 		<div class="fl clearfix">
 			<div class="group fl">
@@ -418,8 +420,40 @@
 	</div>
 </div>
 <!-- footer end -->
+<!-- 弹窗内容 -->
+<div class="clearfix content_layer buy-vip-layer">
+	<p class="layer-title"><i class="border-blue"></i>VIP会员服务订购</p>
+	<div class="layer-content buy-vip-content ui-mt30">
+		<p class="text-wrap">会员状态<span class="fr">已开通</span></p>
+		<p class="text-wrap">会员有效期<span class="fr">2015-06-28</span></p>
+		<div class="text-wrap item-recharge">
+			<p class="title">账户余额(元)</p>
+			<p class="content">￥251,124.00<a href="" class="btn-recharge">充值</a></p>
+		</div>
+		<div class="choose-pack">
+			<p class="text-wrap">选择套餐</p>
+			<ul class="pack-list">
+				<li class="fl selected">
+					168元/1年
+					<i class="icon-selected-big"></i>
+				</li>
+				<li class="fr">300元/2年(9折)</li>
+				<li class="fl">428元/3年(85折)</li>
+				<li class="fr">588元/5年(7折)</li>
+			</ul>
+		</div>
+	</div>
+	<!-- layer  底部提交 -->
+	<div class="layer-bottom">
+	     <div class="layer-content">
+	         <p class="ui-form-btn"><a href="" class="ui-btn ui-btn-blue">下一步</a></p>
+	         <p class="xyb-agree-ctn align-center"><input type="checkbox" checked="checked" name="xyb_agreement" id="xyb_agreement"><label for="xyb_agreement">我已阅读并同意</label><a href="" target="_blank" class="ui-font-blue">《信用宝服务协议》</a></p>
+	     </div>
+	</div>
+</div>
 <!-- script -->
 <script type="text/javascript" src="js/lib/jquery.js"></script>
+<script type="text/javascript" src="js/plugins/layer.js"></script>
 <script type="text/javascript">
 	$(function(){
 		var groess_num_1 =$(".groess-num-1").text();
@@ -427,6 +461,19 @@
 		var groess_num_rate = groess_num_1 / groess_num_2;
 		var groess_bar_width = groess_num_rate * 250;
 		$(".groess-bar").css("width",groess_bar_width)
+		// buy -vip
+		$(".btn-vip-renewal").on("click",function(){
+			layer.open({
+				type:1,
+				title:false,
+				shadeClose:true,
+				area: ['540px','470px'],
+				content:$(".buy-vip-layer")
+			})
+		});
+		$(".pack-list li").bind('click', function() {
+	$(this).addClass('selected').append('<i class="icon-selected-big"></i>').siblings().removeClass('selected').children(".icon-selected-big").remove();
+});
 	})
 	$(function(){
 		var vip_box_newguy_vip =$(".vip-box-newguy-vip");
