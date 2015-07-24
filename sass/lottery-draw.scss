@@ -168,13 +168,6 @@ dl{
 		    z-index: 2;
     	}
 	}
-	.prize-center-box{
-		position:absolute;
-		height: 100px;
-		width:150px;
-		text-align: center;
-    	vertical-align: middle;
-	}
 	.prize-number-1{
 		top:14px;
 		left:14px;
@@ -231,7 +224,7 @@ dl{
 		top:128px;
 		left:14px;
 	}
-	.prize-btn{
+	.prize-number-15{
 		top:114px;
 		left:164px;
 		width: 506px;
@@ -381,7 +374,7 @@ dl{
 }
 .pop-up-box{
 	border-radius:12px;
-	width:590px;
+	width:650px;
 	background:#ffde00;
 	margin:0 auto;
 	display:none;
@@ -509,11 +502,12 @@ dl{
 				border:1px solid #dddddd;
 			}
 			select{
-				width: 158px;
+				width: 179px;
 				height:34px;
 				border:1px solid #dddddd;
 				margin-left:12px;
 				&:first-child{
+					width: 180px;
 					margin-left:0;
 				}
 			}
@@ -527,17 +521,4 @@ dl{
 }
 #big_award,#now_award{
 	overflow: hidden;
-}
-.prize-lotter-shadow {
-    width: 150px;
-    height: 100px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 10px;
-    background: #000;
-    opacity: 0.7;
-    filter: alpha(opacity=70);
-    -ms-filter: alpha(opacity=07);
-    z-index: 2;
 }
