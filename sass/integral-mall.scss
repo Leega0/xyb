@@ -80,7 +80,7 @@ dl{
 .mall-ui-commodity-box{
 	position:relative;
 	float:left;
-	height: 270px;
+	height: 300px;
 	width: 214px;
 	text-align: center;
 	.img-box{
@@ -103,12 +103,8 @@ dl{
 		color: #474747;
 		font-size:14px;
 		line-height:20px;
-		height:20px;
-		padding:0 25px;
-		margin:20px 0 8px;
-		overflow:hidden;
-		white-space:nowrap;
-		text-overflow:ellipsis;
+		height:40px;
+		padding:30px 25px 16px;
 		&:hover{
 			text-decoration: underline;
 		}
@@ -126,7 +122,7 @@ dl{
 }
 .mall-ui-aside-commodity-box {
 	position:relative;
-	height: 94px;
+	height: 88px;
 	width: 100%;
 	border-top:1px solid #eeeeee;
 	&:first-child{
@@ -135,7 +131,7 @@ dl{
 	.img-box{
 		float:left;
 		position:relative;
-		height: 93px;
+		height: 88px;
 		width:104px;
 		text-align:center;
 		a{
@@ -153,10 +149,7 @@ dl{
 		color: #474747;
 		font-size:14px;
 		line-height:20px;
-		padding:20px 0 10px;
-		text-overflow:ellipsis;
-		white-space:nowrap;
-		overflow:hidden;
+		padding:14px 40px 6px 0;
 		&:hover{
 			text-decoration: underline;
 		}
@@ -173,7 +166,7 @@ dl{
 .mall-login-box-top{
 	display:none;
 	.title{
-		padding:24px 0 18px 40px;
+		padding:24px 0 26px 40px;
 		color:#474747;
 		font-size:12px;
 		line-height: 18px;
@@ -269,7 +262,7 @@ dl{
 	}
 }
 .mall-login-box-data{
-	padding:20px 0 20px 40px;
+	padding:32px 0 30px 40px;
 	span{
 		float:left;
 		display: inline-block;
@@ -365,7 +358,7 @@ dl{
 .index-mall-exchange{
 	margin-bottom:16px;
 	.mall-ui-box{
-		height: 316px;
+		height: 344px;
 	}
 	.mall-ui-commodity-box{
 		margin-left:10px;
@@ -381,7 +374,7 @@ dl{
 .index-mall-newest{
 	margin-bottom:16px;
 	.mall-ui-box{
-		height: 614px;
+		height: 672px;
 	}
 	.mall-ui-commodity-box{
 		margin-left:10px;
@@ -481,12 +474,6 @@ dl{
 	}
 	.mall-login-box{
 		width:280px;
-		.title{
-			padding: 24px 0 30px 40px;
-		}
-		.mall-login-box-data{
-			  padding: 30px 0 28px 40px;
-		}
 	}
 	.page-easy-box{
 		dd{

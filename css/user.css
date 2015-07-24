@@ -1743,16 +1743,12 @@ dl.qc-code {
   padding: 10px 0;
 }
 
-.add-card-itmes .card-info-items .ui-input, .add-card-itmes .card-info-items .card-dz-select {
+.add-card-itmes .card-info-items .ui-input {
   border: 1px solid #ddd;
   border-radius: 3px;
   box-sizing: border-box;
   padding: 10px;
   width: 250px;
-}
-
-.add-card-itmes .card-info-items .card-dz-select {
-  width: 120px;
 }
 
 .add-card-itmes .set-default-card {
@@ -1897,8 +1893,9 @@ dl.qc-code {
 }
 
 .layer-phone-code .send-code {
-  width: 114px;
-  height: 40px;
+  width: 90px;
+  height: 28px;
+  line-height: 28px;
   float: left;
 }
 

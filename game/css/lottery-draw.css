@@ -195,6 +195,14 @@ dl {
   z-index: 2;
 }
 
+.lottery-draw-box-main .prize-center-box {
+  position: absolute;
+  height: 100px;
+  width: 150px;
+  text-align: center;
+  vertical-align: middle;
+}
+
 .lottery-draw-box-main .prize-number-1 {
   top: 14px;
   left: 14px;
@@ -265,7 +273,7 @@ dl {
   left: 14px;
 }
 
-.lottery-draw-box-main .prize-number-15 {
+.lottery-draw-box-main .prize-btn {
   top: 114px;
   left: 164px;
   width: 506px;
@@ -429,7 +437,7 @@ dl {
 
 .pop-up-box {
   border-radius: 12px;
-  width: 650px;
+  width: 590px;
   background: #ffde00;
   margin: 0 auto;
   display: none;
@@ -589,14 +597,13 @@ dl {
 }
 
 .pop-up-box.adress .new-adress select {
-  width: 179px;
+  width: 158px;
   height: 34px;
   border: 1px solid #dddddd;
   margin-left: 12px;
 }
 
 .pop-up-box.adress .new-adress select:first-child {
-  width: 180px;
   margin-left: 0;
 }
 
@@ -607,4 +614,18 @@ dl {
 
 #big_award, #now_award {
   overflow: hidden;
+}
+
+.prize-lotter-shadow {
+  width: 150px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  background: #000;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  -ms-filter: alpha(opacity=07);
+  z-index: 2;
 }

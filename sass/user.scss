@@ -1527,15 +1527,12 @@ dl{
 			font-size: 12px;
 			padding:10px 0;
 		}
-		.ui-input,.card-dz-select{
+		.ui-input{
 			border:1px solid #ddd;
 			border-radius:3px;
 			box-sizing:border-box;
 			padding:10px;
 			width: 250px;
-		}
-		.card-dz-select{
-			width: 120px;
 		}
 	}
 	.set-default-card{
@@ -1661,8 +1658,9 @@ dl{
 		padding:0 !important;
 	}
 	.send-code{
-		width: 114px;
-		height: 40px;
+		width: 90px;
+		height: 28px;
+		line-height: 28px;
 		float: left;
 	}
 }
