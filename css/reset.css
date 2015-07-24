@@ -1207,23 +1207,58 @@ h6 {
   border-left: 1px solid #eee;
 }
 
-.myhome .user-level {
-  font-size: 11px;
-  font-style: italic;
-  color: #fff;
-  background-color: #2c97f4;
-  border-radius: 3px;
-  padding: 1px 3px;
-  margin-left: 5px;
-  font-family: "Arial";
-}
-
 .myhome .icon-messages {
   position: relative;
   padding: 10px;
   margin-top: 5px;
   margin-left: 10px;
   background: url(../images/sprites/icon-unread.png) no-repeat center;
+}
+
+.user-level {
+  display: inline-block;
+  width: 20px;
+  height: 14px;
+  position: relative;
+  margin-left: 5px;
+  top: 3px;
+  background: url(../images/sprites/vip-level.png) no-repeat;
+}
+
+.user-level.vip1 {
+  background-position: -26px 0;
+}
+
+.user-level.vip2 {
+  background-position: -52px 0;
+}
+
+.user-level.vip3 {
+  background-position: -78px 0;
+}
+
+.user-level.vip4 {
+  background-position: -104px 0;
+}
+
+.user-level.vip5 {
+  background-position: -130px 0;
+}
+
+.user-level.vip6 {
+  background-position: -156px 0;
+}
+
+.user-level.vip7 {
+  background-position: -182px 0;
+}
+
+.user-level.vip8 {
+  background-position: -208px 0;
+}
+
+.user-level.vip9 {
+  background-position: -234px 0;
 }
 
 .myhome-account {

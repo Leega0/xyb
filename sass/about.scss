@@ -51,17 +51,17 @@ dl{
 		line-height: 42px;
 		text-align: center;
 		margin:0 auto;
-		border:1px solid #12ffff;
+		color:#fff;
+		border:1px solid #fff;
 		border-radius:3px;
-		color:#12ffff;
 		font-size: 16px;
 		&:hover{
-			color:#fff;
-			border:1px solid #fff;
-		}
-		&:active{
 			border:1px solid #12ffff;
 			color:#12ffff;
+		}
+		&:active{
+			color:#fff;
+			border:1px solid #fff;
 		}
 	}
 }
@@ -486,7 +486,7 @@ dl{
 		}
 	}
 	dl{
-		margin-bottom:118px;
+		// margin-bottom:118px;
 	}
 	dd{
 		float:left;
@@ -687,7 +687,7 @@ dl{
 		position:relative;
 		padding:86px 0;
 	}
-	background:#f4f4f4;
+	background:#fff;
 	h2{
 		color: #474747;
 		font-size:24px;
@@ -2064,6 +2064,96 @@ dl{
 		}
 	}
 }
+//法律法规列表页
+.laws-and-regulations-list{
+	padding:30px 0 120px;
+	background:#fff;
+	border-top:1px solid #eeeeee;
+	h3,dl{
+		margin:0;
+	}
+	.le{
+		float:left;
+		width:220px;
+		background:#f6f6f6;
+		border-bottom:1px solid #eeeeee;
+		.title{
+			position:relative;
+			height:76px;
+			line-height:76px;
+			padding-left:66px;
+			font-size:18px;
+			color:#474747;
+			border:1px solid #eeeeee;
+			border-bottom:0px;
+		}
+
+	}
+	.ri{
+		min-height:436px;
+		float:left;
+		width:898px;
+		margin-left: -1px;
+		padding:30px 40px 30px;
+		border:1px solid #eeeeee;
+		h3{
+			font-size:18px;
+			color:#474747;
+			padding:20px 0;
+			text-align:center;
+			font-weight:bold;
+			border-bottom:1px solid #eeeeee;
+			margin-bottom:30px;
+		}
+		.title{
+			padding:0 50px;
+			color: #474747;
+			font-size:14px;
+			font-weight:bold;
+			line-height:30px;
+		}
+		.text{
+			padding:0 50px;
+			color: #474747;
+			font-size:14px;
+			text-indent: 26px;
+			line-height:30px;
+		}
+		.date{
+			padding:0 50px;
+			color: #474747;
+			font-size:14px;
+			text-align:right;
+			line-height:30px;
+		}
+		img{
+			display:block;
+			margin:20px auto;
+		}
+	}
+	.user-tabs-item{
+		display:block;
+		position:relative;
+		border-top:1px solid #f6f6f6;
+		border-right:1px solid #eeeeee;
+		border-bottom:1px solid #f6f6f6;
+		border-left:2px solid #eeeeee;
+		height:58px;
+		line-height: 58px;
+		padding-left:66px;
+		color: #474747;
+		font-size:14px;
+		&:hover,&.user-tabs-active{
+			font-weight:bold;
+			background:#fff;
+			border-top:1px solid #eeeeee;
+			border-right:1px solid #fff;
+			border-bottom:1px solid #eeeeee;
+			border-left:2px solid #2c97f4;
+		}
+	}
+}
+
 .help-center-list-icon{
 	display:inline-block;
 	position:absolute;

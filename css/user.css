@@ -58,17 +58,6 @@ dl {
   padding: 10px 0;
 }
 
-.user-account-info .user-name .user-level {
-  font-size: 11px;
-  font-style: italic;
-  color: #fff;
-  background-color: #2c97f4;
-  border-radius: 3px;
-  padding: 1px 3px;
-  margin-left: 5px;
-  font-family: "Arial";
-}
-
 .user-account-info .user-approve {
   padding: 5px 0;
 }

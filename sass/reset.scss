@@ -1107,16 +1107,6 @@ $base_blue:#2c97f4;
       border-left: 1px solid #eee;
     }
   }
-  .user-level{
-    font-size: 11px;
-    font-style: italic;
-    color: #fff;
-    background-color: #2c97f4;
-    border-radius: 3px;
-    padding: 1px 3px;
-    margin-left: 5px;
-    font-family: "Arial";
-  }
   .icon-messages{
     position: relative;
     padding:10px;
@@ -1126,6 +1116,44 @@ $base_blue:#2c97f4;
   }
 
 }
+// 通用等级图标
+  .user-level{
+    display: inline-block;
+    width: 20px;
+    height: 14px;
+    position: relative;
+    margin-left: 5px;
+    top:3px;
+    background: url(../images/sprites/vip-level.png) no-repeat;
+    &.vip1{
+      background-position:-26px 0;
+    }
+    &.vip2{
+      background-position:-52px 0;
+    }
+    &.vip3{
+      background-position:-78px 0;
+    }
+    &.vip4{
+      background-position:-104px 0;
+    }
+    &.vip5{
+      background-position:-130px 0;
+    }
+    &.vip6{
+      background-position:-156px 0;
+    }
+    &.vip7{
+      background-position:-182px 0;
+    }
+    &.vip8{
+      background-position:-208px 0;
+    }
+    &.vip9{
+      background-position:-234px 0;
+    }
+
+  }
 .myhome-account{
   position: relative;
   &.expand{
