@@ -1,0 +1,8 @@
+icon-cacul.png, 42, 42, 0, 0
+icon-cacul-hover.png, 42, 42, 44, 0
+icon-code.png, 42, 42, 88, 0
+icon-code-hover.png, 42, 42, 132, 0
+icon-go-top.png, 42, 42, 176, 0
+icon-gotop-hover.png, 42, 42, 220, 0
+icon-kefu.png, 42, 42, 264, 0
+icon-kefu-hover.png, 42, 42, 308, 0

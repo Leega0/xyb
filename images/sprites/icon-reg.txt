@@ -1,0 +1,7 @@
+icon-ipt-person.png, 25, 17, 0, 0
+icon-ipt-email.png, 26, 16, 27, 0
+icon-ipt-lock.png, 27, 16, 55, 0
+icon-ipt-peoples.png, 31, 16, 84, 0
+icon-ipt-phone.png, 24, 16, 117, 0
+icon-rg-minux.png, 16, 16, 143, 0
+icon-rg-plus.png, 16, 16, 169, 0

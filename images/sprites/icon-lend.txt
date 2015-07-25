@@ -1,0 +1,6 @@
+icon-10m.png, 50, 56, 0, 0
+icon-wdy.png, 46, 53, 52, 0
+icon-lcj.png, 44, 51, 100, 0
+icon-qzh.png, 50, 50, 146, 0
+icon-cpf.png, 48, 48, 198, 0
+icon-mkd.png, 75, 47, 248, 0

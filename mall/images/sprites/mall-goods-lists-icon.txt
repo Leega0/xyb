@@ -1,0 +1,20 @@
+.sprite-1-1{ background-position: 0 0; width: 32px; height: 25px; } 
+.sprite-1{ background-position: -42px 0; width: 32px; height: 25px; } 
+
+.sprite-11-11{ background-position: -84px 0; width: 32px; height: 22px; } 
+.sprite-11{ background-position: -126px 0; width: 32px; height: 22px; } 
+
+.sprite-13-13{ background-position: -168px 0; width: 32px; height: 25px; } 
+.sprite-13{ background-position: -210px 0; width: 32px; height: 25px; } 
+
+.sprite-3-3{ background-position: -252px 0; width: 32px; height: 25px; } 
+.sprite-3{ background-position: -294px 0; width: 32px; height: 25px; } 
+
+.sprite-5-5{ background-position: -336px 0; width: 32px; height: 25px; } 
+.sprite-5{ background-position: -378px 0; width: 32px; height: 25px; } 
+
+.sprite-7-7{ background-position: -420px 0; width: 32px; height: 25px; } 
+.sprite-7{ background-position: -462px 0; width: 32px; height: 25px; } 
+
+.sprite-9-9{ background-position: -504px 0; width: 32px; height: 27px; } 
+.sprite-9{ background-position: -546px 0; width: 32px; height: 27px; } 

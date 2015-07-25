@@ -1,0 +1,82 @@
+html{
+	background:#fff;
+}
+.half-year-news{
+	padding-bottom:100px;
+	.border-top{
+		border-top:1px dashed #b5b5b6;
+		padding-top:40px;
+	}
+	.border-top-1{
+		border-top:1px solid #edb494;
+		padding-top:30px;
+	}
+	.banner{
+		height:330px;
+		background:url("../images/banner.jpg") no-repeat center;
+	}
+	img{
+		display: block;
+		margin:0 auto 30px;
+	}
+	h2{
+		padding-top:40px;
+		margin:60px 0 20px;
+		font-size:60px;
+		padding-bottom:16px;
+		&:first-child{
+			padding-top:0;
+			margin:20px 0;
+		}
+		span{
+			display:block;
+			font-size:40px;	
+		}
+	}
+	p{
+		font-size: 20px;
+		color: #898989;
+		text-indent: 40px;
+		line-height: 30px;
+		margin-top:20px;
+		margin-bottom:30px;
+		&.differ{
+			font-size: 25px;
+			color: #d9611e;
+		}
+	}
+	.data-review{
+		h2{
+			color: #f29600;
+			border-bottom:1px solid #f29600;
+		}
+	}
+	.company{
+		h2{
+			color: #d9611e;
+			border-bottom:1px solid #d9611e;
+		}
+	}
+	.operating-conditions{
+		h2{
+			color: #eebd42;
+			border-bottom:1px solid #eebd42;
+		}
+	}
+	.loan-situation{
+		h2{
+			color: #a65623;
+			border-bottom:1px solid #a65623;
+		}
+	}
+	.fund-flow-situation{
+		h2{
+			color: #6f6558;
+			border-bottom:1px solid #6f6558;
+		}
+	}
+}
+.half-year-news-wrap{
+	width:800px;
+	margin:0 auto;
+}

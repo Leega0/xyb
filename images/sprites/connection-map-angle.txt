@@ -1,0 +1,6 @@
+.sprite-1{ background-position: 0 0; width: 6px; height: 3px; } 
+.sprite-2{ background-position: -16px 0; width: 6px; height: 3px; } 
+.sprite-3{ background-position: -32px 0; width: 3px; height: 6px; } 
+.sprite-4{ background-position: -45px 0; width: 3px; height: 6px; } 
+.sprite-5{ background-position: -58px 0; width: 3px; height: 6px; } 
+.sprite-6{ background-position: -71px 0; width: 3px; height: 6px; } 

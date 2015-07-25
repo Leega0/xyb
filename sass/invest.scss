@@ -1,0 +1,1058 @@
+.invest-table{
+	td{
+		border-top: 1px solid #f6f6f6;
+		padding:23px 0;
+		text-align: center;
+		.ui-btn{
+			padding:14px 30px;
+		}
+		.invest-xt-title{
+			color: #b9b9b9;
+			margin-bottom: 8px;
+		}
+		.credit-level{
+			width: 30px;
+			height: 30px;
+			line-height: 30px;
+			color: #fff;
+			font-size: 16px;
+			background-color: #74ca98;
+			border-radius:50%;
+			text-align: center;
+			margin:0 auto;
+			&.level_b{
+				background-color: #f1c40f;
+			}
+			&.level_c{
+				background-color: #fc8478;
+			}
+			&.level_d{
+				background-color: #ff3939;
+			}
+		}
+	}
+	.invest-title{
+		padding-left: 30px;
+		font-size: 16px;
+		text-align: left;
+		p{
+			margin-top: 5px;
+		}
+		.green-bbox{
+			font-size: 12px;
+			padding:1px 10px;
+			margin-right: 5px;
+		}
+	}
+	.invest-btn{
+			
+		}
+	.invest-rate{
+		text-align: left;
+		padding-left: 20px;
+	}
+	.invest-date{
+		
+	}
+	.invest-credit{
+		
+	}
+	.invest-progress{
+		text-align: left;
+		padding-left: 20px;
+		p{
+			color: #b9b9b9;
+			padding-top: 5px;
+		}
+	}
+}
+// 信投宝-列表页
+.invest-menu{
+	li{
+		float: left;
+		width: 20%;
+		text-align: center;
+		font-size: 16px;
+		a{
+			display: block;
+			height: 58px;
+			line-height: 58px;
+			.separator{
+				color: #eee;
+				float: right;
+			}
+		}
+		&.cur{
+			color:#2c97f4;
+			border-top:2px solid #2c97f4;
+			margin-top: -1px;
+		}
+	}
+}
+// 筛选
+.filter-box{
+	overflow: hidden;
+	h5{
+		font-weight: normal;
+		margin:24px 0 0 30px;
+	}
+}
+.filter-wrap{
+	font-size: 14px;
+	margin-left: 10px;
+	dt{
+		padding:18px 0 8px 20px;
+		margin-left: 5px;
+	}
+}
+.filter-condition{
+	overflow: hidden;
+	dt,dd{
+		float: left;
+		padding:10px 20px;
+	}
+	dd{
+		.selected{
+			background-color: #2c97f4;
+			color: #fff;
+			border-radius:3px;
+			padding:2px 6px;
+		}
+	}
+}
+.invset-list-wrap{
+	margin:25px;
+	margin-top: 20px;
+	border:1px solid #eee;
+}
+.invest-table-inside{
+	th{
+		font-weight: normal;
+		background-color: #f9f9f9;
+		position:relative;
+		&.invest-title{
+			font-size: 12px;
+		}
+		&.invest-avali{
+			text-align: left;
+			padding-left: 20px;
+		}
+		b{
+			position: absolute;
+			margin-left: 5px;
+			&.triangle-up{
+				top:20px;
+			}
+			&.triangle-down{
+				bottom:19px
+			}
+		}
+	}
+	td{
+		border-color:#eee;
+		.green-bbox{
+			padding:1px 5px;
+		}
+		.ui-btn{
+		padding: 10px 30px;
+		}
+		.invest-end{
+			padding:10px 37px;
+			cursor: not-allowed;
+		}
+	}
+	th,td{
+		padding:20px 0;
+	}
+	.invest-title{
+		font-size: 14px;
+	}
+}
+// 活期宝理财产品
+.invest-current{
+	overflow: hidden;
+	padding-bottom:60px;
+	.invest-hq-chart{
+		width: 440px;
+		margin-top: 40px;
+		margin-left: 20px;
+	}
+	.invest-hq-rate{
+		width: 210px;
+		padding: 90px 20px 0 100px;
+		p{
+			padding-bottom: 5px;
+		}
+		span{
+			font-size: 34px;
+    		color: #2c97f4;
+    		.icon-down{
+    			width: 22px;
+			    height: 26px;
+			    background: url(../images/sprites/icon-downgreen.png) no-repeat;
+    		}
+		}
+	}
+}
+.detail-invest-box{
+		width: 270px;
+		margin-right:68px;
+}
+.detail-invest-content{
+	position: relative;
+	.invest-last-num{
+		line-height: 1.8;
+	}
+	.ui-icon-sucess{
+		top:0;
+		left: 50%;
+		margin-left: -20px;
+	}
+	.ui-input-body{
+		input{
+			width: 100%;
+		}
+	}
+	.invest-money-detail{
+		position: relative;
+		.detail-icons{
+			display: inline-block;
+			width: 14px;
+			height: 14px;
+			cursor: pointer;
+			float: left;
+		}
+		.icon-plus{
+			background: url(../images/sprites/icon-plus.png) no-repeat;
+		}
+		.icon-minus{
+			background: url(../images/sprites/icon-minus.png) no-repeat;
+		}
+		.invest-money-text{
+			width: 206px;
+			float: left;
+			p{
+				padding-bottom:10px;
+				overflow: hidden;
+				margin: 0 3px;
+			}
+		}
+		.money-last{
+			display: none;
+		}
+		.btn-recharge{
+			color: #2c97f4;
+			border:1px solid #2c97f4;
+			padding:0 3px;
+			border-radius:3px;
+			margin-left: 5px;
+			float: right;
+		}
+	}
+}
+.content{
+	.detail-tabs{
+		height: 58px;
+		border: 1px solid #eee;
+		position: relative;
+		background-color: #f9f9f9;
+	}
+	.detail-tabs-item{
+		display: block;
+	    float: left;
+	    height: 58px;
+	    line-height: 58px;
+	    padding: 0 32px;
+	    font-size: 16px;
+	    border-right: 1px solid #eee;
+	}
+	.detail-tabs-active{
+		height: 58px;
+	    line-height: 58px;
+	    background-color: #fff;
+	    color: #399df5;
+	    border-top: 2px solid #3498db;
+	}
+	.detail-list{
+		border:1px solid #eee;
+		border-top:0;
+	}
+}
+.ask-item{
+	line-height: 2;
+	padding:10px 30px;
+}
+.invest-intro-pd{
+	padding:0 30px 60px;
+	clear:both;
+}
+.invest-intro-table{
+	tr{
+		&:first-child{
+			td{
+				border-top:2px solid #eee;
+			}
+		}
+	}
+	td{
+		padding:20px 0;
+		font-size: 14px;
+		border-bottom:1px solid #eee;
+		&:first-child{
+			padding-left: 30px;
+		}
+	}
+}
+// 通用弹出层样式
+.invest-money-text{
+	.use-crad-help{
+		width: 263px;
+	}
+	.gift-cards{
+		width: 263px;
+		border:1px solid #b5dcfe;
+		background-color: #f3f9ff;
+		overflow: hidden;
+		display: none;
+	}
+	.gift-card-item{
+		padding:10px 2px 10px 0;
+		overflow: hidden;
+		input{
+			position: relative;
+			top:2px;
+			margin-left: 10px;
+		}
+		&:first-child{
+			border-bottom:1px dashed #b5dcfe;
+		} 
+	}
+}
+// 定期宝详情页
+.detail-content-left{
+	float: left;
+	width: 840px;
+	.detail-content-section{
+		margin: 20px 30px 0; 
+	}
+	.detail-content-infor{
+		border-top:1px solid #eee;
+		border-bottom:1px solid #eee;
+	}
+	.detail-content-item{
+		float: left;
+		width: 226px;
+		text-align: center;
+		padding:56px 0;
+		&.detail-content-item-end{
+			text-align: left;
+			padding-left: 80px;
+		}
+	}
+	.detail-content-feature{
+		p{
+			width: 33.33%;
+			float: left;
+			padding:42px 0;
+			&.release-date{
+				text-indent: 50px;
+			}
+		}
+		.ui-font-green{
+			.icon-sec{
+				margin-left: 20px;
+			}
+			span{
+				position: relative;
+				top:-4px;
+				margin-left: 5px;
+			}
+		}
+	}
+}
+.icon-sec{
+	display:inline-block;
+	width:14px;
+	height: 16px;
+	background: url(../images/sprites/icon-sec.png) no-repeat;
+}
+.detail-content-right{
+	float: right;
+	.detail-invest-box{
+		width: 280px;
+		margin:34px 30px 18px;
+	}
+}
+.detail-content-right{
+	.btn-invest-all{
+		position: absolute;
+		right: 0;
+		top: 8px;
+		border-top-right-radius: 3px;
+		border-bottom-right-radius: 3px;
+		width: 45px;
+		height: 40px;
+		line-height: 40px;
+		color: #fff;
+		text-align: center;
+		background-color: #2c97f4;
+	}
+}
+// 投资记录列表
+.invest-record{
+	th{
+		font-weight: normal;
+		color: #b9b9b9;
+		font-size: 14px;
+		padding:20px 0;
+		border-bottom:1px solid #eee;
+	}
+	td{
+		padding: 24px 0;
+		font-size: 14px;
+		text-align: center;
+		border-bottom:1px solid #eee;
+	}
+	.record-date{
+		text-align: left;
+		padding-left: 120px;
+	}
+}
+// 通用提示工具条
+.tools-con-notice{
+	background-color: #fffcda;
+	border:1px solid #f9f1ab;
+	border-radius:3px;
+	padding:10px 20px;
+}
+// 所有产品列表
+.invest-product-list {
+	.product-box{
+		position: relative;
+		background-color: #fff;
+		border:1px solid #eee;
+		border-radius: 2px;
+		width: 283px;
+		height:280px;
+		float: left;
+		margin-left: 20px;
+		text-align: center;
+		&:first-child{
+			margin-left: 0;
+		}
+		h3{
+			font-weight: normal;
+			margin: 0;
+			line-height: 3.6;
+		}
+		.icon-starproduct{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 78px;
+			height: 78px;
+			background: url(../images/sprites/star-product.png) no-repeat;
+
+		}
+	}
+	.invest-go-detail{
+		.ui-btn{
+			margin-top: 42px;
+			padding:12px 96px;
+		}
+	}
+}
+// 四大优势
+.four-advantage{
+	overflow: hidden;
+	padding:18px 0;
+	background-color: #def0ff;
+	margin:15px 0;
+	li{
+		float: left;
+		width: 25%;
+		.icon-advage{
+			display: inline-block;
+			float: left;
+			width: 56px;
+			height: 64px;
+			margin-left: 28px;
+			background: url(../images/sprites/icon-advage.png) no-repeat;
+			&.icon-fico{
+				background-position: -58px 0;
+			}
+			&.icon-recycle{
+				background-position:-116px 0;
+			}
+			&.icon-sec{
+				background-position:-174px 0;
+			}
+		}
+		.ctx{
+			float: left;
+			margin-left: 16px;
+			margin-top: 12px;
+		}
+	}
+}
+// all 详情tab页
+.content{
+	.all-detail-tabs{
+		background-color: #fff;
+		margin: 0 28px;
+		border:0;
+		border-bottom:2px solid #eee;
+		.detail-tabs-item{
+			border-right:0;
+			padding:0 20px;
+		}
+		.detail-tabs-active{
+			border-top:0;
+			border-bottom:2px solid #3498db;
+		}
+	}
+}
+// 用户心声
+.invest-user-heart{
+	overflow: hidden;
+	padding:34px 0;
+	.user-avatar{
+		margin-left: 10px;
+	}
+	.avatar-bg{
+		background-color:#def0ff;
+		width: 80px;
+		height: 80px;
+		border-radius:50%;
+		overflow: hidden;
+		text-align:center;
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.invest-user-infor{
+		float: left;
+		width: 960px;
+		margin: 0 40px;
+	}
+	.user-reviews{
+		padding-top: 10px;
+		line-height: 1.8
+	}
+}
+// 信投宝详情页
+.detail-xtb-section{
+	.detail-content-item{
+		width: 164px;
+		.credit-level{
+			width: 30px;
+			height: 30px;
+			line-height: 30px;
+			color: #fff;
+			font-size: 16px;
+			background-color: #74ca98;
+			border-radius:50%;
+			text-align: center;
+			margin:0 auto;
+			margin-top: 8px;
+			&.level_b{
+				background-color: #f1c40f;
+			}
+			&.level_c{
+				background-color: #fc8478;
+			}
+		}
+	}
+}
+// 信头宝 借款详情页
+.contentb h6{
+	margin:0;
+	line-height: 50px;
+}
+.fico-grade{
+	padding:30px;
+}
+.loaner-info{
+	width:760px;
+	margin-left: 10px;
+	.loan-reason{
+		font-size: 14px;
+		color: #b9b9b9;
+		line-height: 2;
+		padding-bottom:20px;
+	}
+	.table-loaner-info{
+		width: 350px;
+	}
+	table{
+		width: 100%;
+		border: 1px solid #eee;
+		color: #3e3e3e;
+		font-size: 12px;
+		text-align: center;
+		td{
+			padding: 12px 20px;
+			vertical-align: text-top;
+			border-bottom: 1px solid #eee;
+			line-height: 1.8;
+			&.th{
+				border-right: 1px solid #eee;
+				background: #f3f3f3;
+    			width: 90px;
+			}
+			&.approved{
+				 background:url(../images/sprites/icon-criedted.png) no-repeat center
+			}
+		}
+	}
+}
+// fico 评分
+.fico-blue{
+  background-color: #72a5d5 !important;
+}
+.fico-green{
+  background-color: #6fae59 !important;
+}
+.fico-yellow{
+  background-color: #ffd52c !important;
+}
+.fico-red{
+  background-color: #ff8a80 !important;
+}
+.fico-color-icon{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  float: left;
+}
+.loaner-score{
+    border: 1px solid #eee;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0 20px 20px;
+    text-align: center;
+    width: 330px;
+    box-sizing: border-box;
+    h5{
+    	font-weight: normal;
+    	margin: 0;
+    }
+    .fico-canvas {
+    width: 208px;
+    height: 208px;
+    position: relative;
+    margin-left: 35px;;
+    margin-top: 25px;
+    	canvas{
+    		margin-top: 21px;
+    	}
+    	span{
+    		position: absolute;
+    		width: 15px;
+    		height: 15px;
+    		border-radius: 50%;
+    	}
+    	.fico-blue{
+    		 left: 50%;
+    		margin-left: -7px;
+    	}
+    	.fico-green{
+    		top: 50%;
+    		right: 0;
+    		margin-top: -7px;
+    	}
+    	.fico-yellow{
+    		bottom: 0;
+    		left: 50%;
+    		margin-left: -7px;
+    	}
+    	.fico-red{
+    		top: 50%;
+    		left: 0;
+    		margin-top: -7px;
+    	}
+	}
+	.credit-rating{
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 80px;
+		height: 84px;
+		background-color: #73cb99;
+		text-align: center;
+		b{
+			font-weight: normal;
+			padding-top: 10px;
+			display: block;
+			color: #fff;
+		}
+		strong{
+			color: #fff;
+			font-size: 42px;
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 25px;
+			text-align: center;
+			width: 100%;
+		}
+		.sum{
+			position: absolute;
+			left: 0;
+			bottom: -20px;
+			width: 100%;
+			em{
+				color: #2c97f4;
+				font-weight: bold;
+				padding: 0 3px;
+				font-family: Tahoma, Geneva, sans-serif;
+			}
+		}
+	}
+	.fico-get-score{
+    	padding: 10px 0;
+    	margin-left: 15px;
+    	.detail-percent-wrap{
+			width: 266px;
+    		margin: 15px 0;
+    		overflow: hidden;
+    	}
+    	.progress-txt{
+    		font-size: 12px;
+		    color: #3e3e3e;
+		    padding: 0 10px;
+		    float: left;
+    	}
+    	.fico-ui-progress{
+    		width: 120px;
+    		height: 12px;
+		    border-radius: 6px;
+		    top: 2px;
+		    float: left;
+    	}
+    	.ui-progress-content{
+    		height: 12px;
+    		border-radius: 6px;
+    	}
+	}
+}
+// 借款人信息table
+.all-info-tables{
+	padding:0 30px 30px 40px;
+	margin-top: -30px;
+	.fico-noticy {
+    		color: #b9b9b9;
+    		padding: 18px 10px;
+    	}
+    .fico-view-report{
+    	padding:12px 0;
+	    margin: 30px auto;
+	    display: block;
+	    width: 290px;
+	    }
+}
+.xtb-info-table{
+	table{
+		width: 100%;
+    	border: 1px solid #dadada;
+    	th{
+    		height: 43px;
+    		font-weight: normal;
+    		background-color: #f3f3f3;
+    		border-left: 1px solid #dadada;
+    		border-bottom: 1px solid #dadada;
+    	}
+    	td{
+    		padding: 12px 20px;
+		    vertical-align: text-top;
+		    border-bottom: 1px solid #dadada;
+		    line-height: 1.8;
+		    border-left: 1px solid #dadada;
+		    text-align: center;
+    	}
+    }
+}
+// 定期宝列表详情页
+.invest-mkap-btn{
+	.ui-btn{
+		width: 120px;
+		box-sizing:border-box;
+		padding:0 !important;
+		height: 38px;
+		line-height: 38px;
+		text-align: center;
+	}
+}
+.invest-fixed-sum{
+	ul{
+		overflow: hidden;
+    	padding: 58px 0;
+	}
+	li{
+		float: left;
+		width: 33.33%;
+		.icon-bg{
+			float: left;
+			width: 84px;
+			height: 84px;
+			border-radius:50%;
+			margin-left: 46px;
+			background-color: #def0ff;
+			text-align: center;
+		}
+		.invest-icon{
+			display: inline-block;
+			margin-top: 15px;
+			background: url(../images/sprites/invest-icon.png) no-repeat;
+	    }
+	    &.sum-money{
+	    	.invest-icon{
+	    		width: 41px;
+	    		height: 36px;
+		    	background-position:-98px 0;
+		    	margin-top: 25px;
+	    	}
+	    }
+	    &.sum-makemoney{
+	    	.invest-icon{
+	    		width: 40px;
+	    		height: 50px;
+		    	background-position:0 0;
+	    	}
+	    }
+	    &.sum-users{
+	    	.invest-icon{
+	    		width: 54px;
+	    		height: 43px;
+		    	background-position:-42px 0;
+	    	}
+	    }
+	    span{
+	    	display: block;
+    		padding-top: 20px;
+    		padding-left: 24px;
+    		i{
+    			display: block;
+    			padding-top: 5px;
+    		}
+	    }
+	}
+}
+.process-map{
+	text-align:center;
+	padding-top: 20px;
+}
+/*map 地图样式*/
+.map-point {
+  margin: 0 auto;
+  width: 733px;
+  height: 392px;
+  overflow: hidden;
+  position: relative;
+  background: url(../images/mapbg.png) no-repeat 0 0;
+}
+.map-point a {
+  float: left;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 22px;
+  text-indent: -9999em;
+  overflow: hidden;
+  background: url(../images/map_point_cur.png) no-repeat;
+  &:hover{
+  	background: url(../images/btn_h.png) no-repeat;
+  }
+}
+.mapStateTip {
+  position: absolute;
+  padding: 5px 8px;
+  background: #3498db;
+  border-radius: 4px;
+  color: #fff;
+  display: none;
+}
+[class^="arrows-"], [class*=" arrows-"] {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: top;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent;
+  overflow: hidden;
+  content: "";
+}
+.mapStateTip .arrows-down {
+  border-top-color: #3498db;
+  border-width: 6px;
+  position: absolute;
+  left: 50%;
+  bottom: -11px;
+  margin-left: -6px;
+}
+/*地图样式结束*/
+// 登录弹出框
+.title-login{
+	font-size: 16px;
+	border-bottom:1px solid #2c97f4;
+	padding-left: 20px;
+	line-height: 56px;
+}
+.quick-login{
+	.ui-form-item{
+		padding:15px 0;
+	}
+	.ui-label-icon {
+		background: url(../images/sprites/icon-reg.png) no-repeat;
+	}
+	.icon-form-peoples {
+		width: 31px;
+		background-position: -84px 0;
+	}
+	.icon-form-loginpw {
+		width: 27px;
+		background-position: -55px 0;
+		margin-left: 13px;
+	}
+	.auto-login input {
+		position: relative;
+		top: 2px;
+		margin-right: 3px;
+	}
+}
+.qk-login-btn{
+	.ui-form-btn{
+		padding-bottom: 10px;
+	}
+}
+//投资详情页 修改
+.icon-sy-arrow{
+	display:inline-block;
+	position: relative;
+	top:3px;
+	margin-right: 3px;
+	width:16px;
+	height:14px;
+	background: url(../images/sprites/icon-sy-arrow.png) no-repeat;
+}
+.icon-wenhao{
+	display:inline-block;
+	position: relative;
+	top:3px;
+	margin-right: 5px;
+	width:16px;
+	height:16px;
+	background: url(../images/sprites/icon-wenhao.png) no-repeat;
+}
+.icon-tips-arrow{
+	position: absolute;
+	left:10px;
+	width:14px;
+	height:7px;
+	background: url(../images/sprites/tips-arrow.png) no-repeat;
+}
+.tips-box-ye{
+	border:1px solid #eee;
+	position: absolute;
+	width:280px;
+	z-index:9;
+	background: #fff;
+	box-shadow:0px 0px 5px #eee;
+	.sy-card-list{
+		margin: 0 18px;
+		dd{
+			padding:16px 0;
+		}
+	}
+}
+.tips-box-sy{
+	border:1px solid #eee;
+	position: absolute;
+	width:280px;
+	left:0;
+	z-index:9;
+	margin-left: -10px;
+	margin-top: 5px;
+	padding:10px 10px 0 10px;
+	border-radius:3px;
+	background: #fff;
+	box-shadow:0px 0px 2px #eee;
+	display:none;
+}
+.now-sy-card{
+	position: relative;
+	top:-2px;
+	margin-right: 2px;
+}
+.sy-card-list{
+	overflow: hidden;
+	dt{
+		font-weight: bold;
+		a{
+			font-weight: normal;
+		}
+	}
+	dd{
+		border-top:1px solid #eee;
+		padding:10px 0;
+	}
+}
+.detail-invest-layer{
+	.detail-invest-content{
+		width: 280px;
+    	margin: 34px auto 18px auto;
+	}
+	.btn-invest-all{
+	position: absolute;
+    right: 0;
+    top: 8px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    width: 45px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+    background-color: #2c97f4;
+	}
+}
+// 开发测试提示页面
+.invset-list-wrap-error{
+	padding-top:184px;
+	height:684px;
+	border:1px solid #eeeeee;
+	text-align:center;
+	.title{
+		color: #474747;
+		font-size:24px;
+		margin-top: 80px;
+	}
+	.text-blue{
+		color: #2c98f3;
+		font-size:16px;
+		margin-top: 16px;
+	}
+	.text{
+		color: #474747;
+		font-size:14px;
+		line-height: 34px;
+		margin-top: 50px;
+	}
+}
+.ui-icon-sucess {
+	position:absolute;
+ 	background: url("../images/sprites/icon-sucess.png") no-repeat center;
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+#new_user_bimg{
+	display: block;
+	height: 400px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #2c97f4;
+}
