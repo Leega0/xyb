@@ -1,3 +1,0 @@
-.sprite-1{ background-position: 0 0; width: 143px; height: 143px; } 
-.sprite-2{ background-position: -153px 0; width: 143px; height: 143px; } 
-.sprite-3{ background-position: -306px 0; width: 143px; height: 143px; } 

@@ -1,3 +1,0 @@
-invest-icon-earn.png, 40, 50, 0, 0
-invest-icon-person.png, 54, 43, 42, 0
-invest-icon-money.png, 41, 36, 98, 0
