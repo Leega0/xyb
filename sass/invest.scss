@@ -240,6 +240,14 @@
 		.money-last{
 			display: none;
 		}
+		.text{
+			position:relative;
+			top: -2px;
+		}
+		.money{
+			position: relative;
+			top: 3px;
+		}
 		.btn-recharge{
 			color: #2c97f4;
 			border:1px solid #2c97f4;
@@ -247,6 +255,7 @@
 			border-radius:3px;
 			margin-left: 5px;
 			float: right;
+			margin-top: 1px;
 		}
 	}
 }
@@ -941,7 +950,7 @@
 .icon-wenhao{
 	display:inline-block;
 	position: relative;
-	top:3px;
+	top:1px;
 	margin-right: 5px;
 	width:16px;
 	height:16px;

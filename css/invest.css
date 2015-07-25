@@ -276,6 +276,16 @@
   display: none;
 }
 
+.detail-invest-content .invest-money-detail .text {
+  position: relative;
+  top: -2px;
+}
+
+.detail-invest-content .invest-money-detail .money {
+  position: relative;
+  top: 3px;
+}
+
 .detail-invest-content .invest-money-detail .btn-recharge {
   color: #2c97f4;
   border: 1px solid #2c97f4;
@@ -283,6 +293,7 @@
   border-radius: 3px;
   margin-left: 5px;
   float: right;
+  margin-top: 1px;
 }
 
 .content .detail-tabs {
@@ -1037,7 +1048,7 @@
 .icon-wenhao {
   display: inline-block;
   position: relative;
-  top: 3px;
+  top: 1px;
   margin-right: 5px;
   width: 16px;
   height: 16px;
