@@ -696,8 +696,16 @@ h6 {
   padding-top: 15px !important;
 }
 
+.ui-pt18 {
+  padding-top: 18px !important;
+}
+
 .ui-pt20 {
   padding-top: 20px !important;
+}
+
+.ui-pt23 {
+  padding-top: 23px !important;
 }
 
 .ui-pt30 {
@@ -1290,10 +1298,15 @@ h6 {
   background-color: #fff;
   border: 1px solid #eee;
   border-top: 0;
+  color: #474747;
 }
 
 .myhome-account .home-account-list p:hover {
-  background-color: #f4faff;
+  background-color: #2a99f3;
+}
+
+.myhome-account .home-account-list p:hover a {
+  color: #fff;
 }
 
 .myhome-account .icon-arrow {
@@ -1347,28 +1360,42 @@ h6 {
   top: 28px;
 }
 
+.menu-list li .menu-invest.expand .icon-arrow-b {
+  background: url(../images/sprites/icon-arrow-up.png) no-repeat;
+}
+
+.menu-list li .menu-invest.expand .menu-invest-list {
+  border-top: 0;
+}
+
 .menu-list li .menu-invest-list {
   position: absolute;
-  left: 8px;
-  top: 50px;
+  left: -1px;
+  top: 40px;
   background-color: #fff;
   display: none;
   text-align: center;
   border: 1px solid #eee;
+  padding-top: 10px;
   z-index: 99;
 }
 
 .menu-list li .menu-invest-list p:hover {
-  background-color: #f4faff;
+  background-color: #2a99f3;
+}
+
+.menu-list li .menu-invest-list p:hover a {
+  color: #fff;
 }
 
 .menu-list li .menu-invest-list a {
-  line-height: 2;
+  line-height: 2.2;
   display: block;
   padding: 0;
-  width: 100px;
+  width: 112px;
   text-align: left;
-  text-indent: 18px;
+  font-size: 14px;
+  text-indent: 22px;
 }
 
 .menu-list .icon-downapp {
@@ -1512,7 +1539,7 @@ h6 {
 
 .ui-popbar {
   position: fixed;
-  bottom: 200px;
+  bottom: 45px;
   right: 20px;
   z-index: 999;
 }
@@ -1630,7 +1657,6 @@ h6 {
 }
 
 .layer-bottom {
-  border-top: 1px solid #ddd;
   margin: 0 25px;
 }
 

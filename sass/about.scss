@@ -2200,7 +2200,7 @@ dl{
   }
 }
 .recommend-reward{
-	padding:40px 0;
+	padding:40px 0 60px;
 //第一部分
 	.top-step{
 		margin:0;
@@ -2241,21 +2241,22 @@ dl{
 		margin-top:40px;
 		dd{
 			float:right;
-			width:394px;
-			height:270px;
+			width:320px;
+			height:450px;
 			&:first-child{
 				float:left;
-				width:790px;
+				width:860px;
 			}
 		}
 		.generate-box{
 			padding:31px 0;
 			input{
 				float:left;
-				width:432px;
+				width:490px;
 				height:36px;
 				padding-left:10px;
 				margin-left:21px;
+				color: #b9b9b9;
 			}
 			a{
 				float:left;
@@ -2279,32 +2280,16 @@ dl{
 			padding-left:14px;
 			border-bottom:1px solid #efefef;
 		}
-		th,td{
-			font-size:12px;
-			border-left:1px solid #efefef;
-			&:first-child{
-				border-left:0;
-			}
-		}
-		th{
-			color:#474747;
-			background:#f9f9f9;
-			height:42px;
-		}
-		td{
-			color:#fb8678;
-			text-align: center;
-			height:44px;
-			&:first-child{
-				color:#474747;
-			}
+		.mid-box-img{
+			display: block;
+			margin:20px auto 0;
 		}
 		.text-sliderdown-wrap{
  			overflow: hidden;
- 			height:200px;
+ 			height:374px;
 		}
 		.text-sliderdown-box{
-			padding:14px 0 0 16px;
+			padding:18px 0 0 16px;
 			li{
 				color: #b9b9b9;
 				font-size:14px;
@@ -2318,7 +2303,7 @@ dl{
 		.title{
 			color:#474747;
 			font-size:16px;
-			padding:76px 0 11px 9px;
+			padding:0 0 11px 9px;
 			border-bottom:1px solid #efefef;
 		}
 		.text{
@@ -2326,16 +2311,126 @@ dl{
 			color:#b9b9b9;
 			font-size:14px;
 			line-height: 30px;
-			a{
-				color:#2c97f4;
-				&:hover{
-					text-decoration: underline
-				}
-				&:active{
-					text-decoration: none
-				}
+			i{
+				display: inline-block;
+				width: 24px;
 			}
 		}
 
+	}
+}
+//实时财务数据页面
+.true-time-financial-data{
+	padding:30px 0;
+	.contain_wrap{
+		border:1px solid #eee;
+	}
+}
+.true-time-financial-data-1{
+	padding-top:24px;
+	height:676px;
+	background:#fff url(../images/true-time-financial-data-1.png) no-repeat  center 50px;
+	.top-title{
+		color: #474747;
+		font-size: 18px;
+		border-left:4px solid #399df5;
+		padding-left:10px;
+		height:20px;
+		line-height:20px;
+		margin-left:28px;
+		span{
+			font-size: 14px;
+		}
+	}
+	.min-title{
+		color: #474747;
+		font-size: 16px;
+		text-align:center;
+		margin-top:100px;
+	}
+	.min-data{	
+		text-align:center;
+		margin-top:16px;
+		span{
+			display: inline-block;
+			color: #ffffff;
+			font-size: 66px;
+			padding:10px 18px;
+			background:#2c97f4;
+			border-radius:10px;
+			box-shadow:0 3px #dad9d9;
+		}
+	}
+	.min-about{
+		margin-top:20px;
+		text-align:center;
+		color: #2c97f4;
+		font-size: 30px;	
+	}
+	.bottom-data{
+		margin-top:210px;
+		dd{
+			text-align:center;
+			float:left;
+			
+			color: #474747;
+			font-size: 14px;
+		}
+		span{
+			display: block;
+			color: #474747;
+			font-size: 24px;
+			margin-bottom:6px;
+		}
+	}
+	.bottom-data-1{
+		width:382px;
+	}
+	.bottom-data-2{
+		width:448px;
+	}
+	.bottom-data-3{
+		width:370px;
+	}
+}
+.true-time-financial-data-2{
+	height:560px;
+	background:#fbfbfb url(../images/true-time-financial-data-2.png) no-repeat center;
+	p{
+		font-size: 16px;
+	}
+	span{
+		margin-top:10px;
+		display: block;
+		color: #474747;
+		font-size: 18px;
+		font-weight:bold;
+	}
+	.data1{
+		padding: 86px 0 0 764px;
+	}
+	.data2{
+		text-align:right;
+		padding: 10px 864px 0 0;
+	}
+	.mim-data{
+		width:222px;
+		margin:32px 0 0 454px;
+		text-align:center;
+		span{
+			margin-bottom:10px;
+		}
+	}
+	.data3{
+		padding: 32px 0 0 902px;
+	}
+	.data4{
+		text-align:right;
+		padding: 14px 900px 0 0;
+	}
+	.data5{
+		text-align:right;
+		padding: 0 488px 0 0;
+		margin-top:-14px;
 	}
 }

@@ -382,25 +382,35 @@
 		<div class="layer-add-card">
 			<div class="add-card-itmes ui-size14">
 				<div class="card-info-items">
-					<p>真实姓名</p>
+					<p class="clearfix">真实姓名<a href="" class="fr ui-font-blue">实名认证></a></p>
 					<input type="text" class="ui-input" value="王*明" disabled>
-				</div>
-				<div class="card-info-items">
-					<p>身份证号</p>
-					<input type="text" class="ui-input" value="440301*********1542" disabled>
-				</div>
-				<div class="card-info-items">
-					<p>选择银行卡</p>
+				</div>				
+				<div class="card-info-items ui-mt15">
 					<select name="" id="" class="ui-input">
-						<option value="">请选择</option>
+						<option value="">请选择银行卡</option>
 						<option value="">中国银行</option>
 						<option value="">中国农业银行</option>
 						<option value="">招商银行</option>
 					</select>
 				</div>
-				<div class="card-info-items">
-					<p>银行卡卡号</p>
-					<input type="text" placeholder="请输入银行卡卡号" class="ui-input">
+                <!-- 支行调用 -->
+                <div class="card-info-items ui-mt15 clearfix">
+                    <select name="" id="" class="card-dz-select fl">
+                        <option value="">所在省</option>
+                        <option value="">新疆</option>
+                    </select>
+                    <select name="" id="" class="card-dz-select fr">
+                        <option value="">所在市</option>
+                        <option value="">昌吉</option>
+                        <option value="">自治区直辖县级行政单位</option>
+                    </select>
+                </div>
+                <!-- end -->
+                <div class="card-info-items ui-mt15">
+                    <input type="text" placeholder="请输入开户支行" class="ui-input">
+                </div>
+				<div class="card-info-items ui-mt15">
+					<input type="text" placeholder="请输入银行卡号" class="ui-input">
 				</div>
 				<div class="card-info-items">
 					<p>银行预留手机号</p>
@@ -430,7 +440,7 @@
 						<p class="ui-input-body">
 							<input type="text" placeholder="输入短信验证码" class="ui-short-input">
 						</p>
-						<a href="javascript:void(0);" class="ui-btn ui-btn-blue send-code">发送验证码</a>
+                        <input type="button" value="发送验证码" class="ui-btn ui-btn-blue send-code">
 					</div>
 				</div>
 			</div>

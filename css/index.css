@@ -55,16 +55,32 @@
   background: url(../images/sprites/icon-youshi.png) no-repeat;
 }
 
-.banner-wrap .our-superiority a.icon-recycle {
+.banner-wrap .our-superiority a:hover {
+  background: url(../images/sprites/icon-youshi-hover.png) no-repeat !important;
+}
+
+.banner-wrap .our-superiority .icon-recycle {
   background-position: -116px 0;
 }
 
-.banner-wrap .our-superiority a.icon-fico {
+.banner-wrap .our-superiority .icon-recycle:hover {
+  background-position: -59px 0 !important;
+}
+
+.banner-wrap .our-superiority .icon-fico {
   background-position: -58px 0;
 }
 
-.banner-wrap .our-superiority a.icon-benxi {
+.banner-wrap .our-superiority .icon-fico:hover {
+  background-position: -118px 0 !important;
+}
+
+.banner-wrap .our-superiority .icon-benxi {
   background: url(../images/sprites/icon-benxi.png) no-repeat;
+}
+
+.banner-wrap .our-superiority .icon-benxi:hover {
+  background-position: -1px 0 !important;
 }
 
 .banner-wrap .free-regist {
@@ -318,11 +334,54 @@
   margin-left: 0 !important;
 }
 
-.about-xyb p {
+.about-xyb .media-content {
+  overflow: hidden;
+  height: 80px;
+  margin-bottom: 13px;
+}
+
+.about-xyb .media-content img {
+  float: left;
+}
+
+.about-xyb .media-content .media-title {
+  float: left;
+  width: 230px;
+  margin-left: 14px;
   font-size: 14px;
-  color: #b9b9b9;
   line-height: 2;
-  padding-top: 10px;
+  margin-top: -5px;
+}
+
+.about-xyb .media-content .time {
+  color: #b9b9b9;
+}
+
+.about-xyb ul {
+  list-style-image: url(../images/icon-list-style.png);
+  padding: 0 15px;
+}
+
+.about-xyb li {
+  font-size: 14px;
+  padding: 9.5px 0;
+}
+
+.about-xyb li span {
+  display: inline-block;
+}
+
+.about-xyb li span.link {
+  width: 233px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: relative;
+  top: 2px;
+}
+
+.about-xyb li span.time {
+  color: #b9b9b9;
 }
 
 .about-xyb a {
@@ -384,7 +443,7 @@
 .about-media .media-content {
   overflow: hidden;
   height: 80px;
-  margin-bottom: 13px;
+  margin-bottom: 6px;
 }
 
 .about-media .media-content img {

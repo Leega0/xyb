@@ -44,16 +44,29 @@
 			width: 56px;
 			height: 88px;
 			background: url(../images/sprites/icon-youshi.png) no-repeat;
-			&.icon-recycle{
-				background-position:-116px 0;
-			}
-			&.icon-fico{
-				background-position:-58px 0;
-			}
-			&.icon-benxi{
-				background:url(../images/sprites/icon-benxi.png) no-repeat;
+			&:hover{
+				background: url(../images/sprites/icon-youshi-hover.png) no-repeat !important;
 			}
 		}
+		.icon-recycle{
+				background-position:-116px 0;
+				&:hover{
+					background-position:-59px 0 !important;
+				}
+
+			}
+		.icon-fico{
+				background-position:-58px 0;
+				&:hover{
+					background-position:-118px 0 !important;
+				}
+			}
+		.icon-benxi{
+				background:url(../images/sprites/icon-benxi.png) no-repeat;
+				&:hover{
+					background-position:-1px 0 !important;
+				}
+			}
 	}
 	.free-regist{
 		padding:15px 0;
@@ -272,11 +285,46 @@
 }
 .about-xyb{
 	margin-left: 0 !important;
-	p{
+	.media-content{
+		overflow: hidden;
+		height: 80px;
+		margin-bottom: 13px;
+		img{
+			float: left;
+		}
+		.media-title{
+			float: left;
+			width: 230px;
+			margin-left: 14px;
+			font-size: 14px;
+			line-height: 2;
+			margin-top: -5px;
+		}
+		.time{
+			color: #b9b9b9;
+		}
+	}
+	ul{
+		list-style-image: url(../images/icon-list-style.png);
+		padding:0 15px;
+	}
+	li{
 		font-size: 14px;
-		color: #b9b9b9;
-		line-height: 2;
-		padding-top: 10px;
+		padding:9.5px 0;
+		span{
+			display: inline-block;
+			&.link{
+				width: 233px;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				position: relative;
+				top: 2px;
+			}
+			&.time{
+				color: #b9b9b9;
+			}
+		}
 	}
 	a{
 		display: block;
@@ -330,7 +378,7 @@
 	.media-content{
 		overflow: hidden;
 		height: 80px;
-		margin-bottom: 13px;
+		margin-bottom: 6px;
 		img{
 			float: left;
 		}

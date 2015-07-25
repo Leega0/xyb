@@ -7,8 +7,10 @@ $(function(){
 	});
 	// menu 菜单栏展开
 	$(".menu-invest").hover(function() {
+    $(this).addClass('expand')
 		$(".menu-invest-list").show()
 	}, function() {
+    $(this).removeClass('expand')
 		$(".menu-invest-list").stop().hide()
 	});
 	// footer 菜单栏展开
@@ -20,7 +22,6 @@ $(function(){
     // 返回顶部
     function w_screen(){
     if($(window).width() <= 1280){
-      console.log(window.screen.width);
       $("#index_popbar").hide();
     }else if($(window).width() > 1280){
       $("#index_popbar").show();
@@ -29,16 +30,30 @@ $(function(){
   w_screen();
   window.onresize=function(){
     w_screen();
-    barEdge = ($(document).width()-1200) / 2 - $pobarWidth - 15;
-    $popbar.css('right', barEdge);
+    // barEdge = ($(document).width()-1200) / 2 - $pobarWidth - 15;
+    // $popbar.css('right', barEdge);
   }
-    var $popbar = $('.ui-popbar'),
-        $pobarWidth = $popbar.width(),
-        barEdge = ($(document).width()-1200) / 2 - $pobarWidth - 15;
-    $popbar.css('right', barEdge);
-
+  var $scrollto=$("#scrollto");
+   $(window).scroll(function(){  
+                if ($(window).scrollTop()>100){  
+                    $scrollto.show(300);  
+                }  
+                else  
+                {  
+                   $scrollto.hide(300);  
+                }});//end
+   $scrollto.click(function(){  
+                $('body,html').animate({scrollTop:0},800);  
+                return false;  
+            }); 
+    var $popbar = $('.ui-popbar')//,
+        // $pobarWidth = $popbar.width(),
+        // barEdge = ($(document).width()-1200) / 2 - $pobarWidth - 15;
+    $scrollto.hide();
+    $popbar.css('right', '10px');
     var $wechat = $('.ui-code');
         $wechatImg = $wechat.next('img');
+
     $wechat.bind('mouseover', function() {
         $wechatImg.css('display', 'block');
     });

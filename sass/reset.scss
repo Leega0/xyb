@@ -669,8 +669,14 @@ $base_blue:#2c97f4;
 .ui-pt15 {
   padding-top: 15px !important;
 }
+.ui-pt18 {
+  padding-top: 18px !important;
+}
 .ui-pt20 {
   padding-top: 20px !important;
+}
+.ui-pt23 {
+  padding-top: 23px !important;
 }
 .ui-pt30 {
   padding-top: 30px !important;
@@ -1177,9 +1183,13 @@ $base_blue:#2c97f4;
     background-color: #fff;
     border:1px solid #eee;
     border-top:0;
+    color: #474747;
     p{
       &:hover{
-        background-color: #f4faff;
+        background-color: #2a99f3;
+        a{
+          color: #fff;
+        }
       }
     }
   }
@@ -1227,27 +1237,40 @@ $base_blue:#2c97f4;
         right: 10px;
         top: 28px;
       }
+      &.expand{
+        .icon-arrow-b{
+          background:url(../images/sprites/icon-arrow-up.png) no-repeat;
+        }
+        .menu-invest-list{
+          border-top:0;
+        }
+      }
     }
     .menu-invest-list{
       position: absolute;
-      left: 8px;
-      top:50px;
+      left: -1px;
+      top:40px;
       background-color: #fff;
       display: none;
       text-align: center;
       border:1px solid #eee;
+      padding-top: 10px;
       p{
         &:hover{
-          background-color: #f4faff;
+          background-color: #2a99f3;
+          a{
+            color: #fff;
+          }
         }
       }
       a{
-        line-height: 2;
+        line-height: 2.2;
         display: block;
         padding:0;
-        width: 100px;
+        width: 112px;
         text-align: left;
-        text-indent: 18px;
+        font-size: 14px;
+        text-indent: 22px;
       }
       z-index: 99;
     }
@@ -1383,7 +1406,7 @@ $base_blue:#2c97f4;
 // 返回顶部
 .ui-popbar{
   position: fixed;
-  bottom: 200px;
+  bottom: 45px;
   right: 20px;
   z-index: 999;
   .icon-popbar{
@@ -1486,7 +1509,6 @@ $base_blue:#2c97f4;
   display:none;
 }
 .layer-bottom{
-  border-top:1px solid #ddd;
   margin:0 25px;
   .xyb-agree-ctn{
     input{
