@@ -2,45 +2,35 @@
 (function($,g){var h={},id=1,etid=g+'ETID';$.fn[g]=function(e,f){id++;f=f||this.data(etid)||id;e=e||150;if(f===id)this.data(etid,f);this._hover=this.hover;this.hover=function(c,d){c=c||$.noop;d=d||$.noop;this._hover(function(a){var b=this;clearTimeout(h[f]);h[f]=setTimeout(function(){c.call(b,a)},e)},function(a){var b=this;clearTimeout(h[f]);h[f]=setTimeout(function(){d.call(b,a)},e)});return this};return this};$.fn[g+'Pause']=function(){clearTimeout(this.data(etid));return this};$[g]={get:function(){return id++},pause:function(a){clearTimeout(h[a])}}})(jQuery,'mouseDelay');
 var polygonNames = {
 	'沈阳': 'shenyang',
-	'大连': 'dalian',
-	'沧州': 'cangzhou',
+	'郑州': 'zhenghzou',
+	'西安': 'xian',
+	'洛阳': 'luoyang',
+	'福州': 'fuzhou',
+	'南阳': 'nanyang',
+	'南昌': 'nanchang',
+	'许昌': 'xuchang',
+	'包头': 'baotou',
+	'上海': 'shanghai',
+	'石家庄': 'shijiazhuang',
 	'淄博': 'zibo',
 	'扬州': 'yangzhou',
-	'许昌': 'xuchang',
-	'南京': 'nanjing',
-	'郑州': 'zhenghzou',
-	'石家庄': 'shijiazhuang',
-	'洛阳': 'luoyang',
-	'南昌': 'nanchang',
-	'福建': 'fujian',
-	'厦门': 'xiamen',
-	'四川': 'sichuan',
-	'上海': 'shanghai',
-	'西安': 'xian',
-	'天津': 'tianjin',
-	'北京': 'beijing',
-	'深圳': 'shenzhen'
-}
+	'厦门': 'xiamen'
+	}
 var pointPosition = {
 	'shenyang': '542|106',
-	'dalian': '531|131',
-	'cangzhou': '480|155',
+	'zhenghzou': '472|187',
+	'xian': '427|198',
+	'luoyang': '457|204',
+	'fuzhou': '528|270',
+	'nanyang': '467|202',
+	'nanchang': '489|253',
+	'xuchang': '477|211',
+	'baotou': '411|130',
+	'shanghai': '542|221',
+	'shijiazhuang': '454|155',
 	'zibo': '505|168',
 	'yangzhou': '531|202',
-	'luoyang': '457|204',
-	'nanjing': '519|217',
-	'zhenghzou': '472|187',
-	'shijiazhuang': '454|155',
-	'xuchang': '477|211',
-	'nanchang': '489|253',
-	'fujian': '528|270',
-	'xiamen': '518|293',
-	'sichuan': '371|240',
-	'shanghai': '542|221',
-	'xian': '427|198',
-	'tianjin': '495|139',
-	'beijing': '480|121',
-	'shenzhen': '482|317'
+	'xiamen': '518|293'	
 }
 function offsetXY(e) {
 	var pointTip = $('.mapStateTip');

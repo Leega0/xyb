@@ -81,7 +81,7 @@
 			<li><a href="">活期宝<span class="separator">|</span></a></li>
 			<li class="cur"><a href="">定期宝<span class="separator">|</span></a></li>
 			<li><a href="">信投宝<span class="separator">|</span></a></li>
-			<li><a href="">债券转让</a></li>
+			<li><a href="">债权转让</a></li>
 		</ul>
 	</div>
 </div>
@@ -116,35 +116,38 @@
 <!-- 项目详情end -->
 <!-- 立即投资start -->
 <div class="bg-white border-eee detail-content-right">
-        <div class="detail-invest-box">
+        <div class="detail-invest-box ui-mb0">
             <div class="detail-invest-content">
                 <p>剩余可投金额(元)</p>
                 <p class="ui-font-blue ui-size28 invest-last-num">521,245.00</p>
                 <!-- tips -->
                 <p class="invest-money-detail clearfix ui-mt5">
-                        <i class="icon-wenhao"></i><em class="text">账户可用(元)<em><a href="javascript:void(0);" class="btn-recharge" id="btn_recharge">充值</a><i class="ui-font-blue fr money">￥521,512.00</i>
+                        <i class="icon-wenhao"></i><em class="text">账户可用(元)</em><a href="javascript:void(0);" class="btn-recharge" id="btn_recharge">充值</a><i class="ui-font-blue fr money">￥521,512.00</i>
                 </p>
                 <div class="ui-form-item ui-mt5">
                     <p class="ui-input-body">
-                        <input type="text" placeholder="输入金额需为 50 的倍数" class="ui-font-blue ui-size14">
+                        <input type="text"  value="0.00" class="ui-font-blue ui-size14"  onfocus="if(this.value==this.defaultValue)this.value=''" onblur="if(this.value.replace(/ /ig,'')=='')this.value=this.defaultValue">
                     </p>
                     <a href="javascript:void(0);" class="btn-invest-all ui-size14">全投</a>
                 </div>
-        
-                <div class="clearfix ui-pt10">收益提升卡(<em class="ui-font-blue">3</em>)<div class="fr">
-                	<span class="now-sy-card"><i class="icon-sy-arrow"></i>7天1.5倍卡</span><div class=" fr" id="change_sy_card"><a href=""><a href="javascript:void(0);" class="ui-font-blue">[更换]</a>
- 				<!-- tips -->
-                <div class="tips-box-sy">
-                	<dl class="sy-card-list">
-                		<dt>收益提升卡(<em class="ui-font-blue">3</em>)<a href="" class="ui-font-blue fr">查看所有></a></dt>
-                		<dd class="no-border"><i class="icon-sy-arrow"></i>7天1.5倍卡<em class="ui-font-gray">[11.12过期]</em><a href="javascript:void(0);" class="ui-font-blue fr">[选择]</a></dd>
-                		<dd><i class="icon-sy-arrow"></i>7天1.5倍卡<em class="ui-font-gray">[11.12过期]</em><a href="javascript:void(0);" class="ui-font-blue fr">[选择]</a></dd>
-                		<dd><i class="icon-sy-arrow"></i>7天1.5倍卡<em class="ui-font-gray">[11.12过期]</em><a href="javascript:void(0);" class="ui-font-blue fr">[选择]</a></dd>
-                	</dl>
+        <!-- 收益卡模块 -->
+                <div class="clearfix ui-pt10 ui-syk-module">
+                    <p class="ui-input-body" id="syk_default">
+                       <!-- 默认显示收益卡  -->
+                        <span class="default-syk">
+                            <i class="icon-syk icon-syk-green"></i>1.1倍收益提升卡
+                            <b class="index-icons icon-arrow-b"></b>
+                        </span>
+                    </p>
+                    <!-- 收益卡列表 -->
+                    <ul class="have-syk-list">
+                        <li><i class="icon-syk icon-syk-green"></i>1.1倍收益提升卡</li>
+                        <li><i class="icon-syk icon-syk-red"></i>1.2倍收益提升卡</li>
+                        <li><i class="icon-syk icon-syk-blue"></i>1.3倍收益提升卡</li>
+                        <li><i class="icon-syk icon-syk-pink"></i>1.4倍收益提升卡</li>
+                        <li><i class="icon-syk icon-syk-brwon"></i>1.5倍收益提升卡</li>
+                    </ul>
                 </div>
-                <!-- tips end -->
-                	</div>
-                </div></div>
                 <p class="clearfix ui-pt15">预计收益(元)<span class="fr"><em class="ui-font-blue">512.00</em><em class="ui-font-green">+20.00</em></span></p>
                 <p class="ui-form-btn"><a href="javascript:void(0);" class="ui-btn ui-btn-blue" id="invest_now">立即投资</a></p>
             </div>
@@ -340,45 +343,68 @@
 			})
 		});
 		$(function(){
-			$("#change_sy_card").mouseover(function(){
-				$(".tips-box-sy").stop().slideDown()
-			});
-			$("#change_sy_card").mouseout(function(){
-				$(".tips-box-sy").stop().slideUp()
-			});
-		})
-	//tips 插件
-		$.fn.extend({
-	hoverTips : function (){
-		var self = $(this);
-		var sw = self.get(0).switch;
-		if( !sw ) {
-			sw = true;
-			var htmlDom = $('<div class="tips-box-ye">'+
-                	'<dl class="sy-card-list">'+
-                		'<dd class="no-border">账户余额(元)<span class="fr ui-font-blue">521,512.00</span></dd>'+
-                		'<dd>账户礼金(元)<span class="fr ui-font-blue">521,512.00</span></dd>'+
-                	'</dl>'+
-                	'<i class="icon-tips-arrow"></i>'+
+			//收益卡选择
+			$(".ui-syk-module").click(function(){
+				var thisinput=$("#syk_default");
+				var thisul=$(".have-syk-list");
+				if(thisul.css("display")=="none"){
+					if(thisul.height()>200){
+						thisul.css({height:"200"+"px","overflow-y":"scroll" })
+					};
+					thisul.fadeIn("100");
+					var self = $(this);
+						var ms_top = self.offset().top,
+						ms_left = self.offset().left,
+						ms_right = self.offset().left+280;
+						$(document).mousemove(function(event){
+						  if(event.pageX<ms_left||event.pageY<ms_top||event.pageX>ms_right){
+							thisul.fadeOut("fast");
+							}
+						});
+					thisul.hover(function(){},
+						function(){thisul.fadeOut("100");
+					})
+					thisul.find("li").on('click',function(){
+                        $(".default-syk").html($(this).html()+'<b class="index-icons icon-arrow-b"></b>');
+                        thisul.fadeOut("100");
+                    });
+				}
+				else{
+					thisul.fadeOut("fast");
+				}
+			})
+        });
+	        //tips 插件
+        $.fn.extend({
+        hoverTips : function (){
+        var self = $(this);
+        var sw = false;
+        if( !sw ) {
+            sw = true;
+            var htmlDom = $('<div class="tips-box-ye">'+
+                    '<dl class="sy-card-list">'+
+                        '<dd class="no-border">账户余额(元)<span class="fr ui-font-blue">521,512.00</span></dd>'+
+                        '<dd>账户礼金(元)<span class="fr ui-font-blue">521,512.00</span></dd>'+
+                    '</dl>'+
+                    '<i class="icon-tips-arrow"></i>'+
                 '</div>')
-		}
-		self.on("mouseover",function(){
-			$("body").append( htmlDom );
-			var left = self.offset().left-10;
-			var top = self.offset().top - htmlDom.outerHeight()-10;
-			htmlDom.css({"left":left,"top":top - 10,"display":"block"});
-			htmlDom.stop().animate({ "top" : top ,"opacity" : 1},300);
-		});
-		self.on("mouseout",function(){
-			var top = parseInt(htmlDom.css("top"));
-			htmlDom.stop().animate({ "top" : top - 10 ,"opacity" : 0},300,function(){
-				htmlDom.remove();
-				sw = false;
-			});
-		});
-	}
+        }
+        self.on("mouseover",function(){
+            $("body").append( htmlDom );
+            var left = self.offset().left-10;
+            var top = self.offset().top - htmlDom.outerHeight()-10;
+            htmlDom.css({"left":left,"top":top - 10,"display":"block"});
+            htmlDom.stop().animate({ "top" : top ,"opacity" : 1},300);
+        });
+        self.on("mouseout",function(){
+            var top = parseInt(htmlDom.css("top"));
+            htmlDom.stop().animate({ "top" : top - 10 ,"opacity" : 0},300,function(){
+                htmlDom.remove();
+                sw = false;
+            });
+        });
+    }
 });
-
 $(".icon-wenhao").hoverTips();
 	</script>
 </body>

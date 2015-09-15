@@ -27,21 +27,22 @@ dl{
 	text-align:center;
 	.avatar{
 		margin-top: 26px;
-		padding-left: 60px;
 		a{
-			display: table-cell;
-			overflow: hidden;
-			text-align: center;
-			vertical-align: middle;
-			width: 98px;
-			height: 98px;
-			border:2px solid #ddd;
-			border-radius:50%;
-			background-color: #fff;
+			position: relative;
+			height: 100px;
+			width: 100px;
+			margin-left: 56px;
+			display: block;
+			.ui-mask{
+				position: absolute;
+				background: url(../images/newHeader.png) no-repeat;
+				width: 98px;
+				height: 98px;
+			}
 			img{
 				width: 98px;
 				height: 98px;
-				overflow: hidden;
+				border-radius:50%;
 			}
 		}
 	}
@@ -115,9 +116,8 @@ dl{
 				right: 38px;
 				top: 20px;
 			}
-			&:hover{
-				border-left:2px solid $base_blue;
-				margin-left: -1px;
+			&:hover{	
+				background-color: #fafafa;
 			}
 		}
 		&.cur{
@@ -145,35 +145,58 @@ dl{
 .user_r{
 	position:relative;
 	border:1px solid #eee;
-	margin-left: 219px;
+	margin-left: 221px;
 	margin-bottom: 50px;
 	padding: 30px;
-	min-height:763px;
+	min-height:880px;
 }
 .w330{
 	width:330px;
 }
 .w280{
-	width:280px;
+	width:280px !important;
+}
+.w200{
+	width:200px;
+}
+.w220{
+	width:220px;
 }
 .w180{
 	width:180px;
 }
 .user-assets-box{
-	padding:20px 0;
+	padding:20px 0 40px;
 	overflow: hidden;
+}
+.uc-index-img{
+	float: left;
+	padding-right: 10px;
+	height:80px;
+}
+.icon-uc-index{
+	display:inline-block;
+	width:58px;
+	height:58px;
+	background:url(../images/sprites/icon-uc-index.png) no-repeat;
+	&.icon-uc-ye{
+		background-position:-180px 0;
+	}
+	&.icon-uc-sy{
+		background-position:-120px 0;
+	}
+	&.icon-uc-jf{
+		background-position:-60px 0;
+	}
 }
 .user-assets-view{
 	float: left;
-	margin-left: 20px;
-	dt{
-		padding:5px 0;
-	}
 	.num{
 		font-size: 28px;
 		font-weight: bold;
 		font-family: "Arial";
 		padding-bottom: 10px;
+		padding-top: 5px;
 		.icon-up-blue{
 			background: url(../images/icon-up-blue.png) no-repeat;
 			display: inline-block;
@@ -209,8 +232,8 @@ dl{
     border-right: 1px solid #eee;
 }
 .user-tabs-active {
-    height: 46px;
-    line-height: 46px;
+    height: 45px;
+    line-height: 45px;
     background-color: #fff;
     border-top: 2px solid $base_blue;
     font-weight: bold;
@@ -238,6 +261,14 @@ dl{
     	td{
     		line-height: 24px;
     		height: 80px;
+    	}
+    	//暂无信息时显示
+    	.unknow-info{
+    		color: #b9b9b9;
+    		padding:50px 0;
+    		.ui-font-blue{
+    			display: inline;
+    		}
     	}
     }
     &.massage-list{
@@ -402,6 +433,9 @@ dl{
 .user-earn-today{
 	background-color: #f4faff;
 	border:1px solid #d3e5f4;
+	.user-assets-view{
+		margin-left: 20px;
+	}
 }
 // 近期回款计划
 .invest-list-control{
@@ -423,6 +457,12 @@ dl{
 	    color: #3e3e3e;
 	    font-weight: bold;
 	    font-size: 14px;
+	    &.delivery-address{
+	    	height: 48px;
+	    	line-height: 48px;
+	    	background-color: #f6f6f6;
+	    	padding-left: 20px;
+	    }
 	}
 	form{
 		float: right;
@@ -438,6 +478,17 @@ dl{
 		float: left;
 	    line-height: 64px;
 	    margin-left: 40px;
+	}
+	.filter_time{
+		input{
+			color: #b9b9b9;
+			width: 80px;
+			height: 25px;
+			line-height: 25px;
+			border:1px solid #ddd;
+			padding-left: 40px;
+			border-radius: 3px;
+		}
 	}
 }
 .invest-list{
@@ -555,7 +606,7 @@ dl{
 	.user-trans-rule{
 		background-color: #f5faff;
 		border: 1px solid #d3e5f4;
-		padding:18px 28px;
+		padding:18px;
 		.title{
 			font-weight: bold;
 			font-size: 14px;
@@ -566,10 +617,16 @@ dl{
 		}
 	}
 	.user-layer-bond{
-		width: 240px;
-		margin: 24px auto;
-		.ui-font-blue{
-			padding-top: 5px;
+		margin: 24px auto 0;
+		border-bottom:1px solid #eee;
+		.fl{
+			padding-left: 15px;
+		}
+		.fr{
+			padding-right: 50px;
+		}
+		li{
+			padding-bottom: 5px;
 		}
 	}
 }
@@ -633,10 +690,10 @@ dl{
 	}
 }
 .bank-list{
-	padding:10px;
+	padding:10px 10px 10px 0;
 	li{
 		float: left;
-		margin:8px 20px 8px 0;
+		margin:8px 45px 8px 0;
 		input{
 			position: relative;
 			top: 2px;
@@ -871,6 +928,9 @@ dl{
 	span{
 		font-weight: normal;
 	}
+	.cur{
+		color: #2c97f4;
+	}
 }
 .user-info-tb{
 	margin-top: 10px;
@@ -907,13 +967,27 @@ dl{
 			padding:0 10px;
 		}
 	}
-	.user-save{
+	.name-number{
+		.u-input{
+			width: 275px;
+		}
+	}
+	.select-address{
+		select{
+			width: 128px;
+			margin-right: 8px;
+		}
+	}
+	.detail-address{
+		.u-input{
+			width: 408px;
+		}
+	}
+	.user-add-save{
 		padding-top: 30px;
-		padding-bottom: 20px;
-		.ui-btn{
+		input{
 			font-size: 14px;
-			padding:10px 40px;
-			margin-left: 0;
+			padding:10px 20px;
 		}
 	}
 }
@@ -921,87 +995,8 @@ dl{
 .normal{
 	font-weight: normal;
 }
-// 用户地址列表
-.user-address-list{
-	td{
-		padding:16px 0;
-	}
-	.user-area,.user-address,.user-phone,.user-handle{
-		text-align: left;
-		text-indent: 30px;
-	}
-	.user-handle{
-		.sapare{
-			color: #d7d7d7;
-			padding:0 8px;
-		}
-	}
-	.default-addr{
-		font-size: 12px;
-		padding-left: 0;
-		padding-right: 0;
-		width: 70px;
-		display: none;
-	}
-	.user-address-def,.hover-item{
-		.default-addr{
-			display: block;
-		}
-	}
-	.hover-item{
-		background-color: #f6f6f6;
-	}
-}
-.user-add-box{
-	text-align:center;
-	margin-top: 30px;
-	.ui-btn{
-		font-size: 14px;
-		padding:8px 30px;
-	}
-}
 // 新增收货地址
-.user-addrinfo-layer{
-	padding-top: 10px;
-}
-.user-write-info{
-	.label{
-		padding:14px 0 10px;
-	}
-	.u-input{
-		border:1px solid #ddd;
-		border-radius:3px;
-		padding:10px;
-	}
-	.user-name{
-		input{
-			width: 50%;
-		}
-	}
-	.user-provience{
-		select{
-			width: 120px;
-		}
-	}
-	.user-addr-detail{
-		input{
-			width: 100%;
-			box-sizing: border-box;
-		}
-	}
-	.user-phone{
-		input{
-			width: 50%;
-		}
-	}
-}
-.user-add-save{
-		text-align: center;
-		padding-top: 50px;
-		.ui-btn{
-			padding:12px 100px;
-		}
-}
+
 // 自动投资
 .user-auto-invest{
 	position: relative;
@@ -1177,8 +1172,8 @@ dl{
 }
 .gift-catd-wrap{
 	overflow: hidden;
-	border-bottom:1px solid #eee;
-	padding-bottom: 30px;
+	// border-bottom:1px solid #eee;
+	// padding-bottom: 30px;
 	li{
 		float: left;
 		width: 33.33%;
@@ -1186,7 +1181,7 @@ dl{
 	}
 	.gift-card-box{
 		width: 240px;
-		height: 156px;
+		height: 146px;
 		margin-left: 32px;
 		background:url(../images/sprites/gift-card.png) no-repeat;
 		.go-to-use{
@@ -1202,51 +1197,65 @@ dl{
 		}
 		&.blue-card{
 			background-position: 0 0;
+			.beishu{
+				color: #61b0f4;
+			}
+		}
+		&.gold-card{
+			background-position:-242px 0;
+			.beishu{
+				color: #e1cd7b;
+			}
 		}
 		&.green-card{
-			background-position:-484px 0;
+			background-position:-726px 0;
+			.beishu{
+				color: #8dd4ab;
+			}
 		}
 		&.pink-card{
-			background-position:-726px 0;
+			background-position:-968px 0;
+			.beishu{
+				color: #ffa9a1;
+			}
 		}
 		&.gray-card{
-			background-position:-242px 0;
+			background-position:-484px 0;
+			.beishu{
+				color: #ddd;
+			}
 		}
-		dt{
-			text-align: center;
-			font-size: 14px;
-			line-height: 38px;
-			color: #fff;
+		&.purple-card{
+			background-position:-1210px 0;
+			.beishu{
+				color: #c3a1f0;
+			}
 		}
 		dd{
 			overflow: hidden;
 		}
-		.date,.beishu{
-             height: 60px;
-             float: left;
-             text-align: center;
-             em{
-             	display: block;
-             	font-weight: bold;
-             	font-size: 28px;
-             	font-family: "Arial";
-             	padding-top: 5px;
-             }
-		}
-		.date{
-			margin-top: 18px;
-             margin-left: 40px;
-		}
 		.beishu{
-			float: right;
-			margin-top: 18px;
-			margin-right: 40px;
+			margin-top: 34px;
+			//margin-left: 30px;
+			margin-left: 10px;
+			font-size: 46px;
+			font-family: "Arial";
+			font-weight:bold;
+			float: left;
+		}
+		.beishu-info{
+			float: left;
+			margin-top: 34px;
+			margin-left: 18px;
+			p{
+				padding-top: 8px;
+			}
 		}
 		.out-date{
 			line-height: 34px;
 			text-align: center;
 			color: #b9b9b9;
-			margin-top: 4px;
+			margin-top: 22px;
 		}
 	}
 }
@@ -1327,13 +1336,13 @@ dl{
 		&.user-icon-correct,&.error{
 		display: block;
 		margin:0 auto;
-		width: 16px;
-		height: 16px;
-		background:url(../images/sprites/icon-criedted.png) no-repeat;
+		width: 18px;
+		height: 18px;
+		background:url(../images/sprites/icon-criedted.png) no-repeat center;
 		background-size:16px;
 		}
 		&.error{
-			background:url(../images/sprites/icon-error-samll.png) no-repeat;
+			background:url(../images/sprites/icon-error-samll.png) no-repeat center;
 		}
 	}
 	dl{
@@ -1419,6 +1428,7 @@ dl{
 	}
 	.user-add-box{
 		margin-top: 60px;
+		text-align: center;
 		a{
 			font-size: 16px;
 			height:30px;
@@ -1523,6 +1533,7 @@ dl{
 	.card-info-items{
 		width: 250px;
 		margin: 0 auto;
+		position: relative;
 		p{
 			font-size: 12px;
 			padding:10px 0;
@@ -1536,6 +1547,29 @@ dl{
 		}
 		.card-dz-select{
 			width: 120px;
+		}
+		//银行列表
+		.branch-addlist{
+			z-index: 100;
+			position: absolute;
+			top: 45px;
+			left: 0;
+			list-style-type: none;
+			display: none;
+			max-height: 100px;
+			overflow-y: auto;
+			border: 1px solid #CCC;
+			width: 355px;
+			background-color: white;
+			li{
+				cursor: pointer;
+			    border-top:1px solid #ccc;
+			    line-height: 25px;
+			    background-color: white;
+			    &:hover{
+			    	background-color: #ccc;
+			    }
+			}
 		}
 	}
 	.set-default-card{
@@ -1595,6 +1629,9 @@ dl{
 	}
 	.w100{
 		width: 100%;
+	}
+	.w90{
+		width: 90%;
 	}
 	.get-valid{
 		width: 100%;
@@ -1759,5 +1796,245 @@ dl{
     width: 40px;
     height: 40px;
 		background: url("../images/sprites/icon-sucess.png") no-repeat center;
+	}
+}
+// 我的推荐码
+.my-nominate{
+	background-color: #fff;
+	padding:5px 0;
+	margin:10px 46px;
+	border-radius:12px;
+}
+// 上传头像
+.upload-avatar-module{
+	overflow: hidden;
+	padding-top: 20px;
+	.update-lrol{
+		float: left;
+		width: 530px;
+	}
+	.update-rrol{
+		float: left;
+		border-left:1px solid #eee;
+		padding-left: 30px;
+		.info{
+			width: 235px;
+			line-height: 2.2;
+		}
+		.img-s-ct{
+			margin-top:30px;
+			.img-s{
+				width: 50px;
+				height: 50px;
+			}
+		}
+		.img-s{
+			margin: 14px 0;
+			width: 100px;
+			height: 100px;
+			text-align: center;
+			display: table-cell;
+    		vertical-align: middle;
+    		background-color:#f9f9f9;
+		}
+	}
+	.btn-upload{
+		border:1px solid #ddd;
+		width: 166px;
+		height: 34px;
+		line-height: 34px;
+		position: relative;
+		cursor: pointer;
+		border-radius:3px;
+		.ui-icon-pic{
+			display: inline-block;
+			position: relative;
+			top: 3px;
+			margin-left: 14px;
+			margin-right: 8px;
+            width: 20px;
+            height: 16px;
+            background: url(../images/ui-icon-pic.png) no-repeat;
+		}
+	}
+	.img-now-state{
+		position: relative;
+		width: 475px;
+		height: 242px;
+		background-color:#f6f6f6;
+		border:1px solid #eee;
+		display: table;
+		text-align: center;
+		margin: 10px 0;
+		.img-b{
+			display: table-cell;
+			vertical-align: middle;
+			position: relative;
+			z-index: 9;
+		}
+	}
+	.avatar-list{
+		overflow: hidden;
+		li{
+			float: left;
+			margin-right: 18px;
+			position: relative;
+			cursor: pointer;
+			b{
+				position: absolute;
+	            width: 88px;
+	            height: 88px;
+	            left: 0;
+	            top: 0;
+			}
+			&.selected{
+				b{
+					background:url(../images/avatar-selected.png) no-repeat;
+				}
+			}
+		}
+	}
+	.save-avatar{
+		padding-top: 60px;
+		.ui-btn{
+			font-size: 14px;
+			padding:12px 70px;
+		}
+	}
+}
+/*客户没相关投资的空显示*/
+.nothing-empty-box{
+	padding-top:50px;
+	.img{
+		display: block;
+		margin:0 auto;
+	}
+	.tips{
+		color:#b9b9b9!important;
+		font-size:14px!important;
+		margin-top:20px;
+		text-align:center;
+		padding-bottom:50px;
+	}
+}
+.tips-bottom-text{
+	border-top:1px solid #eee;
+	line-height:30px;
+	color:#b9b9b9!important;
+	font-size:12px!important;
+	padding-top:20px;
+	span{
+		display: block;
+		font-weight:bold;
+	}
+}
+// 用户指引操作
+.user-guide-title{
+	text-align:center;
+	padding-bottom: 30px;
+	font-size: 14px;
+}
+.guide-noty{
+	padding-top: 20px;
+}
+.icon-noty{
+	display:inline-block;
+	width:16px;
+	height: 16px;
+	position: relative;
+	top:3px;
+	margin-right: 5px;
+	background:url(../images/icon-noty.png) no-repeat;
+}
+.guide-bind-card{
+	text-align:center;
+	padding-top: 60px;
+	.ui-btn{
+		padding:12px 100px;
+	}
+}
+.guide-cardbd-now{
+	text-align:center;
+	padding-top: 30px;
+	.ui-btn{
+		padding: 12px 95px;
+	}
+}
+.guide-invest-now{
+	.ui-btn{
+		margin-top: 20px;
+		font-size: 14px;
+		padding:10px 80px;
+	}
+}
+.ui-pl190{
+	padding-left: 190px;
+}
+// 用户第一次登录后操作后的引导操作
+.g-s-1,.g-s-2,.g-s-3,.g-s-4{
+	background-image: url("../images/sprites/guid-step-bg.png");
+	background-repeat:no-repeat;
+	position: absolute;
+	z-index:1001;
+	.guide_btn_closed{
+		width: 31px;
+		height: 31px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		cursor: pointer;
+	}
+	.guide_next_btn{
+		width: 120px;
+		height: 40px;
+		position: absolute;
+	}
+}
+.g-s-1{
+	width:289px;
+	height:306px;
+	background-position: 0 0;
+	.guide_next_btn{
+		position: absolute;
+		bottom:14px;
+		left: 43px;
+	}
+}
+.g-s-2{
+	width:249px;
+	height:244px;
+	background-position:-507px 0;
+	.guide_btn_closed{
+		right: 35px;
+	}
+	.guide_next_btn{
+		position: absolute;
+		left: 30px;
+		bottom:14px;
+	}
+}
+.g-s-3{
+	width:214px;
+	height:273px;
+	background-position:-291px 0;
+	.guide_next_btn{
+		position: absolute;
+		left: 28px;
+		bottom:14px;
+	}
+}
+.g-s-4{
+	width:405px;
+	height:233px;
+	background-position:-758px 0;
+	.guide_btn_closed{
+		left: 50%;
+		margin-left: -33px;
+	}
+	.guide_next_btn{
+		position: absolute;
+		bottom:14px;
+		left: 50%;
+		margin-left: -43px;
 	}
 }

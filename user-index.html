@@ -16,7 +16,7 @@
 		<!-- 未登陆 -->
 		<p class="fl"><a href=""><i class="index-icons icon-home"></i>信用宝首页</a></p>
 		<ul class="fr myhome">
-			<li class="welcome"><a href="" class="welcome-a">你好，AlexHOU</a><a href="" class="welcome-a"><em class="user-level vip9"></em></a><a class="litte-icons icon-messages"></a><a href="">退出</a></li>
+			<li class="welcome"><a href="" class="welcome-a">你好，AlexHOU</a><a href="" class="welcome-a"><em class="user-level vip9"></em></a><a class="litte-icons icon-messages icon-nomessage"><em>&hellip;</em></a><a href="">退出</a></li>
 			<li class="separator"></li>
 			<li><div class="myhome-account">
 				<a href="">我的账户</a>
@@ -86,7 +86,10 @@
 			<!-- 头像模块 -->
 			<dl class="user-account-info">
 				<dt class="avatar">
-					<a href=""><img src="images/user-default-ava.png"></a>
+					<a href="">
+						<span class="ui-mask"></span>
+						<img src="images/newHeader.jpg">
+					</a>
 				</dt>
 				<dd class="user-name bold">飞天小黄鸭<em class="user-level vip9"></em></dd>
 				<dd class="user-approve">
@@ -94,6 +97,10 @@
 					<a href="" class="icon-user-auth icon-email"></a>
 					<a href="" class="icon-user-auth icon-real"></a>
 					<a href="" class="icon-user-auth icon-un-bkcard"></a>
+				</dd>
+				<!-- 我的推荐码 -->
+				<dd>
+					<p class="my-nominate">推荐码&nbsp;&nbsp;<b>521486</b></p>
 				</dd>
 				<dd class="user-sec-status">
 					安全等级<em class="ui-font-pink">低</em><span class="spara">|</span><a class="ui-font-blue" href="">[提升]</a>
@@ -106,7 +113,7 @@
 				<li><a href="">我的借款<i class="ui-arrow"></i></a></li>
 				<li><a href="">收支记录<i class="ui-arrow"></i></a></li>
 				<li><a href="">充值提现<i class="ui-arrow"></i></a></li>
-				<li><a href="">账户设置<i class="ui-arrow"></i></a></li>
+				<li id="guide-step-end"><a href="">账户设置<i class="ui-arrow"></i></a></li>
 				<li><a href="">消息中心<i class="ui-arrow"></i></a></li>
 			</ul>
 			<!-- 二维码扫描 -->
@@ -122,25 +129,34 @@
 			<!-- 资产概览 -->
 			<div class="user-assets-box">
 				<dl class="user-assets-view w330">
-					<dt>账户余额(元)</dt>
+					<dt class="uc-index-img">
+						<i class="icon-uc-index icon-uc-ye"></i>
+					</dt>
+					<dd>账户余额(元)</dd>
 					<dd class="num">1,582,254.00</dd>
 					<dd class="btns">
 						<a href="" class="ui-btn ui-btn-blue">充值</a><a href="" class="ui-btn-empty-blue ui-btn-empty">提现</a>
 					</dd>
 				</dl>
 				<dl class="user-assets-view w330">
-					<dt>累计收益(元)</dt>
+					<dt class="uc-index-img">
+						<i class="icon-uc-index icon-uc-sy"></i>
+					</dt>
+					<dd>累计收益(元)</dd>
 					<dd class="num">521,254.00</dd>
 					<dd class="ui-font-gray">累计完成投资<a href="" class="ui-font-blue">&nbsp;108&nbsp;</a>笔</dd>
 				</dl>
-				<dl class="user-assets-view w180">
-					<dt>账户积分</dt>
+				<dl class="user-assets-view w200" id="guide-step-one">
+					<dt class="uc-index-img">
+						<i class="icon-uc-index icon-uc-jf"></i>
+					</dt>
+					<dd>账户积分</dd>
 					<dd class="num">521,254</dd>
 					<dd class="ui-font-gray">100%中奖<a href="" class="ui-font-blue ui-pl10">立即抽奖&gt;</a></dd>
 				</dl>
 			</div>
 			<!-- 资产统计 -->
-			<div class="user-tabs">
+			<div class="user-tabs ui-mt20">
                     <a class="user-tabs-item" href="javascript:void(0);">账户资产概览</a>
                     <a class="user-tabs-item" href="javascript:void(0);">投资收益统计</a>
                     <a class="user-tabs-item" href="javascript:void(0);">借款状况统计</a>
@@ -148,7 +164,10 @@
             <div class="user-account-moudle">
             <!-- 左侧 -->
             		<dl class="all-property">
-            			<dt>资产总额(元)</dt>
+	            		<dt class="uc-index-img">
+							<i class="icon-uc-index icon-uc-all"></i>
+						</dt>
+            			<dd>资产总额(元)</dd>
             			<dd class="big-num">5,895,254.00</dd>
             		</dl>
             		<dl class="all-property-detail w180">
@@ -157,14 +176,14 @@
             			<dd class="ui-pt30">待收本金(元)</dd>
             			<dd class="nor-num">254.00</dd>
             		</dl>
-            		<dl class="all-property-detail w180">
+            		<dl class="all-property-detail w180" id="guide-step-two">
             			<dd>礼金账户(元)</dd>
             			<dd class="nor-num">254.00</dd>
             			<dd class="ui-font-gray">剩<em class="ui-font-blue">48天</em>过期</dd>
             			<dd class="ui-pt16">待收收益(元)</dd>
             			<dd class="nor-num">254.00</dd>
             		</dl>
-            		<dl class="all-property-detail w180">
+            		<dl class="all-property-detail w180" id="guide-step-three">
             			<dd>红包账户(元)</dd>
             			<dd class="nor-num">254.00</dd>
             			<dd class="ui-font-gray">剩<em class="ui-font-blue">45天</em>过期<a href=""class="ui-font-blue ui-pl5">查看&gt;</a></dd>
@@ -369,5 +388,71 @@
 <script type="text/javascript" src="js/lib/jquery.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
 <script type="text/javascript" src="js/user.js"></script>
+<script type="text/javascript">
+	window.onload =function(){
+		newGuide();
+	}
+	function newGuide(){
+		var blank_all = $("<div class='guide_blank'></div>")
+		// 背景层元素
+		var guide_box_one = $("<div class='guide_box g-s-1'></div>");
+		var guide_box_two = $("<div class='guide_box g-s-2'></div>");
+		var guide_box_three = $("<div class='guide_box g-s-3'></div>");
+		var guide_box_end = $("<div class='guide_box g-s-4'></div>");
+		//循环遍历添加
+		$.each([guide_box_one,guide_box_two,guide_box_three,guide_box_end], function(index, val) {
+			 $("<div class='guide_btn_closed'></div><a class='guide_next_btn' javascript:;></a>").appendTo(val)
+		});
+		// 获取文档宽高
+		var d_w = $(document).width();
+		var d_h = $(document).height();
+		// 蒙版层样式
+		blank_all.css({
+			'left': '0',
+			'top': '0',
+			'width':d_w,
+			'height':d_h,
+			'z-index':'999',
+			'position':'fixed',
+			'background-color':'#000',
+			'opacity':'0.5'
+		});
+		// 追加到body中
+		$("body").prepend(blank_all,guide_box_one,guide_box_two,guide_box_three,guide_box_end);
+		// 关闭引导
+		$(".guide_box").hide();
+		$(".g-s-1").show();
+		$(".guide_btn_closed,.g-s-4>.guide_next_btn").on('click',function(){
+			blank_all.hide();
+			$(".guide_box").hide();
+		})
+
+		//引导步骤定位
+		function getPosx(posenum){
+			//eval('step'+posenum+'PosX') = $("'#guide-step-'+'posenum'").offset().left;
+			console.log(posenum)
+		}
+		getPosx(one);
+		/*var steponePosX = $("#guide-step-one").offset().left
+		var steponePosY = $("#guide-step-one").offset().top;*/
+		//guide_box_one.css({'left':getPosx(one)-35});
+		//2
+		var steptwoPosX = $("#guide-step-two").offset().left
+		var steptwoPosY = $("#guide-step-two").offset().top;
+		guide_box_two.css({'left':steptwoPosX-75,'top':steptwoPosY-38});
+		//3
+		var stepthreePosX = $("#guide-step-three").offset().left
+		var stepthreePosY = $("#guide-step-three").offset().top;
+		guide_box_three.css({'left':stepthreePosX-35,'top':stepthreePosY-42});
+		//4
+		var stependPosX = $("#guide-step-end").offset().left
+		var stependPosY = $("#guide-step-end").offset().top;
+		guide_box_end.css({'left':stependPosX+24,'top':stependPosY-40});
+		//引导顺序
+		$(".guide_next_btn").on('click',function(){
+			$(this).parent().hide().next().show();
+		})
+	}
+</script>
 </body>
 </html>

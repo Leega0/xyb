@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cmn-Hans">
+<html lang="zh-cmn-Hans" class="bg-white">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -18,15 +18,93 @@
 	</div>
 <!-- 头部结束 -->
 <!-- 提示信息开始 -->
-	<div class="page-tips page-tips-1 align-center">
+	<div class="login-input-wrap align-center">
 		<div class="contain_wrap">
-			<em class="icon-sucess"></em>
-			<p class="p1">恭喜您，成功注册信用宝用户</p>
-			<p class="p2">为了您的投资安全，请您 完善基本信息 开始信用宝平台的愉快投资旅程</p>
-			<div class="links">
-				<a href="" class="ui-btn ui-btn-blue">完善基本信息</a>
-				<a href="" class="ui-btn-empty ui-btn-empty-blue">开始理财</a>
+			<!-- 注册信息输入 -->
+			<div class="login-input">
+				<p class="clearfix"><a href="" target="_blank" class="ui-font-blue fr">使用邮箱注册&gt;</a></p>
+				<div class="ui-form-item">
+					<p class="ui-input-body">
+						<i class="ui-label-icon icon-form-phone"></i>
+						<input type="text" placeholder="输入注册手机号" class="w85">
+					</p>
+				</div>
+				<p class="ui-size14 ui-font-gray align-left ui-pt10">
+					设置登录密码
+				</p>
+				<div class="ui-form-item ui-pt20">
+						<p class="ui-input-body">
+							<i class="ui-label-icon icon-form-loginpw"></i>
+							<input type="password" placeholder="8位以上,字母与数字组合" class="w85 valid_correct">
+						</p>
+				</div>
+				<div class="ui-form-item">
+						<p class="ui-input-body">
+							<i class="ui-label-icon icon-form-loginpw"></i>
+							<input type="password" placeholder="重复输入密码" class="w85 valid_error">
+						</p>
+				</div>
+				<!-- 推荐人 -->
+				<p class="recommend-code ui-font-gray"><i class="ui-label-icon icon-tj-plus"></i>推荐人(选填)</p>
+				<div class="ui-form-item ui-form-hidden">
+						<p class="ui-input-body">
+							<input type="text" placeholder="推荐码/手机号/邮箱/ID号" class="w98">
+						</p>
+				</div>
+				<!-- 验证码 -->
+				<div class="ui-form-item input-vali-code">
+					<p class="ui-input-body ui-input-middle">
+						<input type="text" placeholder="输入右侧验证码" class="valid_correct">	
+					</p>
+					<img src="images/valid-code.jpg">
+				</div>
+				<!-- 条款 -->
+				<p class="auto-login align-left">
+					<input type="checkbox" checked="checked" name="remember_login" id="remember_login">
+					<label for="remember_login">我已阅读并同意</label>
+					<a href="" class="ui-font-blue" target="_blank">使用条款&nbsp;</a>和<a href="" class="ui-font-blue" target="_blank">&nbsp;隐私条款</a>
+				</p>
+				<div class="ui-form-item">
+					<p class="ui-form-btn"><a href="" class="ui-btn ui-btn-blue">一键注册</a></p>
+				</div>
 			</div>
+			<!-- 注册信息输入end -->
+			<!-- 接收手机验证码 -->
+			<div class="login-input">
+				<p class="ui-size14 align-left ui-pb20">注册手机号：138*****8000</p>
+				<div class="ui-form-item ui-pt10 ui-pb30">
+							<p class="ui-input-body ui-input-middle">
+								<input type="text" placeholder="输入短信验证码" class="w98">
+							</p>
+							<p class="send-code">
+								<a href="javascript:void(0);" class="ui-btn ui-btn-blue">发送验证码</a>
+							</p>
+				</div>
+				<div class="ui-form-item ui-mt30">
+					<p class="ui-form-btn"><a href="" class="ui-btn ui-btn-blue">完成注册</a></p>
+				</div>
+			</div>
+			<!-- 接收手机验证码end -->
+			<div class="page-tips align-center">
+				<em class="icon-sucess"></em>
+				<p class="p1">恭喜您，成功注册信用宝用户</p>
+				<p class="p2 ui-size12">为了您的投资安全，请您 完善基本信息 开始信用宝平台的愉快投资旅程</p>
+				<div class="links">
+					<a href="" class="ui-btn ui-btn-blue">完善基本信息</a>
+					<a href="" class="ui-btn-empty ui-btn-empty-blue">开始理财</a>
+				</div>
+			</div>
+			<!-- end -->
+			<!-- 邮箱验证 -->
+				<div class="login-input page-tips-w450">
+						<em class="icon-sucess"></em>
+						<p class="p1">您的邮箱验证邮件已经发送至<span class="ui-font-blue">10068@qq.com</span></p>
+						<p class="p3">请在24小时内登录邮箱并点击邮件中的激活链接激活您的账户，激活后即可登录投资</p>
+						<p class="p3">如果未收到邮件，点击<a href="" class="ui-font-blue">重新发送邮件</a></p>
+						<div class="ui-form-item">
+						<p class="ui-form-btn"><a href="" class="ui-btn ui-btn-blue">登录邮箱</a></p>
+						</div>
+				</div>
 		</div>
 	</div>
 <!-- 提示信息结束 -->
@@ -44,5 +122,15 @@
 		
 	</div>
 <!-- 底部结束 -->
+<script type="text/javascript" src="js/lib/jquery.js"></script>
+<script type="text/javascript">
+	// 推荐号填写
+	$(function(){
+		$('.recommend-code').bind('click',function(){
+			$(this).find(".icon-tj-plus").toggleClass('icon-tj-minmus');
+			$(this).next().toggle();
+		})
+	})
+</script>
 </body>
 </html>

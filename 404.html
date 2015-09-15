@@ -12,7 +12,7 @@
 <body>
 <!-- 提示信息开始 -->
 	<div class="page-tips page-tips-1 align-center">
-		<div class="contain_wrap">
+		<div class="contain_wrap" style="padding-bottom:0">
 			<img src="images/404.jpg" alt="404页面">
 			<p class="p1">不好意思，你找的页面不存在哦</p>
 			<p class="ui-size12 ui-font-gray">页面将在<span class="ui-font-blue ui-pl5 ui-pr5" id="time_go_index">7</span>秒钟自动跳转到首页</p>
@@ -23,7 +23,7 @@
 <!-- 提示信息结束 -->
 <!-- 底部开始 -->
 	<div class="empty-footer">
-		<div class="contain_wrap">
+		<div class="contain_wrap" style="padding-top:0">
 			<div class="links">
 				<a href="">关于我们</a>
 				<a href="">联系我们</a>
@@ -72,7 +72,7 @@ var all_time = parseInt(text(time_go_index));
 			}
 		}
 	window.onload=function(){
-		setInterval(decai, 1000);
+		// setInterval(decai, 1000);
 	}
 </script>
 </body>

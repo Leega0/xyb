@@ -80,56 +80,307 @@
 		<dl class="le">
 			<p class="title"><i class="icon-question-mark-blue"></i>常见问题</p>
 			<div class="user-tabs">
-                <a class="user-tabs-item user-tabs-active" href="javascript:void(0);">注册登录<i class="ui-arrow"></i></a>
-                <a class="user-tabs-item" href="javascript:void(0);">充值提现<i class="ui-arrow"></i></a>
-                <a class="user-tabs-item" href="javascript:void(0);">投资回款<i class="ui-arrow"></i></a>
-                <a class="user-tabs-item" href="javascript:void(0);">安全保障<i class="ui-arrow"></i></a>
-                <a class="user-tabs-item" href="javascript:void(0);">信用宝积分<i class="ui-arrow"></i></a>
-                <a class="user-tabs-item" href="javascript:void(0);">账户管理<i class="ui-arrow"></i></a>
+                <a class="user-tabs-item user-tabs-active" href="javascript:void(0);" rel="onlogin">注册登录<i class="ui-arrow"></i></a>
+                <a class="user-tabs-item" href="javascript:void(0);" rel="withdraw">充值提现<i class="ui-arrow"></i></a>
+                <a class="user-tabs-item" href="javascript:void(0);" rel="payments">投资回款<i class="ui-arrow"></i></a>
+                <a class="user-tabs-item" href="javascript:void(0);" rel="safety">安全保障<i class="ui-arrow"></i></a>
+                <a class="user-tabs-item" href="javascript:void(0);" rel="account">账户管理<i class="ui-arrow"></i></a>
+                <a class="user-tabs-item" href="javascript:void(0);" rel="integral">信用宝积分<i class="ui-arrow"></i></a>
+                <a class="user-tabs-item" href="javascript:void(0);" rel="activity">活动相关<i class="ui-arrow"></i></a>
             </div>
 		</dl>
 		<dl class="ri">
 			<div class="user-account-moudle">
 				<h3 class="top-title">注册登录</h3>
-				<div class="ul-list">
-					<p class="title">怎么找回登录密码？<i class="help-center-list-icon"></i></p>
+				<div class="ul-list" id="onlogin-1">
+					<p class="title">1）忘记登录密码怎么办？<i class="help-center-list-icon"></i></p>
 					<ol class="ul-list-hide">
-						<li>怎么找回登录密码？</li>
-						<li>怎么找回登录密码？</li>
-						<li>怎么找回登录密码？</li>
+						<li>客户可以使用手机或邮箱来找回登录密码：</li>
+						<li>① 使用邮箱找回将会收到一封验证邮件，根据邮件中的链接提示来重置登录密码；</li>
+						<li>② 使用手机找回将会收到短信验证码，输入正确的验证码后可重置登录密码。</li>
 					</ol>
 				</div>
-				<div class="ul-list">
-					<p class="title">怎么找回登录密码？<i class="help-center-list-icon"></i></p>
+				<div class="ul-list" id="onlogin-2">
+					<p class="title">2）可以更改绑定的邮箱或手机吗？<i class="help-center-list-icon"></i></p>
 					<ol class="ul-list-hide">
-						<li>怎么找回登录密码？</li>
-						<li>怎么找回登录密码？</li>
-						<li>怎么找回登录密码？</li>
+						<li>可以更改。客户登录信用宝后，在我的账户-账户设置-手机绑定/邮箱绑定，点击“修改”，收取手机验证码或验证邮件后，可重新进行绑定。</li>
 					</ol>
 				</div>
-				<div class="ul-list">
-					<p class="title">怎么找回登录密码？<i class="help-center-list-icon"></i></p>
+				<div class="ul-list" id="onlogin-3">
+					<p class="title">3）为什么要进行实名认证？<i class="help-center-list-icon"></i></p>
 					<ol class="ul-list-hide">
-						<li>怎么找回登录密码？</li>
-						<li>怎么找回登录密码？</li>
-						<li>怎么找回登录密码？</li>
+						<li>为确保投资人的资金安全，投资人在首次投资前需要进行个人身份信息的验证。投资人可在“我的账户-账户设置”里完成实名认证。</li>
+					</ol>
+				</div>
+				<div class="ul-list" id="onlogin-4">
+					<p class="title">4）如何进行实名认证？<i class="help-center-list-icon"></i></p>
+					<ol class="ul-list-hide">
+						<li>有两种途径可以进行实名认证：</li>
+						<li>① 登录账户后，选择一个标的进行投资，点击“投资”，未认证时会触发认证；</li>
+						<li>② 登录后进入“我的账户-账户设置”进行实名认证操作。</li>
+					</ol>
+				</div>
+				<div class="ul-list" id="onlogin-5">
+					<p class="title">5）实名认证无法通过是什么原因？如何解决？<i class="help-center-list-icon"></i></p>
+					<ol class="ul-list-hide">
+						<li>信用宝实名认证与公安系统联网，如果信息不一致，就会导致无法通过。以下几种情况将无法自行完成实名认证：</li>
+						<li>① 名字中带有繁体字；</li>
+						<li>② 曾经改过名字；</li>
+						<li>③ 军人转业、复员换的身份证；</li>
+						<li>④ 做过户籍变动。</li>
+						<li>解决办法：您可以拨打客服热线400-699-6060需求帮助。</li>
+					</ol>
+				</div>
+				<div class="ul-list" id="onlogin-6">
+					<p class="title">6）实名认证成功后能修改吗？可以申请注册几个实名认证的账号？<i class="help-center-list-icon"></i></p>
+					<ol class="ul-list-hide">
+						<li>实名认证成功后不能修改。每个人（同一身份证）仅可以实名认证一个账号。为确保用户更好的管理自己的账户资产，建议您谨慎填写您的认证信息。</li>
 					</ol>
 				</div>
 			</div>
 			<div class="user-account-moudle">
-				2
+				<h3 class="top-title">充值提现</h3>
+				<div class="ul-list" id="withdraw-1">
+					<p class="title">1）充值收取费用吗？<i class="help-center-list-icon"></i></p>
+					<ol class="ul-list-hide">
+						<li>投资人在信用宝充值是免费的。</li>
+					</ol>
+				</div>
+				<div class="ul-list" id="withdraw-2">
+					<p class="title">2）账户提现收费吗？如何收取？<i class="help-center-list-icon"></i></p>
+					<ol class="ul-list-hide">
+						<li>在信用宝通过第三方支付平台充值会收取相应的手续费，目前该费用由信用宝承担，用户提现无需手续费。（注：为避免不正当套现行为，若投资人在充值后没有进行任何投资将资金提现，信用宝将收取0.5%的手续费。）</li>
+					</ol>
+				</div>
+				<div class="ul-list" id="withdraw-3">
+					<p class="title">3）充值/提现是否有限额？是否有次数限制？<i class="help-center-list-icon"></i></p>
+					<ol class="ul-list-hide">
+						<li>信用宝对于客户的充值没有金额和次数限制，但客户在充值时的单笔限额取决于银行支付限额、第三方支付平台支付限额和用户自己设定的支付限额三者共同决定，取三者最小值。</li>
+						<li>为了保障大家的提现效率，提现验证码一天最多只能发送3次，提现金额至少50元。</li>
+					</ol>
+				</div>
+				<div class="ul-list" id="withdraw-4">
+					<p class="title">4）如何进行提现？<i class="help-center-list-icon"></i></p>
+					<ol class="ul-list-hide">
+						<li>客户按照以下步骤进行提现：</li>
+						<li>① 登录后进入“我的账户”；</li>
+						<li>② 进入“我的账户”页面的“充值提现”，点击“提现”；</li>
+						<li>③ 选择要进行提现的银行卡并输入提现金额；</li>
+						<li>④ 输入支付密码，并进行短信验证，完成提现申请。</li>
+					</ol>
+				</div>
+				<div class="ul-list" id="withdraw-5">
+					<p class="title">5）申请提现后何时到账？<i class="help-center-list-icon"></i></p>
+					<ol class="ul-list-hide">
+						<li>信用宝收到用户提现申请后会在两个工作日内进行处理，由于不同银行处理速度不同，转账后提现资金将会在24小时内到账（如遇双休日或法定节假日顺延）。</li>
+						<li>如果用户迟迟未收到提现资金，可能为银行卡信息填写有误，银行做正在退款操作，预计会在7个工作日内完成退款。有任何问题可拨打客服热线：400-699-6060。</li>
+					</ol>
+				</div>
+				<div class="ul-list" id="withdraw-6">
+					<p class="title">6）在充值时为什么银行扣款成功但信用宝账户余额没有增加？<i class="help-center-list-icon"></i></p>
+					<ol class="ul-list-hide">
+						<li>这种情况可能由于以下几种原因导致：</li>
+						<li>① 银行已扣款，但是可能由于银行系统原因，资金没有同步到第三方支付平台，第三方支付平台没有收到扣款，所以信用宝账户余额没有增加。银行会在发现问题之后和第三方支付平台对接，将充值金额打入信用宝账户余额，如银行没有把资金对接给第三方支付平台，银行会在2个工作日之内把充值金额退回原卡；</li>
+						<li>② 第三方支付平台判断当前网络存在钓鱼风险，自动关闭了交易，充值金额会在2个工作日之内退回原卡。若发生此种情况请客户保存充值时的订单号，拨打信用宝客服热线400-699-6060进行处理。</li>
+					</ol>
+				</div>
+				<div class="ul-list" id="withdraw-7">
+					<p class="title">7）为什么会提现失败？<i class="help-center-list-icon"></i></p>
+					<ol class="ul-list-hide">
+						<li>造成您提现失败的原因可能有以下几种：</li>
+						<li>① 银行账号/户名错误，或是账号和户名不符；</li>
+						<li>② 银行账户冻结或正在办理挂失；</li>
+						<li>③ 省份、城市、开户行等银行信息错误；</li>
+						<li>④ 使用信用卡提现。</li>
+						<li>如果遇到以上情况，我们会在收到支付机构转账失败的通知后解除您的资金冻结，请您不必担心资金安全。</li>
+					</ol>
+				</div>
 			</div>
 			<div class="user-account-moudle">
-				3
+				<h3 class="top-title">投资回款</h3>
+				<div class="ul-list" id="payments-1">
+					<p class="title">1）信用宝有哪些理财产品？<i class="help-center-list-icon"></i></p>
+					<ol class="ul-list-hide">
+						<li>信用宝有信投宝、定期宝、活期宝（即将上线）等产品。</li>
+					</ol>
+				</div>
+				<div class="ul-list" id="payments-2">
+					<p class="title">2）如何进行投资？<i class="help-center-list-icon"></i></p>
+					<ol class="ul-list-hide">
+						<li>按照以下步骤进行投资：</li>
+						<li>① 在信用宝注册、通过实名认证、成功绑定银行卡；</li>
+						<li>② 点击“我的账户”页面的“充值”按钮给账户充值；</li>
+						<li>③ 点击“我要理财”浏览“定期宝”或“信投宝”等产品；</li>
+						<li>④ 选择加入定期宝、信投宝或其他项目。</li>
+					</ol>
+				</div>
+				<div class="ul-list" id="payments-3">
+					<p class="title">3）投资人的本金和收益是否可以等到保障？<i class="help-center-list-icon"></i></p>
+					<ol class="ul-list-hide">
+						<li> 信用宝平台设置的本金保障机制适用于平台所有产品，如借款人出现还款逾期的情况，信用宝平台风险准备金会将未还本息垫付到出借人的信用宝账户当中，充分保障投资人本金及投资收益。</li>
+					</ol>
+				</div>
+				<div class="ul-list" id="payments-4">
+					<p class="title">4）投资是否需要支付费用？<i class="help-center-list-icon"></i></p>
+					<ol class="ul-list-hide">
+						<li>客户在信用宝充值、投资不需要支付任何费用。</li>
+					</ol>
+				</div>
+				<div class="ul-list" id="payments-5">
+					<p class="title">5）投资后什么时候开始计算收益？<i class="help-center-list-icon"></i></p>
+					<ol class="ul-list-hide">
+						<li>定期宝系列产品计息时间为：T+2个工作日（节假日顺延）；</li>
+						<li>信投宝（散标）产品计息时间为：满标后当天计息。</li>
+					</ol>
+				</div>
+				<div class="ul-list" id="payments-6">
+					<p class="title">6）投资后一般是几点回款？<i class="help-center-list-icon"></i></p>
+					<ol class="ul-list-hide">
+						<li>一般在回款日当天10:00左右开始回款，不超过当天16:00。</li>
+					</ol>
+				</div>
 			</div>
 			<div class="user-account-moudle">
-				4
+				<h3 class="top-title">安全保障</h3>
+				<div class="ul-list" id="safety-1">
+					<p class="title">1）信用宝是什么？<i class="help-center-list-icon"></i></p>
+					<ol class="ul-list-hide">
+						<li>信用宝”是借鉴美国FICO（费埃哲）标准，结合中国国情，建立的个人信用风险管理创新平台。通过国际先进的信用管理统计模型来评估个人信用情况，评价信用风险等级，与中国领先的个人金融门户——“我爱卡”有效联动，通过互联网及移动互联网等高科技技术手段服务广大客户提供借款或理财服务。</li>
+					</ol>
+				</div>
+				<div class="ul-list" id="safety-2">
+					<p class="title">2）借款人都来自哪里？<i class="help-center-list-icon"></i></p>
+					<ol class="ul-list-hide">
+						<li>借款人包括但不限于都市工薪族、学生、私营业主等高成长性人群，合格的借款人均经过严格甄选、层层把关后通过信用审核且具备足够还款能力的优质借款人。</li>
+					</ol>
+				</div>
+				<div class="ul-list" id="safety-3">
+					<p class="title">3）借款人逾期了怎么办？<i class="help-center-list-icon"></i></p>
+					<ol class="ul-list-hide">
+						<li>投资人在信用宝平台的资金交易由阳光保险集团进行担保，若交易出现意外损失，阳光保险集团将进行赔付。当借款人未能在约定时间还款时，信用宝风险准备金将实时为您垫付您的本金和利息。</li>
+					</ol>
+				</div>
+				<div class="ul-list" id="safety-4">
+					<p class="title">4）信用宝靠什么来控制风险？<i class="help-center-list-icon"></i></p>
+					<ol class="ul-list-hide">
+						<li class="bold">严格的信用管理体系</li>
+						<li>信用宝是借鉴美国FICO（费埃哲）标准，结合中国国情，建立的创新个人信用风险管理咨询服务平台。通过国际先进的信用管理统计模型来评估个人信用情况，评价信用风险等级。 信用宝平台对每一位借款人客户进行科学的信审系统评分，对其还款意愿和还款能力进行过充分的考察，通过信用产品设计、信用数据分析挖掘、信用风险评估、信用增值方案设计、贷中流程管理、商帐管理等全程管理，来精准把握借款人的信用情况。</li>
+						<li class="bold">信用宝平台推荐出借模式具有低风险性</li>
+						<li>投资人通过信用宝平台的推荐进行出借，投资人的资金分散借给多个优质借款人，风险也同时被分散，比如30万的资金很可能被分散借给10个人，通过信用宝平台出借方式具有天然的低风险性。精准的平台数据量预测和稳健的市场开拓政策，极大地降低了资金流动性风险的出现。</li>
+						<li class="bold">风险准备金机制</li>
+						<li>即使出现个别借款人未能及时还款的情况，平台还设立了还款风险金机制，即平台从服务费中预先提取一定的专用资金，用于弥补借款人违约可能带来的损失。还款风险金的提取比例由信用宝根据借款人的整体违约状况进行设定，并根据实际的不良借款比例进行适当的调整。</li>
+						<li>策诚财富会定期向投资人披露还款风险金专用账户整体信息情况。如果投资人在披露期内得到还款风险金专用账户的补偿，将披露投资人的具体受偿情况。</li>
+						<li class="bold">完善的合规管理制度</li>
+						<li>信用宝合规管理是信用宝通过设置风控合规管理岗位，制定和执行合规政策，开展合规监测和合规培训等措施，预防、识别、评估、报告和应对合规风险的行为。</li>
+					</ol>
+				</div>
 			</div>
 			<div class="user-account-moudle">
-				5
+				<h3 class="top-title">账户管理</h3>
+				<div class="ul-list" id="account-1">
+					<p class="title">1）信用宝账户密码都有哪些？<i class="help-center-list-icon"></i></p>
+					<ol class="ul-list-hide">
+						<li>① 登录密码：登录信用宝时需要输入的密码；</li>
+						<li>② 交易密码：投资时、提现时需要输入的密码。</li>
+					</ol>
+				</div>
+				<div class="ul-list" id="account-2">
+					<p class="title">2）初始交易密码是什么？<i class="help-center-list-icon"></i></p>
+					<ol class="ul-list-hide">
+						<li>初始交易密码是投资人注册信用宝时设置的登录密码（可在账户设置中修改）。</li>
+					</ol>
+				</div>
+				<div class="ul-list" id="account-3">
+					<p class="title">3）账户可用余额指的是什么？<i class="help-center-list-icon"></i></p>
+					<ol class="ul-list-hide">
+						<li>指账户内投资人可自由支配的资金。</li>
+					</ol>
+				</div>
+				<div class="ul-list" id="account-4">
+					<p class="title">4）投资中冻结金额代表什么？<i class="help-center-list-icon"></i></p>
+					<ol class="ul-list-hide">
+						<li>指的是新购买的投资项目未计息的金额。</li>
+					</ol>
+				</div>
+				<div class="ul-list" id="account-5">
+					<p class="title">5）提现中冻结金额代表什么？<i class="help-center-list-icon"></i></p>
+					<ol class="ul-list-hide">
+						<li>指的是申请提现后等待处理的金额。</li>
+					</ol>
+				</div>
+				<div class="ul-list" id="account-6">
+					<p class="title">6）手机收不到验证码怎么办？<i class="help-center-list-icon"></i></p>
+					<ol class="ul-list-hide">
+						<li>因工信部管制垃圾短信，现各手机运营商都在对106短信网关号段进行品牌改造和升级，造成暂时收不到短信验证码或接收验证码延迟，如果注册时收不到验证码请先使用邮箱验证；如果提现时收不到验证码，请拨打客服热线及时联系客服：400-699-6060。</li>
+					</ol>
+				</div>
 			</div>
 			<div class="user-account-moudle">
-				6
+				<h3 class="top-title">信用宝积分</h3>
+				<div class="ul-list" id="integral-1">
+					<p class="title">1）如何获得信用宝积分？<i class="help-center-list-icon"></i></p>
+					<ol class="ul-list-hide">
+						<li>信用宝积分可通过注册、登录、会员升级、投资、邀请好友等操作来获得，具体获得规则点击查看【<a href="">VIP特权</a>】。</li>
+					</ol>
+				</div>
+				<div class="ul-list" id="integral-2">
+					<p class="title">2）信用宝积分有什么用？<i class="help-center-list-icon"></i></p>
+					<ol class="ul-list-hide">
+						<li>投资人可使用积分在【<a href="">我要抽奖</a>】页面抽奖、在【<a href="">积分商城</a>】兑换礼品。</li>
+					</ol>
+				</div>
+				<div class="ul-list" id="integral-3">
+					<p class="title">3）信用宝积分可以转让给他人吗？<i class="help-center-list-icon"></i></p>
+					<ol class="ul-list-hide">
+						<li>不可以，积分仅限当前账户使用，不能转让给他人。</li>
+					</ol>
+				</div>
+			</div>
+			<div class="user-account-moudle">
+				<h3 class="top-title">活动相关</h3>
+				<div class="ul-list" id="activity-1">
+					<p class="title">1）[新手任务]新手注册/投资可以获得哪些额外的奖励？<i class="help-center-list-icon"></i></p>
+					<ol class="ul-list-hide">
+						<li> 新手注册后，将账户信息（包括实名认证、手机绑定、邮箱绑定）全部完善，可获得额外的积分奖励；新用户也可投资【新手专区】内的标的，享受额外加息（具体加多少根据当前活动规则）。</li>
+					</ol>
+				</div>
+				<div class="ul-list" id="activity-2">
+					<p class="title">2）[推荐好友]推荐好友奖励规则<i class="help-center-list-icon"></i></p>
+					<ol class="ul-list-hide">
+						<li>客户点击首页顶部的“推荐有礼”进入推荐页面，可复制自己的推荐链接，将其发送给好友，通过此链接注册的好友则计为当前客户的推荐用户，以获得相关奖励。</li>
+						<li>推荐好友里的推荐人和被推荐人有两层的从属关系。推荐人可以从1级推荐和2级推荐的年化投资额中获得相应比例的推荐奖励（如图示）。</li>
+						<li>推荐奖励计算：推荐人总收益=1级推荐人年化投资额*1.0%+2级推荐人年化投资额*0.2；备注：年化投资额=用户投资额*标的期数/12。</li>
+						<li class="align-center ui-mt30 ui-mb10"><img src="images/recommend-reward-mid-box.png" alt="" class="mid-box-img"></li>
+						
+					</ol>
+				</div>
+				<div class="ul-list" id="activity-3">
+					<p class="title">3）[收益提升卡]收益提升卡的使用规则<i class="help-center-list-icon"></i></p>
+					<ol class="ul-list-hide">
+						<li>① 首次注册、升级VIP或抽奖赠送收益提升卡：用户首次注册、升级VIP或抽奖时，可获得收益提升卡（用户可在收益提升卡有效期内购买债权或理财产品时使用，且只适用于非活期产品），收益提升卡是将新购买的产品收益提升相应的倍数，但产品收益使用收益提升卡时的最高提升至14%，收益提升卡有效期为1周。</li>
+						<li>② 产品的实际收益率=min（产品收益*收益提升卡倍数,14%），取2个数字中孰小的金额。推荐注册赠送收益提升卡：推荐人根据推荐的人数获得相应的收益提升卡，收益提升卡是将新购买的产品收益提升相应的倍数，但产品收益使用收益提升卡时的最高提升至14%，收益提升卡有效期为1周。</li>
+						<li>③ 具体推荐注册获赠收益提升卡标准如：推荐10人及以上注册，获赠1.1倍；推荐20人及以上注册，获赠1.2倍；推荐30人及以上注册，获赠1.3倍；推荐40人及以上注册，获赠1.4倍；推荐50人及以上，获赠1.5倍。</li>
+					</ol>
+				</div>
+				<div class="ul-list" id="activity-4">
+					<p class="title">4）[VIP会员]如何成为信用宝VIP会员？<i class="help-center-list-icon"></i></p>
+					<ol class="ul-list-hide">
+						<li>信用宝VIP会员费用168元/年。信用宝在活动推广期间将会赠送部分VIP会员，请大家随时关注信用宝网站。</li>
+					</ol>
+				</div>
+				<div class="ul-list" id="activity-5">
+					<p class="title">5）[成长值]信用宝成长值和可用积分如何计算？<i class="help-center-list-icon"></i></p>
+					<ol class="ul-list-hide">
+						<li>① 成长值=累计投资积分+累计登陆积分+累计推广积分；</li>
+						<li>② 可用积分=累计投资积分+累计登陆成长积分+累计推广积分+累计生日积分-已兑换积分。</li>
+					</ol>
+				</div>
+				<div class="ul-list" id="activity-6">
+					<p class="title">6）[兑换礼品]如何兑换礼品？<i class="help-center-list-icon"></i></p>
+					<ol class="ul-list-hide">
+						<li>客户登录信用宝后，点击顶部的【积分商城】进入页面，根据账户当前积分的多少，选定可兑换的商品，在商品详情页面点击“立即兑换”，输入收货相关信息即可。客服会在次月的15日前发货。</li>
+					</ol>
+				</div>
 			</div>
 		</dl>
 	</dd>
@@ -185,9 +436,41 @@
 			$(this).find(".ul-list-hide").slideToggle();
 			$(this).siblings().removeClass("on");
 			$(this).toggleClass("on");
-
 		})
+	})
+
+	$(function(){
+	var urlstatus = false;
+	var str = location.hash.split('#');
+	var urlstr_full = str[str.length-1];
+	var urlstr = urlstr_full.slice(0,-2)
+	var nav = $('.user-tabs');
+	var menu = nav.find('a');
+	var nav_box = $('.user-account-moudle');
+	var nav_box_list = nav_box.find('.ul-list');
+
+	menu.each(function () {
+		var self = $(this);
+		var rel = self.attr('rel');
+		if (urlstr === rel) {
+			self.siblings().removeClass('user-tabs-active');
+			self.addClass('user-tabs-active');
+			self.trigger('click');
+			} 
+		});
+
+	nav_box_list.each(function () {
+		var self = $(this);
+		var rel = self.attr('id');
+		if (urlstr_full === rel) {
+			self.trigger('click');
+			self.siblings().removeClass('on');
+			self.addClass('on');
+			
+			} 
+		});
 	})
 </script>
 </body>
 </html>
+

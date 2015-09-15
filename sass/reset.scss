@@ -529,6 +529,9 @@ $base_blue:#2c97f4;
 .ui-font-gray{
   color: #b9b9b9 !important;
 }
+.ui-font-black{
+  color: #000 !important;
+}
 .ui-font-white{
   color: #fff !important;
 }
@@ -546,7 +549,7 @@ $base_blue:#2c97f4;
 }
 /* 字体样式-大小 */
 .ui-size12{
-  font-size: 12px;
+  font-size: 12px !important;
 }
 .ui-size14{
   font-size: 14px;
@@ -570,6 +573,9 @@ $base_blue:#2c97f4;
   font-size: 36px;
 }
  // 边距
+.mg-auto{
+  margin: 0 auto;
+}
 .ui-mt5 {
   margin-top: 5px !important;
 }
@@ -593,6 +599,9 @@ $base_blue:#2c97f4;
 }
 .ui-mt50 {
   margin-top: 50px !important;
+}
+.ui-mb0{
+  margin-bottom: 0 !important;
 }
 .ui-mb5 {
   margin-bottom: 5px !important;
@@ -908,6 +917,17 @@ $base_blue:#2c97f4;
   margin-top: 10px;
   margin-left: 10px;
 }
+.ui-posr{
+  position: relative;
+}
+.icon-new-artip{
+  position: absolute;
+  width: 68px;
+  height: 22px;
+  left: 20px;
+  top: -5px;
+  background: url(../images/sprites/toptips.png) no-repeat;
+}
 // 雪碧图合并
 .icon-form-person{
   background: url(../images/sprites/icon-ipt-person.png) no-repeat;
@@ -919,6 +939,11 @@ $base_blue:#2c97f4;
   background: url(../images/sprites/icon-psw.png) no-repeat;
   width: 30px;
   height: 20px;
+}
+.icon-form-email{
+  background: url(../images/sprites/icon-reg.png) no-repeat;
+  background-position:-27px 0;
+  width:26px;
 }
 // 进度条
 .ui-progress {
@@ -1053,16 +1078,32 @@ $base_blue:#2c97f4;
     a{
       display: inline-block;
       border-radius:4px;
+      border:1px solid #ddd;
       font-size: 14px;
       color: #919191;
-      background-color: #eee;
-      width: 24px;
-      height: 24px;
-      line-height: 24px;
+      background-color: #fff;
+      width: 22px;
+      height: 22px;
+      line-height: 22px;
       margin: 0 3px;
       &.ui-page-link-active{
         background-color: #2c97f4;
         color: #fff;
+        border-color:#2c97f4;
+      }
+      &.ui-page-link-prev{
+        margin-right: 8px;
+        &:hover{
+          border-color:#2c97f4;
+          color: #2c97f4;
+        }
+      }
+      &.ui-page-link-next{
+        margin-left: 8px;
+        &:hover{
+          border-color:#2c97f4;
+          color: #2c97f4;
+        }
       }
     }
   }
@@ -1084,6 +1125,11 @@ $base_blue:#2c97f4;
 .icon-label-hot{
   background-color: #ff4d7b;
   margin-left: 5px;
+}
+.icon-label-zhuan{
+  background-color: #399df5;
+  margin-left: 5px;
+  vertical-align: middle;
 }
 // 头部
 #top{
@@ -1113,12 +1159,43 @@ $base_blue:#2c97f4;
       border-left: 1px solid #eee;
     }
   }
+  .icon-zzqg{
+    display: inline-block;
+    top: 4px;
+    margin-right: 5px;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    background: url(../images/sprites/icon-zzqg.png) no-repeat center;
+  }
+  .icon-scale{
+    &:hover{
+      .icon-zzqg{
+        transform: scale(1.1);
+      }
+    }
+  }
   .icon-messages{
     position: relative;
     padding:10px;
     margin-top: 5px;
     margin-left: 10px;
     background: url(../images/sprites/icon-unread.png) no-repeat center;
+    &.icon-nomessage{
+      background: url(../images/sprites/icon-unread_gray.png) no-repeat center;
+    }
+    em{
+      position: absolute;
+      top: 2px;
+      right: -10px;
+      height: 14px;
+      line-height: 14px;
+      background-color: #c5222c;
+      padding:0 6px;
+      color: #fff;
+      border-radius:10px;
+      font-weight:bold;
+    }
   }
 
 }
@@ -1241,20 +1318,16 @@ $base_blue:#2c97f4;
         .icon-arrow-b{
           background:url(../images/sprites/icon-arrow-up.png) no-repeat;
         }
-        .menu-invest-list{
-          border-top:0;
-        }
       }
     }
     .menu-invest-list{
       position: absolute;
       left: -1px;
-      top:40px;
       background-color: #fff;
       display: none;
       text-align: center;
       border:1px solid #eee;
-      padding-top: 10px;
+      padding-top: 8px;
       p{
         &:hover{
           background-color: #2a99f3;
@@ -1283,6 +1356,17 @@ $base_blue:#2c97f4;
      top:9px;
      left:-5px;
   }
+}
+// add 2015-07-27
+.icon-arrow-up{
+  width:10px;
+  height:6px;
+  position: absolute;
+  background: url(../images/sprites/arrow-up.png) no-repeat;
+  left:50%;
+  margin-left: -5px;
+  top:-5px;
+  z-index: 999;
 }
 // 平台累计
 .statis-sum{
@@ -1362,13 +1446,39 @@ $base_blue:#2c97f4;
     line-height: 28px;
     padding-left: 10px;
     cursor: pointer;
+    &:hover{
+      color: #fff;
+      .icon-arrow{
+         background:url(../images/sprites/foot-arrow-up.png) no-repeat;
+         top: 12px;
+        }
+    }
     .menber-list{
       display: none;
+      position: absolute;
+      bottom:34px;
       width: 142px;
+      padding: 5px 0;
       margin-left: -12px;
+      background-color: #777;
+      border-radius:5px;
+      color: #fff;
+      a{
+        &:hover{
+          color: #bababa;
+        }
+      }
+      .icon-footer-arrow{
+        position: absolute;
+        width: 8px;
+        height: 4px;
+        background:url(../images/sprites/footer-arrow.png) no-repeat;
+        left: 50%;
+        margin-left: -4px;
+        bottom:-4px;
+      }
     }
     p{
-      background-color: #353535;
       text-align: center;
     }
     .icon-arrow{
@@ -1378,6 +1488,45 @@ $base_blue:#2c97f4;
       background-position: -100px 0;
       top: 14px;
       right: 14px;
+    }
+  }
+  .sec-links-list{
+    overflow: hidden;
+    padding-top: 30px;
+    li{
+      float: left;
+      margin-right: 12px;
+    }
+    a{
+      display: inline-block;
+      width: 88px;
+      height: 34px;
+      background: url(../images/sprites/sec-links-bg.png) no-repeat;
+      &.sec-link-hlxh{
+        background-position:-366px 0;
+        &:hover{
+          background-position:-456px 0;
+        }
+      }
+      &.sec-link-bljb{
+        background-position:-186px 0;
+        &:hover{
+          background-position:-276px 0;
+        }
+      }
+      &.sec-link-aqlm{
+        width: 91px;
+        &:hover{
+          background-position:-93px 0;
+        }
+      }
+      &.sec-link-kxwz{
+        width: 93px;
+        background-position:-546px 0;
+        &:hover{
+          background-position:-641px 0;
+        }
+      }
     }
   }
   .footer-link{
@@ -1393,14 +1542,17 @@ $base_blue:#2c97f4;
       }
     }
   }
-  .fr{
-    // padding-right: 100px;
-  }
   .work-time{
-    padding: 20px 0;
+    overflow: hidden;
+    padding-right: 30px;
+    float: right;
   }
-  .our-telnumber{
-
+  .footer-qcode{
+    overflow: hidden;
+    float: right;
+    dt{
+      float: left;
+    }
   }
 }
 // 返回顶部
@@ -1526,4 +1678,42 @@ $base_blue:#2c97f4;
     margin-right: 5px;
     height: 16px;
     border-left: 4px solid #2c97f4;
+}
+// 提现成功
+.recharge-success-wrap{
+    .contain_wrap{
+    margin: 30px auto 80px;
+    border: 1px solid #eeeeee;
+    background: #fff;
+    padding: 200px 0;
+    }
+    .recharge-success-box{
+      width: 330px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .btn-go-home{
+      .ui-btn{
+        width: 260px;
+      }
+    }
+    .icon-sec {
+        display: inline-block;
+        width: 14px;
+        height: 16px;
+        background: url(../images/sprites/icon-sec.png) no-repeat;
+        position: relative;
+        top: 4px;
+        margin-right: 8px;
+    }
+}
+//验证码输入正确 icon
+.valid_correct,.valid_error{
+  background-image:url(../images/valid-icon-correct.png);
+  background-attachment: scroll; 
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+}
+.valid_error{
+  background-image:url(../images/valid-icon-erro.png) !important;
 }

@@ -1,2 +1,0 @@
-.sprite-1{ background-position: 0 0; width: 36px; height: 36px; } 
-.sprite-2{ background-position: -46px 0; width: 36px; height: 36px; } 

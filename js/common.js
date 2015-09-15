@@ -8,22 +8,26 @@ $(function(){
 	// menu 菜单栏展开
 	$(".menu-invest").hover(function() {
     $(this).addClass('expand')
-		$(".menu-invest-list").show()
+		$(".menu-invest-list").stop().fadeIn(300,function(){
+      $(this).animate({"marginTop": "-5px"}, 300)
+    })
 	}, function() {
     $(this).removeClass('expand')
-		$(".menu-invest-list").stop().hide()
+		$(".menu-invest-list").stop().fadeOut(300,function(){
+      $(this).animate({"marginTop": "0px"}, 100)
+    });
 	});
 	// footer 菜单栏展开
 	$(".group-list").hover(function() {
-		$(".menber-list").stop().slideDown();
+		$(".menber-list").stop().fadeIn(300)
 	}, function() {
-		$(".menber-list").stop().slideUp();
+		$(".menber-list").stop().fadeOut(300)
 	});
     // 返回顶部
     function w_screen(){
-    if($(window).width() <= 1280){
+    if($(window).width() <= 1200){
       $("#index_popbar").hide();
-    }else if($(window).width() > 1280){
+    }else if($(window).width() > 1200){
       $("#index_popbar").show();
     }
   }

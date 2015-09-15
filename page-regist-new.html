@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="keywords" content="理财,网络借贷,p2p网络借贷,互联网金融" />
+	<meta name="description" content="中国个人信用风险创新平台-信用宝,为用户提供全方位理财、P2P网络借贷服务,专业的风险管理让理财、P2P网络借贷更加高效安全,您身边的个人金融理财专家-信用宝" />
+	<title>信用宝 官网 - 中国个人信用风险管理创新平台</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+<!-- banner section -->
+<div class="bg-white">
+	<!-- menu start -->
+		<div class="menu-wrap contain_wrap clearfix">
+		<div class="logo fl"><a href=""><img src="images/logo.png" width="306" height="55"></a></div>
+		
+		</div>
+	</div>
+<!-- menu end -->
+<!-- 注册页面v2.0.3 -->
+<div class="contain_wrap">
+	<div class="regist-wrap bg-white">
+		<h5>新用户注册</h5>
+		<div class="reg-step-box">
+			<div class="step-bg step-one"></div>
+			<p class="step-noty clearfix">
+			<span class="fl">填写账户信息</span>
+			<span class="center">验证账户信息</span>
+			<span class="fr">注册成功</span>
+			</p>
+		</div>
+		<!-- 注册信息填写 -->
+		<div class="regist-mid-box">
+			<div class="login-input align-center fl">
+				<div class="ui-form-item" id="input-valid-phone">
+					<p class="ui-input-body">
+						<i class="ui-label-icon icon-form-phone"></i>
+						<input type="text" placeholder="输入注册手机号" class="w85">
+					</p>
+				</div>
+				<p class="ui-size14 ui-font-gray align-left ui-pt10">
+					设置登录密码
+				</p>
+				<div class="ui-form-item ui-pt20">
+						<p class="ui-input-body">
+							<i class="ui-label-icon icon-form-loginpw"></i>
+							<input type="password" placeholder="8位以上,字母与数字组合" class="w85 valid_correct">
+						</p>
+				</div>
+				<div class="ui-form-item">
+						<p class="ui-input-body">
+							<i class="ui-label-icon icon-form-loginpw"></i>
+							<input type="password" placeholder="重复输入密码" class="w85 valid_error">
+						</p>
+				</div>
+				<!-- 推荐人 -->
+				<p class="recommend-code ui-font-gray"><i class="ui-label-icon icon-tj-plus"></i>推荐人(选填)</p>
+				<div class="ui-form-item ui-form-hidden">
+						<p class="ui-input-body">
+							<input type="text" placeholder="推荐码/手机号/邮箱/ID号" class="w98">
+						</p>
+				</div>
+				<!-- 验证码 -->
+				<div class="ui-form-item input-vali-code">
+					<p class="ui-input-body ui-input-middle">
+						<input type="text" placeholder="输入右侧验证码" class="valid_correct">	
+					</p>
+					<img src="images/valid-code.jpg">
+				</div>
+				<!-- 条款 -->
+				<p class="auto-login align-left">
+					<input type="checkbox" checked="checked" name="remember_login" id="remember_login">
+					<label for="remember_login">我已阅读并同意</label>
+					<a href="" class="ui-font-blue" target="_blank">使用条款&nbsp;</a>和<a href="" class="ui-font-blue" target="_blank">&nbsp;隐私条款</a>
+				</p>
+				<div class="ui-form-item">
+					<p class="ui-form-btn"><a href="" class="ui-btn ui-btn-blue">下一步</a></p>
+				</div>
+			</div>
+			<!-- 新用户提示 -->
+			<div class="regist-new-attract">
+				<img src="images/reg-new.jpg" alt="新用户注册活动" width="397" height="429">
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end -->
+<div class="empty-footer">
+		<div class="contain_wrap">
+			<div class="links">
+				<a href="/aboutus">关于我们</a>
+				<a href="/aboutus?#our-connection">联系我们</a>
+				<a href="/help">帮助中心</a>
+				<a href="/regulation?#service-protocol">服务协议</a>
+			</div>
+			<p>© 2015-2016 信用宝金融信息服务 (北京) 有限公司<span>京ICP备15015561号-2</span></p>
+		</div>
+   
+	</div>
+<!-- footer end -->
+	<!-- script -->
+	<script type="text/javascript" src="js/lib/jquery.js"></script>
+	<script type="text/javascript" src="js/plugins/layer.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript">
+	// 推荐号填写
+	$(function(){
+		$('.recommend-code').bind('click',function(){
+			$(this).find(".icon-tj-plus").toggleClass('icon-tj-minmus');
+			$(this).next().toggle();
+		})
+	})
+	// 验证错误提示
+	$("#input-valid-phone").focusin(function(){
+		$(this).find('.ui-input-body').css({
+			borderColor: '#fe8479',
+			boxShadow: '0 0 0 1px #fe8479'
+		});
+		layer.tips('输入的手机号不正确', '.ui-input-body', {
+			tips: [1, '#fd8479'],
+			time: 24000
+		});
+	});
+	$("#input-valid-phone").focusout(function(){
+	layer.closeAll('tips');
+	});
+
+</script>
+</body>
+</html>

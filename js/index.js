@@ -1,11 +1,25 @@
 $(function(){
 	// banner
-  	$('.bxslider').bxSlider({
-  		mode:'fade',
+  slider = $('.bxslider').bxSlider({
+    mode:'fade',
       controls:false,
-  		auto:true,
-  		responsive:true
-  	});
+      auto:true,
+      responsive:true
+      });
+  slider.reloadSlider();
+  function onSliderLoad() {
+    //点击后继续自动播放
+    $(".bx-pager-item a").click(function() {
+     var thumbIndex = $('.bx-pager-item a').index(this);
+     slider.goToSlide(thumbIndex);
+     var _jGtime=slider.startAuto();
+     setTimeout(_jGtime, 800);
+     $('.bx-pager-item a').removeClass('active');
+     $(this).addClass('active');
+       return false;
+  }); 
+   }
+   onSliderLoad();
   	// countdown
 
   	var ts1 = '2015-07-01 17:40:02';
@@ -53,7 +67,7 @@ var scrtime;
                   ul.css({marginTop:0});
                   ul.find("li:first").fadeIn(1000);
                 });        
-        },3000);
+        },5000);
      }).trigger("mouseleave");
   });
 // 用户评论

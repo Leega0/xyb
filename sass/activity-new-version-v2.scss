@@ -1,0 +1,725 @@
+/*新手页面*/
+.activity-new-version{
+	.level-top{
+		height:500px;
+		background:url("../images/activity-page/new-version-v2/new-level-top.jpg") no-repeat top center;
+	}
+	.level-one{
+		height:565px;
+		background: url("../images/activity-page/new-version-v2/new-level-one.jpg") no-repeat top center;
+		.h1-title{
+			padding-top:130px;
+		}
+		.data{
+			padding-top:280px;
+			li{
+				width:290px;
+				text-align:center;
+				float:left;
+				font-size: 26px;
+				line-height:42px;
+				margin-left: 136px;
+				&:first-child{
+					margin-left: 44px;
+				}
+			}
+			span{
+				font-weight:bold;
+			}
+			.data-one{
+				color:#83350a;
+			}
+			.data-two{
+				color:#0d364f;
+			}
+			.data-three{
+				color:#094e44;
+			}
+		}
+	}
+	.level-two{
+		height:587px;
+		background: url("../images/activity-page/new-version-v2/new-level-two.jpg") no-repeat top center;
+		.price-btn{
+			position:absolute;
+			top:120px;
+			left:460px;
+			display:block;
+			width:305px;
+			height:85px;
+			background: url("../images/activity-page/new-version-v2/price-btn.png") no-repeat top left;
+			&:hover{
+				background-position: 0 -95px;
+			}
+			&:active{
+				background-position: 0 0;
+			}
+		}
+		.h1-title{
+			padding-top:480px;
+		}
+	}
+	.level-three{
+		background:#bf2a23;
+		.contain_wrap{
+			padding-top:20px;
+			padding-bottom:1px;
+		}
+	}	
+	.level-four{
+		height:284px;
+		background: url("../images/activity-page/new-version-v2/new-level-four.jpg") no-repeat top center;
+		.h1-title{
+			padding-top:170px;
+		}
+	}
+	.level-bottom{
+		height:648px;
+		background:#2e303d;
+	}
+	.h1-title{
+		margin:0;
+		color:#f6d91d;
+		font-size:36px;
+		font-width: bold;
+		text-align:center;
+	}
+	.copy-right{
+		padding-top:130px;
+		color:#fff;
+		font-size:12px;
+		text-align:center;
+		line-height: 40px;
+		opacity:0.5;
+		filter: alpha(opacity=50);
+	}
+}
+/*老手页面*/
+.activity-old-version{
+	.level-top{
+		height:320px;
+		background:url("../images/activity-page/new-version-v2/old-level-top.jpg") no-repeat top center;
+	}
+	.level-one{
+		height:420px;
+		background:url("../images/activity-page/new-version-v2/old-level-one.jpg") no-repeat top center;
+		.black-scroll-bar{
+			position:absolute;
+			top:194px;
+			left:0;
+			height:21px;
+			width:100%;
+			background:url("../images/activity-page/new-version-v2/old-black-scroll-bar-bg.png") no-repeat top center;
+			
+		}
+		.yellow-slide-bar{
+			width:1080px;
+			margin:6px auto 0;
+			span{
+				float:left;
+				height:7px;
+				display: block;
+			}
+			.le,.ri{
+				width:5px;
+				background:url("../images/activity-page/new-version-v2/old-yellow-scroll-side.png") no-repeat;
+			}
+			.ri{
+				background-position: -5px 0;
+			}
+			.mid{
+				width:160px;
+				background:#fdd803;
+				&.second-step{
+					width:560px;
+				}
+				&.third-step{
+					width:1070px;
+				}
+			}
+		}
+		.click-park{
+			position:absolute;
+			top:164px;
+			left:0;
+			li{
+				text-align:center;
+				width:200px;
+				float:left;
+				padding-left: 200px;
+				&:first-child{
+					padding-left: 100px;
+				}
+				&.on{
+					.cir{
+						background-position: -45px 0;
+					}
+					.gift{
+						background-position: -70px 0; 
+						color:#fdd502;
+					}
+					.squ{
+						background-position: -178px 0;
+					}
+				}
+			}
+			.date{
+				text-align:center;
+				font-size:14px;
+				color:#181640;
+			}
+			.cir{
+				display: block;
+				width:28px;
+				height:29px;
+				margin:9px auto 0;
+				background: url("../images/activity-page/new-version-v2/old-dot.png") no-repeat;
+				background-position: 6px 8px;
+			}
+			.squ{
+				display: block;
+				cursor: pointer;
+				width:168px;
+				height:164px;
+				margin:16px auto 0;
+				background: url("../images/activity-page/new-version-v2/old-hexagon.png") no-repeat;
+				color:#181640;
+				font-size:24px;
+				padding-top:16px;
+				&:hover{
+					background-position: -178px 0;
+					.text{
+						display: block;
+					}
+					.gift{
+						background-position: -70px 0; 
+						color:#fdd502;
+					}
+				}
+				&:active{
+					background-position: 0 0;
+				}
+			}
+			.gift{
+				display: block;
+				width:60px;
+				height:28px;
+				padding-top:28px;
+				margin:0 auto 12px;
+				color:#dfae05;
+				font-size:24px;
+				background: url("../images/activity-page/new-version-v2/old-gift.png") no-repeat;
+			}
+			.text{
+				display: none;
+				padding-top:46px;
+				color:#181640;
+				font-size:18px;
+			}
+		}
+	}
+	.level-two{
+		background:#fcca02 url("../images/activity-page/new-version-v2/old-level-two.png") no-repeat top center;
+		.contain_wrap{
+			height:640px;
+			padding-top:1px;
+		}
+		.ui-btn{
+			display: block;
+			background:#ee632c;
+			width:340px;
+			height:66px;
+			box-shadow:0 5px 0 #d8501a;
+			padding:0;
+			line-height: 66px;
+			font-size:24px;
+			font-weight: bold;
+			&:hover{
+				background:#fd5715;
+			}
+			&:active{
+				background:#ee632c;
+			}
+			&.done{
+				background:#999999;
+				box-shadow:0 5px 0 #666666;
+			}
+		}
+		.app-download{
+			position:fixed;
+			top:50%;
+			margin-top: -118px;
+		}
+		.active-park{
+			height:640px;
+		}
+		.active-park-one{
+			margin-top:60px;
+			display: none;
+			background: url("../images/activity-page/new-version-v2/old-active-park-one.png") no-repeat 60px 0;
+			.text{
+				padding: 90px 0 0 740px;
+				color:#181640;
+				font-size:36px;
+				line-height:64px;
+			}
+			.ui-btn{
+				margin:100px 0 0 740px;
+			}
+		}
+		.active-park-two{
+			margin-top:80px;
+			background: url("../images/activity-page/new-version-v2/old-active-park-two-strone.png") no-repeat 309px 390px;
+			.squ{
+				float:left;
+				height:287px;
+				width:316px;
+				background: url("../images/activity-page/new-version-v2/old-active-park-two.png") no-repeat;
+				margin-left: 80px;
+				&:first-child{
+					margin-left: 40px;
+				}
+			}
+			.money{
+				display: block;
+				width:106px;
+				height:106px;
+				margin:36px auto 24px;
+				background: url("../images/activity-page/new-version-v2/old-money.png") no-repeat;
+			}
+			.money-one{
+				background-position: 0 0;
+			}
+			.money-two{
+				background-position: -116px 0;
+			}
+			.money-three{
+				 background-position: -232px 0;
+			}
+			.title{
+				text-align:center;
+				font-size:24px;
+				color:#e8503a;
+				font-weight:bold;
+			}
+			.text{
+				margin-top: 38px;
+				text-align:center;
+				font-size:20px;
+				color:#fde208;
+				font-weight:bold;
+			}
+			.ui-btn{
+				margin:80px auto 0;
+			}
+		}
+		.active-park-three{
+			margin-top:80px;
+			display: none;
+			.card{
+				float:left;
+				height:280px;
+				width:296px;
+				background: url("../images/activity-page/new-version-v2/old-card.png") no-repeat top left;
+				margin-left: 80px;
+			}
+			.card-one{
+				background-position:0 0;
+			}
+			.card-two{
+				background-position: -306px 0;
+			}
+			.card-three{
+				background-position: -612px 0;
+			}
+			.text{
+				padding-top: 250px;
+				text-align:center;
+				font-size:20px;
+				color:#34302f;
+			}
+			.ui-btn{
+				margin:110px auto 0;
+			}
+		}
+	}
+	.level-bottom{
+		background:#fcc902 url("../images/activity-page/new-version-v2/old-level-bottom-strone.png") no-repeat left 160px;
+		.text{
+			color:#34302f;
+			font-size:14px;
+			line-height: 36px;
+			span{
+				display: block;
+				font-size:24px;
+			}
+		}
+		.copy-right{
+			text-align:center;
+			font-size:12px;
+			padding:120px 0 140px;
+			opacity:0.5;
+			line-height: 40px;
+			filter: alpha(opacity=50);
+		}
+	}
+}
+.contain_wrap{
+	position:relative;
+}
+/*投资箱体*/
+.activity-invest {
+  position: relative;
+  height: 180px;
+  margin: 0 auto 30px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+	.activity-invest-title{
+		position: absolute;
+		top: 40px;
+		left: 108px;
+		font-size: 14px!important;
+	}
+	img {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		display: block;
+		width: 113px;
+		height: 113px;
+		z-index: 1; 
+	}
+	li {
+		float: left;
+		height: 100%; 
+	}
+	p {
+		font-size: 18px;
+		color: #3598db; 
+	}
+	.p1 {
+		font-size: 14px; 
+	}
+	.p2 {
+		font-size: 40px; 
+	}
+	.p3 {
+		font-size: 14px; 
+	}
+	.i1 {
+		font-size: 24px; 
+	}
+	.add-rate{
+		position:absolute;
+		bottom:10px;
+		right:0px;
+		display: block;
+		font-size:14px;
+		color:#fff;
+		width:60px;
+		height:24px;
+		line-height: 24px;
+		text-align: center;
+		background:url("../images/activity-page/new-version-v2/add-rate-bg.png") no-repeat;
+	}
+	.rate {
+		width: 200px;
+		padding-left: 113px; 
+		.p1 {
+			margin-top: 30px; 
+		}
+		.p2 {
+			position: relative;
+			margin-top: 68px;
+		}
+		.p3 {
+			margin-top: 16px; 
+		}
+	}
+	.date {
+		width: 160px;
+		padding-left: 70px; 
+		.p2 {
+			margin-top: 70px; 
+		}
+		.p3 {
+			margin-top: 16px; 
+		}
+	}
+	.limit {
+		width: 230px;
+		padding-left: 70px; 
+		.p1 {
+			margin-top: 70px;
+			color: #ababab; 
+		}
+		.p3 {
+			margin-top: 16px; 
+		}
+	}
+	.ui-progress {
+		position: relative;
+		width: 132px;
+		text-align: center;
+		height: 15px;
+		margin-top: 5px;
+		border-radius: 3px;
+		color: #fff;
+		background-color: #ccc; 
+	}
+	.ui-progress-content {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 15px;
+		z-index: 99;
+		border-radius: 3px;
+		background-color: #10bf56; 
+	}
+	.ui-progress-value {
+		width: 0;
+		height: 0;
+		display: none; 
+	}
+	.btn {
+		position: relative;
+		width: 357px;
+		background-color: #dff2ff;
+		a {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			display: block;
+			width: 240px;
+			text-align: center;
+			height: 60px;
+			line-height: 60px;
+			margin: -30px 0 0 -120px;
+			font-size: 24px;
+			border-radius: 5px;
+			color: #fff;
+		}
+		.invest-end{
+			background-color: #ababab; 
+			box-shadow: 0 3px 0 #989696;
+		}
+		.invest-now{
+			background-color: #f76930; 
+			box-shadow: 0 3px 0 #d8501a;
+			&:hover{
+				background-color: #ff7e45;
+			}
+			&:active{
+				background-color: #f76930;
+			}
+		}
+	}
+}
+/*风控图标*/
+.good-icon-data{
+	li{
+		float:left;
+		width:300px;
+	}
+	span{
+		display: block;
+		width: 161px; 
+		height: 192px;
+		margin: 0 auto;
+		background:url("../images/activity-page/new-version-v2/good-icon-data-bg.png") no-repeat;
+	}
+	.icon-one{
+		background-position: 0 0;
+	}
+	.icon-two{
+		background-position: -171px 0;
+	}
+	.icon-three{
+		background-position: -343px 0;
+	}
+	.icon-four{
+		background-position: -514px 0;
+	}
+	p{
+		opacity:0.8;
+		text-align:center;
+		color:#fff;
+	}
+	.title{
+		font-size:24px;
+		padding-top:46px;
+	}
+	.text{
+		font-size:14px;
+		padding-top:20px;
+	}
+}
+/*注册框*/
+.login-box{
+  position:absolute;
+  top:46px;
+  right:0;
+  width:328px;
+  padding:26px 26px 46px 26px;
+  background-color:#fff;
+  box-shadow:0 5px 0 #c2c2c2;
+  .text-top{
+    margin-bottom:24px;
+    color: #2f323f;
+    font-size:24px;
+    text-align:center;
+    span{
+    	font-weight: bold;
+    }
+  }
+  .tips-link{
+    color:#2c97f4;
+    &:hover{
+      text-decoration: underline;
+    }
+    &:active{
+      text-decoration: none;
+    }
+  }
+  .img{
+    margin:30px auto 0;
+    display: block;
+    width:280px;
+  }
+  .text-tips{
+    color: #474747;
+    font-size:14px;
+    text-align:center;
+    margin:40px 0;
+  }
+  .ui-btn{
+  	padding:0;
+    margin:0;
+  }
+  .sure-btn{
+    height:42px;
+    line-height:42px;
+    width:100%;
+    font-size: 16px;
+    background-color:#2c97f4;
+    &:hover{
+      background-color:#56b1ff;
+    }
+    &:active{
+      background-color:#2c97f4;
+    }
+  }
+  .text-bottom{
+    text-align: center;
+    font-size:14px;
+    color:#474747;
+    margin-top:20px;
+  }
+  .input-box{
+    height:28px;
+    width:316px;
+    border:1px solid #dddddd;
+    border-radius:3px;
+    margin-bottom: 20px;
+    padding: 12px 0 0 10px;
+    .ui-label-icon{
+    	margin:0;
+    	width:27px;
+    	background:url("../images/activity-page/new-version-v2/ui-label-icon.png") no-repeat;
+    	&.icon-form-phone{
+			background-position: 0 0;
+    	}
+    	&.icon-form-code {
+			background-position: -36px 0;
+		}
+		&.icon-form-key {
+			background-position: -72px 0;
+		}
+    }
+    .input{
+      position:relative;
+      top:-3px;
+      padding-left: 10px;
+      display: inline-block;
+      width: 260px;
+      font-size: 14px;
+      border: 0;
+      outline: 0;
+    }
+  }
+  .input-box-code{
+    margin-bottom: 20px;
+    .input-box{
+      float:left;
+      width:160px;
+      margin-bottom: 0;
+      .input{
+        width: 100px;
+      }
+    }
+    .code-btn{
+      float:right;
+      font-size: 16px;
+      height:42px;
+      width:152px;
+      background-color:#ffb040;
+      &:hover{
+        background-color:#ffcb5b;
+      }
+      &:active{
+        background-color:#ffb040;
+      }
+    }
+  }
+  .input-box-img{
+    margin-bottom: 20px;
+    .input-box{
+      float:left;
+      width:200px;
+      margin-bottom: 0;
+      .input{
+        width: 100px;
+      }
+    }
+    .img-btn{
+      float:right;
+      height:42px;
+      width:100px;
+      border: 0;
+      outline: 0;
+    }
+  }
+  .auto-login{
+    color: #b9b9b9;
+    font-size:12px;
+    margin:10px 0 20px;
+    input{
+      position:relative;
+      top:2px;
+    }
+    .a-link{
+      color: #2c97f4;
+      display: inline-block;
+      padding:0 6px;
+      &:hover{
+        text-decoration: underline;
+      }
+      &:active{
+        text-decoration: none;
+      }
+    }
+    .label{
+      cursor:pointer;
+      &:hover{
+        text-decoration: underline;
+      }
+      &:active{
+        text-decoration: none;
+      }
+    }
+  }
+}
+.dis-none{
+	display:none!important;
+}

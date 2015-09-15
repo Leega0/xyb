@@ -127,16 +127,11 @@
 				<div class="invest-list-control">
 					<form>
 						<div class="filter_time">
-							记录时间:
-							<select>
-								<option>最近3个月</option>
-								<option>不限</option>
-								<option>3</option>
-								<option>4</option>
-							</select>
+							起止日期:
+							<input type="text" onclick="laydate()" class="laydate-icon" id="from_date">&nbsp;&nbsp;-&nbsp;&nbsp;<input type="text" class="laydate-icon" id="end_date">
 						</div>
 						<div class="filter_status">
-							类型:
+							状态:
 							<select>
 								<option>不限</option>
 								<option>2</option>
@@ -577,5 +572,14 @@
 <script type="text/javascript" src="js/lib/jquery.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
 <script type="text/javascript" src="js/user.js"></script>
+<script type="text/javascript" src="js/plugins/laydate.js"></script>
+<script type="text/javascript">
+	laydate({
+		elem:'#end_date',
+		choose:function(dates){
+			alert('你选择的日期是'+dates)
+		}
+	})
+</script>
 </body>
 </html>

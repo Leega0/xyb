@@ -17,7 +17,7 @@
 		<ul class="fr myhome">
 			<li><a href="">你好，请 登录</a></li>
 			<li class="separator"></li>
-			<li><a href="" class="ui-font-blue">免费注册</a></li>
+			<li><a href="">免费注册</a></li>
 			<li class="separator"></li>
 			<li><div class="myhome-account">
 				<a href="">我的账户</a>
@@ -45,7 +45,7 @@
 		<div class="logo fl"><img src="images/logo.png" width="306" height="55"></div>
 		<div class="menu fr">
 			<ul class="menu-list clearfix">
-				<li><a href="" class="ui-font-blue">首页</a></li>
+				<li><a href="">首页</a></li>
 				<li class="separator"></li>
 				<li>
 					<div class="menu-invest">
@@ -77,83 +77,53 @@
 
 <!-- 实时财务数据页面 start -->
 <div class="true-time-financial-data">
-	<dl class="contain_wrap">
-		<dd class="true-time-financial-data-1">
-			<p class="top-title">
-				实时财务数据
-				<span>（以下统计均未计入定期宝数据）</span>
-			</p>
+	<div class="contain_wrap true-time-financial-data-box">
+		<p class="top-title">
+			实时财务数据
+			<span>（以下统计包括信投宝和定期宝数据）</span>
+		</p>
+		<div class="min-box">
 			<p class="min-title">
 				总成交金额（元）
 			</p>
 			<p class="min-data">
-				<span>
-					154,764,787.00
-				</span>
+				<span class="min-data-box timer" id="count-number" data-to="154764787" data-speed="800"></span>
 			</p>
 			<p class="min-about">
 				约1.54亿
-			</p>
-			<dl class="bottom-data clearfix">
-				<dd class="bottom-data-1">
-					<span>
-						2792
-					</span>
-					总成交借款笔数
-				</dd>
-				<dd class="bottom-data-2">
-					<span>
-						5,642,943.61
-					</span>
-					风险准备金 = 100万+总批贷金额*3%
-				</dd>
-				<dd class="bottom-data-3">
-					<span>
-						12,135,609.22
-					</span>
-					待回收本息总额（元）
-				</dd>
-			</dl>
-		</dd>
-		<dd class="true-time-financial-data-2">
-			<p class="data1">
-				坏账率
-				<span>
-					0.00%
-				</span>
-			</p>
-			<p class="data2">
-				最近30天待回收本息（元）
-				<span>
-					1,970,623.90
-				</span>
-			</p>
-			<p class="mim-data">
-				<span>
-					3.31%
-				</span>
-				6月30日逾期率
-			</p>
-			<p class="data3">
-				坏账总本息
-				<span>
-					0.00
-				</span>
-			</p>
-			<p class="data4">
-				未收回垫付金额（元）
-				<span>
-					464,294.36
-				</span>
-			</p>
-			<p class="data5">
-				截至6月30日逾期率
-				<span>
-					3.31%
-				</span>
-			</p>
-		</dd>
-	</dl>
+			</p>		
+		</div>
+		<p class="data1 around-data">
+			<span>
+				464,294.36
+			</span>
+			未收回垫付金额（元）
+		</p>
+		<p class="data2 around-data">
+			<span>
+				1,970,623.90
+			</span>
+			最近30天待回收本息（元）
+		</p>
+		<p class="data3 around-data">
+			<span>
+				12,135,609.22
+			</span>
+			待回收本息总额（元）
+		</p>
+		<p class="data4 around-data">
+			<span>
+				2792
+			</span>
+			总成交借款笔数
+		</p>
+		<p class="data5 around-data">
+			<span>
+				5,642,943.61
+			</span>
+			风险准备金 = 100万+总批贷金额*3%
+		</p>
+	</div>
 </div>
 <!-- 实时财务数据页面 end -->
 
@@ -195,39 +165,8 @@
 	</div>
 </div>
 <!-- footer end -->
-<!-- 弹窗内容 -->
-<div class="clearfix content_layer buy-vip-layer">
-	<p class="layer-title"><i class="border-blue"></i>VIP会员服务订购</p>
-	<div class="layer-content buy-vip-content ui-mt30">
-		<p class="text-wrap">会员状态<span class="fr">已开通</span></p>
-		<p class="text-wrap">会员有效期<span class="fr">2015-06-28</span></p>
-		<div class="text-wrap item-recharge">
-			<p class="title">账户余额(元)</p>
-			<p class="content">￥251,124.00<a href="" class="btn-recharge">充值</a></p>
-		</div>
-		<div class="choose-pack">
-			<p class="text-wrap">选择套餐</p>
-			<ul class="pack-list">
-				<li class="fl selected">
-					168元/1年
-					<i class="icon-selected-big"></i>
-				</li>
-				<li class="fr">300元/2年(9折)</li>
-				<li class="fl">428元/3年(85折)</li>
-				<li class="fr">588元/5年(7折)</li>
-			</ul>
-		</div>
-	</div>
-	<!-- layer  底部提交 -->
-	<div class="layer-bottom">
-	     <div class="layer-content">
-	         <p class="ui-form-btn"><a href="" class="ui-btn ui-btn-blue">下一步</a></p>
-	         <p class="xyb-agree-ctn align-center"><input type="checkbox" checked="checked" name="xyb_agreement" id="xyb_agreement"><label for="xyb_agreement">我已阅读并同意</label><a href="" target="_blank" class="ui-font-blue">《信用宝服务协议》</a></p>
-	     </div>
-	</div>
-</div>
 <!-- script -->
 <script type="text/javascript" src="js/lib/jquery.js"></script>
-<script type="text/javascript" src="js/plugins/layer.js"></script>
+<script type="text/javascript" src="js/ometer.js"></script>
 </body>
 </html>

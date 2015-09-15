@@ -11,6 +11,7 @@
 			margin-bottom: 8px;
 		}
 		.credit-level{
+			display: block;
 			width: 30px;
 			height: 30px;
 			line-height: 30px;
@@ -37,6 +38,11 @@
 		text-align: left;
 		p{
 			margin-top: 5px;
+		}
+		a{
+			&:hover{
+				color: #2c97f4;
+			}
 		}
 		.green-bbox{
 			font-size: 12px;
@@ -240,13 +246,9 @@
 		.money-last{
 			display: none;
 		}
-		.text{
-			position:relative;
-			top: -2px;
-		}
 		.money{
 			position: relative;
-			top: 3px;
+			top: 2px;
 		}
 		.btn-recharge{
 			color: #2c97f4;
@@ -258,6 +260,19 @@
 			margin-top: 1px;
 		}
 	}
+	.icon-sec{
+		position: relative;
+		top: 4px;
+		margin-right: 8px;
+	}
+	.text{
+			position:relative;
+			top: -2px;
+		}
+}
+// 通用浮层文字
+.conm-tips{
+	line-height: 1.8;
 }
 .content{
 	.detail-tabs{
@@ -352,7 +367,7 @@
 		float: left;
 		width: 226px;
 		text-align: center;
-		padding:56px 0;
+		padding:60px 0;
 		&.detail-content-item-end{
 			text-align: left;
 			padding-left: 80px;
@@ -522,37 +537,199 @@
 	}
 }
 // 用户心声
-.invest-user-heart{
-	overflow: hidden;
-	padding:34px 0;
-	.user-avatar{
-		margin-left: 10px;
+.heartfelt-wishes{
+	padding-top:24px;
+	position:relative;
+}
+.heartfelt-wishes-list-box{
+	margin:0 30px;
+	li{
+		padding:20px 0;
+		border-top:1px dashed #dddddd;
+		&:first-child{
+			border-top:0;
+		}
 	}
-	.avatar-bg{
-		background-color:#def0ff;
-		width: 80px;
-		height: 80px;
-		border-radius:50%;
-		overflow: hidden;
+	.le{
+		float:left;
 		text-align:center;
-		display: table-cell;
-		vertical-align: middle;
+		width:100px;
+		img{
+			border-radius:50%;
+		}
+		div{
+			position:relative;
+			height:74px;
+		}
+		.img-cover{
+			position:absolute;
+			top:0;
+			left:13px;
+			width:74px;
+			height:74px;
+			background:url(../images/newHeader2.png) no-repeat;
+		}
+		.img-text{
+			display: block;
+			color: #b9b9b9;
+			font-size:12px;
+			margin-top:10px;
+			width:100px;
+		}
 	}
-	.invest-user-infor{
+	.ri{
+		position:relative;
+		width:940px;
+		float:right;
+		margin-right:10px;
+		color: #90c3f0;
+		font-size:14px;
+		padding:24px 30px;
+		line-height:26px;
+		background:#dff1ff;
+		border-radius:3px;
+		i{
+			top:24px;
+			left:-18px;
+		}
+	}
+}
+.self-wishes-list-box{
+	display:none;
+	height:428px;
+	.self-wishes-list-ul{
+		margin:0 30px;
+	}
+	.self-wishes-list-li{
+		height:58px;
+		border-bottom:1px dashed #dddddd;
+		span{
+			float:left;
+			display: block;
+			height:58px;
+		}
+	}
+	.self-wishes-list-style{
+		width:58px;
+		padding:0 10px;
+		i{
+			margin-top: 20px;
+			display: block;
+			width:58px;
+			text-align:center;
+			height:20px;
+			line-height:20px;
+			font-size:12px;
+			border-radius:3px;
+			&.pass{
+				border:1px solid #2a97f4;
+				color:#2a97f4;
+			}
+			&.error{
+				border:1px solid #fc8378;
+				color:#fc8378;
+			}
+			&.examine{
+				border:1px solid #74ca99;
+				color:#74ca99;
+			}
+		}
+	}
+	.self-wishes-list-text{
+		padding-right:40px;
+		width:880px;
+		line-height:58px;
+		overflow: hidden;
+		white-space:nowrap;
+		text-overflow:ellipsis
+	}
+	.self-wishes-list-date{
+		line-height:58px;
+		color:#c3c3c3;
+	}
+	#page .pageholder{
+		padding: 24px 0 0;
+	}
+	.self-wishes-empty{
+		padding-top:90px;
+		text-align:center;
+	}
+	.self-wishes-empty-text{
+		color:#b9b9b9;
+		font-size:14px;
+		padding-top:26px;
+	}
+}
+.ui-icon-triangle-blue-top-right{
+	position:absolute;
+	height:18px;
+	width:18px;
+	background: url(../images/sprites/triangle-blue-top-right.png) no-repeat;
+}
+.ui-icon-triangle-red-bottom{
+	position:absolute;
+	height:4px;
+	width:8px;
+	background: url(../images/sprites/triangle-red-bottom.png) no-repeat;
+}
+.heartfelt-wishes-input{
+	position:absolute;
+	bottom:0px;
+	left:-5px;
+	height:64px;
+	width:1210px;
+	background:url(../images/heartfelt-wishes-input-bg.png) no-repeat top;
+	div{
+		margin-top:5px;
+		height:47px;
+		width:1210px;
+		background:#474e5d;
+		padding-top:12px;
+	}
+	input{
+		margin-left: 30px;
 		float: left;
-		width: 960px;
-		margin: 0 40px;
+		width:972px;
+		height:34px;
+		border-radius:3px;
+		border:0;
+		padding:0 14px;
 	}
-	.user-reviews{
-		padding-top: 10px;
-		line-height: 1.8
+	a{
+		float: right;
+		height:22px;
+		line-height: 22px;
+		width:118px;
+		margin-right:30px;
 	}
+	.tips{
+		display: none;
+		top: -17px;
+		right: 182px;
+		position:absolute;
+		color: #fff;
+		font-size:12px;
+		padding:6px 9px;
+		background:#fc8478;
+		border-radius:3px;
+		i{
+			position:absolute;
+			bottom:-4px;
+			left:50%;
+			margin-left:-4px;
+		}
+	}
+}
+#reviews{
+	overflow: hidden;
+	height:428px;
 }
 // 信投宝详情页
 .detail-xtb-section{
 	.detail-content-item{
 		width: 164px;
 		.credit-level{
+			display: block;
 			width: 30px;
 			height: 30px;
 			line-height: 30px;
@@ -568,6 +745,9 @@
 			}
 			&.level_c{
 				background-color: #fc8478;
+			}
+			&.level_d{
+				background-color: #ff3939;
 			}
 		}
 	}
@@ -937,7 +1117,7 @@
 		padding-bottom: 10px;
 	}
 }
-//投资详情页 修改
+//投资详情页 收益卡
 .icon-sy-arrow{
 	display:inline-block;
 	position: relative;
@@ -950,7 +1130,7 @@
 .icon-wenhao{
 	display:inline-block;
 	position: relative;
-	top:1px;
+	top:2px;
 	margin-right: 5px;
 	width:16px;
 	height:16px;
@@ -1009,6 +1189,66 @@
 		padding:10px 0;
 	}
 }
+.icon-syk{
+	display:inline-block;
+	width:16px;
+	height:12px;
+	position: relative;
+	top:2px;
+	margin-right: 10px;
+	background:url(../images/sprites/icon-syk.png) no-repeat;
+	&.icon-syk-blue{
+		background-position: -52px 0;
+	}
+	&.icon-syk-red{
+		background-position:-26px 0;
+	}
+	&.icon-syk-brwon{
+		background-position:-78px 0;
+	}
+	&.icon-syk-pink{
+		background-position:-104px 0;
+	}
+}
+.ui-syk-module{
+	position: relative;
+	.ui-input-body{
+		cursor:pointer;
+	}
+	.default-syk{
+		display: inline-block;
+		margin-left: 10px;
+		margin-top: 10px;
+		.icon-arrow-b{
+			position: absolute;
+		    width: 8px;
+		    height: 4px;
+		    background-position: -100px -26px;
+		    right: 12px;
+		    top: 28px;
+		}
+	}
+	.have-syk-list{
+		display: none;
+		position: absolute;
+		z-index: 9;
+		background-color:#fff;
+		border:1px solid #ddd;
+		border-radius:2px;
+		width: 280px;
+		margin-top: 2px;
+		li{
+			height: 30px;
+			padding-left: 10px;
+			line-height: 30px;
+			cursor: pointer;
+			&:hover{
+				background-color: #2c97f4;
+				color: #fff;
+			}
+		}
+	}
+}
 .detail-invest-layer{
 	.detail-invest-content{
 		width: 280px;
@@ -1064,4 +1304,36 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-color: #2c97f4;
+}
+// 投资页新增弹窗样式-跟user-css重复
+.real-name-valid {
+    width: 280px;
+    .icon-bind-tips{
+    	display: inline-block;
+	    width: 40px;
+	    height: 40px;
+	    background: url(../images/sprites/icon-bind-tips.png) no-repeat;
+	    margin-bottom: 20px;
+    }
+    .ui-form-item{
+    	padding:15px 0;
+    }
+    .btn-bindphone-now {
+    width: 250px;
+    height: 42px;
+    line-height: 42px;
+    padding: 0;
+    margin: 60px 0;
+    text-align: center;
+	}
+}
+.page-tips {
+    text-align: center;
+    padding-top: 60px;
+}
+.user-sec-input {
+    margin: 0 auto;
+}
+.bx-shadow{
+	box-shadow:0 0 0 2px #def0fe !important;
 }

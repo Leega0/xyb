@@ -1,8 +1,0 @@
-user-bkcard.png, 20, 20, 0, 0
-user-email.png, 20, 20, 26, 0
-user-phone.png, 20, 20, 52, 0
-user-real.png, 20, 20, 78, 0
-user-un-bkcard.png, 20, 20, 104, 0
-user-un-email.png, 20, 20, 130, 0
-user-un-phone.png, 20, 20, 156, 0
-user-un-real.png, 20, 20, 182, 0

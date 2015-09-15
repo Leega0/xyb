@@ -30,8 +30,7 @@ dl{
 	border:1px solid #eeeeee;
 }
 .border2{
-	border:1px solid;
-	border-color:#2c97f4 #eeeeee #eeeeee;
+	border:1px solid #eeeeee;
 }
 //文字样式
 .mall-ui-p-title{
@@ -41,7 +40,6 @@ dl{
 	height:22px;
 	line-height:22px;
 	font-weight:bold;
-	border-left:7px solid #2c97f4;
 	.tips{
 		color:#b9b9b9;
 		font-size:12px;
@@ -96,6 +94,7 @@ dl{
 		}
 		img{
 			max-width:170px;
+			max-height:170px;
 		}
 	}
 	.title{
@@ -146,6 +145,7 @@ dl{
 		}
 		img{
 			max-width: 80px;
+			max-height: 80px;
 		}
 	}
 	.title{
@@ -177,19 +177,6 @@ dl{
 		color:#474747;
 		font-size:12px;
 		line-height: 18px;
-		.name em{
-			margin-left: 2px;
-			display:inline-block;
-			width:34px;
-			text-align: center;
-			height:14px;
-			line-height: 14px;
-			background:#ff8a80;
-			color:#fff;
-			font-size:10px;
-			border-radius:3px;
-			font-style:italic;
-		}
 		.text{
 			display: block;
 			color:#b9b9b9;
@@ -346,7 +333,7 @@ dl{
 }
 //主页开始
 .integral-mall-wrap{
-	padding:58px 0 64px;
+	padding:30px 0 64px;
 	background:#fff;
 
 }
@@ -566,6 +553,7 @@ dl{
 	}
 	img{
 		max-width: 340px;
+		max-height: 340px;
 	}
 }
 .page-mall-commodity-full{
@@ -584,7 +572,9 @@ dl{
 		margin:60px 0;
 		text-align:center;
 		img{
-			margin-bottom: 10px;
+			display:block;
+			max-width: 840px;
+			margin:0 auto;
 		}
 	}
 	.page-commodity-details-tips{
@@ -648,6 +638,10 @@ dl{
 		display: table-cell;
 		vertical-align: middle;
 		text-align: center;
+		img{
+			max-width: 100px;
+			max-height: 100px;
+		}
 	}
 	.p-big{
 		text-align: center;
@@ -772,4 +766,133 @@ dl{
 			}
 		}
 	}
+}
+.update-version-one{
+	.mall-ui-box-left{
+		width:100%;
+	}
+	.mall-ui-commodity-box{
+		width:218px;
+		margin: 10px;
+		&:first-child{
+			margin-left: 10px;
+		}
+	}
+	.mall-ui-p-title{
+		padding-top:24px;
+	}
+	.mall-ui-box{
+		height:auto;
+	}
+	.mall-login-top-box{
+		border:1px solid #eee;
+	}
+	.integral-mall-wrap{
+		&.on{
+			.top-scroll-control{
+				position:fixed;
+				width:100%;
+				top:0;
+				left:0;
+				background:#fff;
+				z-index: 100;
+				box-shadow: 1px 3px 3px #eee;
+			}
+			.mall-login-top-box{
+				border:0;
+			}
+			.index-mall-newest{
+				padding-top:78px;
+			}
+		}
+	}
+}
+.mall-login-top-box{
+	height:78px;
+	dd{
+		float:left;
+		height:78px;
+	}
+	.login-portrait{
+		width:90px;
+		position:relative;
+		.login-img{
+			position:absolute;
+			top:13px;
+			left:19px;
+			display: block;
+			width:52px;
+			height:52px;	
+		}
+	}
+	.login-style{
+		width:280px;
+	}
+	.login-have-not{
+		line-height: 78px;
+		a{
+			color:#2ca4f6;
+			font-size:12px;
+			margin-right: 10px;
+			&:hover{
+			color:#62c7ff;
+			}
+			&:active{
+			color:#48b4ff;
+			}
+		}
+	}
+	.login-has{
+		font-size:12px;
+		.title{
+			padding:24px 0 8px;
+			color:#474747;
+		}
+		.text{
+			color:#b9b9b9;
+		}
+	}
+	.login-data{
+		width:330px;
+		line-height: 78px;
+		font-size:12px;
+		color:#474747;
+		span{
+			display: inline-block;
+			padding:0 4px;
+			color:#fd8479;
+			font-size:18px;
+			font-weight:bold;
+		}
+	}
+	.login-btn{
+		a{
+			display: block;
+			width:96px;
+			height:36px;
+			padding-left:34px;
+			border:1px solid #ddd;
+			line-height: 36px;
+			margin-top: 21px;
+			border-radius:4px;
+			position:relative;
+			.icon-three-line{
+				position:absolute;
+				top:13px;
+				left:13px;
+			}
+			&:hover{
+				text-decoration: underline;
+			}
+			&:active{
+				text-decoration: none;
+			}
+		}
+	}
+}
+.icon-three-line{
+	display:block;
+	width:13px;
+	height:10px;
+	background:url('../images/sprites/icon-three-line.png') no-repeat;
 }

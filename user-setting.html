@@ -121,6 +121,7 @@
                     <a class="user-tabs-item" href="javascript:void(0);">自动投资</a> 
                     <a class="user-tabs-item" href="javascript:void(0);">收益卡(4)</a>
                     <a class="user-tabs-item" href="javascript:void(0);">红包</a>
+                    <a class="user-tabs-item" href="javascript:void(0);">推荐好友</a>
             </div>
             <div class="user-account-moudle">
 				<!-- 基本信息 -->
@@ -180,60 +181,47 @@
 						<td>邮箱：</td>
 						<td class="user-email"><span class="bold">1802****204@189.cn</span><a href="" class="ui-font-blue">[修改]</a><label for="" class="ui-font-gray">已验证</label></td>
 					</tr>
-					<tr>
-						<td class="user-save" colspan="2"><input type="submit" value="保存" class="ui-btn ui-btn-blue"></td>
-					</tr>
 				</table>
-				<!-- 收货地址管理 -->
-				<div class="invest-list-control">
-                    <p>收货地址管理<em class="ui-font-gray normal">(平台实物礼品或奖品邮寄地址)</em></p>
+				<!-- 收货地址设置 -->
+				<div class="invest-list-control ui-mt30">
+                    <p class="delivery-address">收货地址设置<em class="normal">(平台实物礼品或奖品邮寄地址)</em></p>
             	</div>
-            	<!-- 地址列表 -->
-            	<table class="invest-list user-address-list" width="100%">
-                    <colgroup>
-                        <col width="91px">
-                        <col width="135px">
-                        <col width="271px">
-                        <col width="138px">
-                        <col width="140px">
-                        <col width="112px">
-                    </colgroup>
-                    <tbody>
-                    <tr class="tr1">
-                        <th>收件人</th>
-                        <th class="user-area">所在地</th>
-                        <th class="user-address">地址</th>
-                        <th class="user-phone">电话/手机</th>
-                        <th class="user-handle">操作</th>
-       					<th></th>
-                    </tr>
-                    <tr class="user-address-item user-address-def">
-                        <td>侯文涛 </td>
-                        <td class="user-area">广东深圳市福田区</td>
-                        <td class="user-address">农林路天天向上花园109栋409</td>
-                        <td class="user-phone">13800***001</td>
-                        <td class="user-handle"><a href="" class="ui-font-blue">修改</a><i class="sapare">|</i><a href="" class="ui-font-blue">删除</a></td>
-                        <td><a href="javascript:void(0);" class="default-addr ui-btn ui-btn-blue">默认地址</a></td>
-                    </tr>
-                    <tr class="user-address-item">
-                        <td>侯文涛 </td>
-                        <td class="user-area">广东深圳市福田区</td>
-                        <td class="user-address">农林路天天向上花园109栋409</td>
-                        <td class="user-phone">13800***001</td>
-                        <td class="user-handle"><a href="" class="ui-font-blue">修改</a><i class="sapare">|</i><a href="" class="ui-font-blue">删除</a></td>
-                        <td><a href="javascript:void(0);" class="default-addr ui-btn ui-btn-blue">默认地址</a></td>
-                    </tr>
-                    <tr class="user-address-item">
-                        <td>侯文涛 </td>
-                        <td class="user-area">广东深圳市福田区</td>
-                        <td class="user-address">农林路天天向上花园109栋409</td>
-                        <td class="user-phone">13800***001</td>
-                        <td class="user-handle"><a href="" class="ui-font-blue">修改</a><i class="sapare">|</i><a href="" class="ui-font-blue">删除</a></td>
-                        <td><a href="javascript:void(0);" class="default-addr ui-btn ui-btn-blue">默认地址</a></td>
-                    </tr>
-                    </tbody>
-                </table>
-                <p class="user-add-box"><a href="javascript:void(0);" class="ui-btn ui-btn-blue user-add-address">+新增收货地址</a></p>
+            	<!-- 收货地址填写 -->
+            	<table class="user-info-tb">
+            		<tr>
+            			<td>收件人：</td>
+            			<td class="name-number"><input type="text" class="u-input"></td>
+            		</tr>
+            		<tr>
+            			<td>手机号：</td>
+            			<td class="name-number"><input type="text" class="u-input"></td>
+            		</tr>
+            		<tr>
+            			<td>所在区：</td>
+            			<td class="select-address">
+            				<select name="" id="" class="u-input">
+            						<option value="">请选择</option>
+            						<option value="">广东省</option>
+            					</select>
+            					<select name="" id="" class="u-input">
+            						<option value="">请选择</option>
+            						<option value="">深圳市</option>
+            					</select>
+            					<select class="u-input">
+            						<option value="">请选择</option>
+            						<option value="">南山区</option>
+            					</select>
+            			</td>
+            		</tr>
+            		<tr>
+            			<td>详细地址：</td>
+            			<td class="detail-address"><input type="text" class="u-input"></td>
+            		</tr>
+            		<tr>
+            			<td></td>
+            			<td class="user-add-save"><input type="submit" value="保存修改" class="ui-btn ui-btn-blue"></td>
+            		</tr>
+            	</table>
             </div>
             <div class="user-account-moudle safty">
             <!-- 账户安全 -->
@@ -349,14 +337,14 @@
 						<td colspan="2" class="title">条件设置</td>
 					</tr>
 					<tr>
-						<td>投资金额比例</td>
-						<td class="option invest-rate">
-						 <select name="" id="" class="u-input">
-						 	<option value="">10%</option>
-						 	<option value="">20%</option>
-						 	<option value="">30%</option>
-						 </select>
+						<td>账户保留金额</td>
+						<td class="option invest-last">
+							<input type="text" value="100" class="u-input"><label>元</label><span class="ui-font-gray">当你账户的可投资金额大于这个金额时，自动投资才会生效</span>
 						</td>
+					</tr>
+					<tr>
+						<td>每笔投资金额</td>
+						<td class="option invest-num"><input type="text" value="100" class="u-input"><label>元</label></td>
 					</tr>
 					<tr>
 						<td>投资产品</td>
@@ -372,21 +360,31 @@
 						</td>
 					</tr>
 					<tr>
-						<td>年化利率</td>
+						<td>借款期限上限</td>
+						<td class="option invest-long">
+							<select name="" id="" class="u-input">
+								<option value="">1</option>
+							 	<option value="">2</option>
+							 	<option value="">3</option>
+							 	<option value="">4</option>
+							 	<option value="">5</option>
+							 	<option value="">6</option>
+							</select>
+							<label>个月</label>
+						</td>
+					</tr>
+					<tr>
+						<td>年化利率下限</td>
 						<td class="option invest-earn-rate">
 							<select name="" id="" class="u-input">
-								<option value="">6%</option>
-							 	<option value="">5%</option>
-							 	<option value="">4%</option>
-							 	<option value="">3%</option>
+								<option value="">4</option>
+							 	<option value="">5</option>
+							 	<option value="">6</option>
+							 	<option value="">7</option>
+							 	<option value="">8</option>
+							 	<option value="">9</option>
 							</select>
-							<label>至</label>
-							<select name="" id="" class="u-input">
-								<option value="">12%</option>
-							 	<option value="">10%</option>
-							 	<option value="">8%</option>
-							 	<option value="">7%</option>
-							</select>
+							<label>%</label>
 						</td>
 					</tr>
 					<tr>
@@ -395,28 +393,6 @@
 							<span><input type="checkbox" checked><label class="credit-level level_a">A</label></span>
 							<span><input type="checkbox" checked><label class="credit-level level_b">B</label></span>
 							<span><input type="checkbox" checked><label class="credit-level level_c">C</label></span>
-						</td>
-					</tr>
-					<tr>
-						<td>借款期限</td>
-						<td class="option invest-long">
-							<select name="" id="" class="u-input">
-								<option value="">1个月</option>
-							 	<option value="">2个月</option>
-							 	<option value="">3个月</option>
-							 	<option value="">4个月</option>
-							 	<option value="">5个月</option>
-							 	<option value="">6个月</option>
-							</select>
-							<label>至</label>
-							<select name="" id="" class="u-input">
-								<option value="">12个月</option>
-							 	<option value="">11个月</option>
-							 	<option value="">10个月</option>
-							 	<option value="">9个月</option>
-							 	<option value="">8个月</option>
-							 	<option value="">7个月</option>
-							</select>
 						</td>
 					</tr>
 					<tr>
@@ -434,18 +410,14 @@
 								<input type="checkbox">
 								<label for="">约定本息</label>
 							</span>
+							<span>
+								<input type="checkbox">
+								<label for="">每月付息到期还本</label>
+							</span>
 						</td>
 					</tr>
-					<tr>
-						<td>每笔投资金额</td>
-						<td class="option invest-num"><input type="text" value="100" class="u-input"><label>元</label></td>
-					</tr>
-					<tr>
-						<td>账户保留金额</td>
-						<td class="option invest-last">
-							<input type="text" value="100" class="u-input"><label>元</label><span class="ui-font-gray">当你账户的可投资金额大于这个金额时，自动投资才会生效</span>
-						</td>
-					</tr>
+					
+					
 				</table>
 				<!-- 保存设置 -->
 				<p class="user-save-autoinvest">
@@ -463,113 +435,107 @@
 				<span class="fr"><a href="">优惠券规则说明</a></span>
 				</p>
 				<!-- 收益卡 -->
-				<ul class="gift-catd-wrap">
+<!-- 				<ul class="gift-catd-wrap">
 					<li>
 						<dl class="gift-card-box green-card">
-							<dt>7天1.5倍收益卡</dt>
 							<dd>
-								<div class="date">
-									<p>持续时间(天)</p><em>7</em>
-								</div>
 								<div class="beishu">
-									<p>收益倍数</p><em>1.5</em>
+									<p>1.1</p>
+								</div>
+								<div class="beishu-info">
+									<p>倍收益提升卡</p>
+									<p class="ui-font-gray">提升预期年化收益率</p>
 								</div>
 							</dd>
 							<dd class="out-date">
 								过期时间：2015-05-06
 							</dd>
-							
 						</dl>
 					</li>
 					<li>
 						<dl class="gift-card-box blue-card">
-							<dt>7天1.5倍收益卡</dt>
 							<dd>
-								<div class="date">
-									<p>持续时间(天)</p><em>7</em>
-								</div>
 								<div class="beishu">
-									<p>收益倍数</p><em>1.5</em>
+									<p>1.3</p>
+								</div>
+								<div class="beishu-info">
+									<p>倍收益提升卡</p>
+									<p class="ui-font-gray">提升预期年化收益率</p>
 								</div>
 							</dd>
 							<dd class="out-date">
 								过期时间：2015-05-06
 							</dd>
-							
 						</dl>
 					</li>
 					<li>
 						<dl class="gift-card-box pink-card">
-							<dt>7天1.5倍收益卡</dt>
 							<dd>
-								<div class="date">
-									<p>持续时间(天)</p><em>7</em>
-								</div>
 								<div class="beishu">
-									<p>收益倍数</p><em>1.5</em>
+									<p>1.2</p>
+								</div>
+								<div class="beishu-info">
+									<p>倍收益提升卡</p>
+									<p class="ui-font-gray">提升预期年化收益率</p>
 								</div>
 							</dd>
 							<dd class="out-date">
 								过期时间：2015-05-06
 							</dd>
-							
 						</dl>
 					</li>
 					<li>
-						<dl class="gift-card-box blue-card">
-							<dt>7天1.5倍收益卡</dt>
+						<dl class="gift-card-box gold-card">
 							<dd>
-								<div class="date">
-									<p>持续时间(天)</p><em>7</em>
-								</div>
 								<div class="beishu">
-									<p>收益倍数</p><em>1.5</em>
+									<p>1.5</p>
+								</div>
+								<div class="beishu-info">
+									<p>倍收益提升卡</p>
+									<p class="ui-font-gray">提升预期年化收益率</p>
 								</div>
 							</dd>
 							<dd class="out-date">
 								过期时间：2015-05-06
 							</dd>
-							
 						</dl>
 					</li>
 					<li>
-						<dl class="gift-card-box green-card">
-							<dt>7天1.5倍收益卡</dt>
+						<dl class="gift-card-box purple-card">
 							<dd>
-								<div class="date">
-									<p>持续时间(天)</p><em>7</em>
-								</div>
 								<div class="beishu">
-									<p>收益倍数</p><em>1.5</em>
+									<p>1.4</p>
+								</div>
+								<div class="beishu-info">
+									<p>倍收益提升卡</p>
+									<p class="ui-font-gray">提升预期年化收益率</p>
 								</div>
 							</dd>
 							<dd class="out-date">
 								过期时间：2015-05-06
 							</dd>
-							
 						</dl>
-					</li>
-					<!-- 已使用 -->
-					<li>
+					</li> -->
+					<!-- 已使用&过期 -->
+	<!-- 				<li>
 						<dl class="gift-card-box gray-card">
-							<dt>7天1.5倍收益卡</dt>
 							<dd>
-								<div class="date">
-									<p>持续时间(天)</p><em>7</em>
-								</div>
 								<div class="beishu">
-									<p>收益倍数</p><em>1.5</em>
+									<p>1.1</p>
+								</div>
+								<div class="beishu-info">
+									<p class="ui-font-gray">倍收益提升卡</p>
+									<p class="ui-font-gray">提升预期年化收益率</p>
 								</div>
 							</dd>
 							<dd class="out-date">
 								过期时间：2015-05-06
 							</dd>
-							
 						</dl>
 					</li>
-				</ul>
+				</ul> -->
 				<!-- 分页按钮 -->
-				<div id="page" class="ui-pt30">
+<!-- 				<div id="page" class="ui-pb30">
 					<div class="pageholder">
 						<a href="">&lt;</a>
 						<a href="" class="cur">1</a>
@@ -577,7 +543,18 @@
 						<a href="">3</a>
 						<a href="">&gt;</a>
 					</div>
-				</div>
+				</div> -->
+				<div class="nothing-empty-box">
+	            	<img src="images/self-wishes-empty.png" alt="" class="img">
+	            	<p class="tips">暂无数据</p>
+
+	            </div>
+				<p class="tips-bottom-text">
+					<span>优惠券规则说明</span>
+					①首次注册、升级VIP或抽奖赠送收益提升卡：用户首次注册、升级VIP或抽奖时，可获得收益提升卡（用户可在购买定期宝或信投宝时使用，且只适用于非活期产品），收益提升卡可提升产品收益，收益提升卡有效期为1周；<br>
+					②产品的实际收益率=产品收益*收益提升卡倍数；<br>
+					③定期宝【策诚年年盈】和【策诚久久盈】两个产品暂时无法使用收益提升卡；
+				</p>
             </div>
             <!-- 红包 -->
             <div class="user-account-moudle red-bonus">
@@ -588,7 +565,7 @@
             			<p>剩 <span class="ui-font-blue">45</span> 天过期</p>
             		</dd>
             		<dd class="red-bonus-data">
-            			<div id="unfreeze_rate">70%</div>
+            			<div id="unfreeze_rate">60%</div>
             			<p>全解冻所需投资(元)：
             			<span class="ui-font-blue bold">586,542,12121242.00</span></p>
             			<a href="" class="ui-btn ui-btn-blue">立即解冻红包</a>
@@ -620,7 +597,7 @@
 	                    <th>途径</th>
 	                    <th>有效期</th>
 	                </tr>
-	                <tr>
+<!-- 	                <tr>
 						<td>2015.10.30 10:10:10</td>
 						<td class="ui-font-green">+58,654.00</td>
 						<td>微信端</td>
@@ -631,46 +608,11 @@
 						<td class="ui-font-green">+58,654.00</td>
 						<td>平台活动</td>
 						<td>2015.10.30-2015.10.30</td>
-	                </tr>
+	                </tr> -->
 	                </tbody>
 	            </table>
-<!-- 	            <table class="invest-list" width="100%">
-	                <colgroup>
-	                    <col width="300px">
-	                    <col width="300px">
-	                    <col width="300px">
-	                </colgroup>
-	                <tbody>
-	                <tr class="tr1">
-	                    <th>解冻时间</th>
-	                    <th>投资金额(元)</th>
-	                    <th>解冻金额(元)</th>
-	                </tr>
-	                <tr>
-						<td>2015.10.30 10:10:10</td>
-						<td>58,654.00</td>
-						<td class="ui-font-pink">58,654.00</td>
-	                </tr>
-	                </tbody>
-	            </table> -->
-<!-- 	            <table class="invest-list" width="100%">
-	                <colgroup>
-	                    <col width="450px">
-	                    <col width="450px">
-	                </colgroup>
-	                <tbody>
-	                <tr class="tr1">
-	                    <th>过期时间</th>
-	                    <th>金额(元)</th>
-	                </tr>
-	                <tr>
-						<td>2015.10.30 10:10:10</td>
-						<td>58,654.00</td>
-	                </tr>
-	                </tbody>
-	            </table> -->
                 <!-- 分页 -->
-                <div id="page" class="ui-pt20 ui-pb10">
+<!--                 <div id="page" class="ui-pt20 ui-pb10">
                 	<div class="pageholder">
                 		<a href="">&lt;</a>
                 		<a href="" class="cur">1</a>
@@ -678,8 +620,79 @@
                 		<a href="">3</a>
                 		<a href="">&gt;</a>
                 	</div>
+                </div> -->
+	            <div class="nothing-empty-box">
+	            	<img src="images/self-wishes-empty.png" alt="" class="img">
+	            	<p class="tips">暂无数据</p>
+	            </div>
+                <p class="tips-bottom-text">
+            		<span>红包解冻规则说明</span>
+					①红包解冻金额=投资金额*0.5%*VIP等级系数；（VIP系数：VIP1/VIP2：1.1；VIP3/VIP4：1.2；VIP5/VIP6：1.3；VIP7/VIP8：1.4）。<br>
+					②红包解冻后的金额将直接进入礼金账户，并且可用于投资；例：收到10000元的待解冻红包，若投资1000且为VIP1的用户，红包解冻金额为1000*0.5%*1.1=5.5元，这5.5元将进入礼金账户。<br>
+					③红包有效期为45天，若在有效期内未投资，那么红包将过期失效。
+				</p>
                 </div>
+                <!-- 推荐好友开始 -->
+                <div class="user-account-moudle recommend-friend">
+	            	<dl class="clearfix">
+	            		<dd class="data">
+	            			推荐总收益(元)
+	            			<span class="num">34343434</span>
+	            		</dd>
+	            		<dd class="data">
+	            			推荐注册人数(位)
+	            			<span class="num">343434</span>
+	            		</dd>
+	            		<dd class="data">
+	            			推荐已投资人数(位)
+	            			<span class="num">343434</span>
+	            		</dd>
+	            	</dl>
+	            	<p class="user-add-box">
+	            		<a href="" class="ui-btn ui-btn-blue">立即推荐好友赚收益</a>
+	            	</p>
+	            	
+					<div class="invest-list-control clearfix">
+						<p class="fl">好友推荐记录</p>
+						<a href="" class="ui-font-blue">推荐好友规则说明</a>
+					</div>
+		            <table class="invest-list" width="100%">
+		                <colgroup>
+		                    <col width="176px">
+		                    <col width="156px">
+		                    <col width="224px">
+		                    <col width="216x">
+		                    <col width="146x">
+		                </colgroup>
+		                <tbody>
+		                <tr class="tr1">
+		                    <th>注册时间</th>
+		                    <th>用户昵称</th>
+		                    <th>真是姓名</th>
+		                    <th>手机号</th>
+		                    <th>操作</th>
+		                </tr>
+		                <tr>
+							<td>2015.10.30 10:10:10</td>
+							<td>用户昵称</td>
+							<td>微信端</td>
+							<td>13800138000</td>
+							<td><a href="javascript:;" class="btn-a layer_friend_detail">好友明细</a></td>
+		                </tr>
+		                </tbody>
+		            </table>
+	                <!-- 分页 -->
+	                <div id="page" class="ui-pt20 ui-pb10">
+	                	<div class="pageholder">
+	                		<a href="">&lt;</a>
+	                		<a href="" class="cur">1</a>
+	                		<a href="">2</a>
+	                		<a href="">3</a>
+	                		<a href="">&gt;</a>
+	                	</div>
+	                </div>
                 </div>
+                <!-- 推荐好友结束 -->
             <!-- tab切换end -->		
 		</div>
 	</div>
@@ -722,43 +735,6 @@
 	</div>
 </div>
 <!-- footer end -->
-<!-- 地址弹窗 -->
-<div class="content_layer user-layer-address">
-	<p class="layer-title"><i class="border-blue"></i>新增收货地址</p>
-	<div class="user-myinvest-layer user-addrinfo-layer">
-		<!-- 收货信息填写 -->
-		<form>
-			<ul class="user-write-info">
-				<li><p class="label">收件人</p></li>
-				<li><p class="user-name"><input type="text" class="u-input"></p></li>
-				<li><p class="label">所在区</p></li>
-				<li><p class="user-provience">
-					<select name="" id="" class="u-input">
-						<option value="">请选择</option>
-						<option value="">广东省</option>
-					</select>
-					<select name="" id="" class="u-input">
-						<option value="">请选择</option>
-						<option value="">深圳市</option>
-					</select>
-					<select class="u-input">
-						<option value="">请选择</option>
-						<option value="">南山区</option>
-					</select>
-				</p></li>
-				<li>
-					<p class="label">详细地址</p>
-				</li>
-				<li>
-					<p class="user-addr-detail"><input type="text" class="u-input"></p>
-				</li>
-				<li><p class="label">电话/手机</p></li>
-				<li><p class="user-phone"><input type="text" class="u-input"></p></li>
-			</ul>
-			<p class="user-add-save"><input type="submit" value="保存" class="ui-btn ui-btn-blue"></p>
-		</form>
-	</div>
-</div>
 <!-- script -->
 <script type="text/javascript" src="js/lib/jquery.js"></script>
 <script type="text/javascript" src="js/lib/highcharts.js"></script>
@@ -769,27 +745,22 @@
 <script type="text/javascript">
 // 设置默认地址
 $(function(){
-	$(".user-address-item").hover(function() {
-		$(this).addClass('hover-item')
-	}, function() {
-		$(this).removeClass('hover-item')
-	});
 	// 自动投标开关
 	$(".user-invest-switch").children('a').bind('click',function(){
 		$(this).siblings().removeClass('cur');
 		$(this).addClass('cur');
 	})
 	;
-	//地址填写弹窗
-	$(".user-add-address").on("click",function(){
-			layer.open({
-				type:1,
-				title:false,
-				shadeClose:true,
-				area: ['540px','500px'],
-				content:$('.content_layer')
-			})
-		});
+	//好友明细 
+	$(".layer_friend_detail").on("click",function(){
+		layer.open({
+			type:2,
+			title:false,
+			shadeClose:true,
+			area: ['540px','500px'],
+			content:['user-layer-listdtial-friend.htm','no']
+		})
+	});
 	// 礼品券使用
 	$("#card_change_tab").children().on('click',function(){
 		$(this).addClass('cur').siblings().removeClass('cur')

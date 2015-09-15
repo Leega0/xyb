@@ -37,7 +37,7 @@ var $shadow = null,
                          title: false,
                          border: [0],
                          closeBtn: [0],
-                         area: ['640', 'auto'],
+                         area: ['590', 'auto'],
                          shadeClose: false,
                          closeBtn: [0, true], //去掉默认关闭按钮
                          bgcolor: '',
@@ -52,7 +52,7 @@ var $shadow = null,
                          title: false,
                          border: [0],
                          closeBtn: [0],
-                         area: ['640', 'auto'],
+                         area: ['590', 'auto'],
                          shadeClose: false,
                          closeBtn: [0, true], //去掉默认关闭按钮
                          bgcolor: '',
@@ -92,35 +92,29 @@ var $shadow = null,
                          page: {dom : '#get_adress'}
                         })
                     }) 
-//中奖滚动函数 
-function marque(id,time){
-
-    var $swap = $(id);  //滚动区域
-    
-    var movetotop;  //滚动的变量
-    
-    $swap.hover(function() {
-
-        clearInterval(movetotop);  //鼠标进入指定的区域停止动画
-
-        },function(){
-            
-            movetotop=setInterval(function() {  //定义一个滚动时间间隔的方法
-
-                   var li_height = $swap.find('li').height();
-
-                   $swap.find('li:first').animate({marginTop:-li_height + 'px'},time,function() {                                  
-
-                    $swap.find('li:first').css('marginTop',0).appendTo($swap);  //获取到li的高度，向上滚动一个高度，并且用回调函数把css样式调回到原始的初始状态 
-
-                                    });
-
-                   },1000);
-            
-        }).trigger('mouseleave');
+//中奖滚动函数
+function awardNav(id,time){ 
+    var $this = $(id); 
+    var scrollTimer; 
+    $this.hover(function(){ 
+        clearInterval(scrollTimer); 
+    },function(){ 
+        scrollTimer = setInterval(function(){ 
+            scrollNews( $this ); 
+        }, time ); 
+    }).trigger("mouseout"); 
+} 
+function scrollNews(obj){ 
+    var $self = obj.find("ul:first"); 
+    var lineHeight = $self.find("li:first").height(); 
+    $self.animate({ "margin-top" : -lineHeight +"px" },600 , function(){ 
+        $self.css({"margin-top":"0px"}).find("li:first").appendTo($self); 
+    }) 
+}
+if($("#big_award").children('li').length>=6){
+    awardNav(".renav",2000);
 
 }
-$(function(){
-    marque(big_award,900);
-    marque(now_award,600);
-})//文本滚动 
+if($("#now_award").children('li').length>=6){
+    awardNav(".renav2",1000);
+}

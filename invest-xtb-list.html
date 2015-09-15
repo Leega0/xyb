@@ -361,39 +361,57 @@
 <!-- footer end -->
 <!-- 内嵌弹窗 -->
 <div class="content_layer invest-dqb-layer">
-    <p class="layer-title"><i class="border-blue"></i>日常生活消费<em class="ui-font-gray ui-size12">（项目编号：SB025413）</em></p>
+    <p class="layer-title">日常生活消费<em class="ui-font-gray ui-size12">（项目编号：SB025413）</em></p>
     <div class="detail-invest-layer">
-    <div class="detail-invest-content">
+            <div class="detail-invest-content">
                 <p>剩余可投金额(元)</p>
-                <p class="ui-font-blue ui-size28 invest-last-num">521,245.00</p>
+                <p class="ui-font-blue ui-size28 invest-last-num">877,900.00</p>
                 <!-- tips -->
                 <p class="invest-money-detail clearfix ui-mt5">
-                        <i class="icon-wenhao"></i>账户可用(元)<a href="javascript:void(0);" class="btn-recharge" id="btn_recharge">充值</a><i class="ui-font-blue fr">￥521,512.00</i>
+                    <i class="icon-wenhao"></i><em class="text">账户可用(元)</em><a href="/my?left=recharge" target="_blank" class="btn-recharge">充值</a><i class="ui-font-blue fr money">￥13.00</i>
                 </p>
                 <div class="ui-form-item ui-mt5">
                     <p class="ui-input-body">
-                        <input type="text" placeholder="输入金额需为 50 的倍数" class="ui-font-blue ui-size14">
+                        <input type="text" id="amount" onfocus="if(this.value==this.defaultValue)this.value=''" onblur="if(this.value.replace(/ /ig,'')=='')this.value=this.defaultValue" value="0.00" class="ui-font-blue ui-size14">
                     </p>
-                    <a href="javascript:void(0);" class="btn-invest-all ui-size14">全投</a>
+                    <a href="javascript:void(0);" id="investAll" class="btn-invest-all ui-size14">全投</a>
                 </div>
-        
-                <div class="clearfix ui-pt10">收益提升卡(<em class="ui-font-blue">3</em>)<div class="fr">
-                    <span class="now-sy-card"><i class="icon-sy-arrow"></i>7天1.5倍卡</span><div class=" fr" id="change_sy_card"><a href=""><a href="javascript:void(0);" class="ui-font-blue">[更换]</a>
-                <!-- tips -->
-                <div class="tips-box-sy">
-                    <dl class="sy-card-list">
-                        <dt>收益提升卡(<em class="ui-font-blue">3</em>)<a href="" class="ui-font-blue fr">查看所有></a></dt>
-                        <dd class="no-border"><i class="icon-sy-arrow"></i>7天1.5倍卡<em class="ui-font-gray">[11.12过期]</em><a href="javascript:void(0);" class="ui-font-blue fr">[选择]</a></dd>
-                        <dd><i class="icon-sy-arrow"></i>7天1.5倍卡<em class="ui-font-gray">[11.12过期]</em><a href="javascript:void(0);" class="ui-font-blue fr">[选择]</a></dd>
-                        <dd><i class="icon-sy-arrow"></i>7天1.5倍卡<em class="ui-font-gray">[11.12过期]</em><a href="javascript:void(0);" class="ui-font-blue fr">[选择]</a></dd>
-                    </dl>
+                <div class="clearfix ui-pt10 ui-syk-module">
+                    <p class="ui-input-body" id="syk_default">
+                       <!-- 默认显示收益卡  -->
+                        <span class="default-syk">
+                            <i class="icon-syk icon-syk-green"></i>1.1倍收益提升卡
+                            <b class="index-icons icon-arrow-b"></b>
+                        </span>
+                    </p>
+                    <!-- 收益卡列表 -->
+                    <ul class="have-syk-list">
+                        <li><i class="icon-syk icon-syk-green"></i>1.1倍收益提升卡</li>
+                        <li><i class="icon-syk icon-syk-red"></i>1.2倍收益提升卡</li>
+                        <li><i class="icon-syk icon-syk-blue"></i>1.3倍收益提升卡</li>
+                        <li><i class="icon-syk icon-syk-pink"></i>1.4倍收益提升卡</li>
+                        <li><i class="icon-syk icon-syk-brwon"></i>1.5倍收益提升卡</li>
+                    </ul>
                 </div>
-                <!-- tips end -->
-                    </div>
-                </div></div>
-                <p class="clearfix ui-pt15">预计收益(元)<span class="fr"><em class="ui-font-blue">512.00</em><em class="ui-font-green">+20.00</em></span></p>
-                <p class="ui-form-btn"><a href="javascript:void(0);" class="ui-btn ui-btn-blue" id="invest_now">立即投资</a></p>
-            </div>
+        <p class="clearfix ui-pt15">预计收益(元)<span class="fr"><em class="ui-font-blue" id="income_p">0.00</em>
+        </span></p>
+
+        <p class="clearfix ui-pt10">输入交易密码<a href="/my?left=setting_Safe&amp;right=safe_trade_pass_auth" target="_blank" class="ui-font-gray fr">忘记密码？</a></p>
+        <div class="ui-form-item">
+            <p class="ui-input-body ui-mt5 bx-shadow">
+                <i class="ui-label-icon icon-form-passwd"></i>
+                <input id="trade_val" type="password" placeholder="非登录密码哦" class="charge_psw w85">
+            </p>
+        </div>
+        <p class="ui-font-gray ui-mt10"><i class="icon-sec"></i>本次资金交易安全，由<a href="" target="_blank" class="ui-font-blue">阳光财险</a>承保</p>
+    </div>
+    <!-- 底部提交 -->
+    <div class="layer-bottom ui-mtd5">
+       <div class="layer-content">
+           <p class="ui-form-btn"><a href="javascript:void(0);" id="invest_now" class="ui-btn ui-btn-blue">确定投资</a></p>
+           <p class="xyb-agree-ctn align-center"><input type="checkbox" checked="checked" name="xyb_agreement" id="xyb_agreement"><label for="xyb_agreement">我已阅读并同意</label><a href="/regulation?#lend-agreement" target="_blank" class="ui-font-blue">《出借咨询与服务协议》</a></p>
+       </div>
+   </div>
             </div>
 </div>
 	<!-- script -->
@@ -406,36 +424,68 @@
               type:1,
                 title:false,
                 shadeClose:true,
-                area: ['540px','420px'],
+                area: ['500px','580px'],
                 content:$(".invest-dqb-layer")
           });
       });
+        //二次弹窗
+        $("#invest_now").on('click',function(){
+             layer.alert('交易密码错误')
+           // layer.confirm('交易密码错误')
+        })
+     $("#btn_recharge").on('click',function(){
+        layer.msg("test it")
+     });
         $(function(){
-            $("#change_sy_card").mouseover(function(){
-                $(".tips-box-sy").stop().slideDown()
-            });
-            $("#change_sy_card").mouseout(function(){
-                $(".tips-box-sy").stop().slideUp()
-            });
+            //收益卡选择
+            $(".ui-syk-module").click(function(){
+                var thisinput=$("#syk_default");
+                var thisul=$(".have-syk-list");
+                if(thisul.css("display")=="none"){
+                    if(thisul.height()>200){
+                        thisul.css({height:"200"+"px","overflow-y":"scroll" })
+                    };
+                    thisul.fadeIn("100");
+                    var self = $(this);
+                        var ms_top = self.offset().top,
+                        ms_left = self.offset().left,
+                        ms_right = self.offset().left+280;
+                        $(document).mousemove(function(event){
+                          if(event.pageX<ms_left||event.pageY<ms_top||event.pageX>ms_right){
+                            thisul.fadeOut("fast");
+                            }
+                        });
+                    thisul.hover(function(){},
+                        function(){thisul.fadeOut("100");
+                    })
+                    thisul.find("li").on('click',function(){
+                        $(".default-syk").html($(this).html()+'<b class="index-icons icon-arrow-b"></b>');
+                        thisul.fadeOut("100");
+                    });
+                }
+                else{
+                    thisul.fadeOut("fast");
+                }
+            })
         });
         //tips 插件
         $.fn.extend({
-    hoverTips : function (){
+        hoverTips : function (){
         var self = $(this);
         var sw = false;
         if( !sw ) {
             sw = true;
             var htmlDom = $('<div class="tips-box-ye">'+
                     '<dl class="sy-card-list">'+
-                        '<dd class="no-border">账户余额(元)<span class="fr ui-font-blue">521,512.00</span></dd>'+
-                        '<dd>账户礼金(元)<span class="fr ui-font-blue">521,512.00</span></dd>'+
+                        '<dd class="no-border">账户余额(元)<span class="fr ui-font-blue">2000</span></dd>'+
+                        '<dd>账户礼金(元)<span class="fr ui-font-blue">300</span></dd>'+
                     '</dl>'+
                     '<i class="icon-tips-arrow"></i>'+
                 '</div>')
         }
         self.on("mouseover",function(){
             $(".layui-layer").append( htmlDom );
-            var left = htmlDom.outerWidth()/2-22;
+            var left = htmlDom.outerWidth()/2-42;
             var top = htmlDom.outerHeight()/2-5;
             htmlDom.css({"left":left,"top":top - 10,"display":"block"});
             htmlDom.stop().animate({ "top" : top ,"opacity" : 1},300);
