@@ -497,10 +497,10 @@ h6 {
 }
 /* 浮动 */
 .fl{
-  float: left;
+  float: left !important;
 }
 .fr{
-  float: right;
+  float: right !important;
 }
 /* 字体样式 */
 .bold {
@@ -547,12 +547,18 @@ $base_blue:#2c97f4;
 .ui-font-pink{
   color: #fc8478 !important;
 }
+.ui-font-default{
+  color: #474747 !important;
+}
+.ui-font-num{
+  font-family:"arial";
+}
 /* 字体样式-大小 */
 .ui-size12{
   font-size: 12px !important;
 }
 .ui-size14{
-  font-size: 14px;
+  font-size: 14px !important;
 }
 .ui-size16{
   font-size: 16px !important;
@@ -565,6 +571,9 @@ $base_blue:#2c97f4;
 }
 .ui-size28{
   font-size: 28px;
+}
+.ui-size32{
+  font-size: 32px;
 }
 .ui-size34{
   font-size: 34px;
@@ -1716,4 +1725,14 @@ $base_blue:#2c97f4;
 }
 .valid_error{
   background-image:url(../images/valid-icon-erro.png) !important;
+}
+// 问号提示
+.icon-wenhao{
+  display:inline-block;
+  position: relative;
+  top:2px;
+  margin-right: 5px;
+  width:16px;
+  height:16px;
+  background: url(../images/sprites/icon-wenhao.png) no-repeat;
 }

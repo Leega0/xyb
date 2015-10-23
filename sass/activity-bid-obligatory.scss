@@ -1,0 +1,386 @@
+.contain_wrap{
+	position:relative;
+	height:100%;
+}
+.activity-auto-bid{
+	.title{
+		font-size:28px;
+		width:306px;
+		margin:0 auto;
+		text-align:center;
+		padding-top: 44px;
+		span{
+			font-weight: bold;
+			display: block;
+		}
+	}
+	.list{
+		li{
+			float:left;
+			font-size:14px;
+			font-weight:bold;
+			line-height: 22px;
+		}
+		.red-word{
+			font-size:18px;
+			color:#d7441f;
+		}
+	}
+	.auto-bid-one{
+		height:509px;
+		background:#ffe298 url("../images/activity-page/bid-obligatory/auto-bid-one-bg.jpg") no-repeat top center;
+		.text{
+			color:#fff;
+			font-size:26px;
+			font-weight:bold;
+			padding:94px 0 0 248px;
+		}
+	}
+	.auto-bid-two{
+		height:391px;
+		background:#cceffe url("../images/activity-page/bid-obligatory/auto-bid-two-bg.png") no-repeat top center;
+		.title,.list{
+			color:#1b2e58;
+		}
+		.list-one{
+			padding:168px 0 0 42px;
+		}
+		.list-two{
+			padding:141px 0 0 120px;
+		}
+		.list-three{
+			padding: 116px 0 0 124px;
+		}
+		.list-four{
+			padding:100px 0 0px 66px;
+		}
+	}
+	.auto-bid-three{
+		height:242px;
+		background:#dbf6fd url("../images/activity-page/bid-obligatory/auto-bid-three-bg.png") no-repeat top center;
+	}
+	.auto-bid-four{
+		height:169px;
+		background:#b0d7e8 url("../images/activity-page/bid-obligatory/auto-bid-four-bg.png") no-repeat top center;
+	}
+	.auto-bid-five{
+		height:802px;
+		background:#fffbd0 url("../images/activity-page/bid-obligatory/auto-bid-five-bg.png") no-repeat top center;
+		.title{
+			color:#fb7414;
+		}
+		.list{
+			color:#bf682b;
+		}
+		.list-one{
+			padding:249px 0 0 42px;
+			line-height: 1.4;
+		}
+		.list-two{
+			padding:162px 0 0px 96px;
+		}
+		.list-three{
+			padding: 188px 0 0 214px;
+		}
+	}
+	.auto-bid-six{
+		height:802px;
+		background:#a6cee0 url("../images/activity-page/bid-obligatory/auto-bid-six-bg.png") no-repeat top center;
+		.title{
+			color:#0f3a9b;
+		}
+		.list{
+			color:#153378;
+		}
+		.list-one{
+			padding:206px 0 0px 28px;
+		}
+		.list-two{
+			padding:110px 0 0 20px;
+		}
+		.list-three{
+			padding: 106px 0 0px 466px;
+		}
+		.list-four{
+			position:relative;
+			left:-32px;
+			padding-top:324px;
+		}
+	}
+	.auto-bid-seven{
+		height:1700px;
+		background:#fffbd0;
+		.text{
+			color:#333333;
+			font-size:18px;
+			span{
+				color:#d7441f;
+				font-size:24px;
+				font-weight:bold;
+			}
+		}
+		.text-one{
+			padding-top: 80px;
+			line-height: 1.8;
+		}
+		.text-two{
+			padding-top: 60px;
+			font-size:24px;
+		}
+		.text-three{
+			padding-top: 10px;
+		}
+		.text-four{
+			padding-top: 80px;
+		}
+		.img-one{
+			margin: 30px 0 0 92px;
+		}
+		.img-two{
+			margin: 40px 0 0 244px;
+		}
+	}
+	.auto-bid-eight{
+		height:220px;
+		background:#ffe298;
+		.copyright{
+			padding-top:70px;
+			font-size:12px;
+			color:rgba(99,84,57,.5);
+			line-height: 40px;
+			text-align:center;
+		}
+	}
+}
+
+.activity-obligatory-rights{
+	.title{
+		color:#fff;
+		font-size:28px;
+		text-align:center;
+		span{
+			font-size:32px;
+			font-weight:bold;
+			display: block;
+			padding-top:56px;
+		}
+	}
+	.list{
+		li{
+			color:#333333;
+			font-size:14px;
+			font-weight: bold;
+			float:left;
+			line-height: 22px;
+		}
+		.red-word{
+			color:#f05937;
+			font-size:18px;
+		}
+	}
+	// .talk-one{
+	// 	height:96px;
+	// 	width:149px;
+	// 	background: url("../images/activity-page/bid-obligatory/talk-one-bg.png") no-repeat top center;
+	// }
+	// .talk-two{
+	// 	height:140px;
+	// 	width:266px;
+	// 	background: url("../images/activity-page/bid-obligatory/talk-two-bg.png") no-repeat top center;
+	// }
+	// .talk-three{
+	// 	height:193px;
+	// 	width:281px;
+	// 	background: url("../images/activity-page/bid-obligatory/talk-three-bg.png") no-repeat top center;
+	// }
+	// .talk-four{
+	// 	height:134px;
+	// 	width:208px;
+	// 	background: url("../images/activity-page/bid-obligatory/talk-four-bg.png") no-repeat top center;
+	// }
+	// .talk-five{
+	// 	height:172px;
+	// 	width:251px;
+	// 	background: url("../images/activity-page/bid-obligatory/talk-five-bg.png") no-repeat top center;
+	// }
+	// .talk-six{
+	// 	height:134px;
+	// 	width:194px;
+	// 	background: url("../images/activity-page/bid-obligatory/talk-six-bg.png") no-repeat top center;
+	// }
+	// .moive-img{
+	// 	position:absolute;
+	// }
+	.obligatory-rights-one{
+		height:509px;
+		background:#f15f3d url("../images/activity-page/bid-obligatory/obligatory-rights-one-bg.png") no-repeat top center;
+	}
+	.obligatory-rights-two{
+		height:645px;
+		background:#48cfae url("../images/activity-page/bid-obligatory/obligatory-rights-two-bg.png") no-repeat top center;
+		// .img-one{
+		// 	bottom:-44px;
+		// 	left:10px;
+		// }
+		// .img-two{
+		// 	bottom:-30px;
+		// 	left:310px;
+		// }
+		// .img-three{
+		// 	bottom:-60px;
+		// 	right:300px;
+		// }
+		// .img-four{
+		// 	bottom:-40px;
+		// 	right:80px;
+		// }
+		.list-one{
+			padding:132px 0 0 74px;
+		}
+		.list-two{
+			padding:104px 0 0px 156px;
+		}
+		.list-three{
+			padding: 116px 0 0 216px;
+		}
+	}
+	.obligatory-rights-three{
+		height:155px;
+		background:#36bc9b url("../images/activity-page/bid-obligatory/obligatory-rights-three-bg.png") no-repeat top center;
+	}
+	.obligatory-rights-four{
+		height:801px;
+		background:#fdd551 url("../images/activity-page/bid-obligatory/obligatory-rights-four-bg.png") no-repeat top center;
+		.title{
+			font-size:24px;
+		}
+		.list-one{
+			padding:164px 0 0px 16px;
+		}
+		.list-two{
+			padding:170px 0 0 110px;
+		}
+		.list-three{
+			padding: 168px 0 0px 172px;
+		}
+		.list-four{
+			padding: 170px 0 0px 72px;
+		}
+		// .img-one{
+		// 	bottom:60px;
+		// 	left:30px;
+		// }
+		// .img-two{
+		// 	bottom:56px;
+		// 	left:310px;
+		// }
+		// .img-three{
+		// 	bottom:68px;
+		// 	right:348px;
+		// }
+		// .img-four{
+		// 	bottom:64px;
+		// 	right:40px;
+		// }
+	}
+	.obligatory-rights-five{
+		height:802px;
+		background:#48cfae url("../images/activity-page/bid-obligatory/obligatory-rights-five-bg.png") no-repeat top center;
+		.list-one{
+			padding: 218px 0 0px 88px;
+		}
+		.list-two{
+			padding: 168px 0 0 74px;
+		}
+		.list-three{
+			padding: 188px 0 0px 134px;
+		}
+		.list-four{
+			padding: 196px 0 0px 114px;
+		}
+		// .img-one{
+		// 	bottom:68px;
+		// 	left:72px;
+		// }
+		// .img-two{
+		// 	bottom:68px;
+		// 	left:310px;
+		// }
+		// .img-three{
+		// 	bottom:48px;
+		// 	right:336px;
+		// }
+		// .img-four{
+		// 	bottom:54px;
+		// 	right:10px;
+		// }
+	}
+	.obligatory-rights-six{
+		height:164px;
+		background:#fbf6c3;
+		.text{
+			color:#333333;
+			font-size:18px;
+			line-height: 2;
+			padding:40px 20px 0;
+			span{
+				color:#f05937;
+				font-size:24px;
+				font-weight: bold;
+			}
+		}
+	}
+	.obligatory-rights-seven{
+		height:2100px;
+		background:#fffcda;
+		.title-two{
+			padding:70px 0 50px;
+			color:#f05937;
+			font-size:32px;
+			text-align:center;
+			background: url("../images/activity-page/bid-obligatory/red-line.png") no-repeat  172px 90px;
+		}
+		.text{
+			color:#333333;
+			font-size:18px;
+			padding-left:96px;
+			position:relative;
+			height:75px;
+			line-height: 75px;
+			margin:30px 0 10px;
+		}
+		.num{
+			color:#f05937;
+			font-size:14px;
+			position:absolute;
+			left:0;
+			top:0;
+			height:60px;
+			width:65px;
+			padding-top:15px;
+			text-align:center;
+			background: url("../images/activity-page/bid-obligatory/red-squ.png") no-repeat;
+			line-height: 1;
+			i{
+				font-size:30px;
+			}
+		}
+		.img-one{
+			margin-left: 90px;
+		}
+		.img-two,.img-three{
+			margin-left: 236px;
+		}
+	}
+	.obligatory-rights-eight{
+		height:209px;
+		background:#f1c01f;
+		.copyright{
+			padding-top:70px;
+			font-size:12px;
+			color:rgba(99,84,57,.5);
+			line-height: 40px;
+			text-align:center;
+		}
+	}
+}

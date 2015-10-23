@@ -297,25 +297,17 @@ dl{
 	}
 }
 //标签样式
-.icon-red-vip{
+.icon-90-off,.icon-85-off{
 	position:absolute;
 	top:0;
-	left:0;
-	display:block;
-	width:56px;
-	height:56px;
-	background: url("../images/mall/icon-red-vip.png") no-repeat center;
+	right:5px;
+	width:32px;
+	height:42px;
+	background: url("../images/mall/percent90.png") no-repeat center;
 	z-index:10;
 }
-.icon-blue-hot{
-	position:absolute;
-	top:0;
-	left:0;
-	display:block;
-	width:56px;
-	height:56px;
-	background: url("../images/mall/icon-blue-hot.png") no-repeat center;
-	z-index:10;
+.icon-85-off{
+	background: url("../images/mall/percent85.png") no-repeat center;
 }
 //广告部分
 .integral-mall-ad{

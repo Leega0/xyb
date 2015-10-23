@@ -158,11 +158,8 @@
 .login-input{
 	width:328px;
 	margin:0 auto;
-	h5{
-		font-weight: normal;
-		margin: 0;
-		padding-bottom: 16px;
-		padding-top: 30px;
+	.ui-form-btn{
+		padding:14px 0 5px;
 	}
 	.p1 {
     font-size: 18px;
@@ -174,6 +171,22 @@
 	}
 	.p3 {
     margin-bottom: 16px
+	}
+	//微信登录
+	.weichat-login{
+		width: 171px;
+		margin:38px auto 20px;
+		border:1px solid #eee;
+	}
+	.weichat-login-text{
+		padding-bottom: 30px;
+		.ui-font-gray{
+			border-right:1px solid #c3c3c3;
+			padding-right: 10px;
+		}
+		.ui-font-blue{
+			padding-left: 10px;
+		}
 	}
 }
 .page-tips-w450 {
@@ -204,7 +217,7 @@
 }
 .auto-login{
 	overflow: hidden;
-	padding-top: 20px;
+	padding-top: 5px;
 	input{
 		position: relative;
 		top:2px;
@@ -260,10 +273,49 @@
 	}
 }
 // 错误信息提示
+.login-tab{
+	overflow: hidden;
+	width:328px;
+	margin:16px auto 4px;
+	li{
+		float: left;
+		width: 50%;
+		text-align: center;
+		border-bottom:1px solid #eee;
+		height: 44px;
+		line-height: 44px;
+		font-size: 16px;
+		color: #b9b9b9;
+		cursor: pointer;
+		&.cur{
+			border-color:#2c97f4;
+			color: #474747;
+		}
+	}
+}
 .erro-message{
 	color: red;
     font-size: 14px;
     padding-top: 3px;
+}
+.login-erro-message{
+	width:328px;
+	margin:10px auto 0;
+	background-color: #ffeeee;
+	border:1px solid #fac3c3;
+	border-radius:4px;
+	height:30px;
+	line-height: 30px;
+	.icon-login-erro{
+		display: inline-block;
+		position: relative;
+		margin: 0 5px;
+		top: 3px;
+		width: 16px;
+		height: 16px;
+		background: url(../images/icon-login-erro.png) no-repeat;
+	}
+	color:red;
 }
 .page-valid-erro{
 	width:360px;
@@ -353,4 +405,17 @@
 			}
 		}	
 		}
+}
+.regist-have-account{
+	padding-top: 10px;
+	padding-right: 10px;
+	.icon-hvae-account{
+		display:inline-block;
+		position: relative;
+		top: 6px;
+		margin-right: 8px;
+		width: 24px;
+		height: 24px;
+		background: url(../images/icon-have-account.png) no-repeat;
+	}
 }

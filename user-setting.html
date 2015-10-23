@@ -634,63 +634,127 @@
                 </div>
                 <!-- 推荐好友开始 -->
                 <div class="user-account-moudle recommend-friend">
+                <div class="recomm-title clearfix">
+                	<span class="bold fl ui-pl10">推荐好友统计</span>
+                	<span class="ui-font-gray fr ui-pr10">用户级别:普通用户</span>
+                </div>
 	            	<dl class="clearfix">
 	            		<dd class="data">
-	            			推荐总收益(元)
-	            			<span class="num">34343434</span>
+	            			<div>
+	            			礼金总收入(元)
+	            			<span class="num">52,332.00</span>
+	            			</div>
 	            		</dd>
 	            		<dd class="data">
-	            			推荐注册人数(位)
-	            			<span class="num">343434</span>
+	            			<div>
+	            			推荐人数(位)
+	            			<span class="num">332</span>
+	            			</div>
 	            		</dd>
 	            		<dd class="data">
-	            			推荐已投资人数(位)
-	            			<span class="num">343434</span>
+	            		<div>
+	            			已实名人数(位)
+	            			<span class="num">125</span>
+	            			</div>
 	            		</dd>
 	            	</dl>
 	            	<p class="user-add-box">
-	            		<a href="" class="ui-btn ui-btn-blue">立即推荐好友赚收益</a>
+	            		<a href="" class="ui-btn ui-btn-empty-blue btn-border">立即推荐好友赚礼金</a>
 	            	</p>
 	            	
-					<div class="invest-list-control clearfix">
-						<p class="fl">好友推荐记录</p>
-						<a href="" class="ui-font-blue">推荐好友规则说明</a>
+					<div class="invest-list-control clearfix recommd-friend-cur">
+						<a href="javascript:;" class="fl cur">礼金收益记录</a>
+						<a href="javascript:;" class="fl">推荐好友记录</a>
 					</div>
-		            <table class="invest-list" width="100%">
+					<!-- 表格内容切换 -->
+					<div class="recommd-table-change">
+						<table class="invest-list" width="100%">
 		                <colgroup>
 		                    <col width="176px">
 		                    <col width="156px">
 		                    <col width="224px">
 		                    <col width="216x">
-		                    <col width="146x">
 		                </colgroup>
 		                <tbody>
-		                <tr class="tr1">
-		                    <th>注册时间</th>
+		                <tr class="tr1 table-th-white">
+		                    <th>时间</th>
 		                    <th>用户昵称</th>
-		                    <th>真是姓名</th>
-		                    <th>手机号</th>
-		                    <th>操作</th>
+		                    <th>礼金收益</th>
+		                    <th>发放状态</th>
 		                </tr>
 		                <tr>
 							<td>2015.10.30 10:10:10</td>
-							<td>用户昵称</td>
-							<td>微信端</td>
-							<td>13800138000</td>
-							<td><a href="javascript:;" class="btn-a layer_friend_detail">好友明细</a></td>
+							<td>天天好孩子</td>
+							<td><span class="ui-font-pink">+2.00</span></td>
+							<td>已发放</td>
+		                </tr>
+		                <tr>
+							<td>2015.10.30 10:10:10</td>
+							<td>天天好孩子</td>
+							<td><span class="ui-font-pink">+2.00</span></td>
+							<td class="ui-font-gray">未发放</td>
+		                </tr>
+		                <tr>
+							<td>2015.10.30 10:10:10</td>
+							<td>天天好孩子</td>
+							<td><span class="ui-font-pink">+2.00</span></td>
+							<td>已发放</td>
+		                </tr>
+		                <tr>
+							<td>2015.10.30 10:10:10</td>
+							<td>天天好孩子</td>
+							<td><span class="ui-font-pink">+2.00</span></td>
+							<td class="ui-font-gray">未发放</td>
 		                </tr>
 		                </tbody>
-		            </table>
-	                <!-- 分页 -->
-	                <div id="page" class="ui-pt20 ui-pb10">
-	                	<div class="pageholder">
-	                		<a href="">&lt;</a>
-	                		<a href="" class="cur">1</a>
-	                		<a href="">2</a>
-	                		<a href="">3</a>
-	                		<a href="">&gt;</a>
-	                	</div>
-	                </div>
+		            	</table>
+		            	<!-- 发放统计 -->
+			            <p class="ui-font-gray ui-pt20 ui-pl20">
+			            	已发放：52,332.00 元    待发放：354.00 元
+			            </p>
+			            <!-- 分页 -->
+		                <div id="page" class="ui-pt20 ui-pb10">
+		                	<div class="pageholder">
+		                		<a href="">&lt;</a>
+		                		<a href="" class="cur">1</a>
+		                		<a href="">2</a>
+		                		<a href="">3</a>
+		                		<a href="">&gt;</a>
+		                	</div>
+		                </div>
+					</div>
+					<div class="recommd-table-change" style="display:none">
+						<!-- 表格切换 -->
+			            <table class="invest-list" width="100%">
+			            	<colgroup>
+			                    <col width="220px">
+			                    <col width="490px">
+			                    <col width="190px">
+			                </colgroup>
+			                <tbody>
+			                <tr class="tr1 table-th-white">
+			                    <th>注册时间</th>
+			                    <th>用户昵称</th>
+			                    <th>实名状态</th>
+			                </tr>
+			                <tr>
+								<td>2015.10.30 10:10:10</td>
+								<td>天天好孩子</td>
+								<td>已实名</td>
+			                </tr>
+			            </table>
+			            <!-- table end -->
+			            <!-- 分页 -->
+		                <div id="page" class="ui-pt20 ui-pb10">
+		                	<div class="pageholder">
+		                		<a href="">&lt;</a>
+		                		<a href="" class="cur">1</a>
+		                		<a href="">2</a>
+		                		<a href="">3</a>
+		                		<a href="">&gt;</a>
+		                	</div>
+		                </div>
+					</div>
                 </div>
                 <!-- 推荐好友结束 -->
             <!-- tab切换end -->		
@@ -764,6 +828,13 @@ $(function(){
 	// 礼品券使用
 	$("#card_change_tab").children().on('click',function(){
 		$(this).addClass('cur').siblings().removeClass('cur')
+	})
+	// 个人用户推荐表格内容切换
+	$(".recommd-friend-cur").children('a').on('click',function(){
+		var _tabIndex = $(this).index();
+		$(this).addClass('cur').siblings().removeClass('cur');
+		$(".recommend-friend").find('.recommd-table-change').eq(_tabIndex).show()
+		$(".recommend-friend").find('.recommd-table-change').eq(_tabIndex).siblings(".recommd-table-change").hide();
 	})
 });
 </script>

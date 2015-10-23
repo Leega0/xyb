@@ -110,11 +110,12 @@ dl{
 	}
 }
 .fixed-top{
-	// position:fixed;
-	// top:0;
-	// left:0;
-	// width:100%;
+	position:fixed;
+	top:0;
+  	background-color: #fff; /* background color for IE */
+  	filter: alpha(opacity=80); /* opacity filter for IE */
 	background:rgba(255,255,255,.8);
+
 	a{
 		color: #474747
 	}
@@ -138,9 +139,7 @@ dl{
 	.banner-slider{
 		height: 253px;
 		margin-top:10px;
-		background:url("../images/about-our-synopsis-banner-slider.png") no-repeat center;
-		
-
+		text-align:center;
 	}
 }
 //创始人介绍
@@ -2183,6 +2182,7 @@ dl{
 		width:220px;
 		background:#f6f6f6;
 		border-bottom:1px solid #eeeeee;
+		padding-bottom:10px;
 		.title{
 			position:relative;
 			height:76px;
@@ -2266,6 +2266,9 @@ dl{
 			border-bottom:1px solid #eeeeee;
 			border-left:2px solid #2c97f4;
 		}
+	}
+	.ui-arrow{
+		top:24px;
 	}
 }
 

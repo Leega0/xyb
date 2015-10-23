@@ -74,16 +74,38 @@
 	</div>
 <!-- menu end -->
 <!-- 借款start -->
-<div class="contain_wrap bg-white border-eee lend-main">
+<div class="contain_wrap lend-main">
 <!-- 申请和计算 -->
+	<!-- 信闪贷 -->
+	<div class="bg-white lend-xsd-box border-eee">
+	<!-- tab list -->
+	<ul class="lend-xsd-tab lend-change-tab">
+		<li class="tab cur">信闪贷极速借款</li>
+		<li class="tab">信用宝在线借款</li>
+	</ul>
+	<!-- start1 -->
 	<div class="lender-info">
-		<h5 class="ui-pb20"><i class="border-blue"></i>借款申请</h5>
+		<ul class="lend-step">
+			<li>①资料填写</li>
+			<li>②授权审批</li>
+			<li>③签约放款</li>
+		</ul>
+		<!-- 信闪贷 二维码 -->
+		<div class="lend-qcode ui-mt15 ui-pb20">
+			<img src="images/lend-qcode.png" alt="信闪贷" width="166" height="166">
+			<p class="ui-size14 ui-pt20">扫描二维码极速借款</p>
+		</div>
+		<p class="ui-font-gray">支持城市：<br>郑州，福州，石家庄，南昌，西安，洛阳，厦门，淄博，沧州，扬州，上海，许昌，沈阳，南阳，包头</p>
+	</div>
+	<!-- end1 -->
+	<!-- start2 -->
+	<div class="lender-info" style="display:none">
 		<div class="ui-form-item">
 			<p class="ui-input-body ui-input-middle">
 				<i class="ui-label-icon icon-form-person"></i>
 				<input type="text" id="lend-name" placeholder="借款人称呼">
 			</p>
-			<p class="ui-input-body ui-input-short">
+			<p class="ui-input-body ui-input-short fr">
 				<select name="" id="">
 					<option value="性别">性别</option>
 					<option value="男">男</option>
@@ -101,15 +123,72 @@
 			<p class="ui-form-btn"><a href="" class="ui-btn ui-btn-blue">立即申请</a></p>
 		</div>
 		<p class="ui-font-gray ui-pb40">支持城市：<br>沈阳、郑州、西安、洛阳、福州、南阳、南昌、许昌、包头、上海、石家庄、淄博、扬州、厦门
-</p>
+		</p>
+	</div>	
+	<!-- end2 -->
 	</div>
 	<!-- 借款计算 -->
-	<div class="lend-cal-box">
-		<!-- title -->
-		<div class="lend-title clearfix">
-			<h5 class="fl"><i class="border-blue"></i>借款计算器</h5><p class="fr ui-font-gray">*以上计算结果以最优贷款条件算出仅供参考，请以自身申请贷款后最终平台评估的结果为准。</p>
+	<div class="lend-cal-box border-eee">
+	<!-- 借款tab切换 -->
+	<div class="lend-top-box">
+		<ul class="lend-xsd-tab lend-tab-left">
+			<li class="tab cur">信闪贷借款计算器</li>
+			<li class="tab">信用宝借款计算器</li>
+		</ul>
+		<div class="lend-right-text ui-font-gray">
+			*以下计算结果以最优贷款条件算出仅供参考
 		</div>
-	<table class="level-rate" width="770">
+	</div>
+	<!-- 信闪贷计算器 -->
+	<div class="lend-cal-result">
+		<table class="level-rate" width="100%">
+		<colgroup>
+            <col width="120px">
+            <col width="165px">
+            <col width="205px">
+            <col width="196px">
+        </colgroup>
+        <tr>
+        	<th>借款天数</th>
+        	<th>利息(元/天)</th>
+        	<th>管理费(元/天)</th>
+        	<th>当日还款额(元)</th>
+        </tr>
+        <tr>
+	        <td>1-7</td>
+	        <td>900.00</td>
+	        <td>10</td>
+	        <td>98,789.00</td>
+        </tr>
+        <tr>
+	        <td>8</td>
+	        <td>900.00</td>
+	        <td>10</td>
+	        <td>98,789.00</td>
+        </tr>
+        <tr>
+	        <td>1-7</td>
+	        <td>900.00</td>
+	        <td>10</td>
+	        <td>98,789.00</td>
+        </tr>
+        <tr><td colspan="4"><a href="">查看明细></a></td></tr>
+	</table>
+	<!-- tips -->
+	<p class="ui-font-gray ui-pt20">备注：借款利率：借款利率为每日0.06%，最短计息期限为7天，不足7天的以7天计算。 <a href="" class="ui-font-blue">查看更多介绍>></a></p>
+	<!-- 计算工具 -->
+	<div class="lend-handle clearfix ui-pb5">
+		<div class="ui-form-item">
+			<label>借款金额:</label><p class="ui-input-body ui-input-middle"><input type="text" value="10000" class="ui-size16 bold ui-font-blue"></p>
+		</div>
+		<div class="ui-form-item fr">
+			<a href="" class="ui-btn ui-btn-blue">立即计算</a>
+		</div>
+		</div>
+	</div>
+	<!-- 信用宝计算器 -->
+	<div class="lend-cal-result" style="display:none">
+	<table class="level-rate ui-mt30" width="100%">
 		<colgroup>
             <col width="17%">
             <col width="21%">
@@ -153,7 +232,7 @@
 		</div>
 		<div class="ui-form-item">
 		<label>借款周期:</label>
-			<p class="ui-input-body ui-input-middle"><select class="ui-size16 bold ui-font-blue">
+			<p class="ui-input-body ui-input-short"><select class="ui-size16 bold ui-font-blue">
 				<option value="">12个月</option>
 				<option value="">9个月</option>
 				<option value="">6个月</option>
@@ -163,6 +242,7 @@
 			<a href="" class="ui-btn ui-btn-blue">立即计算</a>
 		</div>
 		</div>
+	</div>
 	<!-- 计算工具end -->
 </div>
 </div>
@@ -301,5 +381,18 @@
 	<!-- script -->
 	<script type="text/javascript" src="js/lib/jquery.js"></script>
 	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript">
+		function xsdTab(tabList,tabCont){
+			var tab_cont = $(tabCont);
+			$(tabList).find(".tab").bind('click',function(){
+				$(this).addClass('cur').siblings().removeClass('cur');
+				var _index = $(this).index();
+				tab_cont.eq(_index).show();
+				tab_cont.eq(_index).siblings(tabCont).hide();
+			})
+		}
+		xsdTab(".lend-change-tab",".lender-info");
+		xsdTab(".lend-tab-left",".lend-cal-result");
+	</script>
 </body>
 </html>

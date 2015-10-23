@@ -126,7 +126,7 @@
 					投资额0.1%赠送礼金</p>
 				<a href="javascript:;" class="ui-btn done">活动结束</a>
 			</div>
-			<div class="active-park active-park-two">
+			<div class="active-park active-park-two on">
 				<ul class="clearfix">
 					<li class="squ">
 						<span class="money money-one"></span>
@@ -191,18 +191,22 @@
 		$(".click-park").find('.click_park_li').click(function(){
 			var click_park_index = $(this).index();
 			$(this).addClass('on').siblings('li').removeClass('on');
-			$(".active-park").eq(click_park_index).show().siblings('.active-park').hide();
+			$(".active-park").eq(click_park_index).addClass('on').siblings('.active-park').removeClass('on');
 		})
+
 	})
 	$(function(){
-		var window_Width =  parseInt((document.body.offsetWidth - 1200)/2)-146;
+		var window_Width =  parseInt((document.body.offsetWidth - 1200)/2)-121;
 		var app_wrap = $(".app-download");
 		app_wrap.css('right',window_Width);
+		if($(window).width() <= 1494){	    	
+			app_wrap.css('right',0);
+		}
 		window.onresize=function(){
 	    if($(window).width() <= 1494){	    	
 			app_wrap.css('right',0);
 		}else if($(window).width() > 1494){
-			var window_Width =  parseInt((document.body.offsetWidth - 1200)/2)-146;
+			var window_Width =  parseInt((document.body.offsetWidth - 1200)/2)-121;
 			app_wrap.css('right',window_Width);
 			}
 		}

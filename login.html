@@ -23,8 +23,15 @@
 		<div class="contain_wrap">
 			<!-- 登录框开始 -->
 			<div class="login-box">
+			<!-- 二维码登录切换 -->
+			<ul class="login-tab">
+				<li class="cur">账户密码登录</li>
+				<li>微信二维码登录</li>
+			</ul>
+			<!-- 切换内容 -->
 				<div class="login-input">
-					<h5 class="clearfix">信用宝会员<span class="erro-message fr">请输入用户名</span></h5>
+				<!-- 错误提示 -->
+					<div class="login-erro-message"><i class="icon-login-erro"></i>用户名或密码不正确</div>
 					<div class="ui-form-item">
 						<p class="ui-input-body">
 							<i class="ui-label-icon icon-form-peoples"></i>
@@ -53,6 +60,16 @@
 					</div>
 					<p class="align-right"><a href="" class="ui-font-blue ui-size16">免费注册&gt;</a></p>
 				</div>
+				<div class="login-input">
+					<div class="weichat-login">
+						<img src="images/wechart-login.png" alt="二维码登录">
+					</div>
+					<!-- 微信登录 -->
+					<p class="weichat-login-text align-center">
+						<span class="ui-font-gray">微信扫码&nbsp;&nbsp;&nbsp;安全登录</span>
+						<a href="javascript:;" class="ui-font-blue">刷新?</a>
+					</p>
+				</div>
 			</div>
 			<!-- 登录框结束 -->
 		</div>
@@ -75,6 +92,19 @@
 <!-- 底部结束 -->
 <script type="text/javascript" src="js/lib/jquery.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+$(function(){
+	//初始化
+	$(".login-input").eq(0).show();
+	//切换
+	$(".login-tab").children().on('click',function(){
+		$(this).addClass('cur').siblings().removeClass('cur');
+		var _indexNum = $(this).index();
+		$(".login-input").eq(_indexNum).show();
+		$(".login-input").eq(_indexNum).siblings(".login-input").hide();
+	})
+})
+</script>
 <style type="text/css">
 	.ui-popbar{
 		display: none;

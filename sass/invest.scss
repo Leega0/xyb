@@ -1,7 +1,7 @@
 .invest-table{
 	td{
 		border-top: 1px solid #f6f6f6;
-		padding:23px 0;
+		padding:22px 0;
 		text-align: center;
 		.ui-btn{
 			padding:14px 30px;
@@ -166,6 +166,10 @@
 			padding:10px 37px;
 			cursor: not-allowed;
 		}
+    	&.unknow-info{
+    		color: #b9b9b9;
+    		padding:80px 0;
+    	}
 	}
 	th,td{
 		padding:20px 0;
@@ -178,26 +182,8 @@
 .invest-current{
 	overflow: hidden;
 	padding-bottom:60px;
-	.invest-hq-chart{
-		width: 440px;
-		margin-top: 40px;
-		margin-left: 20px;
-	}
 	.invest-hq-rate{
-		width: 210px;
-		padding: 90px 20px 0 100px;
-		p{
-			padding-bottom: 5px;
-		}
-		span{
-			font-size: 34px;
-    		color: #2c97f4;
-    		.icon-down{
-    			width: 22px;
-			    height: 26px;
-			    background: url(../images/sprites/icon-downgreen.png) no-repeat;
-    		}
-		}
+		
 	}
 }
 .detail-invest-box{
@@ -439,7 +425,6 @@
 	}
 	.record-date{
 		text-align: left;
-		padding-left: 120px;
 	}
 }
 // 通用提示工具条
@@ -1127,15 +1112,6 @@
 	height:14px;
 	background: url(../images/sprites/icon-sy-arrow.png) no-repeat;
 }
-.icon-wenhao{
-	display:inline-block;
-	position: relative;
-	top:2px;
-	margin-right: 5px;
-	width:16px;
-	height:16px;
-	background: url(../images/sprites/icon-wenhao.png) no-repeat;
-}
 .icon-tips-arrow{
 	position: absolute;
 	left:10px;
@@ -1336,4 +1312,52 @@
 }
 .bx-shadow{
 	box-shadow:0 0 0 2px #def0fe !important;
+}
+.hqb-detail-title{
+	font-size: 18px;
+	margin:25px 30px 0;
+	span{
+		margin-top: 3px;
+		.invest-icon-time{
+			display: inline-block;
+			background: url(../images/hqb-detail-time.png) no-repeat;
+			width: 16px;
+			height: 16px;
+			position: relative;
+			top: 3px;
+			margin-right: 6px;
+		}
+	}
+}
+.ui-hqb-progress{
+	display:inline-block;
+	position: relative;
+	top:-2px;
+	margin:0 15px;
+}
+.detail-hqb-items{
+	.detail-content-item{
+		width: 260px;
+		&.detail-content-item-end{
+			padding-left: 0;
+			text-align:center;
+		}
+	}
+}
+.detail-hqb-feature{
+	.detail-content-item{
+		padding:40px 0;
+	}
+	.detail-content-feature{
+		p{
+			padding: 28px 0;
+			width: 100%;
+			&.tag{
+				span{
+					    padding: 3px 5px;
+    					margin-right: 10px;
+				}
+			}
+		}
+	}
 }

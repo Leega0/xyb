@@ -16,7 +16,7 @@
 		<!-- 未登陆 -->
 		<p class="fl"><a href=""><i class="index-icons icon-home"></i>信用宝首页</a></p>
 		<ul class="fr myhome">
-			<li class="welcome"><a href="" class="welcome-a">你好，AlexHOU</a><a href="" class="welcome-a"><em class="user-level vip9"></em></a><a class="litte-icons icon-messages icon-nomessage"><em>&hellip;</em></a><a href="">退出</a></li>
+			<li class="welcome"><a href="" class="welcome-a">你好，AlexHOU</a><a href="" class="welcome-a"><em class="user-level vip9"></em></a><a class="litte-icons icon-messages"><em>&hellip;</em></a><a href="">退出</a></li>
 			<li class="separator"></li>
 			<li><div class="myhome-account">
 				<a href="">我的账户</a>
@@ -126,6 +126,8 @@
 	<!-- 账户通用导航页end -->
 	<!-- 账户 home -->
 		<div class="user_r account-home">
+		<!-- 泡椒广告 -->
+		<a href="" class="paojiao"><img src="images/paojiao.jpg" alt="泡椒友链"></a>
 			<!-- 资产概览 -->
 			<div class="user-assets-box">
 				<dl class="user-assets-view w330">
@@ -225,10 +227,11 @@
           <!-- 收益展示模块 -->
           <div class="user-assets-box user-earn-today ui-mt15">
 				<dl class="user-assets-view w330">
-					<dt class="ui-size14">活期宝余额(元)<a href="" class="ui-font-blue ui-pl10">详情&gt;</a></dt>
+					<dt class="ui-size14">活期宝份额(元)<a href="" class="ui-font-blue ui-pl10">详情&gt;</a></dt>
 					<dd class="num">1,582,254.00</dd>
 					<dd class="btns">
-						<a href="" class="ui-btn ui-btn-blue">转入</a><a href="" class="ui-btn-empty-blue ui-btn-empty">转出</a>
+						<a href="" class="ui-btn ui-btn-blue">转入</a>
+						<a href="javascript:;" class="ui-btn-empty-blue ui-btn-empty" id="out_sucess">转出</a>
 					</dd>
 				</dl>
 				<dl class="user-assets-view w330">
@@ -237,8 +240,8 @@
 					<dd class="ui-font-gray">累计收益（元）<em class="ui-font-blue">&nbsp;54,214.00</em></dd>
 				</dl>
 				<dl class="user-assets-view w180">
-					<dt class="ui-size14">今日年化收益</dt>
-					<dd class="num ui-font-blue"><i class="icon-up-blue"></i>8.00%</dd>
+					<dt class="ui-size14">昨日年化收益率</dt>
+					<dd class="num ui-font-blue">8.004%</dd>
 					<dd class="ui-font-gray">七日年化收益率<a href="" class="ui-font-blue ui-pl10">2.7490%</a></dd>
 				</dl>
 			</div>
@@ -384,8 +387,21 @@
 	</div>
 </div>
 <!-- footer end -->
+<!-- 弹窗 -->
+<div class="content_layer" id="tran_out_success">
+	<div class="user-sec-input page-tips">
+		<em class="icon-sucess"></em>
+		<p class="p1">活期宝份额已经申请转出</p>
+		<p class="p2">转出金额  20,562.00 元</p>
+		<p class="p2">预计5分钟内转入您的“可用余额”</p>
+		<div class="ui-form-item">
+			<p class="ui-form-btn"><a href="javascript:;" class="ui-btn ui-btn-blue" onclick="layer.closeAll();">确认</a></p>
+		</div>
+	</div>
+</div>
 <!-- script -->
 <script type="text/javascript" src="js/lib/jquery.js"></script>
+<script type="text/javascript" src="js/plugins/layer.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
 <script type="text/javascript" src="js/user.js"></script>
 <script type="text/javascript">
@@ -428,31 +444,32 @@
 		})
 
 		//引导步骤定位
-		function getPosx(posenum){
-			//eval('step'+posenum+'PosX') = $("'#guide-step-'+'posenum'").offset().left;
-			console.log(posenum)
-		}
-		getPosx(one);
-		/*var steponePosX = $("#guide-step-one").offset().left
-		var steponePosY = $("#guide-step-one").offset().top;*/
-		//guide_box_one.css({'left':getPosx(one)-35});
+		var stepOnePosY = $("#guide-step-one").offset().top;
+		guide_box_one.css({'left':$("#guide-step-one").offset().left-35,'top':stepOnePosY-30});
 		//2
-		var steptwoPosX = $("#guide-step-two").offset().left
-		var steptwoPosY = $("#guide-step-two").offset().top;
-		guide_box_two.css({'left':steptwoPosX-75,'top':steptwoPosY-38});
+		var stepTwoPosY = $("#guide-step-two").offset().top;
+		guide_box_two.css({'left':$("#guide-step-two").offset().left-75,'top':stepTwoPosY-38});
 		//3
-		var stepthreePosX = $("#guide-step-three").offset().left
-		var stepthreePosY = $("#guide-step-three").offset().top;
-		guide_box_three.css({'left':stepthreePosX-35,'top':stepthreePosY-42});
+		var stepThreePosY = $("#guide-step-three").offset().top;
+		guide_box_three.css({'left':$("#guide-step-three").offset().left-35,'top':stepThreePosY-42});
 		//4
-		var stependPosX = $("#guide-step-end").offset().left
-		var stependPosY = $("#guide-step-end").offset().top;
-		guide_box_end.css({'left':stependPosX+24,'top':stependPosY-40});
+		var stepEndPosY = $("#guide-step-end").offset().top;
+		guide_box_end.css({'left':$("#guide-step-end").offset().left+24,'top':stepEndPosY-40});
 		//引导顺序
 		$(".guide_next_btn").on('click',function(){
 			$(this).parent().hide().next().show();
 		})
 	}
+	// 活期宝弹窗
+	 $('#out_sucess').on('click', function() {
+          layer.open({
+              type:1,
+                title:false,
+                shadeClose:true,
+                area: ['500px','400px'],
+                content:$("#tran_out_success")
+          });
+      });
 </script>
 </body>
 </html>

@@ -12,16 +12,73 @@ h5{
 	margin-bottom: 20px;
 	overflow: hidden;
 }
-.lender-info{
-	width: 290px;
-	padding:26px 30px;
+.lend-xsd-box{
+	width: 400px;
+	height:440px;
 	float: left;
 	border-right:1px solid #eee;
+}
+// 信闪贷是个什么东东
+.lend-xsd-tab{
+	overflow: hidden;
+	font-size: 16px;
+	li{
+		float: left;
+		width: 50%;
+		height: 58px;
+		line-height:58px;
+		cursor:pointer;
+		text-align: center;
+		border-bottom:1px solid #eee;
+		box-sizing:border-box;
+		&:first-child{
+			border-right:1px solid #eee;
+		}
+		&.cur{
+			color: #2c97f4;
+			font-weight: bold;
+			border-top:2px solid #2c97f4;
+			border-bottom:0;
+		}
+	}
+}
+.lender-info{
+	padding:20px 30px;	
 	.ui-font-gray{line-height: 1.8;}
+	.lend-step{
+		overflow: hidden;
+		background: url(../images/lend-step-bg.png) no-repeat;
+		width: 344px;
+		height: 40px;
+		li{
+			float: left;
+			width: 33.33%;
+			text-align: center;
+			line-height: 40px;
+		}
+	}
+	.lend-qcode{
+		.img{
+			width: 166px;
+			height: 166px;
+			border:1px solid #eee;
+			margin: 0 auto;
+			table{
+				margin: 13px auto;
+			}
+		}
+		p{
+			text-align: center;
+		}
+	}
+	.ui-input-middle{
+		width: 240px;
+	}
 }
 .lend-cal-box{
 	float: left;
-	padding-left: 36px;
+	margin-left: 10px;
+	background-color:#fff;
 	.lend-title{
 		line-height: 56px;
 		margin-top: 8px;
@@ -44,6 +101,23 @@ h5{
 		padding-right:10px;
 	}
 }
+.lend-top-box{
+	overflow: hidden;
+	.lend-tab-left{
+		float: left;
+		width: 410px;
+	}
+	.lend-right-text{
+		width: 327px;
+		line-height: 57px;
+		height: 57px;
+		padding-left: 30px;
+		padding-right: 18px;
+		float: left;
+		border-left:1px solid #eee;
+		border-bottom:1px solid #eee;
+	}
+}
 // 估算列表
 .level-rate{
 	margin:0 auto;
@@ -57,7 +131,6 @@ h5{
 		}
 		th{
 			padding:22px 0;
-			border-top:2px solid #eee;
 			color: #b9b9b9;
 			font-weight: normal;
 		}
@@ -88,7 +161,15 @@ h5{
 			}
 		}
 	}
-
+.lend-cal-result{
+	width:700px;
+	min-height:382px;
+	overflow:hidden;
+	margin:0 auto;
+}
+.table-expand-scroll{
+	overflow-y: auto;
+}
 // 六大优势
 .lend-advantage{
 	margin-bottom: 20px;
@@ -189,5 +270,14 @@ h5{
 				width: 150px;
 			}
 		}
+		.ui-input-short{
+			select{
+				margin-left: 0;
+			}
+		}
 	}
+}
+.go_back_box{
+	width:100%;
+	padding-top: 26px !important;
 }

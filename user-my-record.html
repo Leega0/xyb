@@ -122,6 +122,7 @@
                     <a class="user-tabs-item" href="javascript:void(0);">冻结记录</a>
                     <a class="user-tabs-item" href="javascript:void(0);">中奖记录</a>
                     <a class="user-tabs-item" href="javascript:void(0);">兑换记录</a>
+                    <a class="user-tabs-item" href="javascript:void(0);">活期宝明细</a>
             </div>
             <div class="user-account-moudle record">
 				<div class="invest-list-control">
@@ -275,7 +276,8 @@
 	                    <col width="160px">
 	                    <col width="100px">
 	                    <col width="160px">
-	                    <col width="150px">
+	                    <col width="50px">
+	                    <col width="100px">
 	                </colgroup>
 	                <tbody>
 	                <tr class="tr1">
@@ -285,6 +287,7 @@
 	                    <th>提现金额(元)</th>
 	                    <th>手续费(元)</th>
 	                    <th>状态</th>
+	                    <th>操作</th>
 	                </tr>
 	                <tr>
 						<td>2015-10-30 10:10:10</td>
@@ -293,6 +296,7 @@
 						<td>1000.00</td>
 						<td>0.00</td>
 	                    <td>提现成功</td>
+	                    <td class="list-btn-revoke revoke-disabled"><a href="javascript:void(0)">撤销</a></td>
 	                </tr>
 	                <tr>
 						<td>2015-10-30 10:10:10</td>
@@ -301,6 +305,16 @@
 						<td>1000.00</td>
 						<td>0.00</td>
 	                    <td>排队中</td>
+	                    <td class="list-btn-revoke"><a href="javascript:;" id="btn-revoke">撤销</a></td>
+	                </tr>
+	                <tr>
+						<td>2015-10-30 10:10:10</td>
+						<td>提现手续费</td>
+						<td>13056161631316516</td>
+						<td>1000.00</td>
+						<td>0.00</td>
+	                    <td>已撤销</td>
+	                    <td class="list-btn-revoke revoke-disabled"><a href="javascript:;">撤销</a></td>
 	                </tr>
 	                </tbody>
 	            </table>
@@ -512,6 +526,85 @@
 	                </tbody>
 	            </table>
             </div>
+            <!-- 活期宝明细 -->
+            <div class="user-account-moudle record">
+				<div class="invest-list-control">
+					<form>
+						<div class="filter_time">
+							记录时间:
+							<select>
+								<option>最近3个月</option>
+								<option>不限</option>
+								<option>3</option>
+								<option>4</option>
+							</select>
+						</div>
+						<div class="filter_status">
+							类型:
+							<select>
+								<option>不限</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+							</select>
+						</div>
+					</form>
+					<p class="fl">明细记录列表</p>
+				</div>
+	            <table class="invest-list" width="100%">
+	                <colgroup>
+	                    <col width="160px">
+	                    <col width="210px">
+	                    <col width="160px">
+	                    <col width="210px">
+	                    <col width="160px">
+	                </colgroup>
+	                <tbody>
+	                <tr class="tr1">
+	                    <th>时间</th>
+	                    <th>收益(元)</th>
+	                    <th>转入(元)</th>
+	                    <th>转出(元)</th>
+	                    <th>活期宝余额(元)</th>
+	                </tr>
+	                <tr>
+						<td>2015-10-30 10:10:10</td>
+						<td><span class="ui-font-pink">26.00</span></td>
+						<td>-</td>
+						<td>-</td>
+	                    <td>54,812.00</td>
+	                </tr>
+	                <tr>
+						<td>2015-10-30 10:10:10</td>
+						<td>-</td>
+						<td>26</td>
+						<td>-</td>
+	                    <td>54,812.00</td>
+	                </tr>
+	                <tr>
+						<td>2015-10-30 10:10:10</td>
+						<td>-</td>
+						<td>26</td>
+						<td>-</td>
+	                    <td>54,812.00</td>
+	                </tr>
+	                <tr>
+						<td>2015-10-30 10:10:10</td>
+						<td>-</td>
+						<td>26</td>
+						<td>-</td>
+	                    <td>54,812.00</td>
+	                </tr>
+	                <tr>
+						<td>2015-10-30 10:10:10</td>
+						<td>-</td>
+						<td>26</td>
+						<td>-</td>
+	                    <td>54,812.00</td>
+	                </tr>
+	                </tbody>
+	            </table>
+            </div>
             <!-- tab切换end -->
           <!-- 收益展示模块 -->
 			<!-- 近期回款 -->
@@ -568,12 +661,35 @@
 	</div>
 </div>
 <!-- footer end -->
+<!-- 弹窗 -->
+<div class="content_layer ui-pt30" id="invoke-handle-layer">
+	<div class="layer-paycomplete ui-pt30">
+	    <span class="icon-sprite icon-bind-tips"></span>
+	    <p>是否确定撤销本次提现申请?</p>
+	    <!-- 状态链接调用 -->
+	    <p class="pay-back-links clearfix">
+	        <a href="" class="ui-btn ui-btn-blue fl">确认</a>
+	        <a href="" class="ui-btn-empty ui-btn-empty-blue fr">取消</a>
+	    </p>
+	</div>
+	</div>
 <!-- script -->
 <script type="text/javascript" src="js/lib/jquery.js"></script>
+<script type="text/javascript" src="js/plugins/layer.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
 <script type="text/javascript" src="js/user.js"></script>
 <script type="text/javascript" src="js/plugins/laydate.js"></script>
 <script type="text/javascript">
+$('#btn-revoke').on('click', function() {
+          layer.open({
+              type:1,
+                title:false,
+                shadeClose:true,
+                area: ['540px','340px'],
+                content:$("#invoke-handle-layer")
+          });
+      });
+      //日期
 	laydate({
 		elem:'#end_date',
 		choose:function(dates){

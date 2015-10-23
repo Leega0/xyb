@@ -86,47 +86,63 @@
 	</div>
 </div>
 <!-- 投资列表 -->
-<div class="bg-white contain_wrap ui-mt20 border-eee">
-<!-- 筛选框 -->
+<div class="contain_wrap ui-mt20 clearfix">
+<!-- 项目详情start -->
+<div class="bg-white border-eee detail-content-left">
 	<div class="filter-box">
-		<h5 class="border-lfb">活期宝理财产品</h5>
+		<div class="border-lfb clearfix hqb-detail-title">活期宝-随存随取收益高
+			<span class="fr ui-font-gray ui-size14"><i class="invest-icon-time"></i>每日 11:30 更新额度</span>
+		</div>
 	</div>
-<!-- 筛选end -->
-<!-- 活期宝概览start -->
-<div class="invest-current">
-        <div class="invest-hq-chart fl">
-            <!-- chart -->
-            <div id="main_chart" style="height:180px; width:410px;"></div>
-            <p class="align-center">活期宝7日年化利率走势</p>
-        </div>
-        <div class="invest-hq-rate fl">
-            <p>今日预期年化收益率</p>
-            <span class="ui-font-green"><i class="index-icons icon-down"></i>10.25<em>%</em></span>
-        </div>
-        <div class="detail-invest-box fr ui-mt20 ">
+	<div class="detail-content-section detail-hqb-feature">
+			<div class="detail-content-infor clearfix detail-hqb-items">
+				<div class="detail-content-item">
+					<p>今日活期额度(元)</p>
+					<p class="ui-pt5 ui-font-blue"><span class="ui-size28">￥18,000,000.00</span></p>
+				</div>
+				<div class="detail-content-item">
+					<p>昨日年化收益率</p>
+					<p class="ui-pt5 ui-font-blue"><span class="ui-size28">10.252</span>%</p>
+				</div>
+				<div class="detail-content-item detail-content-item-end">
+					<p>昨日万元收益(元)</p>
+					<p class="ui-font-blue ui-pt5"><span class="ui-size28">12.25</span></p>
+				</div>
+			</div>
+			<div class="detail-content-feature clearfix">
+				<p class="tag">
+					<span class="green-bbox">随存随取</span>
+					<span class="green-bbox">1元起投</span>
+					<span class="green-bbox">当日计息</span>
+					<span class="green-bbox">本息保障</span>
+				</p>
+			</div>
+	</div>
+</div>
+<!-- 项目详情end -->
+<!-- 立即投资start -->
+<div class="bg-white border-eee detail-content-right">
+        <div class="detail-invest-box ui-mb0">
             <div class="detail-invest-content">
-                <p>剩余可投金额</p>
-                <p class="ui-font-blue ui-size24 invest-last-num">521,245.00</p>
-                <p>输入投资金额</p>
-                <div class="ui-form-item">
+                
+                <!-- tips -->
+                <p class="invest-money-detail clearfix ui-mt5">
+                        <i class="icon-wenhao"></i><em class="text">账户可用(元)</em><a href="javascript:void(0);" class="btn-recharge" id="btn_recharge">充值</a><i class="ui-font-blue fr money">￥521,512.00</i>
+                </p>
+                <p class="ui-pt15">输入转入金额</p>
+                <div class="ui-form-item ui-mt5">
                     <p class="ui-input-body">
-                        <input type="number" placeholder="0.00" value="0.00" class="ui-font-blue ui-size16">
+                        <input type="text" value="0.00" class="ui-font-blue ui-size14" onfocus="if(this.value==this.defaultValue)this.value=''" onblur="if(this.value.replace(/ /ig,'')=='')this.value=this.defaultValue">
                     </p>
+                    <a href="javascript:void(0);" class="btn-invest-all ui-size14">全转</a>
                 </div>
-                <div class="invest-money-detail">
-                    <i class="detail-icons icon-plus"></i>
-                    <div class="invest-money-text">
-                        <p>账户可用资金(元)<i class="ui-font-blue fr">￥521,512.00</i></p>
-                        <p class="ui-font-gray money-last">账户余额(元)<i class="fr">￥521,512.00</i></p>
-                        <p class="ui-font-gray money-last">账户礼金(元)<i class="fr">￥521,512.00</i></p>
-                    </div>
-                <a href="javascript:void(0);" class="btn-recharge" id="btn_recharge">充值</a>
-                </div>
-                <p class="ui-form-btn ui-mtd5"><a href="" class="ui-btn ui-btn-blue">立即申请</a></p>
+        <!-- 收益卡模块 -->
+                <p class="clearfix ui-pt5">预期日收益(元) <span class="fr"><em class="ui-font-blue">￥52.00</em></span></p>
+                <p class="clearfix ui-pt15">收益起始时间 <span class="fr"><em class="ui-font-blue">2015-06-17</em></span></p>
+                <p class="ui-form-btn"><a href="javascript:void(0);" class="ui-btn ui-btn-blue" id="invest_now">立即转入</a></p>
             </div>
         </div>
 </div>
-<!-- 活期宝概览end -->
 </div>
 <!-- 详情tab页start -->
 <div class="contain_wrap content bg-white ui-mt20 ui-mb40">
@@ -134,10 +150,11 @@
         <div id="detail-tabs" name="detail-tabs" class="detail-tabs">
                     <a class="detail-tabs-item detail-tabs-active" href="javascript:void(0);">活期宝介绍</a>
                     <a class="detail-tabs-item" href="javascript:void(0);">常见问题</a>
+                    <a class="detail-tabs-item" href="javascript:void(0);">交易记录(254)</a>
         </div>
         <div class="detail-list">
             <dl class="ask-item">
-                <dd class="ui-size14 ui-font-gray">活期团投资团随投随取，让您的资金超灵活，本金有保障，5.5%预期年化净收益比余额宝更高更稳定！加入当日开始，天天计息，无固定期限，可长期持有。您可以选择随时加入或退出。加入全程0手续费，0充值费，0退出费！活期团流动性由与之相对应的“定期团”来保障，“定期团”的资产是流动现金或货币基金等可随时取现的资产组成。“定期团”不公开发售，您可通过您的专属理财顾问了解该团，若无法联系理财顾问，请直接拨打021-61128450。</dd>
+                <dd class="ui-size14 ui-font-gray">“活期宝”产品是信用宝打造的“每日返息”智能投资工具，信用宝根据投资人的委托，将资金用于平台内具有风险准备金的借款项目进行自动分散投资。投资人的加入资金在满足产品协议相关规则的前提下，可在计息后的任意时刻申请部分或全部赎回。</dd>
             </dl>
             <!-- 介绍table -->
             <div class="invest-intro-pd">
@@ -147,53 +164,138 @@
             <col width="85%">
             </colgroup>
                 <tr>
-                    <td>投资目标</td>
-                    <td>寻求超级灵活资产配置（可能需要随时取用，或暂未决定投资目标），或想确保资金灵活度的同时获取比余额宝更高更稳定收益的投资人。</td>
+                    <td>预期年化收益</td>
+                    <td>7%-11%</td>
                 </tr>
                 <tr>
-                    <td>投资时间</td>
-                    <td>无固定期限，可长期持有。持有期内享受5.0%-8.0%浮动预期年化净收益。可随时通过债权转让退出，无赎回手续费。</td>
+                    <td>计息时间</td>
+                    <td>投资当日计息</td>
                 </tr>
                 <tr>
-                    <td>保障级别</td>
-                    <td>本金利息保障</td>
+                    <td>申购方式</td>
+                    <td>1元起投，个人申购金额不限制</td>
                 </tr>
                 <tr>
-                    <td>利息分配</td>
-                    <td>T+1到帐：投资人在投资次日会收到前1日利息（例如1月1日成功投资，则在1月2日收到首次利息）；此后每天，投资人会收到前一天利息，直至赎回。</td>
+                    <td>赎回上限</td>
+                    <td>个人每日赎回上限为50000元</td>
                 </tr>
                 <tr>
-                    <td>赎回机制</td>
-                    <td>通过债权转让退出，资金返至信用宝用户账户。</td>
+                    <td>赎回方式</td>
+                    <td>（1）计息中的份额及待收收益可随时申请赎回<br>（2）赎回当日不计息</td>
                 </tr>
                 <tr>
-                    <td>费用说明</td>
-                    <td>免费</td>
+                    <td>赎回到账日</td>
+                    <td>预计实时赎回到用户平台账户，提现到账时间视银行处理速度</td>
                 </tr>
                 <tr>
-                    <td>产品协议</td>
-                    <td><a href="" class="ui-font-blue">活期宝协议（范本）</a></td>
+                    <td>手续费</td>
+                    <td>无</td>
                 </tr>
+                <tr>
+                    <td>风控措施</td>
+                    <td>（1）100%本息保障<br>（2）阳光财产保险保障资金交易安全</td>
+                </tr>
+                
             </table>
             </div>
         </div>
         <div class="detail-list">
             <dl class="ask-item">
-                <dt class="ui-size14">1.我加入活期团并投资1万元，10天后我能赚到多少钱？</dt>
-                <dd class="ui-size14 ui-font-gray">活期团为投资者提供年化5.5%的预期净收益。1万元投资10天的净收益为：10,000*5.5%/365.4*10 = 15.05元。</dd>
+                <dt class="ui-size14">1、活期宝是否有期限限制？</dt>
+                <dd class="ui-size14 ui-font-gray">活期宝可随时转入，并随时转出。</dd>
             </dl>
             <dl class="ask-item">
-                <dt class="ui-size14">2.活期团安全吗？</dt>
-                <dd class="ui-size14 ui-font-gray">活期团投资本息无忧。投资资金能够实现高度分散，并将5.5%以上的收益作为风险保证金，保障投资本金和收益。</dd>
+                <dt class="ui-size14">2、转入活期宝的资金投到哪去了？</dt>
+                <dd class="ui-size14 ui-font-gray">转入活期宝的资金将委托信用宝平台投向合作的100%本息保障的优质借款项目。</dd>
             </dl>
             <dl class="ask-item">
-                <dt class="ui-size14">3.我什么时候会收到利息？我该如何拿回本金？</dt>
-                <dd class="ui-size14 ui-font-gray">投资后第1日起，投资人会收到前一天的利息（例如1月1日成功投资，则在1月2日收到首次利息）；此后每天，投资人会收到前一天的利息，直至退团。利息支付的金额将根据对应期间内投资团所投的每笔借款的实际还款情况，扣除10%的居间服务费，超过5.5%的部分作为投资团风险保证金，5.5%以下部分将根据根据每个投资人占投资团的份额进行分配，并支付至投资人的点融网账户供投资人提现或进行其他投资。若当无借款人还款或借款人还款金额不足以向所有投资人分配年化5.5%的利息，则将在下一个收款日补足，以此类推。本金部分自动复投，投资无固定期限，团员可随时通过债权转让收回本金，退团费率0%。</dd>
+                <dt class="ui-size14">3、活期宝的收益率如何确定</dt>
+                <dd class="ui-size14 ui-font-gray">活期宝在每日的24:00计算当日的年化收益率，收益率的高低视配置借款项目的收益率在7%-11%之间浮动。</dd>
             </dl>
             <dl class="ask-item">
-                <dt class="ui-size14">4.我的钱投给了谁？我怎么知道还款情况如何？</dt>
-                <dd class="ui-size14 ui-font-gray">点融网坚持向投资人披露每一笔资金的去向，和每一笔借款的还款情况。投资完成后，请登投资人账号，在“我的账户>我的投资>团团赚”中，点击投资的投资团的“详情”进行查看。</dd>
+                <dt class="ui-size14">4、活期宝的昨日收益如何计算？</dt>
+                <dd class="ui-size14 ui-font-gray">昨日收益=活期宝已确认的份额*昨日收益率/360，因小数点只保存2位，建议投资50元起。</dd>
             </dl>
+            <dl class="ask-item">
+                <dt class="ui-size14">5、转入后什么时候开始计算收益，每日的收益什么时候到账？</dt>
+                <dd class="ui-size14 ui-font-gray">当日23点59分前转入的资金当日计算收益，次日9点前收益转入“可用余额”。</dd>
+            </dl>
+            <dl class="ask-item">
+                <dt class="ui-size14">6、活期宝如何提现至银行账户？</dt>
+                <dd class="ui-size14 ui-font-gray">您需首先转出持有的活期份额至“可用余额”，然后即可申请提现。份额转出时间为实时，提现时间视银行处理速度。</dd>
+            </dl>
+            <dl class="ask-item">
+                <dt class="ui-size14">7、为什么活期宝的收益会这么高？</dt>
+                <dd class="ui-size14 ui-font-gray">活期宝是信用宝平台上所有产品中最主打的产品，平台对投资人做了最大程度的让利。也正因为如此，活期宝有每日总额度限制，大额资金可购买定期宝。</dd>
+            </dl>
+            <dl class="ask-item">
+                <dt class="ui-size14">8、活期宝的转出次数及金额有限制吗?</dt>
+                <dd class="ui-size14 ui-font-gray">单个用户每日转出次数不限制，每日转出上限为50000元。</dd>
+            </dl>
+        </div>
+        <div class="detail-list">
+        	
+        	<div class="invest-intro-pd ui-pb20">
+	        	<table class="invest-record" width="100%">
+	        		<colgroup>
+		            <col width="8%">
+		            <col width="37%">
+		            <col width="24%">
+		            <col width="26%">
+		            </colgroup>
+		            <tr>
+		            	<th>序号</th>
+		            	<th>用户</th>
+		            	<th>交易金额</th>
+		            	<th class="record-date">交易时间</th>
+		            </tr>
+		            <tr>
+		            	<td>85</td>
+		            	<td>1235******541</td>
+		            	<td>51,212.00</td>
+		            	<td class="record-date">2015-05-06 08:26:38</td>
+		            </tr>
+		            <tr>
+		            	<td>85</td>
+		            	<td>1235******541</td>
+		            	<td>51,212.00</td>
+		            	<td class="record-date">2015-05-06 08:26:38</td>
+		            </tr>
+		            <tr>
+		            	<td>85</td>
+		            	<td>1235******541</td>
+		            	<td>51,212.00</td>
+		            	<td class="record-date">2015-05-06 08:26:38</td>
+		            </tr>
+		            <tr>
+		            	<td>85</td>
+		            	<td>1235******541</td>
+		            	<td>51,212.00</td>
+		            	<td class="record-date">2015-05-06 08:26:38</td>
+		            </tr>
+		            <tr>
+		            	<td>85</td>
+		            	<td>1235******541</td>
+		            	<td>51,212.00</td>
+		            	<td class="record-date">2015-05-06 08:26:38</td>
+		            </tr>
+		            <tr>
+		            	<td>85</td>
+		            	<td>1235******541</td>
+		            	<td>51,212.00</td>
+		            	<td class="record-date">2015-05-06 08:26:38</td>
+		            </tr>
+	        	</table>
+	        	<div id="page" class="ui-pt30 ui-pb10">
+	        		<div class="pageholder">
+	        			<a href="">&lt;</a>
+	        			<a href="" class="cur">1</a>
+	        			<a href="">2</a>
+	        			<a href="">3</a>
+	        			<a href="">&gt;</a>
+	        		</div>
+	        	</div>
+	        </div>
         </div>
     </div>
 </div>
@@ -239,8 +341,50 @@
 	<!-- script -->
 	<script type="text/javascript" src="js/lib/jquery.js"></script>
     <script type="text/javascript" src="js/plugins/layer.js"></script>
-    <script type="text/javascript" src="js/lib/highcharts.js"></script>
-    <script type="text/javascript" src="js/chart.js"></script>
 	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript">
+		//tips 插件
+        $.fn.extend({
+        hoverTips : function (){
+        var self = $(this);
+        var sw = false;
+        if( !sw ) {
+            sw = true;
+            if(self.attr("id")=="pre_interest"){
+            	var htmlDom = $('<div class="tips-box-ye">'+
+            		'<dl class="sy-card-list">'+
+                        '<dd class="no-border conm-tips">预付利息：受让人垫付给出让人的债权自上一还款日至转让生效日的应计利息</dd>'+
+                    '</dl>'+
+            		'<i class="icon-tips-arrow"></i>'+
+            	'</div>')
+            }else
+            {
+              var htmlDom = $('<div class="tips-box-ye">'+
+                    '<dl class="sy-card-list">'+
+                        '<dd class="no-border">账户余额(元)<span class="fr ui-font-blue">521,512.00</span></dd>'+
+                        '<dd>账户礼金(元)<span class="fr ui-font-blue">521,512.00</span></dd>'+
+                    '</dl>'+
+                    '<i class="icon-tips-arrow"></i>'+
+                '</div>')
+             }
+        }
+        self.on("mouseover",function(){
+            $("body").append( htmlDom );
+            var left = self.offset().left-10;
+            var top = self.offset().top - htmlDom.outerHeight()-10;
+            htmlDom.css({"left":left,"top":top - 10,"display":"block"});
+            htmlDom.stop().animate({ "top" : top ,"opacity" : 1},300);
+        });
+        self.on("mouseout",function(){
+            var top = parseInt(htmlDom.css("top"));
+            htmlDom.stop().animate({ "top" : top - 10 ,"opacity" : 0},300,function(){
+                htmlDom.remove();
+                sw = false;
+            });
+        });
+    }
+});
+$(".icon-wenhao").hoverTips();
+	</script>
 </body>
 </html>
