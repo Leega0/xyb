@@ -99,7 +99,7 @@
 	</div>
 	<!-- end1 -->
 	<!-- start2 -->
-	<div class="lender-info" style="display:none">
+	<div class="lender-info lender-info2" style="display:none">
 		<div class="ui-form-item">
 			<p class="ui-input-body ui-input-middle">
 				<i class="ui-label-icon icon-form-person"></i>
@@ -120,10 +120,39 @@
 			</p>
 		</div>
 		<div class="ui-form-item">
-			<p class="ui-form-btn"><a href="" class="ui-btn ui-btn-blue">立即申请</a></p>
+			<p class="ui-input-body">
+				<i class="ui-label-icon icon-form-money"></i>
+				<input type="text" placeholder="借款金额">
+			</p>
 		</div>
-		<p class="ui-font-gray ui-pb40">支持城市：<br>沈阳、郑州、西安、洛阳、福州、南阳、南昌、许昌、包头、上海、石家庄、淄博、扬州、厦门
-		</p>
+		<div class="ui-form-item">
+			<p class="ui-input-body ui-input-short" style="width:110px;">
+				<select name="" id="">
+					<option value="所在省份">所在省份</option>
+					<option value="广东">广东</option>
+					<option value="湖北">湖北</option>
+				</select>
+			</p>
+			<p class="ui-input-body ui-input-short ui-ml10" style="width:160px;">
+				<select name="" id="">
+					<option value="所在地区">所在地区</option>
+					<option value="深圳">深圳</option>
+					<option value="广州">广州</option>
+				</select>
+			</p>
+		</div>
+		<div class="ui-form-item input-vali-code">
+					<p class="ui-input-body ui-input-middle" id="code_val_p" style="width: 170px;margin-right: 10px;">
+						<input type="text" id="vcode" placeholder="输入右侧验证码">	
+					</p>
+					<a class="ui-code" href="javascript:void(0);" name="refresh" id="refresh" title="点击刷新" onclick="refresh();">
+						<img src="../images/valid-code.jpg" alt="imgVcode" id="imgVcode"> 
+					</a>
+				   <div id="code_val"></div>
+		</div>
+		<div class="ui-form-item">
+			<p class="ui-form-btn ui-pt10"><a href="javascript:;" class="ui-btn ui-btn-blue" id="btn_lt_apply">立即申请</a></p>
+		</div>
 	</div>	
 	<!-- end2 -->
 	</div>
@@ -413,8 +442,23 @@
 	</div>
 </div>
 <!-- footer end -->
+<!-- 弹窗 -->
+<div class="content_layer lend-xsd-layer">
+	<div class="detail-invest-layer">
+            <div class="detail-invest-content align-center">
+            	<div class="user-sec-input  page-tips real-name-valid">
+						<i class="icon-bind-tips"></i>
+						<p class="ui-size14 ui-lh">您的申贷金额&le;10000元,请您选择信闪贷极速借款</p>
+						<div class="ui-form-item">
+									<a href="" class="ui-btn ui-btn-blue btn-bindphone-now">使用信闪贷极速借款</a>
+							</div>
+					</div>
+            </div>
+    </div>
+</div>
 	<!-- script -->
 	<script type="text/javascript" src="js/lib/jquery.js"></script>
+	<script type="text/javascript" src="../js/plugins/layer.js"></script>
 	<script type="text/javascript" src="js/common.js"></script>
 	<script type="text/javascript">
 		function xsdTab(tabList,tabCont){
@@ -450,6 +494,17 @@
 				$(".unexpand").show();
 				$(".table-expand-scroll").css('height', 'auto');
 		}
+		// 弹窗
+		$("#btn_lt_apply").on('click',function(){
+			layer.open({
+              type:1,
+                title:false,
+                shadeClose:true,
+                closeBtn: true,
+                area: ['500px','388px'],
+                content:$(".lend-xsd-layer")
+          });
+		})
 	</script>
 </body>
 </html>

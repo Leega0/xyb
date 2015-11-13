@@ -1,0 +1,943 @@
+@charset "UTF-8";
+/*新手页面*/
+.g-newstep-icon {
+  display: inline-block;
+  width: 64px;
+  height: 60px;
+  position: relative;
+  top: 6px;
+  margin-right: 12px;
+}
+
+.g-newstep-icon.step-one {
+  background: url("../images/activity-page/new-version-v3/g-newstep-1.png") no-repeat;
+}
+
+.g-newstep-icon.step-two {
+  background: url("../images/activity-page/new-version-v3/g-newstep-2.png") no-repeat;
+}
+
+.g-newstep-icon.step-three {
+  background: url("../images/activity-page/new-version-v3/g-newstep3.png") no-repeat;
+}
+
+.activity-new-version {
+  background-color: #e6e7e9;
+}
+
+.activity-new-version .level-top {
+  height: 530px;
+  background: url("../images/activity-page/new-version-v3/g-newreg-top.jpg") no-repeat top center;
+}
+
+.activity-new-version .level-top.level-top-newer {
+  overflow: hidden;
+  height: 651px;
+  background: url("../images/activity-page/new-version-v3/g-ani-bg.png") no-repeat top center;
+}
+
+.activity-new-version .level-top.level-top-newer + div {
+  background: none;
+  height: 400px;
+}
+
+.activity-new-version .level-top.level-top-newer + div .h1-title {
+  padding-top: 0;
+}
+
+.activity-new-version .level-top.level-top-newer .hand-layer {
+  top: 8% !important;
+  left: 20% !important;
+  position: absolute;
+  z-index: 99;
+}
+
+.activity-new-version .level-top.level-top-newer .contain_wrap {
+  position: absolute !important;
+  left: 50%;
+  margin-left: -600px;
+  z-index: 999;
+  top: 120px;
+}
+
+.activity-new-version .level-one {
+  height: 537px;
+  background: url("../images/activity-page/new-version-v3/g-newer-regbg.jpg") no-repeat top center;
+}
+
+.activity-new-version .level-one .h1-title {
+  padding-top: 110px;
+  font-size: 40px;
+  font-weight: normal;
+  margin: 0;
+  color: #3e67cc;
+  text-align: center;
+}
+
+.activity-new-version .level-two {
+  height: 801px;
+  background: url("../images/activity-page/new-version-v3/g-gifts-itembg.jpg") no-repeat top center;
+}
+
+.activity-new-version .level-two .h1-title {
+  padding-top: 110px;
+  font-size: 40px;
+  font-weight: normal;
+  margin: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.activity-new-version .level-three {
+  background-color: #e6e7e9;
+}
+
+.activity-new-version .level-three .contain_wrap .h1-title {
+  font-size: 40px;
+  font-weight: normal;
+  margin: 0;
+  color: #3e67cc;
+  text-align: center;
+  padding-bottom: 66px;
+}
+
+.activity-new-version .level-three .g-new-intro {
+  font-size: 22px;
+  color: #3e68cd;
+  padding-bottom: 20px;
+}
+
+.activity-new-version .level-bottom {
+  height: 270px;
+  background: #3e68cd;
+}
+
+.activity-new-version .copy-right {
+  padding-top: 80px;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  line-height: 40px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+.g-newer-reg {
+  padding-top: 70px;
+}
+
+.g-newer-reg .g-gifts-img {
+  margin-left: 60px;
+}
+
+.g-newer-reg .g-gifts-text {
+  margin-left: 190px;
+  padding-top: 40px;
+}
+
+.g-newer-reg .g-gifts-text p {
+  color: #3e67cc;
+  font-size: 20px;
+}
+
+.g-newer-reg .g-gifts-text p.text {
+  line-height: 1.4;
+}
+
+.g-newe-btn {
+  display: inline-block;
+  height: 58px;
+  line-height: 58px;
+  font-size: 24px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  background-color: #f65f63;
+  box-shadow: 0 3px 0 #df2328;
+}
+
+.g-newe-btn:hover {
+  background-color: #f63f60;
+}
+
+.g-newe-btn.reg-now {
+  margin-top: 50px;
+  width: 290px;
+}
+
+.g-newe-btn.invest-now {
+  width: 290px;
+  margin-top: 50px;
+}
+
+.g-gifts-list {
+  overflow: hidden;
+  margin-top: 60px;
+}
+
+.g-gifts-list li {
+  float: left;
+  margin-left: 66px;
+}
+
+.g-gifts-list li dl {
+  width: 308px;
+  height: 308px;
+  text-align: center;
+  background: url("../images/activity-page/new-version-v3/g-new-giftbg.png") no-repeat center;
+}
+
+.g-gifts-list li dl.two {
+  background: url("../images/activity-page/new-version-v3/g-new-giftbg2.png") no-repeat center;
+}
+
+.g-gifts-list li dl.three {
+  background: url("../images/activity-page/new-version-v3/g-new-giftbg3.png") no-repeat center;
+}
+
+.g-gifts-list li dl dt {
+  font-size: 22px;
+  color: #fff;
+  padding-top: 28px;
+}
+
+.g-gifts-list li dl dd {
+  font-size: 24px;
+  color: #e8503a;
+  font-weight: bold;
+  padding-top: 150px;
+}
+
+.g-newe-rule {
+  color: #3e68cd;
+  padding: 20px 0;
+}
+
+.g-newe-rule .title {
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+
+.g-newe-rule .ui-size14 {
+  line-height: 2;
+}
+
+/*老手页面*/
+.activity-old-version .level-top {
+  height: 320px;
+}
+
+.activity-old-version .level-one {
+  height: 420px;
+}
+
+.activity-old-version .level-one .black-scroll-bar {
+  position: absolute;
+  top: 194px;
+  left: 0;
+  height: 21px;
+  width: 100%;
+}
+
+.activity-old-version .level-one .yellow-slide-bar {
+  width: 1080px;
+  margin: 6px auto 0;
+}
+
+.activity-old-version .level-one .yellow-slide-bar span {
+  float: left;
+  height: 7px;
+  display: block;
+}
+
+.activity-old-version .level-one .yellow-slide-bar .le, .activity-old-version .level-one .yellow-slide-bar .ri {
+  width: 5px;
+}
+
+.activity-old-version .level-one .yellow-slide-bar .ri {
+  background-position: -5px 0;
+}
+
+.activity-old-version .level-one .yellow-slide-bar .mid {
+  width: 160px;
+  background: #fdd803;
+}
+
+.activity-old-version .level-one .yellow-slide-bar .mid.second-step {
+  width: 560px;
+}
+
+.activity-old-version .level-one .yellow-slide-bar .mid.third-step {
+  width: 1070px;
+}
+
+.activity-old-version .level-one .click-park {
+  position: absolute;
+  top: 164px;
+  left: 0;
+}
+
+.activity-old-version .level-one .click-park li {
+  text-align: center;
+  width: 200px;
+  float: left;
+  padding-left: 200px;
+}
+
+.activity-old-version .level-one .click-park li:first-child {
+  padding-left: 100px;
+}
+
+.activity-old-version .level-one .click-park li.on .cir {
+  background-position: -45px 0;
+}
+
+.activity-old-version .level-one .click-park li.on .gift {
+  background-position: -70px 0;
+  color: #fdd502;
+}
+
+.activity-old-version .level-one .click-park li.on .squ {
+  background-position: -178px 0;
+}
+
+.activity-old-version .level-one .click-park .date {
+  text-align: center;
+  font-size: 14px;
+  color: #181640;
+}
+
+.activity-old-version .level-one .click-park .cir {
+  display: block;
+  width: 28px;
+  height: 29px;
+  margin: 9px auto 0;
+  background-position: 6px 8px;
+}
+
+.activity-old-version .level-one .click-park .squ {
+  display: block;
+  cursor: pointer;
+  width: 168px;
+  height: 164px;
+  margin: 16px auto 0;
+  color: #181640;
+  font-size: 24px;
+  padding-top: 16px;
+}
+
+.activity-old-version .level-one .click-park .squ:hover {
+  background-position: -178px 0;
+}
+
+.activity-old-version .level-one .click-park .squ:hover .text {
+  display: block;
+}
+
+.activity-old-version .level-one .click-park .squ:hover .gift {
+  background-position: -70px 0;
+  color: #fdd502;
+}
+
+.activity-old-version .level-one .click-park .squ:active {
+  background-position: 0 0;
+}
+
+.activity-old-version .level-one .click-park .gift {
+  display: block;
+  width: 60px;
+  height: 28px;
+  padding-top: 28px;
+  margin: 0 auto 12px;
+  color: #dfae05;
+  font-size: 24px;
+}
+
+.activity-old-version .level-one .click-park .text {
+  display: none;
+  padding-top: 46px;
+  color: #181640;
+  font-size: 18px;
+}
+
+.activity-old-version .level-two .contain_wrap {
+  height: 640px;
+  padding-top: 1px;
+}
+
+.activity-old-version .level-two .ui-btn {
+  display: block;
+  background: #ee632c;
+  width: 340px;
+  height: 66px;
+  box-shadow: 0 5px 0 #d8501a;
+  padding: 0;
+  line-height: 66px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.activity-old-version .level-two .ui-btn:hover {
+  background: #fd5715;
+}
+
+.activity-old-version .level-two .ui-btn:active {
+  background: #ee632c;
+}
+
+.activity-old-version .level-two .ui-btn.done {
+  background: #999999;
+  box-shadow: 0 5px 0 #666666;
+}
+
+.activity-old-version .level-two .app-download {
+  position: fixed;
+  top: 50%;
+  margin-top: -118px;
+}
+
+.activity-old-version .level-two .active-park {
+  height: 640px;
+}
+
+.activity-old-version .level-two .active-park.on {
+  display: block !important;
+}
+
+.activity-old-version .level-two .active-park-one {
+  margin-top: 60px;
+  display: none;
+}
+
+.activity-old-version .level-two .active-park-one .text {
+  padding: 90px 0 0 740px;
+  color: #181640;
+  font-size: 36px;
+  line-height: 64px;
+}
+
+.activity-old-version .level-two .active-park-one .ui-btn {
+  margin: 100px 0 0 740px;
+}
+
+.activity-old-version .level-two .active-park-two {
+  margin-top: 80px;
+  display: none;
+}
+
+.activity-old-version .level-two .active-park-two .squ {
+  float: left;
+  height: 287px;
+  width: 316px;
+  margin-left: 80px;
+}
+
+.activity-old-version .level-two .active-park-two .squ:first-child {
+  margin-left: 40px;
+}
+
+.activity-old-version .level-two .active-park-two .money {
+  display: block;
+  width: 106px;
+  height: 106px;
+  margin: 36px auto 24px;
+}
+
+.activity-old-version .level-two .active-park-two .money-one {
+  background-position: 0 0;
+}
+
+.activity-old-version .level-two .active-park-two .money-two {
+  background-position: -116px 0;
+}
+
+.activity-old-version .level-two .active-park-two .money-three {
+  background-position: -232px 0;
+}
+
+.activity-old-version .level-two .active-park-two .title {
+  text-align: center;
+  font-size: 24px;
+  color: #e8503a;
+  font-weight: bold;
+}
+
+.activity-old-version .level-two .active-park-two .text {
+  margin-top: 38px;
+  text-align: center;
+  font-size: 20px;
+  color: #fde208;
+  font-weight: bold;
+}
+
+.activity-old-version .level-two .active-park-two .ui-btn {
+  margin: 80px auto 0;
+}
+
+.activity-old-version .level-two .active-park-three {
+  margin-top: 80px;
+  display: none;
+}
+
+.activity-old-version .level-two .active-park-three .card {
+  float: left;
+  height: 280px;
+  width: 296px;
+  margin-left: 80px;
+}
+
+.activity-old-version .level-two .active-park-three .card-one {
+  background-position: 0 0;
+}
+
+.activity-old-version .level-two .active-park-three .card-two {
+  background-position: -306px 0;
+}
+
+.activity-old-version .level-two .active-park-three .card-three {
+  background-position: -612px 0;
+}
+
+.activity-old-version .level-two .active-park-three .tips {
+  font-size: 14px;
+  color: #ba9b22;
+  padding: 50px 0 0 84px;
+}
+
+.activity-old-version .level-two .active-park-three .text {
+  padding-top: 250px;
+  text-align: center;
+  font-size: 20px;
+  color: #34302f;
+}
+
+.activity-old-version .level-two .active-park-three .ui-btn {
+  margin: 50px auto 0;
+}
+
+.contain_wrap {
+  position: relative;
+}
+
+/*投资箱体*/
+.activity-invest {
+  position: relative;
+  height: 180px;
+  margin: 0 auto 30px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.activity-invest .activity-invest-title {
+  position: absolute;
+  top: 40px;
+  left: 113px;
+  font-size: 14px !important;
+}
+
+.activity-invest img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: block;
+  width: 113px;
+  height: 113px;
+  z-index: 1;
+}
+
+.activity-invest li {
+  float: left;
+  height: 100%;
+}
+
+.activity-invest p {
+  font-size: 18px;
+  color: #3e68cd;
+}
+
+.activity-invest .p1 {
+  font-size: 14px;
+}
+
+.activity-invest .p2 {
+  font-size: 40px;
+}
+
+.activity-invest .p3 {
+  font-size: 14px;
+}
+
+.activity-invest .i1 {
+  font-size: 24px;
+}
+
+.activity-invest .add-rate {
+  position: absolute;
+  bottom: 10px;
+  right: 0px;
+  display: block;
+  font-size: 14px;
+  color: #fff;
+  width: 60px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.activity-invest .rate {
+  width: 200px;
+  padding-left: 116px;
+}
+
+.activity-invest .rate .p1 {
+  margin-top: 30px;
+}
+
+.activity-invest .rate .p2 {
+  position: relative;
+  margin-top: 68px;
+}
+
+.activity-invest .rate .p3 {
+  margin-top: 16px;
+}
+
+.activity-invest .date {
+  width: 160px;
+  padding-left: 70px;
+}
+
+.activity-invest .date .p2 {
+  margin-top: 70px;
+}
+
+.activity-invest .date .p3 {
+  margin-top: 16px;
+}
+
+.activity-invest .limit {
+  width: 230px;
+  padding-left: 70px;
+}
+
+.activity-invest .limit .p1 {
+  margin-top: 70px;
+  color: #ababab;
+}
+
+.activity-invest .limit .p3 {
+  margin-top: 16px;
+}
+
+.activity-invest .ui-progress {
+  position: relative;
+  width: 132px;
+  text-align: center;
+  height: 15px;
+  margin-top: 5px;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #ccc;
+}
+
+.activity-invest .ui-progress-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  z-index: 99;
+  border-radius: 3px;
+  background-color: #10bf56;
+}
+
+.activity-invest .ui-progress-value {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+.activity-invest .btn {
+  position: relative;
+  float: right;
+  width: 320px;
+  background-color: #dff2ff;
+}
+
+.activity-invest .btn a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 240px;
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+  margin: -30px 0 0 -120px;
+  font-size: 24px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.activity-invest .btn .invest-end {
+  background-color: #ababab;
+  box-shadow: 0 3px 0 #989696;
+}
+
+.activity-invest .btn .invest-now {
+  background-color: #f65f63;
+  box-shadow: 0 3px 0 #df2328;
+}
+
+.activity-invest .btn .invest-now:hover {
+  background-color: #f63f60;
+}
+
+.activity-invest .btn .invest-now:active {
+  background-color: #f63f60;
+}
+
+/*注册框*/
+.login-box {
+  position: absolute;
+  top: 46px;
+  right: 0;
+  width: 328px;
+  padding: 26px 26px 46px 26px;
+  background-color: #fff;
+  box-shadow: 0 5px 0 #c2c2c2;
+}
+
+.login-box .text-top {
+  margin-bottom: 24px;
+  color: #2f323f;
+  font-size: 24px;
+  text-align: center;
+}
+
+.login-box .text-top span {
+  font-weight: bold;
+}
+
+.login-box .tips-link {
+  color: #2c97f4;
+}
+
+.login-box .tips-link:hover {
+  text-decoration: underline;
+}
+
+.login-box .tips-link:active {
+  text-decoration: none;
+}
+
+.login-box .img {
+  margin: 30px auto 0;
+  display: block;
+  width: 280px;
+}
+
+.login-box .text-tips {
+  color: #474747;
+  font-size: 14px;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.login-box .ui-btn {
+  padding: 0;
+  margin: 0;
+}
+
+.login-box .sure-btn {
+  height: 42px;
+  line-height: 42px;
+  width: 100%;
+  font-size: 16px;
+  background-color: #2c97f4;
+}
+
+.login-box .sure-btn:hover {
+  background-color: #56b1ff;
+}
+
+.login-box .sure-btn:active {
+  background-color: #2c97f4;
+}
+
+.login-box .text-bottom {
+  text-align: center;
+  font-size: 14px;
+  color: #474747;
+  margin-top: 20px;
+}
+
+.login-box .input-box {
+  height: 28px;
+  width: 316px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  padding: 12px 0 0 10px;
+}
+
+.login-box .input-box input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+}
+
+.login-box .input-box .ui-label-icon {
+  margin: 0;
+  width: 27px;
+  background: url("../images/activity-page/new-version-v3/ui-label-icon.png") no-repeat;
+}
+
+.login-box .input-box .ui-label-icon.icon-form-phone {
+  background-position: 0 0;
+}
+
+.login-box .input-box .ui-label-icon.icon-form-code {
+  background-position: -36px 0;
+}
+
+.login-box .input-box .ui-label-icon.icon-form-key {
+  background-position: -72px 0;
+}
+
+.login-box .input-box .input {
+  position: relative;
+  top: -2px;
+  padding-left: 10px;
+  display: inline-block;
+  width: 260px;
+  font-size: 14px;
+  border: 0;
+  outline: 0;
+}
+
+.login-box .input-box-code {
+  margin-bottom: 20px;
+}
+
+.login-box .input-box-code .input-box {
+  float: left;
+  width: 160px;
+  margin-bottom: 0;
+}
+
+.login-box .input-box-code .input-box .input {
+  width: 100px;
+}
+
+.login-box .input-box-code .code-btn {
+  float: right;
+  font-size: 16px;
+  height: 42px;
+  width: 152px;
+  background-color: #ffb040;
+}
+
+.login-box .input-box-code .code-btn:hover {
+  background-color: #ffcb5b;
+}
+
+.login-box .input-box-code .code-btn:active {
+  background-color: #ffb040;
+}
+
+.login-box .input-box-img {
+  margin-bottom: 20px;
+}
+
+.login-box .input-box-img .input-box {
+  float: left;
+  width: 200px;
+  margin-bottom: 0;
+}
+
+.login-box .input-box-img .input-box input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+}
+
+.login-box .input-box-img .input-box .input {
+  width: 100px;
+}
+
+.login-box .input-box-img .img-btn {
+  float: right;
+  height: 42px;
+  width: 100px;
+  border: 0;
+  outline: 0;
+}
+
+.login-box .auto-login {
+  color: #b9b9b9;
+  font-size: 12px;
+  margin: 10px 0 20px;
+}
+
+.login-box .auto-login input {
+  position: relative;
+  top: 2px;
+}
+
+.login-box .auto-login .a-link {
+  color: #2c97f4;
+  display: inline-block;
+  padding: 0 6px;
+}
+
+.login-box .auto-login .a-link:hover {
+  text-decoration: underline;
+}
+
+.login-box .auto-login .a-link:active {
+  text-decoration: none;
+}
+
+.login-box .auto-login .label {
+  cursor: pointer;
+}
+
+.login-box .auto-login .label:hover {
+  text-decoration: underline;
+}
+
+.login-box .auto-login .label:active {
+  text-decoration: none;
+}
+
+.dis-none {
+  display: none !important;
+}
+
+.scroll-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.scroll-top .scroll-top-bg, .scroll-top .scroll-top-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 50px;
+}
+
+.scroll-top .scroll-top-bg {
+  background: #000;
+  opacity: 0.3;
+}
+
+.scroll-top .scroll-top-btn {
+  background: url("../images/sprites/active-scroll-top-btn.png") no-repeat;
+}
+
+.scroll-top .scroll-top-btn:hover {
+  background-position: -60px 0;
+}

@@ -43,7 +43,22 @@ h5{
 	}
 }
 .lender-info{
-	padding:20px 30px;	
+		padding: 20px 30px;
+	&.lender-info2{
+		padding:30px 60px 0;
+	}
+	.ui-form-item{
+		padding:5px 0;
+		.ui-input-middle{
+			width: 190px;
+		}
+		.ui-input-short{
+			margin-left: 0;
+		}
+		.icon-form-money{
+			background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAQCAYAAAD52jQlAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkJBMkE4RThGODNCMTExRTU5NjUzRjRFMzE3MUE0MzQwIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkJBMkE4RTkwODNCMTExRTU5NjUzRjRFMzE3MUE0MzQwIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QkEyQThFOEQ4M0IxMTFFNTk2NTNGNEUzMTcxQTQzNDAiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QkEyQThFOEU4M0IxMTFFNTk2NTNGNEUzMTcxQTQzNDAiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6zElM6AAAAeUlEQVR42tSUUQrAIAxDzdgle0G9Va+SKayjk22gzg/7I1R8JE0RJMNfparl4BYm1J5SMqkQkevC+rmHVqhXygy6AXurQFGBPRC90LfH6FUKS/+0Tg/0M25JHzHGz/m1BDV3peqgRudp0Cf7Qxuwjv0pSrHML3UIMABNNzVdLH6aegAAAABJRU5ErkJggg==) no-repeat;
+		}
+	}	
 	.ui-font-gray{line-height: 1.8;}
 	.lend-step{
 		overflow: hidden;
@@ -59,8 +74,8 @@ h5{
 	}
 	.lend-qcode{
 		.img{
-			width: 166px;
-			height: 166px;
+			width: 180px;
+			height: 180px;
 			border:1px solid #eee;
 			margin: 0 auto;
 			table{
@@ -280,4 +295,40 @@ h5{
 .go_back_box{
 	width:100%;
 	padding-top: 26px !important;
+}
+.real-name-valid{
+	width:320px;
+	.ui-form-item{
+		padding:15px 0;
+	}
+	.w100{
+		width: 100%;
+	}
+	.w90{
+		width: 90%;
+	}
+	.get-valid{
+		width: 100%;
+		padding:12px 0;
+	}
+	.icon-bind-tips{
+		display:inline-block;
+		width:40px;
+		height:40px;
+		background:url(../images/sprites/icon-bind-tips.png) no-repeat;
+		margin-bottom: 20px;
+	}
+	.btn-bindphone-now{
+		width: 250px;
+		height: 42px;
+		line-height: 42px;
+		padding:0;
+		margin:60px 0;
+		text-align: center;
+	}
+}
+.page-tips {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 60px;
 }

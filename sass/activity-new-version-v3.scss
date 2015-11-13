@@ -1,97 +1,101 @@
 /*新手页面*/
+// 步骤样式
+.g-newstep-icon{
+	display:inline-block;
+	width:64px;
+	height: 60px;
+	position: relative;
+	top:6px;
+	margin-right: 12px;
+	&.step-one{
+		background: url("../images/activity-page/new-version-v3/g-newstep-1.png") no-repeat;
+			}
+	&.step-two{
+		background: url("../images/activity-page/new-version-v3/g-newstep-2.png") no-repeat;
+			}
+	&.step-three{
+		background: url("../images/activity-page/new-version-v3/g-newstep3.png") no-repeat;
+			}
+}
 .activity-new-version{
+	background-color: #e6e7e9;
 	.level-top{
-		height:500px;
-		background:url("../images/activity-page/new-version-v2/new-level-top.jpg") no-repeat top center;
-	}
-	.level-one{
-		height:565px;
-		background: url("../images/activity-page/new-version-v2/new-level-one.jpg") no-repeat top center;
-		.h1-title{
-			padding-top:130px;
-		}
-		.data{
-			padding-top:280px;
-			li{
-				width:290px;
-				text-align:center;
-				float:left;
-				font-size: 26px;
-				line-height:42px;
-				margin-left: 136px;
-				&:first-child{
-					margin-left: 44px;
+		height:530px;
+		background:url("../images/activity-page/new-version-v3/g-newreg-top.jpg") no-repeat top center;
+		&.level-top-newer{
+			overflow: hidden;
+			height: 651px;
+			&+div{
+				background: none;
+				height:400px;
+				.h1-title{
+					padding-top: 0;
 				}
 			}
-
-			span{
-				font-weight:bold;
+			.hand-layer{
+				top: 8% !important;
+				left: 20% !important;
+				position: absolute;
+				z-index: 99;
 			}
-			.data-one{
-				color:#83350a;
+			.contain_wrap{
+				position: absolute !important;
+				left: 50%;
+				margin-left: -600px;
+				z-index: 999;
+				top: 120px;;
 			}
-			.data-two{
-				color:#0d364f;
-			}
-			.data-three{
-				color:#094e44;
-			}
+			background:url("../images/activity-page/new-version-v3/g-ani-bg.png") no-repeat top center;
 		}
 	}
-	&.done{
-		.level-top{
-			background:url("../images/activity-page/new-version-v2/new-level-top-done.jpg") no-repeat top center;
+	.level-one{
+		height:537px;
+		background: url("../images/activity-page/new-version-v3/g-newer-regbg.jpg") no-repeat top center;
+		.h1-title{
+			padding-top:110px;
+			font-size: 40px;
+			font-weight: normal;
+			margin:0;
+			color:#3e67cc;
+			text-align:center;
 		}
 	}
 	.level-two{
-		height:587px;
-		background: url("../images/activity-page/new-version-v2/new-level-two.jpg") no-repeat top center;
-		.price-btn{
-			position:absolute;
-			top:120px;
-			left:460px;
-			display:block;
-			width:305px;
-			height:85px;
-			background: url("../images/activity-page/new-version-v2/price-btn.png") no-repeat top left;
-			&:hover{
-				background-position: 0 -95px;
-			}
-			&:active{
-				background-position: 0 0;
-			}
-		}
+		height:801px;
+		background: url("../images/activity-page/new-version-v3/g-gifts-itembg.jpg") no-repeat top center;
 		.h1-title{
-			padding-top:480px;
+			padding-top:110px;
+			font-size: 40px;
+			font-weight: normal;
+			margin:0;
+			color:#fff;
+			text-align:center;
 		}
 	}
 	.level-three{
-		background:#bf2a23;
+		background-color: #e6e7e9;
 		.contain_wrap{
-			padding-top:20px;
-			padding-bottom:1px;
+			.h1-title{
+			    font-size: 40px;
+			    font-weight: normal;
+			    margin: 0;
+			    color: #3e67cc;
+			    text-align: center;
+			    padding-bottom: 66px;
+			}
 		}
-	}	
-	.level-four{
-		height:284px;
-		background: url("../images/activity-page/new-version-v2/new-level-four.jpg") no-repeat top center;
-		.h1-title{
-			padding-top:170px;
+		.g-new-intro{
+			font-size: 22px;
+			color: #3e68cd;
+			padding-bottom: 20px;
 		}
 	}
 	.level-bottom{
-		height:648px;
-		background:#2e303d;
-	}
-	.h1-title{
-		margin:0;
-		color:#f6d91d;
-		font-size:36px;
-		font-width: bold;
-		text-align:center;
+		height:270px;
+		background:#3e68cd;
 	}
 	.copy-right{
-		padding-top:130px;
+		padding-top:80px;
 		color:#fff;
 		font-size:12px;
 		text-align:center;
@@ -100,22 +104,104 @@
 		filter: alpha(opacity=50);
 	}
 }
+// 已登录状态
+.g-newer-reg{
+	padding-top: 70px;
+	.g-gifts-img{
+		margin-left: 60px;
+	}
+	.g-gifts-text{
+		margin-left: 190px;
+		padding-top: 40px;
+		p{
+			color: #3e67cc;
+			font-size: 20px;
+			&.text{
+				line-height: 1.4;
+			}
+		}
+	}
+}
+// btn
+	.g-newe-btn{
+		display: inline-block;
+		height: 58px;
+		line-height: 58px;
+		font-size: 24px;
+		border-radius:5px;
+		color: #fff;
+		font-weight: bold;
+		background-color: #f65f63;
+		box-shadow: 0 3px 0 #df2328;
+		&:hover{
+			background-color: #f63f60;
+		}
+		&.reg-now{
+			margin-top: 50px;
+			width: 290px;
+		}
+		&.invest-now{
+			width: 290px;
+			margin-top: 50px;
+		}
+	}
+// 礼物列表
+.g-gifts-list{
+	overflow: hidden;
+	margin-top: 60px;
+	li{
+		float: left;
+		margin-left: 66px;
+		dl{
+			width: 308px;
+			height: 308px;
+			text-align: center;
+			background: url("../images/activity-page/new-version-v3/g-new-giftbg.png") no-repeat center;
+			&.two{
+				background: url("../images/activity-page/new-version-v3/g-new-giftbg2.png") no-repeat center;
+			}
+			&.three{
+				background: url("../images/activity-page/new-version-v3/g-new-giftbg3.png") no-repeat center;
+			}
+			dt{
+				font-size: 22px;
+				color: #fff;
+				padding-top: 28px;
+			}
+			dd{
+				font-size: 24px;
+				color: #e8503a;
+				font-weight: bold;
+				padding-top: 150px;
+			}
+		}
+	}
+}
+// 规则
+.g-newe-rule{
+	color:#3e68cd;
+	padding:20px 0;
+	.title{
+		font-size: 24px;
+		padding-bottom: 10px;
+	}
+	.ui-size14{
+		line-height: 2;
+	}
+}
 /*老手页面*/
 .activity-old-version{
 	.level-top{
 		height:320px;
-		background:url("../images/activity-page/new-version-v2/old-level-top.jpg") no-repeat top center;
 	}
 	.level-one{
 		height:420px;
-		background:url("../images/activity-page/new-version-v2/old-level-one.jpg") no-repeat top center;
 		.black-scroll-bar{
 			position:absolute;
 			top:194px;
 			left:0;
 			height:21px;
 			width:100%;
-			background:url("../images/activity-page/new-version-v2/old-black-scroll-bar-bg.png") no-repeat top center;
 			
 		}
 		.yellow-slide-bar{
@@ -128,7 +214,6 @@
 			}
 			.le,.ri{
 				width:5px;
-				background:url("../images/activity-page/new-version-v2/old-yellow-scroll-side.png") no-repeat;
 			}
 			.ri{
 				background-position: -5px 0;
@@ -179,7 +264,6 @@
 				width:28px;
 				height:29px;
 				margin:9px auto 0;
-				background: url("../images/activity-page/new-version-v2/old-dot.png") no-repeat;
 				background-position: 6px 8px;
 			}
 			.squ{
@@ -188,7 +272,6 @@
 				width:168px;
 				height:164px;
 				margin:16px auto 0;
-				background: url("../images/activity-page/new-version-v2/old-hexagon.png") no-repeat;
 				color:#181640;
 				font-size:24px;
 				padding-top:16px;
@@ -214,7 +297,6 @@
 				margin:0 auto 12px;
 				color:#dfae05;
 				font-size:24px;
-				background: url("../images/activity-page/new-version-v2/old-gift.png") no-repeat;
 			}
 			.text{
 				display: none;
@@ -225,7 +307,6 @@
 		}
 	}
 	.level-two{
-		background:#fcca02 url("../images/activity-page/new-version-v2/old-level-two.png") no-repeat top center;
 		.contain_wrap{
 			height:640px;
 			padding-top:1px;
@@ -265,7 +346,6 @@
 		.active-park-one{
 			margin-top:60px;
 			display: none;
-			background: url("../images/activity-page/new-version-v2/old-active-park-one.png") no-repeat 60px 0;
 			.text{
 				padding: 90px 0 0 740px;
 				color:#181640;
@@ -279,12 +359,10 @@
 		.active-park-two{
 			margin-top:80px;
 			display: none;
-			background: url("../images/activity-page/new-version-v2/old-active-park-two-strone.png") no-repeat 309px 390px;
 			.squ{
 				float:left;
 				height:287px;
 				width:316px;
-				background: url("../images/activity-page/new-version-v2/old-active-park-two.png") no-repeat;
 				margin-left: 80px;
 				&:first-child{
 					margin-left: 40px;
@@ -295,7 +373,6 @@
 				width:106px;
 				height:106px;
 				margin:36px auto 24px;
-				background: url("../images/activity-page/new-version-v2/old-money.png") no-repeat;
 			}
 			.money-one{
 				background-position: 0 0;
@@ -330,7 +407,6 @@
 				float:left;
 				height:280px;
 				width:296px;
-				background: url("../images/activity-page/new-version-v2/old-card.png") no-repeat top left;
 				margin-left: 80px;
 			}
 			.card-one{
@@ -358,26 +434,6 @@
 			}
 		}
 	}
-	.level-bottom{
-		background:#fcc902 url("../images/activity-page/new-version-v2/old-level-bottom-strone.png") no-repeat left 160px;
-		.text{
-			color:#34302f;
-			font-size:14px;
-			line-height: 36px;
-			span{
-				display: block;
-				font-size:24px;
-			}
-		}
-		.copy-right{
-			text-align:center;
-			font-size:12px;
-			padding:120px 0 140px;
-			opacity:0.5;
-			line-height: 40px;
-			filter: alpha(opacity=50);
-		}
-	}
 }
 .contain_wrap{
 	position:relative;
@@ -393,7 +449,7 @@
 	.activity-invest-title{
 		position: absolute;
 		top: 40px;
-		left: 108px;
+		left: 113px;
 		font-size: 14px!important;
 	}
 	img {
@@ -411,7 +467,7 @@
 	}
 	p {
 		font-size: 18px;
-		color: #3598db; 
+		color: #3e68cd; 
 	}
 	.p1 {
 		font-size: 14px; 
@@ -436,11 +492,10 @@
 		height:24px;
 		line-height: 24px;
 		text-align: center;
-		background:url("../images/activity-page/new-version-v2/add-rate-bg.png") no-repeat;
 	}
 	.rate {
 		width: 200px;
-		padding-left: 113px; 
+		padding-left: 116px; 
 		.p1 {
 			margin-top: 30px; 
 		}
@@ -499,7 +554,8 @@
 	}
 	.btn {
 		position: relative;
-		width: 357px;
+		float: right;
+		width: 320px;
 		background-color: #dff2ff;
 		a {
 			position: absolute;
@@ -520,56 +576,18 @@
 			box-shadow: 0 3px 0 #989696;
 		}
 		.invest-now{
-			background-color: #f76930; 
-			box-shadow: 0 3px 0 #d8501a;
+			background-color: #f65f63; 
+			box-shadow: 0 3px 0 #df2328;
 			&:hover{
-				background-color: #ff7e45;
+				background-color: #f63f60;
 			}
 			&:active{
-				background-color: #f76930;
+				background-color: #f63f60;
 			}
 		}
 	}
 }
-/*风控图标*/
-.good-icon-data{
-	li{
-		float:left;
-		width:300px;
-	}
-	span{
-		display: block;
-		width: 161px; 
-		height: 192px;
-		margin: 0 auto;
-		background:url("../images/activity-page/new-version-v2/good-icon-data-bg.png") no-repeat;
-	}
-	.icon-one{
-		background-position: 0 0;
-	}
-	.icon-two{
-		background-position: -171px 0;
-	}
-	.icon-three{
-		background-position: -343px 0;
-	}
-	.icon-four{
-		background-position: -514px 0;
-	}
-	p{
-		opacity:0.8;
-		text-align:center;
-		color:#fff;
-	}
-	.title{
-		font-size:24px;
-		padding-top:46px;
-	}
-	.text{
-		font-size:14px;
-		padding-top:20px;
-	}
-}
+
 /*注册框*/
 .login-box{
   position:absolute;
@@ -638,10 +656,13 @@
     border-radius:3px;
     margin-bottom: 20px;
     padding: 12px 0 0 10px;
+    input:-webkit-autofill {
+  		-webkit-box-shadow: 0 0 0 1000px white inset;
+	}
     .ui-label-icon{
     	margin:0;
     	width:27px;
-    	background:url("../images/activity-page/new-version-v2/ui-label-icon.png") no-repeat;
+    	background:url("../images/activity-page/new-version-v3/ui-label-icon.png") no-repeat;
     	&.icon-form-phone{
 			background-position: 0 0;
     	}
@@ -741,11 +762,6 @@
 .dis-none{
 	display:none!important;
 }
-input:-webkit-autofill {
-	-webkit-box-shadow: 0 0 0 1000px white inset;
-	background-color: #fff;
-}
-
 .scroll-top{
 	display:none;
 	position:fixed;

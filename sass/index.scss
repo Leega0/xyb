@@ -209,6 +209,7 @@
     	&.hqb3-invest-date{
     		dd{
     			border-right:0;
+    			padding-right: 0;
     		}
     	}
     }
@@ -261,6 +262,14 @@
 	.invest-zzy-left{
 		height: 160px;
 		margin-top: -8px;
+		.double-special{
+			width: 53px;
+			height: 65px;
+			position: absolute;
+			top: 0;
+			right: 10px;
+			background: url(../images/duble-special.png) no-repeat;
+		}
 	}
 	.invest-dqb-left{
 		height: 300px;
@@ -795,6 +804,11 @@
 			&.corplink-wtcq,&.corplink-zxyh,&.corplink-lfyh,&.corplink-hczf,&.corplink-zmct{
 				background: url(../images/sprites/corplink2.png) no-repeat;
 			}
+			&.corplink-01caijing{
+				background:url(../images/01caijing.png) no-repeat;
+				width: 123px;
+				height: 22px;
+			}
 			display: inline-block;
 			&:hover{
 				opacity:.7;
@@ -832,14 +846,9 @@
 				background-position: -326px -33px;
 			}
 			&.corplin-wdzj{
-				width:115px;
-				height:27px;
-				background-position: -123px -34px;
-			}
-			&.corplink-360{
-				width:128px;
-				height:26px;
-				background-position: -439px -32px;
+				width:96px;
+				height:33px;
+				background:url(../images/wdzj_logo.png) no-repeat;
 			}
 			&.corplink-cccf{
 				width:117px;
@@ -1007,3 +1016,127 @@
 		}
 	}
 }
+// 秒标开始
+.index-secondkill-section{
+	background-color: #6626aa;
+	position: relative;
+	color:#fff;
+	padding-bottom: 10px;
+	margin-bottom: 32px;
+	.second-kill-img{
+		position: absolute;
+		top: -38px;
+		left: -20px;
+	}
+	.limit-time-num{
+		background: url(../images/index-icon-limitime.png) no-repeat;
+	}
+	.hqb3-invest-date{
+		padding-left: 20px !important;
+	}
+	.invest-hqb3-right{
+		.fl{
+			padding-top: 36px;
+			padding-left: 40px;
+			&.hqb3-invest-num{
+				width: 150px;
+				margin-left: 130px;
+				min-width: 150px;
+			}
+			dd{
+				border:0;
+				margin-top: 5px;
+			}
+		}
+		.hqb3-countdown{
+		padding-top: 32px;
+		}
+		.index-icon-clock{
+			background: url(../images/index-clock-white.png) no-repeat;
+		}
+		.ui-btn-yellow{
+			background-color: #ff8400;
+			box-shadow:0 3px 0 #c26400;
+			&:hover{
+				background-color: #EA800E;
+				box-shadow:0 3px 0 #B35D02;
+			}
+		}
+		.ui-btn-gray{
+			box-shadow:0 3px 0 #949393;
+			cursor: not-allowed;
+		}
+		// 秒
+		#timedown_seconds{
+			height: 18px;
+			overflow: hidden;
+			display: inline-block;
+			.dash {
+				width: 34px;
+				height: 18px;
+			background: transparent url('../images/index-second-bg.png') 0 0 no-repeat;
+	float: left;
+	position: relative;
+	.digit {
+	float: left;
+	position: relative;
+	width:16px;
+	height:18px;
+	text-align:center;
+	line-height: 18px;
+	margin-left: 1px;
+	color:#6626aa;
+	font-weight: bold;
+    }
+}
+		}
+		#countdown_sk{
+			height: 16px;
+			overflow: hidden;
+			display: inline-block;
+			position:relative;
+			top: 4px;
+.dash {
+	float: left;
+	position: relative;
+	.digit {
+	float: left;
+	position: relative;
+    }
+}
+		}
+		.second-style{
+			float: left;
+			.position{
+				display: inline-block;
+				width: 16px;
+				height: 18px;
+				background: url(../images/index-second-bg.png) no-repeat;
+				color: #474747;
+				text-align: center;
+				line-height: 18px;
+			}
+		}
+		.second_text{
+			position:relative;
+			top: 3px;
+			margin-left: 5px;
+		}
+	}
+}
+// 倒计时修复
+#countdown{
+			height: 16px;
+			overflow: hidden;
+			display: inline-block;
+			position:relative;
+			top: 4px;
+			.dash {
+	float: left;
+	position: relative;
+	.digit {
+	float: left;
+	position: relative;
+    }
+}
+		}
