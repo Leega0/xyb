@@ -84,14 +84,14 @@
 		<li class="tab">信用宝在线借款</li>
 	</ul>
 	<!-- start1 -->
-	<div class="lender-info">
-		<ul class="lend-step">
+	<div class="lender-info ui-mt20">
+		<ul class="lend-step ui-mt20">
 			<li>①资料填写</li>
 			<li>②授权审批</li>
 			<li>③签约放款</li>
 		</ul>
 		<!-- 信闪贷 二维码 -->
-		<div class="lend-qcode ui-mt15 ui-pb20">
+		<div class="lend-qcode ui-mt30 ui-pb30">
 			<div class="img"><table width="140" height="140"></table></div>
 			<p class="ui-size14 ui-pt20">扫描二维码极速借款</p>
 		</div>
@@ -120,29 +120,37 @@
 			</p>
 		</div>
 		<div class="ui-form-item">
+			<p class="ui-input-body ui-input-short" style="width:220px">
+				<input type="text" placeholder="输入短信验证码" class="w98">
+			</p>
+			<p class="send-code">
+				<a href="javascript:void(0);" class="ui-btn ui-btn-blue">发送验证码</a>
+			</p>
+		</div>
+		<div class="ui-form-item">
 			<p class="ui-input-body">
 				<i class="ui-label-icon icon-form-money"></i>
 				<input type="text" placeholder="借款金额">
 			</p>
 		</div>
 		<div class="ui-form-item">
-			<p class="ui-input-body ui-input-short" style="width:110px;">
+			<p class="ui-input-body ui-input-short" style="width:164px;">
 				<select name="" id="">
 					<option value="所在省份">所在省份</option>
 					<option value="广东">广东</option>
 					<option value="湖北">湖北</option>
 				</select>
 			</p>
-			<p class="ui-input-body ui-input-short ui-ml10" style="width:160px;">
+			<p class="ui-input-body ui-input-short ui-ml10" style="width:164px;">
 				<select name="" id="">
-					<option value="所在地区">所在地区</option>
+					<option value="所在城市">所在城市</option>
 					<option value="深圳">深圳</option>
 					<option value="广州">广州</option>
 				</select>
 			</p>
 		</div>
 		<div class="ui-form-item input-vali-code">
-					<p class="ui-input-body ui-input-middle" id="code_val_p" style="width: 170px;margin-right: 10px;">
+					<p class="ui-input-body ui-input-middle" id="code_val_p" style="width: 227px;margin-right: 10px;">
 						<input type="text" id="vcode" placeholder="输入右侧验证码">	
 					</p>
 					<a class="ui-code" href="javascript:void(0);" name="refresh" id="refresh" title="点击刷新" onclick="refresh();">
@@ -153,6 +161,7 @@
 		<div class="ui-form-item">
 			<p class="ui-form-btn ui-pt10"><a href="javascript:;" class="ui-btn ui-btn-blue" id="btn_lt_apply">立即申请</a></p>
 		</div>
+		<p class="ui-font-gray">支持城市：<br>郑州，福州，石家庄，南昌，西安，洛阳，厦门，淄博，沧州，扬州，上海，许昌，沈阳，南阳，包头, 深圳, 大连</p>
 	</div>	
 	<!-- end2 -->
 	</div>
@@ -275,14 +284,28 @@
 	        <td>54648.52元</td>
         </tr>
         <tr>
-	        <td><a class="credit-level level_b" title="了解信用宝等级" target="_blank">9</a><a class="credit-level level_b" title="了解信用宝等级" target="_blank">8</a></td>
+	        <td><a class="credit-level level_b" title="了解信用宝等级" target="_blank">9</a></td>
 	        <td>1800元</td>
 	        <td>0元</td>
 	        <td>4554.04元</td>
 	        <td>54648.52元</td>
         </tr>
         <tr>
-	        <td><a class="credit-level level_c" title="了解信用宝等级" target="_blank">7</a>等含以下</td>
+	        <td><a class="credit-level level_b" title="了解信用宝等级" target="_blank">8</a></td>
+	        <td>1800元</td>
+	        <td>0元</td>
+	        <td>4554.04元</td>
+	        <td>54648.52元</td>
+        </tr>
+        <tr>
+	        <td><a class="credit-level level_c" title="了解信用宝等级" target="_blank">7</a></td>
+	        <td>1800元</td>
+	        <td>0元</td>
+	        <td>4554.04元</td>
+	        <td>54648.52元</td>
+        </tr>
+        <tr>
+	        <td>以下</td>
 	        <td>1800元</td>
 	        <td>0元</td>
 	        <td>4554.04元</td>
@@ -477,19 +500,19 @@
 		var tabChild = $(".table-expand-scroll .level-rate");
 		var btn_goback = $('<p class="align-center ui-form-item go_back_box"><a href="javascript:;" class="ui-btn ui-btn-blue" id="go_back" onclick="goBack();">'+"返回"+'</a></p>')
 		$(function(){
-			tabChild.find("tr:gt(3)").hide();
+			tabChild.find("tr:gt(5)").hide();
 			tabChild.find("tr:last").show();
 			$("#lookup_detail").on('click',function(){
 				$(this).parent().parent().hide();
 				$(".unexpand").hide().after(btn_goback);
-				$(".table-expand-scroll").css('height', '286px');
-				tabChild.find("tr:gt(3)").show();
+				$(".table-expand-scroll").css('height', '375px');
+				tabChild.find("tr:gt(5)").show();
 				tabChild.find("tr:last").hide();
 			});
 		})
 		function goBack(){
 				$(".go_back_box").remove();
-				tabChild.find("tr:gt(3)").hide();
+				tabChild.find("tr:gt(5)").hide();
 				tabChild.find("tr:last").show();
 				$(".unexpand").show();
 				$(".table-expand-scroll").css('height', 'auto');

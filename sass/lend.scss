@@ -14,7 +14,7 @@ h5{
 }
 .lend-xsd-box{
 	width: 400px;
-	height:440px;
+	height:535px;
 	float: left;
 	border-right:1px solid #eee;
 }
@@ -45,13 +45,14 @@ h5{
 .lender-info{
 		padding: 20px 30px;
 	&.lender-info2{
-		padding:30px 60px 0;
+		.send-code{
+			.ui-btn{
+				padding:12px 15px;
+			}
+		}
 	}
 	.ui-form-item{
 		padding:5px 0;
-		.ui-input-middle{
-			width: 190px;
-		}
 		.ui-input-short{
 			margin-left: 0;
 		}
@@ -74,9 +75,6 @@ h5{
 	}
 	.lend-qcode{
 		.img{
-			width: 180px;
-			height: 180px;
-			border:1px solid #eee;
 			margin: 0 auto;
 			table{
 				margin: 13px auto;
@@ -135,7 +133,7 @@ h5{
 }
 // 估算列表
 .level-rate{
-	margin:0 auto;
+	margin:7px auto 0;
 	td,th{
 			border-bottom:1px solid #eee;
 			font-size: 14px;
@@ -178,7 +176,7 @@ h5{
 	}
 .lend-cal-result{
 	width:700px;
-	min-height:382px;
+	min-height:477px;
 	overflow:hidden;
 	margin:0 auto;
 }

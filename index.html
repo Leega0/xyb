@@ -12,77 +12,129 @@
 	<link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-<!-- 顶部start -->
+<!-- 通用顶部 -->
+<div class="top-wrap">
 	<div id="top" class="clearfix contain_wrap">
-		<!-- 未登陆 -->
-		<p class="fl">全国客服热线：400-068-1176</p>
-		<ul class="fr myhome">
-			<li><a href="javascript:void(0);" id="test_opener">你好，请 登录</a></li>
+		<p class="fl">全国服务热线：400-699-6060 <span class="ui-font-gray ui-pl20">服务时间：周一至周日&nbsp;9:00 - 18:00</span></p>
+		<!-- 关注我们 -->
+		<!-- <div class="fl fllow-us">
+			<span class="weixin"></span>
+			<a href="" class="weibo"></a>
+		</div> -->
+		<ul class="fr site-inside">
 			<li class="separator"></li>
-			<li><a href="" class="ui-font-blue">免费注册</a></li>
+			<li><a href="" target="_blank">VIP特权</a></li>
 			<li class="separator"></li>
-			<li><div class="myhome-account">
-				<a href="">我的账户</a>
-				<div class="home-account-list">
-					<p><a href="">资产状况</a></p>
-					<p><a href="">我的投资</a></p>
-					<p><a href="">我的借款</a></p>
-					<p><a href="">收支记录</a></p>
-					<p><a href="">账户中心</a></p>
-					<p><a href="">消息中心</a></p>
-				</div>
-				<i class="index-icons icon-arrow"></i>
-			</div></li>
+			<li><a href="" target="_blank">积分抽奖</a></li>
 			<li class="separator"></li>
-			<li><a href="">VIP会员</a></li>
+			<li><a href="" target="_blank">积分商城</a></li>
 			<li class="separator"></li>
-			<li><a href="">我要抽奖</a></li>
+			<li><a href="" target="_blank">推荐有奖</a></li>
 			<li class="separator"></li>
-			<li><a href="">积分商城</a></li>
+			<li><a href="" target="_blank"><i class="icon-index phone"></i>手机APP</a></li>
 			<li class="separator"></li>
-			<li><a href="">推荐有礼</a></li>
-			<li class="separator"></li>
-			<li><a href="" class="icon-scale"><i class="icon-zzqg"></i>猪猪钱罐</a></li>
 		</ul>
 	</div>
-<!-- 顶部end -->
-<!-- banner section -->
+</div>
+<!-- 通用顶部end -->
+<!-- 通用menu -->
 <div class="bg-white">
-	<!-- menu start -->
-		<div class="menu-wrap contain_wrap clearfix">
-		<div class="logo fl"><img src="images/logo.png" width="306" height="55" alt="logo"></div>
-		<div class="menu fr">
-			<ul class="menu-list clearfix">
-				<li><a href="" class="ui-font-blue">首页</a></li>
-				<li class="separator"></li>
-				<li>
-					<div class="menu-invest">
-						<a href="">我要理财</a>
-						<div class="menu-invest-list">
-							<p><a href="">活期宝</a></p>
-							<p><a href="">定期宝</a></p>
-							<p><a href="">信投宝</a></p>
-							<p><a href="">债券转让</a></p>
-							<!-- arrow-up -->
-							<i class="index-icons icon-arrow-up"></i>
-						</div>
-						<i class="index-icons icon-arrow-b"></i>
-					</div>
+	<div class="menu-wrap contain_wrap clearfix">
+		<div class="logo fl">
+			<a href="">
+				<img src="images/logo.png" alt="logo" width="164" height="44">
+			</a>
+		</div>
+		<div class="nav fl">
+			<ul class="clearfix">
+				<li class="cur"><a href="" target="_blank">首页</a></li>
+				<li class="menu-drop-item"><a href="" target="_blank">我要理财</a>
+					<ul class="drop-box">
+						<li><a href="">活&nbsp;期&nbsp;宝</a></li>
+						<li><a href="">周&nbsp;周&nbsp;盈</a></li>
+						<li><a href="">定&nbsp;期&nbsp;宝</a></li>
+						<li><a href="">信&nbsp;投&nbsp;宝</a></li>
+						<li><a href="">债权转让</a></li>
+					</ul>
 				</li>
-				<li class="separator"></li>
-				<li class="ui-posr"><a href="">新手专区</a><i class="icon-new-artip"></i></li>
-				<li class="separator"></li>
-				<li><a href="">我要借款</a></li>
-				<li class="separator"></li>
-				<li><a href="">安全保障</a></li>
-				<li class="separator"></li>
-				<li><a href="">关于我们</a></li>
-				<li class="separator"></li>
-				<li><a href=""><i class="index-icons icon-downapp"></i>手机APP</a></li>
+				<li><a href="" target="_blank">我要借款</a></li>
+				<li><a href="" target="_blank">新手指引</a></li>
+				<li><a href="" target="_blank">关于我们</a></li>
 			</ul>
 		</div>
+		<!-- 右侧用户信息 -->
+		<div class="nav-userinfo fr">
+			<!-- 未登录 -->
+			<div class="nav-unlogin">
+				<a href="" class="ui-btn ui-btn-blue">登录</a>
+				<a href="" class="ui-btn ui-btn-empty">免费注册</a>
+			</div>
+			<!-- 已登录 -->
+			<!-- <div class="nav-login">
+				<div class="nav-userimg">
+					<div class="userimg-mask"></div>
+					<img src="images/r_login.png" alt="">
+					<span class="unread-msg">9</span>
+				</div>
+				<p>
+					<a href="">我的账户</a>
+					<i class="login-arrow"></i>
+				</p>
+				<ul>
+					<li>
+						<a href="">
+							<span>资产总额</span>
+							<span class="fr">99999999.00元</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span>可用金额</span>
+							<span class="fr">99999.00元</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span>活期宝</span>
+							<span class="fr">888888.00元</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span>我的投资</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span>收支记录</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span>账户设置</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span>我的优惠</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span>消息中心(25)<em class="red-pointer"></em></span>
+						</a>
+					</li>
+					<li><a href="javascript:;" class="last-border">
+						<span><i class="icon-lgout"></i>登录注销</span>
+						</a></li>
+				</ul>
+			</div> -->
 		</div>
-	<!-- menu end -->
+	</div>
+</div>
+<!-- 通用menu end -->
+<!-- banner section -->
+<div class="bg-white">
 	<!-- banner -->
 	<div class="banner">
 	<!-- slider -->
@@ -757,95 +809,103 @@
 	</div>
 </div>
 <!-- 立即注册end -->
-<!-- 合作伙伴start -->
-<div class="cooperator contain_wrap">
-	<p>合作伙伴</p>
-	<ul class="cooperator-list">
-		<li class="align-left"><a href="http://www.51credit.com/" class="corplink-wak" target="_blank" title="我爱卡金融门户"></a></li>	
-		<li><a href="http://www.58jr.cn/" class="corplink-wtcq" target="_blank" title="网投春秋"></a></li>	
-		<li><a href="http://caifu.xyb100.com/" class="corplink-cccf" target="_blank" title="策诚财富"></a></li>	
-		<li><a href="http://www.sinosig.com/" class="corplink-ygbx" target="_blank" title="阳光保险财险"></a></li>	
-		<li><a href="http://bank.ecitic.com/" class="corplink-zxyh" target="_blank" title="中信银行"></a></li>	
-		<li><a href="http://www.01caijing.com/" class="corplink-01caijing" target="_blank" title="01caijing"></a></li>	
-		<li class="align-left"><a href="http://www.lianlianpay.com/" class="corplink-llzf" target="_blank" title="连连支付"></a></li>	
-		<li><a href="http://www.lccb.com.cn/" class="corplink-lfyh" target="_blank" title="廊坊银行"></a></li>	
-		<li><a href="http://www.ecpss.com/" class="corplink-hczf" target="_blank" title="汇潮支付"></a></li>	
-		<li><a href="http://www.sinousvc.com/" class="corplink-zmct" target="_blank" title="中美创投"></a></li>	
-		<li><a href="http://www.fico.com/cn/" class="corplink-fico" target="_blank" title="美国FICO信用评分"></a></li>	
-		<li><a href="http://www.wdzj.com/" class="corplin-wdzj" target="_blank" title="网贷之家"></a></li>	
-	</ul>
-</div>
-<!-- 合作伙伴end -->
-<!-- footer start -->
-<div id="footer" class="ui-mt50 ">
-	<div class="footer contain_wrap clearfix">
-		<div class="fl clearfix">
-			<div class="group fl">
-				<img src="images/bottom-logo.png" alt="底部logo" width="138" height="36">
-				<div class="group-list">
-					<span>信用宝联盟伙伴</span>
-					<div class="menber-list">
-						<p><a href="http://51credit.com/" target="_blank">我爱卡</a></p>
-						<p><a href="http://xnd.xyb100.com/" target="_blank">信农贷</a></p>
-						<p><a href="http://www.zhuzhuqianguan.com/" target="_blank">猪猪钱罐</a></p>
-						<p><a href="http://www.xyb100.com/caifu/" target="_blank">策诚财富</a></p>
-						<i class="icon-footer-arrow"></i>
-					</div>
-					<i class="index-icons icon-arrow"></i>
-				</div>
+<!-- 公用底部 -->
+<div id="footer">
+	<div class="contain_wrap">
+		<!-- 站内链接 -->
+		<div class="site-inner">
+			<div class="bottom-logo">
+				<img src="images/logo-gray.png" alt="">
+				<p>全国服务热线：</p>
+				<p class="bold">400-699-6060</p>
+				<p>服务时间：</p>
+				<p>工作日 9:00-22:00</p>
+				<p>节假日 9:00-18:00</p>
 			</div>
-			<!-- 底部链接 -->
-			<div class="footer-link fl">
-			<p class="bottom-links">
-			<a href="">关于我们</a>
-			<span>|</span>
-			<a href="">联系我们</a>
-			<span>|</span>
-			<a href="">帮助中心</a>
-			<span>|</span>
-			<a href="">服务协议</a>
-			</p>
-			<p class="footer-rights">
-				&copy;2015-2016 信用宝金融信息服务（北京）有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;京ICP备15015561号-2
-			</p>
-			<!-- 安全认证 -->
-			<ul class="sec-links-list">
-				<li><a href="" target="_blank" class="sec-link-hlxh"></a></li>
-				<li><a href="" target="_blank" class="sec-link-bljb"></a></li>
-				<li><a href="" target="_blank" class="sec-link-aqlm"></a></li>
-				<li><a href="" target="_blank" class="sec-link-kxwz"></a></li>
+			<!-- links -->
+			<ul class="inner-links">
+				<li>
+					<a href="javascript:;" class="title">法律法规</a>
+					<a href="" target="_blank">私隐条款</a>
+					<a href="" target="_blank">服务协议</a>
+					<a href="" target="_blank">安全保障</a>
+					<a href="" target="_blank">转让协议</a>
+				</li>
+				<li>
+					<a href="javascript:;" class="title">帮助中心</a>
+					<a href="" target="_blank">注册充值</a>
+					<a href="" target="_blank">实名认证</a>
+					<a href="" target="_blank">投资提现</a>
+				</li>
+				<li>
+					<a href="javascript:;" class="title">友情链接</a>
+					<a href="http://www.wangdaizhijia.com/" target="_blank">网贷之家</a>
+					<a href="http://www.sinosig.com/" target="_blank">阳光保险</a>
+					<a href="http://www.fico.com/cn/" target="_blank">FICO风控</a>
+					<a href="http://www.sinousvc.com/" target="_blank">中美创投</a>
+				</li>
+				<li class="f-link">
+					<span class="title">&nbsp;</span>
+					<a href="http://www.lianlianpay.com/" target="_blank" class="ui-mt20">连连支付</a>
+					<a href="http://www.ecpss.com/" target="_blank">汇潮支付</a>
+					<a href="http://www.01caijing.com/" target="_blank">零壹财经</a>
+					<a href="http://www.baifendian.com/" target="_blank">百分点</a>
+				</li>
+				<li class="f-link">
+					<span class="title">&nbsp;</span>
+					<a href="https://www.juxinli.com/" target="_blank" class="ui-mt20">聚信力</a>
+					<a href="http://www.58jr.cn/" target="_blank">网投春秋</a>
+					<a href="http://www.lccb.com.cn/" target="_blank">廊坊银行</a>
+				</li>
 			</ul>
-			</div>
-		</div>
-		<div class="fr ui-mr30">
-			<!-- 二维码 -->
-			<dl class="footer-qcode">
-				<dt><img src="images/footer_qcode.png" alt="二维码关注"></dt>
-			</dl>
-			<div class="work-time">
-				<p class="ui-pt20">全国服务热线</p>
-				<p class="our-telnumber bold ui-size24 ui-pt10">400-699-6060</p>
-				<p class="ui-pt10">服务时间（工作日 9:00-18:00）</p>
+			<div class="bottom-qrcode">
+				<dl>
+					<dt class="t">加入猪猪钱罐</dt>
+					<dd><img src="images/img-qcode-zhuzhu.jpg" alt=""></dd>
+					<dd>微信扫扫赚收益</dd>
+				</dl>
+				<dl>
+					<dt class="t">手机APP下载</dt>
+					<dd><img src="images/img-qrcode-xyb.jpg" alt=""></dd>
+					<dd>扫一扫立即下载</dd>
+				</dl>
+				<dl>
+					<dt class="t">信用宝官方微信</dt>
+					<dd><img src="images/img-qcode-wc.jpg" alt=""></dd>
+					<dd>扫一扫立即关注</dd>
+				</dl>
 			</div>
 		</div>
 	</div>
+	<!-- 底部 -->
+	<div class="copy-box">
+		<div class="contain_wrap clearfix">
+		<ul class="copy-box-img fl">
+			<li>
+				<a href="" class="sec-link link-hlxh" target="_blank"></a>
+			</li>
+			<li>
+				<a href="" class="sec-link link-jbzx" target="_blank"></a>
+			</li>
+			<li>
+				<a href="" class="sec-link link-aqlm" target="_blank"></a>
+			</li>
+			<li>
+				<a href="" class="sec-link link-kxwz" target="_blank"></a>
+			</li>
+		</ul>
+		<div class="copy-box-text fr">
+			<p class="ui-mb10">&copy;2015-2016&nbsp;信用宝金融信息服务（北京）有限公司&nbsp;&nbsp;&nbsp;<a href="" target="_blank">京ICP备15015561号-2</a></p>
+			<p>COPYRIGHT&copy;2015-2016&nbsp;XYB100&nbsp;All&nbsp;rights&nbsp;reserved.</p>
+		</div>
+		</div>
+	</div>
 </div>
-<!-- footer end -->
-<!-- popbar -->
-<ul class="ui-popbar" id="index_popbar">
-	<li>
-		<a class="ui-kefu icon-popbar" href=""></a>
-	</li>
-	<li>
-		<a class="ui-code icon-popbar" href=""></a>
-		<img class="ui-qrcode" src="images/wcode.png" style="display: none;">
-	</li>
-	<li>
-		<a class="ui-cal icon-popbar" href=""></a>
-	</li>
-	<li id="scrollto">
-		<a class="ui-gotop icon-popbar" href="javascript:void(0);"></a>
-	</li>
+<!-- 公用底部end -->
+<!-- 返回顶部 -->
+<ul class="fixed-side-right">
+	<li><a href="javascript:;" class="online-kf"></a></li>
+	<li><a href="#" class="go-back-top"></a></li>
 </ul>
 <!-- 弹窗 -->
 <div class="new-menber-knows-block">
@@ -912,6 +972,18 @@ $('#countdown').countDown({
 						'sec': 		0
 					}
 });
+// 菜单栏展开
+		$(".menu-drop-item").hover(function() {
+			$(this).addClass("drop-hover")
+		}, function() {
+			$(this).removeClass("drop-hover")
+		});
+		// 登录后用户信息
+		$(".nav-login").hover(function() {
+			$(this).addClass("user-login-hover")
+		}, function() {
+			$(this).removeClass("user-login-hover")
+		});
 });
 
 $(function(){

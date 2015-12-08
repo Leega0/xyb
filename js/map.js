@@ -1,6 +1,11 @@
 // hover延时
 (function($,g){var h={},id=1,etid=g+'ETID';$.fn[g]=function(e,f){id++;f=f||this.data(etid)||id;e=e||150;if(f===id)this.data(etid,f);this._hover=this.hover;this.hover=function(c,d){c=c||$.noop;d=d||$.noop;this._hover(function(a){var b=this;clearTimeout(h[f]);h[f]=setTimeout(function(){c.call(b,a)},e)},function(a){var b=this;clearTimeout(h[f]);h[f]=setTimeout(function(){d.call(b,a)},e)});return this};return this};$.fn[g+'Pause']=function(){clearTimeout(this.data(etid));return this};$[g]={get:function(){return id++},pause:function(a){clearTimeout(h[a])}}})(jQuery,'mouseDelay');
 var polygonNames = {
+	'北京': 'beijing',
+	'深圳': 'shenzhen',
+	'大连': 'dalian',
+	'沧州': 'cangzhou',
+	'济南': 'jinan',
 	'沈阳': 'shenyang',
 	'郑州': 'zhenghzou',
 	'西安': 'xian',
@@ -17,6 +22,11 @@ var polygonNames = {
 	'厦门': 'xiamen'
 	}
 var pointPosition = {
+	'beijing': '485|128',
+	'shenzhen': '487|320',
+	'dalian': '530|136',
+	'cangzhou': '493|149',
+	'jinan': '491|169',
 	'shenyang': '542|106',
 	'zhenghzou': '472|187',
 	'xian': '427|198',

@@ -206,7 +206,7 @@
                     </tr>
                     <tr>   
                         <td class="index-invest-name">
-                        	<p><a href=""><i class="icon-labels icon-label-xin">信</i>厂房重新装修</a></p>
+                        	<p><a href=""><i class="icon-labels icon-label-bu">步</i>厂房重新装修</a></p>
                         </td>
                         <td class="start-date">
                         	<span class="date">2014-05-25</span>
@@ -220,12 +220,12 @@
                         <td class="table-inside-btn">
                         	<a href="javascript:void(0);" class="layer_list_detail">明细</a>
                         	<a href="" target="_blank">合同</a>
-                        	<a href="javascript:void(0);" class="layer_list_trans">转让</a>
+                        	<a href="javascript:void(0);" class="layer_list_redemption">赎回</a>
                         </td>
                     </tr>
                     <tr>   
                         <td class="index-invest-name">
-                        	<p><a href=""><i class="icon-labels icon-label-xin">信</i>厂房重新装修</a></p>
+                        	<p><a href=""><i class="icon-labels icon-label-bu">步</i>厂房重新装修</a></p>
                         </td>
                         <td class="start-date">
                         	<span class="date">2014-05-25</span>
@@ -239,7 +239,7 @@
                         <td class="table-inside-btn">
                         	<a href="javascript:void(0);" class="layer_list_detail">明细</a>
                         	<a href="" target="_blank">合同</a>
-                        	<a href="javascript:void(0);" class="layer_list_trans">转让</a>
+                        	<a href="javascript:void(0);" class="layer_list_undo">撤销</a>
                         </td>
                     </tr>
                     <tr>   
@@ -355,6 +355,83 @@
 	</div>
 </div>
 <!-- footer end -->
+<!-- 弹窗效果 -->
+<div id="bbg_shuhui" style="display:none;" class="layui-layer-wrap">
+	<p class="layer-title">步步高本金赎回</p>
+	<div class="detail-invest-layer">
+		<div class="detail-invest-content">
+			<p>已投资本金(元)</p>
+			<p class="ui-font-blue ui-size28 invest-last-num">0.00</p>
+			<!-- tips -->
+			<p class="clearfix ui-pt10">输入赎回金额</p>
+			<div class="ui-form-item ui-mt5">
+				<p class="ui-input-body">
+					<input type="text" id="hqb_into_amount" onfocus="if(this.value==this.defaultValue)this.value=''" onblur="if(this.value.replace(/ /ig,'')=='')this.value=this.defaultValue" value="0.00" class="ui-font-blue ui-size14">
+				</p>
+				<a href="javascript:void(0);" id="intoAll" class="btn-invest-all ui-size14">全部</a>
+			</div>
+			<p class="clearfix ui-font-gray">
+				<span class="fl">实际赎回金额(元)</span>
+				<span class="fr">2021.00</span>
+			</p>
+			<p class="clearfix ui-font-gray ui-mt10">
+				<span class="fl">预计到账日期</span>
+				<span class="fr">2015-12-25</span>
+			</p>
+			<p class="clearfix ui-pt20">输入交易密码<a href="/my?left=setting_Safe&amp;right=safe_trade_pass_auth" target="_blank" class="ui-font-gray fr">忘记密码？</a></p>
+			<div class="ui-form-item">
+				<p class="ui-input-body ui-mt5 bx-shadow">
+					<i class="ui-label-icon icon-form-passwd"></i>
+					<input id="hqb_into_trade_val" type="password" placeholder="非登录密码哦" class="charge_psw w85" autocomplete="off">
+				</p>
+			</div>
+		</div>
+		<!-- 底部提交 -->
+		<div class="layer-bottom">
+			<div class="layer-content">
+				<p class="ui-form-btn"><a href="javascript:void(0);" id="bbg_action_out" class="ui-btn ui-btn-blue">确定赎回</a></p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 赎回确认弹窗 -->
+<div class="content_layer" id="tran_out_success">
+	<div class="user-sec-input page-tips">
+		<em class="icon-sucess"></em>
+		<p class="p1">步步高投资本金已经申请赎回</p>
+		<p class="p2">实际赎回金额 2014.00 元</p>
+		<p class="p2">预计到账时间  2015-05-36</p>
+		<div class="ui-form-item">
+			<p class="ui-form-btn"><a href="javascript:;" class="ui-btn ui-btn-blue" onclick="layer.closeAll();">确认</a></p>
+		</div>
+	</div>
+</div>
+<!-- 撤销输入框 -->
+<div id="bbg_undo_input" style="display:none;" class="layui-layer-wrap">
+	<p class="layer-title">取消本金赎回</p>
+	<div class="detail-invest-layer">
+		<div class="detail-invest-content">
+			<p>已申请赎回金额(元)</p>
+			<p class="ui-font-blue ui-size28 invest-last-num">258,400.00</p>
+			<!-- tips -->
+			
+			<p class="ui-font-gray">预计到账日期 2015-12-30</p>
+			<p class="clearfix ui-pt30">输入交易密码<a href="/my?left=setting_Safe&amp;right=safe_trade_pass_auth" target="_blank" class="ui-font-gray fr">忘记密码？</a></p>
+			<div class="ui-form-item">
+				<p class="ui-input-body ui-mt5 bx-shadow">
+					<i class="ui-label-icon icon-form-passwd"></i>
+					<input id="hqb_into_trade_val" type="password" placeholder="非登录密码哦" class="charge_psw w85" autocomplete="off">
+				</p>
+			</div>
+		</div>
+		<!-- 底部提交 -->
+		<div class="layer-bottom">
+			<div class="layer-content">
+				<p class="ui-form-btn"><a href="javascript:void(0);" id="bbg_action_out" class="ui-btn ui-btn-blue">确定取消</a></p>
+			</div>
+		</div>
+	</div>
+</div>
 <!-- script -->
 <script type="text/javascript" src="js/lib/jquery.js"></script>
 <script type="text/javascript" src="js/plugins/layer.js"></script>
@@ -363,6 +440,36 @@
 <!-- 对应三个弹窗效果 -->
 <script>
 	$(function(){
+		//  步步高赎回
+		$(".layer_list_redemption").on('click',function(){
+			layer.open({
+				type:1,
+				title:false,
+				shadeClose:true,
+				area: ['540px','500px'],
+				content:$('#bbg_shuhui')
+			})
+		});
+		$("#bbg_action_out").on("click",function(){
+			layer.closeAll();
+			layer.open({
+				type:1,
+				title:false,
+				shadeClose:true,
+				area: ['500px','400px'],
+				content:$('#tran_out_success')
+			})
+		})
+		//取消赎回
+		$(".layer_list_undo").on('click',function(){
+			layer.open({
+				type:1,
+				title:false,
+				shadeClose:true,
+				area: ['540px','420px'],
+				content:$('#bbg_undo_input')
+			})
+		});
 		// 明细
 		$(".layer_list_detail").on("click",function(){
 			layer.open({

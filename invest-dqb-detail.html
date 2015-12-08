@@ -374,7 +374,7 @@
 				}
 			})
         });
-	        //tips 插件
+	       //tips 插件
         $.fn.extend({
         hoverTips : function (){
         var self = $(this);
@@ -383,28 +383,29 @@
             sw = true;
             var htmlDom = $('<div class="tips-box-ye">'+
                     '<dl class="sy-card-list">'+
-                        '<dd class="no-border">账户余额(元)<span class="fr ui-font-blue">521,512.00</span></dd>'+
-                        '<dd>账户礼金(元)<span class="fr ui-font-blue">521,512.00</span></dd>'+
+                        '<dd class="no-border">账户余额(元)<span class="fr ui-font-blue">2000</span></dd>'+
+                        '<dd>账户礼金(元)<span class="fr ui-font-blue">300</span></dd>'+
                     '</dl>'+
                     '<i class="icon-tips-arrow"></i>'+
                 '</div>')
         }
         self.on("mouseover",function(){
-            $("body").append( htmlDom );
-            var left = self.offset().left-10;
-            var top = self.offset().top - htmlDom.outerHeight()-10;
+            $(".layui-layer").append( htmlDom );
+            var left = htmlDom.outerWidth()/2-42;
+            var top = htmlDom.outerHeight()/2-5;
             htmlDom.css({"left":left,"top":top - 10,"display":"block"});
             htmlDom.stop().animate({ "top" : top ,"opacity" : 1},300);
         });
         self.on("mouseout",function(){
-            var top = parseInt(htmlDom.css("top"));
-            htmlDom.stop().animate({ "top" : top - 10 ,"opacity" : 0},300,function(){
-                htmlDom.remove();
-                sw = false;
-            });
+            // var top = parseInt(htmlDom.css("top"));
+            // htmlDom.stop().animate({ "top" : top - 10 ,"opacity" : 0},300,function(){
+            //     htmlDom.remove();
+            //     sw = false;
+            // });
         });
     }
 });
+
 $(".icon-wenhao").hoverTips();
 	</script>
 </body>
